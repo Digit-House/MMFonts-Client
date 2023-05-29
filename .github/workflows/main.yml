@@ -1,0 +1,13 @@
+- name: Vercel Preview Deployments
+  # You may pin to the exact commit or the version.
+  # uses: snaplet/vercel-action@a84e8e02e05dc563cb94bf816c04a8c6d135571f
+  uses: snaplet/vercel-action@v3.0.1
+  with:
+    # Await for the deployment to be ready and output the deployment URL
+    await-for-deployment: # optional
+    # Delete the preview related data on Vercel
+    delete: # optional
+    # Environment variables to create on Vercel, they are scoped to the "preview" environment and the current branch
+    env: # optional
+    # Command set for the Ignored Build Step in your project settings, the default script is canceling every preview deployments coming from the Vercel GitHub App.
+    ignored-build-command: # optional, default is curl -sS "https://raw.githubusercontent.com/snaplet/vercel-action/v3/scripts/ignore-build.mjs" | node --input-type=module
