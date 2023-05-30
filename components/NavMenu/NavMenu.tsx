@@ -2,7 +2,12 @@
 
 import Link from "next/link";
 import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+	Bars3Icon,
+	MoonIcon,
+	SunIcon,
+	XMarkIcon,
+} from "@heroicons/react/24/outline";
 import Image from "next/image";
 
 const menuItems = [
@@ -27,11 +32,15 @@ const menuItems = [
 interface NavMenuProps {
 	mobileMenuOpen: boolean;
 	setMobileMenuOpen: (value: boolean) => void;
+	isLightTheme: boolean;
+	switchTheme: () => void;
 }
 
 export default function NavMenu({
 	mobileMenuOpen,
 	setMobileMenuOpen,
+	isLightTheme,
+	switchTheme,
 }: NavMenuProps) {
 	return (
 		<>
@@ -45,6 +54,18 @@ export default function NavMenu({
 						{item.title}
 					</Link>
 				))}
+				<div className="w-20 justify-center items-center">
+					<button
+						onClick={switchTheme}
+						className="bg-yellow-500 w-8 h-8 rounded-full flex items-center justify-center"
+					>
+						{isLightTheme ? (
+							<SunIcon className="w-4 h-4" />
+						) : (
+							<MoonIcon className="w-4 h-4" />
+						)}
+					</button>
+				</div>
 			</div>
 
 			<Dialog
