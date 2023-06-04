@@ -12,7 +12,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
 	if (!mounted) return null;
 
 	return (
-		<ThemeProvider attribute="class" forcedTheme="dark">
+		<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 			<Header />
 			{children}
 			<Footer />

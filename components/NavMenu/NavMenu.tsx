@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Dialog } from "@headlessui/react";
 import {
 	Bars3Icon,
@@ -12,20 +13,20 @@ import Image from "next/image";
 
 const menuItems = [
 	{
-		title: "Home",
+		title: "မာတိကာ",
 		href: "/",
 	},
 	{
-		title: "Premium",
+		title: "အခကြေးငွေဖြင့်",
 		href: "/premium",
 	},
 	{
-		title: "lorem",
+		title: "စာထုတ်ရန်",
 		href: "/lorem",
 	},
 	{
-		title: "ContactUs",
-		href: "/contact",
+		title: "ကျွန်တော်တို့အကြောင်း",
+		href: "/contact-us",
 	},
 ];
 
@@ -42,27 +43,34 @@ export default function NavMenu({
 	isLightTheme,
 	switchTheme,
 }: NavMenuProps) {
+	const pathname = usePathname();
+
+	const activeLink =
+		"border-b-2 border-blue-500 text-sm  font-bold leading-6 tracking-wide text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300";
+	const unactiveLink =
+		"text-sm font-semibold leading-6 tracking-wide text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300";
+
 	return (
 		<>
-			<div className="hidden lg:flex lg:gap-x-12">
+			<div className="items-center hidden lg:flex lg:gap-x-12">
 				{menuItems.map((item) => (
 					<Link
 						key={item.title}
 						href={item.href}
-						className="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
+						className={pathname == item.href ? activeLink : unactiveLink}
 					>
 						{item.title}
 					</Link>
 				))}
-				<div className="w-20 justify-center items-center">
+				<div className="items-center justify-center w-20">
 					<button
 						onClick={switchTheme}
-						className="bg-yellow-500 w-8 h-8 rounded-full flex items-center justify-center"
+						className="flex items-center justify-center w-8 h-8 bg-yellow-500 rounded-full checked"
 					>
 						{isLightTheme ? (
-							<SunIcon className="w-4 h-4" />
+							<SunIcon className="w-6 h-6" />
 						) : (
-							<MoonIcon className="w-4 h-4" />
+							<MoonIcon className="w-6 h-6" />
 						)}
 					</button>
 				</div>
@@ -75,11 +83,11 @@ export default function NavMenu({
 				onClose={setMobileMenuOpen}
 			>
 				<div className="fixed inset-0 z-10" />
-				<Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+				<Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
 					<div className="flex items-center justify-between">
 						<a href="#" className="-m-1.5 p-1.5">
 							<Image
-								className="h-8 w-auto"
+								className="w-auto h-8"
 								src="./next.svg"
 								width={40}
 								height={40}
@@ -92,17 +100,17 @@ export default function NavMenu({
 							onClick={() => setMobileMenuOpen(false)}
 						>
 							<span className="sr-only">Close menu</span>
-							<XMarkIcon className="h-6 w-6" aria-hidden="true" />
+							<XMarkIcon className="w-6 h-6" aria-hidden="true" />
 						</button>
 					</div>
-					<div className="mt-6 flow-root">
+					<div className="flow-root mt-6">
 						<div className="-my-6 divide-y divide-gray-500/10">
-							<div className="space-y-2 py-6">
+							<div className="py-6 space-y-2">
 								{menuItems.map((item) => (
 									<a
 										key={item.title}
 										href={item.href}
-										className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+										className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
 									>
 										{item.title}
 									</a>
