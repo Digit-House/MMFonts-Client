@@ -1,45 +1,45 @@
 "use client";
 
-import { useLayoutEffect, useState } from "react";
-import { CheckBox, FontList, SearchBox } from "@components/index";
+import { useState } from "react";
+import {
+	CheckBox,
+	FontListCard,
+	RadioSelectBar,
+	SearchBox,
+} from "@components/index";
 import classNames from "classnames";
 import {
 	MagnifyingGlassIcon,
 	TableCellsIcon,
 } from "@heroicons/react/24/outline";
+import { useRouter } from "next/navigation";
+import { QueueListIcon } from "@heroicons/react/20/solid";
+import { SelectOptionType } from "@core/golobalTypes";
+import useIsMobile from "@hooks/useIsMobile";
 
 export default function Home() {
 	const [value, setValue] = useState<string>("");
-
-	const [slider, setSlider] = useState<string>("18");
+	const [fontSize, setFontSize] = useState<SelectOptionType>({
+		label: "12",
+		value: "12",
+	});
 	const [isToggled, setIsToggled] = useState<boolean>(false);
-	const [isMobile, setIsMobile] = useState<boolean | null>(null);
+	const { isMobile } = useIsMobile();
 	const [checked, setChecked] = useState<{ task: string; done: boolean }[]>([
 		{ task: "ဇော်ဂျီ", done: false },
 		{ task: "ယူနီကုဒ်", done: false },
 	]);
+	const router = useRouter();
 
 	const gridContainerClasses = classNames("grid gap-4 mt-3", {
 		"grid-cols-2": !isToggled,
 		"grid-cols-1": isToggled,
 	});
 
-	useLayoutEffect(() => {
-		const handleResize = () => {
-			setIsMobile(window.innerWidth < 640);
-		};
-
-		window.addEventListener("resize", handleResize);
-
-		return () => {
-			window.removeEventListener("resize", handleResize);
-		};
-	}, []);
-
 	const array = Array.from({ length: 10 }, (_, index) => index + 1);
 
 	const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-		setSlider(event.target.value);
+		setFontSize({ label: event.target.value, value: event.target.value });
 	};
 
 	const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -54,13 +54,18 @@ export default function Home() {
 		setChecked([...checkedClone]);
 	};
 
+	const onClick = (id: number) => {
+		router.push(`/fonts/${id}`);
+	};
+
 	return (
-		<main className="px-20">
-			<div className="flex flex-col items-center justify-center mt-5">
+		<main className="">
+			<div className="flex items-center justify-center mt-5">
 				<SearchBox
 					value={value}
 					handleChange={handleChange}
-					slider={slider}
+					setFontSize={setFontSize}
+					fontSize={fontSize}
 					handleSliderChange={handleSliderChange}
 					handleCheckBoxChange={handleCheckBoxChange}
 					checked={checked}
@@ -90,27 +95,21 @@ export default function Home() {
 						))}
 					</div>
 				</div>
-				<div className="flex flex-row items-center w-full p-2 ml-2 mr-2 rounded-full shadow-md bg-secondary">
-					<span>{slider}px</span>
-					<input
-						type="range"
-						min="0"
-						max="100"
-						value={slider}
-						onChange={handleSliderChange}
-						className="w-full h-2 ml-2 rounded-full outline-none appearance-none bg-darkblue"
-					/>
-				</div>
+				<RadioSelectBar
+					fontSize={fontSize}
+					setFontSize={setFontSize}
+					handleSliderChange={handleSliderChange}
+				/>
 			</form>
 			<div className="flex flex-row items-center mt-10">
 				<p className="flex-1 text-xl font-bold">ဖောင့်ပုံစံ ၉၀</p>
-				<TableCellsIcon
+				<QueueListIcon
 					className="hidden w-8 h-8 mr-3 text-secondary sm:flex"
-					onClick={() => setIsToggled(false)}
+					onClick={() => setIsToggled(true)}
 				/>
 				<TableCellsIcon
 					className="hidden w-8 h-8 text-secondary sm:flex"
-					onClick={() => setIsToggled(true)}
+					onClick={() => setIsToggled(false)}
 				/>
 			</div>
 			<div
@@ -121,7 +120,7 @@ export default function Home() {
 				}
 			>
 				{array.map((i) => (
-					<FontList key={i} />
+					<FontListCard key={i} id={i} onClick={onClick} />
 				))}
 			</div>
 		</main>

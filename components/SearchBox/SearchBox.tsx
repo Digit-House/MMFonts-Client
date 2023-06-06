@@ -1,23 +1,30 @@
+"use client";
 import React, { useState } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import { CheckBox } from "..";
+import { CheckBox, RadioSelectBar } from "..";
+import { SelectOptionType } from "@core/golobalTypes";
 
 type SearchBoxType = {
 	value: string;
 	handleChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
-	slider: string;
+	fontSize: {
+		label: string;
+		value: string;
+	};
 	handleSliderChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 	handleCheckBoxChange: (d: boolean, i: number) => void;
 	checked: { task: string; done: boolean }[];
+	setFontSize: React.Dispatch<React.SetStateAction<SelectOptionType>>;
 };
 
 const SearchBox = ({
 	value,
 	handleChange,
-	slider,
+	fontSize,
 	handleSliderChange,
 	handleCheckBoxChange,
 	checked,
+	setFontSize,
 }: SearchBoxType) => {
 	const [isHovered, setIsHovered] = useState(false);
 
@@ -51,21 +58,14 @@ const SearchBox = ({
 					/>
 					<MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary " />
 				</div>
-				<div
-					className={`flex flex-row items-center  p-2 ml-2 mr-2 radio rounded-full ${
-						isHovered ? "w-1/4" : "w-full"
-					} shadow-md bg-secondary `}
-				>
-					<span>{slider}px</span>
-					<input
-						type="range"
-						min="0"
-						max="100"
-						value={slider}
-						onChange={handleSliderChange}
-						className="w-full h-2 ml-2 rounded-full outline-none appearance-none bg-darkblue"
-					/>
-				</div>
+				<RadioSelectBar
+					fontSize={fontSize}
+					setFontSize={setFontSize}
+					handleSliderChange={handleSliderChange}
+					isHovered={isHovered}
+					customClassName="ml-2 mr-2"
+				/>
+
 				{checked.map(({ task, done }, i) => (
 					<CheckBox
 						key={i}

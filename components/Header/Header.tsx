@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { LogoMenu, NavMenu } from "..";
 import { Bars3Icon } from "@heroicons/react/24/outline";
-import { ThemeProvider, useTheme } from "next-themes";
+import { useTheme } from "next-themes";
 
 export default function Header() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,7 +27,6 @@ export default function Header() {
 						<Bars3Icon className="w-6 h-6" aria-hidden="true" />
 					</button>
 				</div>
-
 				<LogoMenu />
 				<NavMenu
 					switchTheme={() => {

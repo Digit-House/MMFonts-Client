@@ -1,11 +1,17 @@
 import classNames from "classnames";
 import React, { FC } from "react";
 
-const FontList = () => {
+type FontListType = {
+	onClick: (id: number) => void;
+	id: number;
+};
+
+const FontListCard = ({ onClick, id }: FontListType) => {
 	return (
 		<div
-			className="flex-1 p-2 border-2 rounded "
-			style={{ boxShadow: " 2px 2px 0px #292D53" }}
+			className="flex-1 p-2 border-2 rounded cursor-pointer"
+			style={{ boxShadow: " 2px 2px 0px #292D53 " }}
+			onClick={() => onClick(id)}
 		>
 			<div className="flex flex-row justify-between">
 				<div className="">
@@ -24,4 +30,4 @@ const FontList = () => {
 	);
 };
 
-export default FontList;
+export default FontListCard;
