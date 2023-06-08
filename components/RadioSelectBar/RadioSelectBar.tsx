@@ -15,21 +15,15 @@ const options = [
 	{ label: "184", value: "184" },
 	{ label: "280", value: "280" },
 ];
-
-function classNames(...classes) {
+function classNames(...classes: (string | boolean | undefined)[]): string {
 	return classes.filter(Boolean).join(" ");
-}
-
-interface FontSizeState {
-	label: string;
-	value: string;
 }
 
 type RadioSelectBarType = {
 	fontSize: SelectOptionType;
 	setFontSize: React.Dispatch<React.SetStateAction<SelectOptionType>>;
 	isHovered?: boolean;
-	customClassName?: string;
+	customClassName?: string | undefined;
 	handleSliderChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 

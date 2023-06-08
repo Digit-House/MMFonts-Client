@@ -3,7 +3,7 @@ import { Listbox, Transition } from "@headlessui/react";
 import { SelectOptionType } from "@core/golobalTypes";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 
-function classNames(...classes) {
+function classNames(...classes: (string | boolean)[]): string {
 	return classes.filter(Boolean).join(" ");
 }
 
