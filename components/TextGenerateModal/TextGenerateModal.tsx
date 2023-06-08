@@ -41,7 +41,7 @@ const TextGenerateModal = ({ open, setOpen }: TextGenerateModalType) => {
 							leaveFrom="opacity-100 translate-y-0 sm:scale-100"
 							leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
 						>
-							<Dialog.Panel className="relative w-1/2 h-auto px-4 pt-5 pb-4 overflow-hidden text-left transition-all transform border-2 border-black shadow-xl bg-primary dark:bg-lightblue sm:my-8 sm:p-6">
+							<Dialog.Panel className="relative sm:w-1/2  w-full h-auto px-4 pt-5 pb-4 overflow-hidden text-left transition-all transform border-2 border-black shadow-xl bg-primary dark:bg-lightblue sm:my-8 sm:p-6">
 								<div className="absolute cursor-pointer top-1 right-1">
 									<XMarkIcon
 										className="w-6 h-6 text-green-600"
@@ -51,8 +51,8 @@ const TextGenerateModal = ({ open, setOpen }: TextGenerateModalType) => {
 
 								<div className="">
 									<div className="mt-3 text-center sm:mt-5">
-										<div className="flex flex-row justify-between ">
-											<div className="flex flex-row justify-around w-4/6 ">
+										<div className="flex-row justify-between md:flex hidden">
+											<div className="flex-row justify-around w-4/6 ">
 												<label className="relative block w-4/6">
 													<span className="absolute inset-y-0 left-0 flex items-center pl-1">
 														<MagnifyingGlassIcon className="w-10 h-10 p-1 " />
@@ -72,9 +72,36 @@ const TextGenerateModal = ({ open, setOpen }: TextGenerateModalType) => {
 													၅
 												</p>
 											</div>
-											<p className="flex items-center justify-center w-10 h-auto px-3 rounded-sm bg-secondary">
+											<p className="flex items-center justify-center w-10 h-auto py-1 rounded-sm bg-secondary ">
 												ပြီးပြီ
 											</p>
+										</div>
+										<div className="flex flex-col w-full flex-1 md:hidden ">
+											<div className="flex flex-row justify-between mb-2">
+												<label className="relative block w-4/6">
+													<span className="absolute inset-y-0 left-0 flex items-center pl-1">
+														<MagnifyingGlassIcon className="w-10 h-10 p-1 " />
+													</span>
+													<input
+														className="w-full py-2 pl-10 pr-4 border rounded-full shadow bg-secondary border-secondary focus:outline-none"
+														placeholder="ရှာရန်"
+														type="text"
+													/>
+												</label>
+												<p className="flex items-center justify-center w-10 h-auto py-1 rounded-sm bg-secondary ">
+													ပြီးပြီ
+												</p>
+											</div>
+											<div className="flex flex-row justify-between">
+												<CustomSelectBox
+													options={options}
+													initialValue={optionValue}
+													setInitialValue={setOptionValue}
+												/>
+												<p className="flex items-center justify-center w-10 h-auto px-3 rounded-sm bg-secondary">
+													၅
+												</p>
+											</div>
 										</div>
 										<Dialog.Title
 											as="h3"

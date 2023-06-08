@@ -17,7 +17,7 @@ const CheckBox = ({ handleCheckBoxChange, done, i, task }: CheckBoxType) => {
 				checked={done}
 				className="w-4 h-4 rounded cursor-pointer accent-pink-300 border-secondary focus:secondary"
 			/>
-			<label className="ml-2 text-sm font-medium text-gray-900">{task}</label>
+			<p className="ml-2 text-sm font-medium text-gray-900">{task}</p>
 		</div>
 	);
 };

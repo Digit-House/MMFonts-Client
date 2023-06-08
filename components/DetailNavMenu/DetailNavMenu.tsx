@@ -31,8 +31,8 @@ const DetailNavMenu = () => {
 						onClick={showModal}
 					/>
 					{!isHide && (
-						<div className="absolute p-2 leading-normal border-2 right-3 bg-primary">
-							<div className="flex flex-row justify-between mb-2">
+						<div className="absolute p-2 leading-normal border-2 right-3 bg-primary min-w-max">
+							<div className="flex flex-row justify-between mb-2 ">
 								<p>အစီရင်ခံရန်</p>
 								<XMarkIcon className="w-6" onClick={showModal} />
 							</div>
