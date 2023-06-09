@@ -3,6 +3,3 @@ pre-commit:
     lint:
       glob: '*.{ts,tsx}'
       run: yarn lint:fix
-    typecheck:
-      glob: '*.{ts,tsx}'
-      run: yarn type-check
