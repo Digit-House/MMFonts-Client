@@ -87,10 +87,10 @@ export default function NavMenu({
 					<div className="flex items-center justify-between">
 						<a href="#" className="-m-1.5 p-1.5">
 							<Image
-								className="w-auto h-8"
-								src="./icon.svg"
-								width={40}
-								height={40}
+								className="w-auto h-10"
+								src="/icon.png"
+								width={80}
+								height={80}
 								alt="mm fonts collection logo"
 							/>
 						</a>

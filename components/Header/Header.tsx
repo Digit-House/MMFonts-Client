@@ -14,7 +14,7 @@ export default function Header() {
 	return (
 		<header>
 			<nav
-				className="flex items-center justify-between p-6 mx-auto border-b-2 shadow-lg max-w-8xl lg:px-8 border-secondary"
+				className="flex items-center justify-between p-2 mx-auto border-b-2 shadow-lg max-w-8xl lg:px-8 border-secondary"
 				aria-label="Global"
 			>
 				<div className="flex lg:hidden">
