@@ -5,36 +5,36 @@ import Providers from "./Providers";
 const myLocalFont = localFont({
 	src: [
 		{
-			path: "../public/fonts/AcreMMVariable-Thin.ttf",
+			path: "../public/fonts/site/AcreMMVariable-Thin.ttf",
 			weight: "100",
 		},
 		{
-			path: "../public/fonts/AcreMMVariable-ExtraLight.ttf",
+			path: "../public/fonts/site/AcreMMVariable-ExtraLight.ttf",
 			weight: "200",
 		},
 		{
-			path: "../public/fonts/AcreMMVariable-Light.ttf",
+			path: "../public/fonts/site/AcreMMVariable-Light.ttf",
 			weight: "300",
 		},
 		{
-			path: "../public/fonts/AcreMMVariable-Regular.ttf",
+			path: "../public/fonts/site/AcreMMVariable-Regular.ttf",
 			weight: "400",
 		},
 		{
-			path: "../public/fonts/AcreMMVariable-DemiBold.ttf",
+			path: "../public/fonts/site/AcreMMVariable-DemiBold.ttf",
 			weight: "500",
 		},
 		{
-			path: "../public/fonts/AcreMMVariable-Demi.ttf",
+			path: "../public/fonts/site/AcreMMVariable-Demi.ttf",
 			weight: "600",
 		},
 
 		{
-			path: "../public/fonts/AcreMMVariable-Bold.ttf",
+			path: "../public/fonts/site/AcreMMVariable-Bold.ttf",
 			weight: "700",
 		},
 		{
-			path: "../public/fonts/AcreMMVariable-Black.ttf",
+			path: "../public/fonts/site/AcreMMVariable-Black.ttf",
 			weight: "800",
 		},
 	],

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { use, useState } from "react";
 import {
 	CheckBox,
 	FontListCard,
@@ -16,8 +16,11 @@ import { useRouter } from "next/navigation";
 import { QueueListIcon } from "@heroicons/react/20/solid";
 import { SelectOptionType } from "@core/golobalTypes";
 import useIsMobile from "@hooks/useIsMobile";
+import useCSVConvert from "@hooks/useCSVConvert";
 
 export default function Home() {
+	const { fontsArray } = useCSVConvert();
+
 	const [value, setValue] = useState<string>("");
 	const [fontSize, setFontSize] = useState<SelectOptionType>({
 		label: "12",
