@@ -1,15 +1,14 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
+import classNames from 'classnames';
+import React, { useState } from 'react';
 import {
-	DetailNavMenu,
-	FontListDetailCard,
-	RadioSelectBar,
-	TextGenerateModal,
-} from "@components/index";
-import { SelectOptionType } from "@core/golobalTypes";
-import useIsMobile from "@hooks/useIsMobile";
-import classNames from "classnames";
+  FontListDetailCard,
+  RadioSelectBar,
+  TextGenerateModal,
+} from '@components/index';
+import { SelectOptionType } from '@core/golobalTypes';
+import useIsMobile from '@hooks/useIsMobile';
 
 const array = Array.from({ length: 10 }, (_, index) => index + 1);
 
@@ -22,24 +21,24 @@ function Page() {
 	const [open, setOpen] = useState<boolean>(false);
 	const { isMobile } = useIsMobile();
 
-	const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-		setValue(event.target.value);
-	};
+  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setValue(event.target.value);
+  };
 
-	const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-		setFontSize({ label: event.target.value, value: event.target.value });
-	};
+  const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setFontSize({ label: event.target.value, value: event.target.value });
+  };
 
-	return (
-		<div className="">
-			<div>
-				<div className="flex-col hidden sm:flex">
-					<p>ဖောင့်အမည်</p>
-					<p>ဖန်တီးသူ အမည်မသိ</p>
-				</div>
-				<div className="py-6 mr-5 text-right bock sm:hidden">
-					<p className="">အကြောင်းနှင့်မူပိုင်ခွင့်</p>
-				</div>
+  return (
+    <div className="">
+      <div>
+        <div className="flex-col hidden sm:flex">
+          <p>ဖောင့်အမည်</p>
+          <p>ဖန်တီးသူ အမည်မသိ</p>
+        </div>
+        <div className="py-6 mr-5 text-right bock sm:hidden">
+          <p className="">အကြောင်းနှင့်မူပိုင်ခွင့်</p>
+        </div>
 
 				<div className="flex items-center justify-center mt-5">
 					<div className="p-4 border-2 rounded-md border-darkblue dark:border-white">

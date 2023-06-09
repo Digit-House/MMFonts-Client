@@ -69,3 +69,14 @@ input:checked {
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 }
+/*======================
+    404 page
+=======================*/
+
+.page_404 {
+	display: flex;
+	justify-content: center;
+	margin-top: 8rem;
+	background: transparent;
+	font-family: "Arvo", serif;
+}

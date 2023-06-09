@@ -1,64 +1,64 @@
-"use client";
+'use client';
 
-import { use, useState } from "react";
+import { QueueListIcon } from '@heroicons/react/20/solid';
 import {
-	CheckBox,
-	FontListCard,
-	RadioSelectBar,
-	SearchBox,
-} from "@components/index";
+  MagnifyingGlassIcon,
+  TableCellsIcon,
+} from '@heroicons/react/24/outline';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 import {
-	MagnifyingGlassIcon,
-	TableCellsIcon,
-} from "@heroicons/react/24/outline";
-import { useRouter } from "next/navigation";
-import { QueueListIcon } from "@heroicons/react/20/solid";
-import { FontType, SelectOptionType } from "@core/golobalTypes";
-import useIsMobile from "@hooks/useIsMobile";
-import useCSVConvert from "@hooks/useCSVConvert";
+  CheckBox,
+  FontListCard,
+  RadioSelectBar,
+  SearchBox,
+} from '@components/index';
+import { FontType, SelectOptionType } from '@core/golobalTypes';
+import useCSVConvert from '@hooks/useCSVConvert';
+import useIsMobile from '@hooks/useIsMobile';
 
 function classNames(...classes: (string | boolean)[]): string {
 	return classes.filter(Boolean).join(" ");
 }
 
 export default function Home() {
-	const { data } = useCSVConvert("/fonts/data/font.csv");
-	console.log("DTA", data);
+  const { data } = useCSVConvert('/fonts/data/font.csv');
+  console.log('DTA', data);
 
-	const [value, setValue] = useState<string>("");
-	const [fontSize, setFontSize] = useState<SelectOptionType>({
-		label: "12",
-		value: "12",
-	});
-	const [isToggled, setIsToggled] = useState<boolean>(false);
-	const { isMobile } = useIsMobile();
-	const [checked, setChecked] = useState<{ task: string; done: boolean }[]>([
-		{ task: "ဇော်ဂျီ", done: false },
-		{ task: "ယူနီကုဒ်", done: false },
-	]);
-	const router = useRouter();
+  const [value, setValue] = useState<string>('');
+  const [fontSize, setFontSize] = useState<SelectOptionType>({
+    label: '12',
+    value: '12',
+  });
+  const [isToggled, setIsToggled] = useState<boolean>(false);
+  const { isMobile } = useIsMobile();
+  const [checked, setChecked] = useState<{ task: string; done: boolean }[]>([
+    { task: 'ဇော်ဂျီ', done: false },
+    { task: 'ယူနီကုဒ်', done: false },
+  ]);
+  const router = useRouter();
 
 	const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setFontSize({ label: event.target.value, value: event.target.value });
 	};
 
-	const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-		setValue(event.target.value);
-	};
+  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setValue(event.target.value);
+  };
 
-	const handleCheckBoxChange = (done: boolean, i: number) => {
-		let tmp = checked[i];
-		tmp.done = !done;
-		let checkedClone = [...checked];
-		checkedClone[i] = tmp;
-		setChecked([...checkedClone]);
-	};
+  const handleCheckBoxChange = (done: boolean, i: number) => {
+    const tmp = checked[i];
+    tmp.done = !done;
+    const checkedClone = [...checked];
+    checkedClone[i] = tmp;
+    setChecked([...checkedClone]);
+  };
 
-	const onClick = (id: number) => {
-		router.push(`/fonts/${id}`);
-	};
+  const onClick = (id: number) => {
+    router.push(`/fonts/${id}`);
+  };
 
-	if (data.length === 0) return <div>Loading...</div>;
+  if (data.length === 0) return <div>Loading...</div>;
 
 	return (
 		<main className="">
@@ -134,5 +134,4 @@ export default function Home() {
 			</div>
 		</main>
 	);
-	``;
 }

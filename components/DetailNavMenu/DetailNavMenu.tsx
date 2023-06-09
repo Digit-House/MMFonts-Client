@@ -1,18 +1,14 @@
-"use client";
-import React, { useState } from "react";
-import { EllipsisHorizontalIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import classNames from "classnames";
+'use client';
+import { EllipsisHorizontalIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import classNames from 'classnames';
+import React, { useState } from 'react';
 
 const DetailNavMenu = () => {
-	const [isHide, setIsHide] = useState<boolean>(true);
-	const modalClasses = classNames("grid gap-4 mt-3", {
-		"grid-cols-2": !isHide,
-		"grid-cols-1": isHide,
-	});
+  const [isHide, setIsHide] = useState<boolean>(true);
 
-	const showModal = () => {
-		setIsHide((prev) => !prev);
-	};
+  const showModal = () => {
+    setIsHide((prev) => !prev);
+  };
 
 	return (
 		<div className="flex flex-row justify-between mx-2 mt-5 text-lg py-5">
