@@ -15,7 +15,6 @@ const FontListCard = ({ onClick, id, font, typeText }: FontListType) => {
 		src: `url(/fonts/${font.fileName}/${font.fontStyle}.ttf)`,
 	};
 
-	console.log("FONT", fontStyle);
 	return (
 		<div
 			className="flex-1 p-2 border-2 rounded cursor-pointer"

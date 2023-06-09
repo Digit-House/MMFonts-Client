@@ -15,7 +15,7 @@ const useCSVConvert = (csvFilePath: string) => {
 
 				for (let i = 1; i < lines.length; i++) {
 					const currentLine = lines[i].split(",");
-					const font: FontType = {};
+					const font: any = {};
 
 					for (let j = 0; j < headers.length; j++) {
 						font[headers[j]] = currentLine[j];
