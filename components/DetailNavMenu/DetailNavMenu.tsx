@@ -15,7 +15,7 @@ const DetailNavMenu = () => {
 	};
 
 	return (
-		<div className="flex flex-row justify-between mx-2 mt-5 text-lg">
+		<div className="flex flex-row justify-between mx-2 mt-5 text-lg py-5">
 			<div className="flex flex-row items-center">
 				<p className="mr-5">မြန်မာဖောင့်</p>
 				<p>အမည်မသိ</p>
