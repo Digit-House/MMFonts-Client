@@ -1,7 +1,8 @@
+import { FontType } from "@core/golobalTypes";
 import { useEffect, useState } from "react";
 
 const useCSVConvert = (csvFilePath: string) => {
-	const [data, setData] = useState([]);
+	const [data, setData] = useState<FontType[]>([]);
 
 	useEffect(() => {
 		fetch(csvFilePath)
@@ -14,16 +15,15 @@ const useCSVConvert = (csvFilePath: string) => {
 
 				for (let i = 1; i < lines.length; i++) {
 					const currentLine = lines[i].split(",");
-					const obj = {};
+					const font: FontType = {};
 
 					for (let j = 0; j < headers.length; j++) {
-						obj[headers[j]] = currentLine[j];
+						font[headers[j]] = currentLine[j];
 					}
 
-					jsonData.push(obj);
+					jsonData.push(font);
 				}
 
-				console.log(jsonData);
 				setData(jsonData);
 			})
 			.catch((err: Error) => {
