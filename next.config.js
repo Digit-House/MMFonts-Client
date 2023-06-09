@@ -7,7 +7,7 @@ const nextConfig = {
 			test: /\.csv$/,
 			use: [
 				{
-					loader: "csv-loader",
+					loader: 'csv-loader',
 					options: {
 						dynamicTyping: true,
 						header: true,

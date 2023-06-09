@@ -1,26 +1,21 @@
 module.exports = {
-	root: true,
+	env: {
+		browser: true,
+		es2021: true,
+	},
+	extends: [
+		"next",
+		"next/core-web-vitals",
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react/recommended",
+	],
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
-		ecmaVersion: 2020,
+		ecmaVersion: "latest",
 		sourceType: "module",
-		ecmaFeatures: {
-			jsx: true,
-		},
-	},
-	settings: {
-		react: {
-			version: "detect",
-		},
 	},
 	plugins: ["@typescript-eslint", "react", "import", "unused-imports"],
-	extends: [
-		"plugin:react/recommended",
-		"plugin:@typescript-eslint/recommended",
-		"plugin:react-hooks/recommended",
-		"plugin:prettier/recommended",
-	],
-	ignorePatterns: ["*.js"], // ignore files outside src
 	rules: {
 		quotes: ["error", "single", { avoidEscape: true }],
 		semi: "off",
@@ -89,32 +84,4 @@ module.exports = {
 		"no-console": ["error", { allow: ["log", "warn"] }],
 		// disable import React necessity
 	},
-	overrides: [
-		{
-			files: ["use*.ts"],
-			rules: {
-				"@typescript-eslint/explicit-module-boundary-types": "off",
-			},
-		},
-		{
-			files: ["**.test.{ts,tsx}", "**.test.{js,jsx}"],
-			env: {
-				jest: true,
-			},
-			plugins: ["jest"],
-			rules: {
-				"max-nested-callbacks": "off",
-				"max-depth": "off",
-				"max-params": "off",
-				"max-lines": "off",
-				"max-lines-per-function": "off",
-				"jest/no-disabled-tests": "warn",
-				"jest/no-focused-tests": "error",
-				"jest/no-identical-title": "error",
-				"jest/prefer-to-have-length": "warn",
-				"jest/valid-expect": "error",
-				"unused-imports/no-unused-imports-ts": "error",
-			},
-		},
-	],
 };
