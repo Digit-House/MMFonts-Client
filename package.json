@@ -17,8 +17,10 @@
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
     "classnames": "^2.3.2",
+    "csvtojson": "^2.0.10",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
+    "fs": "^0.0.1-security",
     "next": "13.4.4",
     "next-themes": "^0.2.1",
     "postcss": "8.4.24",
@@ -26,5 +28,9 @@
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@types/csvtojson": "^2.0.0",
+    "csv-loader": "^3.0.5"
   }
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { use, useState } from "react";
 import {
 	CheckBox,
 	FontListCard,
@@ -13,14 +13,18 @@ import {
 } from "@heroicons/react/24/outline";
 import { useRouter } from "next/navigation";
 import { QueueListIcon } from "@heroicons/react/20/solid";
-import { SelectOptionType } from "@core/golobalTypes";
+import { FontType, SelectOptionType } from "@core/golobalTypes";
 import useIsMobile from "@hooks/useIsMobile";
+import useCSVConvert from "@hooks/useCSVConvert";
 
 function classNames(...classes: (string | boolean)[]): string {
 	return classes.filter(Boolean).join(" ");
 }
 
 export default function Home() {
+	const { data } = useCSVConvert("/fonts/data/font.csv");
+	console.log("DTA", data);
+
 	const [value, setValue] = useState<string>("");
 	const [fontSize, setFontSize] = useState<SelectOptionType>({
 		label: "12",
@@ -33,8 +37,6 @@ export default function Home() {
 		{ task: "ယူနီကုဒ်", done: false },
 	]);
 	const router = useRouter();
-
-	const array = Array.from({ length: 10 }, (_, index) => index + 1);
 
 	const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setFontSize({ label: event.target.value, value: event.target.value });
@@ -55,6 +57,8 @@ export default function Home() {
 	const onClick = (id: number) => {
 		router.push(`/fonts/${id}`);
 	};
+
+	if (data.length === 0) return <div>Loading...</div>;
 
 	return (
 		<main className="">
@@ -100,7 +104,9 @@ export default function Home() {
 				/>
 			</form>
 			<div className="flex flex-row items-center mt-10">
-				<p className="flex-1 text-xl font-bold">ဖောင့်ပုံစံ ၉၀</p>
+				<p className="flex-1 text-xl font-bold">
+					ဖောင့်ပုံစံ စုစုပေါင်း {data.length}
+				</p>
 				<QueueListIcon
 					className="hidden w-8 h-8 mr-3 text-secondary sm:flex"
 					onClick={() => setIsToggled(true)}
@@ -116,8 +122,14 @@ export default function Home() {
 					"grid gap-4 mt-3"
 				)}
 			>
-				{array.map((i) => (
-					<FontListCard key={i} id={i} onClick={onClick} />
+				{data.map((font: FontType, i) => (
+					<FontListCard
+						key={i}
+						id={i}
+						onClick={onClick}
+						font={font}
+						typeText={value}
+					/>
 				))}
 			</div>
 		</main>
