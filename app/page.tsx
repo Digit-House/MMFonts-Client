@@ -19,7 +19,8 @@ import useIsMobile from "@hooks/useIsMobile";
 import useCSVConvert from "@hooks/useCSVConvert";
 
 export default function Home() {
-	const { fontsArray } = useCSVConvert();
+	const { data } = useCSVConvert("/data/font.csv");
+	console.log("DTA", data);
 
 	const [value, setValue] = useState<string>("");
 	const [fontSize, setFontSize] = useState<SelectOptionType>({
