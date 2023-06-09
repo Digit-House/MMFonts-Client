@@ -1,10 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	darkMode: "class",
 	content: [
-		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
 		"./components/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
 		extend: {
@@ -13,6 +12,16 @@ module.exports = {
 				"gradient-conic":
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
+		},
+		colors: {
+			white: "#fff",
+			primary: "#E4D1AC",
+			secondary: "#EDB92B",
+			darkblue: "#292D53",
+			lightblue: "#365880",
+		},
+		fontFamily: {
+			acre: ["var(--font-acre)"],
 		},
 	},
 	plugins: [],

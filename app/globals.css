@@ -2,26 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+	body {
+		@apply dark:bg-darkblue bg-primary;
+	}
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+input[type="checkbox"] {
+	/* removing default appearance */
+	-webkit-appearance: none;
+	appearance: none;
+	/* creating a custom design */
+	width: 1.2em;
+	height: 1.2em;
+	/* border-radius: 0.15em; */
+	/* margin-right: 0.5em; */
+	border: 0.15em solid #edb92b;
+	/* outline: none; */
+	/* cursor: pointer; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+input:checked::before {
+	content: "\2714";
+	font-size: 1em;
+	color: #edb92b;
+}
+
+input:checked {
+	background-color: #292d53;
+}
+
+.box {
+	position: relative;
+}
+
+.input {
+	transition: 2.5s;
+}
+.radio {
+	transition: 2s;
+}
+
+/* .box:hover input { */
+/* width: 400px; */
+/* } */
+
+.box .icon {
+	color: #ffd52d;
+	transition: 0.2s;
+}
+
+.box:hover .icon {
+	opacity: 0;
+	z-index: -1;
 }

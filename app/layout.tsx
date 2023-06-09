@@ -1,8 +1,45 @@
-import { Footer, Header } from "@components/index";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
+import Providers from "./Providers";
 
-const inter = Inter({ subsets: ["latin"] });
+const myLocalFont = localFont({
+	src: [
+		{
+			path: "../public/fonts/AcreMMVariable-Thin.ttf",
+			weight: "100",
+		},
+		{
+			path: "../public/fonts/AcreMMVariable-ExtraLight.ttf",
+			weight: "200",
+		},
+		{
+			path: "../public/fonts/AcreMMVariable-Light.ttf",
+			weight: "300",
+		},
+		{
+			path: "../public/fonts/AcreMMVariable-Regular.ttf",
+			weight: "400",
+		},
+		{
+			path: "../public/fonts/AcreMMVariable-DemiBold.ttf",
+			weight: "500",
+		},
+		{
+			path: "../public/fonts/AcreMMVariable-Demi.ttf",
+			weight: "600",
+		},
+
+		{
+			path: "../public/fonts/AcreMMVariable-Bold.ttf",
+			weight: "700",
+		},
+		{
+			path: "../public/fonts/AcreMMVariable-Black.ttf",
+			weight: "800",
+		},
+	],
+	variable: "--font-acre",
+});
 
 export const metadata = {
 	title: "Create Next App",
@@ -16,10 +53,8 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
-				<Header />
-				{children}
-				<Footer />
+			<body className={`${myLocalFont.variable} font-acre`}>
+				<Providers>{children}</Providers>
 			</body>
 		</html>
 	);

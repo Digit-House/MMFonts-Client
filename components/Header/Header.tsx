@@ -3,14 +3,18 @@
 import { useState } from "react";
 import { LogoMenu, NavMenu } from "..";
 import { Bars3Icon } from "@heroicons/react/24/outline";
+import { useTheme } from "next-themes";
 
 export default function Header() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+	const { theme, setTheme, systemTheme } = useTheme();
+
+	const currentTheme = theme === "system" ? systemTheme : theme;
 
 	return (
 		<header>
 			<nav
-				className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-8"
+				className="flex items-center justify-between p-6 mx-auto border-b-2 shadow-lg max-w-8xl lg:px-8 border-secondary"
 				aria-label="Global"
 			>
 				<div className="flex lg:hidden">
@@ -20,12 +24,15 @@ export default function Header() {
 						onClick={() => setMobileMenuOpen(true)}
 					>
 						<span className="sr-only">Open main menu</span>
-						<Bars3Icon className="h-6 w-6" aria-hidden="true" />
+						<Bars3Icon className="w-6 h-6" aria-hidden="true" />
 					</button>
 				</div>
-
 				<LogoMenu />
 				<NavMenu
+					switchTheme={() => {
+						setTheme(theme === "dark" ? "light" : "dark");
+					}}
+					isLightTheme={currentTheme === "light"}
 					setMobileMenuOpen={setMobileMenuOpen}
 					mobileMenuOpen={mobileMenuOpen}
 				/>
