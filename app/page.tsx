@@ -18,7 +18,7 @@ import useCSVConvert from '@hooks/useCSVConvert';
 import useIsMobile from '@hooks/useIsMobile';
 
 function classNames(...classes: (string | boolean)[]): string {
-	return classes.filter(Boolean).join(" ");
+	return classes.filter(Boolean).join(' ');
 }
 
 export default function Home() {
@@ -118,8 +118,8 @@ export default function Home() {
 			</div>
 			<div
 				className={classNames(
-					isToggled || isMobile ? "grid-cols-1" : "grid-cols-2",
-					"grid gap-4 mt-3"
+					isToggled || isMobile ? 'grid-cols-1' : 'grid-cols-2',
+					'grid gap-4 mt-3'
 				)}
 			>
 				{data.map((font: FontType, i) => (

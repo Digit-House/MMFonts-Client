@@ -13,10 +13,10 @@ import useIsMobile from '@hooks/useIsMobile';
 const array = Array.from({ length: 10 }, (_, index) => index + 1);
 
 function Page() {
-	const [value, setValue] = useState<string>("");
+	const [value, setValue] = useState<string>('');
 	const [fontSize, setFontSize] = useState<SelectOptionType>({
-		label: "12",
-		value: "12",
+		label: '12',
+		value: '12',
 	});
 	const [open, setOpen] = useState<boolean>(false);
 	const { isMobile } = useIsMobile();
@@ -88,8 +88,8 @@ function Page() {
 			</div>
 			<div
 				className={classNames(
-					isMobile ? "grid-cols-1" : "grid-cols-2",
-					"grid gap-4 mt-3"
+					isMobile ? 'grid-cols-1' : 'grid-cols-2',
+					'grid gap-4 mt-3'
 				)}
 			>
 				{array.map((i) => (

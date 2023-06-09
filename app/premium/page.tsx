@@ -1,15 +1,15 @@
-"use client";
-import React, { useState } from "react";
-import Image from "next/image";
-import fontCoverImage from "@public/fontcoverimage.jpg";
-import { FontListPremiumCard, RadioSelectBar } from "@components/index";
-import { SelectOptionType } from "@core/golobalTypes";
+'use client';
+import Image from 'next/image';
+import React, { useState } from 'react';
+import { FontListPremiumCard, RadioSelectBar } from '@components/index';
+import { SelectOptionType } from '@core/golobalTypes';
+import fontCoverImage from '@public/fontcoverimage.jpg';
 
 const Premium = () => {
 	const array = Array.from({ length: 10 }, (_, index) => index + 1);
 	const [fontSize, setFontSize] = useState<SelectOptionType>({
-		label: "12",
-		value: "12",
+		label: '12',
+		value: '12',
 	});
 	const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setFontSize({ label: event.target.value, value: event.target.value });
