@@ -1,13 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
 	CheckBox,
 	FontListCard,
 	RadioSelectBar,
 	SearchBox,
 } from "@components/index";
-import classNames from "classnames";
 import {
 	MagnifyingGlassIcon,
 	TableCellsIcon,
@@ -16,6 +15,10 @@ import { useRouter } from "next/navigation";
 import { QueueListIcon } from "@heroicons/react/20/solid";
 import { SelectOptionType } from "@core/golobalTypes";
 import useIsMobile from "@hooks/useIsMobile";
+
+function classNames(...classes: (string | boolean)[]): string {
+	return classes.filter(Boolean).join(" ");
+}
 
 export default function Home() {
 	const [value, setValue] = useState<string>("");
@@ -30,11 +33,6 @@ export default function Home() {
 		{ task: "ယူနီကုဒ်", done: false },
 	]);
 	const router = useRouter();
-
-	const gridContainerClasses = classNames("grid gap-4 mt-3", {
-		"grid-cols-2": !isToggled,
-		"grid-cols-1": isToggled,
-	});
 
 	const array = Array.from({ length: 10 }, (_, index) => index + 1);
 
@@ -113,11 +111,10 @@ export default function Home() {
 				/>
 			</div>
 			<div
-				className={
-					isMobile === false
-						? gridContainerClasses
-						: "grid gap-4 mt-3 grid-cols-1"
-				}
+				className={classNames(
+					isToggled || isMobile ? "grid-cols-1" : "grid-cols-2",
+					"grid gap-4 mt-3"
+				)}
 			>
 				{array.map((i) => (
 					<FontListCard key={i} id={i} onClick={onClick} />

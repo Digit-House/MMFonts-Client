@@ -21,10 +21,6 @@ function Page() {
 	});
 	const [open, setOpen] = useState<boolean>(false);
 	const { isMobile } = useIsMobile();
-	const modalClasses = classNames("grid gap-4 mt-3", {
-		"grid-cols-2": !isMobile,
-		"grid-cols-1": isMobile,
-	});
 
 	const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
 		setValue(event.target.value);
@@ -91,11 +87,15 @@ function Page() {
 			<div className="flex flex-row items-center mt-10">
 				<p className="flex-1 text-xl font-bold">ဖောင့်ပုံစံများ</p>
 			</div>
-			<div className={modalClasses}>
-				{array.map((i) => {
-					console.log(typeof i);
-					return <FontListDetailCard key={i} />;
-				})}
+			<div
+				className={classNames(
+					isMobile ? "grid-cols-1" : "grid-cols-2",
+					"grid gap-4 mt-3"
+				)}
+			>
+				{array.map((i) => (
+					<FontListDetailCard key={i} />
+				))}
 			</div>
 			<TextGenerateModal open={open} setOpen={setOpen} />
 		</div>
