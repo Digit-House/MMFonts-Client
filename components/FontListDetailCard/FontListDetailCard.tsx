@@ -13,6 +13,7 @@ const FontListDetailCard = ({ font, size, fontText }: FontListDetailCardType) =>
     src: `url(/fonts/${font.fileName}/${font.fontStyle}.ttf)`,
     fontSize: parseInt(size),
     lineHeight: `${parseInt(size) + 20}px`,
+    fontWeight: font.fontStyle,
   };
   console.log('FONST', fontStyle);
 

@@ -11,8 +11,6 @@ import useIsMobile from '@hooks/useIsMobile';
 function Page() {
   const params = useParams();
 
-  let sliderTimeout: NodeJS.Timeout;
-
   const [value, setValue] = useState<string>('');
   const [fontSize, setFontSize] = useState<SelectOptionType>({
     label: '20',
