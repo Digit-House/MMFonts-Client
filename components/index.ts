@@ -11,3 +11,4 @@ export { default as FontListDetailCard } from './FontListDetailCard/FontListDeta
 export { default as TextGenerateModal } from './TextGenerateModal/TextGenerateModal';
 export { default as FontListPremiumCard } from './FontListPremiumCard/FontListPremiumCard';
 export { default as CustomSelectBox } from './CustomSelectBox/CustomSelectBox';
+export { default as PremiumCard } from './premiumCard/premiumCard';
