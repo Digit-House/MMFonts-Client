@@ -71,7 +71,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <GoogleAnalytics GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_TRAKCING_ID} />
+      {process.env.NEXT_PUBLIC_GA_TRAKCING_ID && (
+        <GoogleAnalytics GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_TRAKCING_ID} />
+      )}
       <HotJar />
       <body className={`${myLocalFont.variable} font-acre`}>
         <Providers>{children}</Providers>
