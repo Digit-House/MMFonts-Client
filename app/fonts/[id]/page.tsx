@@ -38,7 +38,6 @@ function Page() {
             return { ...fontData, fontStyle: style };
           });
 
-          console.log('DA', dataStyles);
           setFontStyles([...dataStyles]);
           setFont(fontData);
         }
