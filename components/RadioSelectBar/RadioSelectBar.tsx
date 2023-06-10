@@ -46,7 +46,7 @@ export default function RadioSelectBar({
       <input
         type="range"
         min="1"
-        max="160"
+        max="96"
         value={fontSize.value}
         onChange={handleSliderChange}
         className="w-full h-2 ml-2 mr-4 rounded-full outline-none appearance-none bg-darkblue"

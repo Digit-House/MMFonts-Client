@@ -1,11 +1,11 @@
 'use client';
 
 import { QueueListIcon } from '@heroicons/react/20/solid';
-import { MagnifyingGlassIcon, TableCellsIcon } from '@heroicons/react/24/outline';
+import { TableCellsIcon } from '@heroicons/react/24/outline';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
-import { CheckBox, FontListCard, RadioSelectBar, SearchBox } from '@components/index';
-import { FontType, SelectOptionType } from '@core/golobalTypes';
+import { FontListCard, SearchBox } from '@components/index';
+import { FontType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
 import useIsMobile from '@hooks/useIsMobile';
 
@@ -46,8 +46,6 @@ export default function Home() {
   };
 
   if (data.length === 0) return <div>Loading...</div>;
-
-  console.log('FOIN', fontSize);
 
   return (
     <main className="">
