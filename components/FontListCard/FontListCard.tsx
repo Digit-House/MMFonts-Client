@@ -6,9 +6,11 @@ type FontListType = {
   typeText: string | undefined;
   id: number;
   font: FontType;
+  fontSize: number;
 };
 
-const FontListCard = ({ onClick, id, font, typeText }: FontListType) => {
+const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) => {
+  console.log('font', fontSize);
   const fontStyle = {
     fontFamily: `${font.fileName} , 'font-acre', sans-serif`,
     src: `url(/fonts/${font.fileName}/${font.fontStyle}.ttf)`,

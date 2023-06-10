@@ -7,26 +7,29 @@ import { CheckBox, RadioSelectBar } from '..';
 type SearchBoxType = {
   value: string;
   handleChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
-  fontSize: {
-    label: string;
-    value: string;
-  };
-  handleSliderChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   handleCheckBoxChange: (d: boolean, i: number) => void;
   checked: { task: string; done: boolean }[];
-  setFontSize: React.Dispatch<React.SetStateAction<SelectOptionType>>;
+  setFont: React.Dispatch<React.SetStateAction<number>>;
 };
 
-const SearchBox = ({
-  value,
-  handleChange,
-  fontSize,
-  handleSliderChange,
-  handleCheckBoxChange,
-  checked,
-  setFontSize,
-}: SearchBoxType) => {
+const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont }: SearchBoxType) => {
+  let sliderTimeout: NodeJS.Timeout;
+
   const [isHovered, setIsHovered] = useState(false);
+
+  const [fontSize, setFontSize] = useState<SelectOptionType>({
+    label: '12',
+    value: '12',
+  });
+
+  const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    clearTimeout(sliderTimeout);
+    setFontSize({ label: event.target.value, value: event.target.value });
+
+    sliderTimeout = setTimeout(() => {
+      setFont(parseInt(event.target.value));
+    }, 1000);
+  };
 
   const handleHover = () => {
     setIsHovered(!isHovered);
