@@ -3,7 +3,7 @@
 import { QueueListIcon } from '@heroicons/react/20/solid';
 import { TableCellsIcon } from '@heroicons/react/24/outline';
 import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { FontListCard, SearchBox } from '@components/index';
 import { FontType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
@@ -49,9 +49,9 @@ export default function Home() {
     if (fontList.length === 0) setFontList(data);
   }, [data]);
 
-  const onClick = (id: number) => {
-    router.push(`/fonts/${id}`);
-  };
+  const onClickFont = useCallback((name: string, id: number) => {
+    router.push(`/fonts/${name.split(' ').join('-')}-${id}`);
+  }, []);
 
   if (data.length === 0) return <div>Loading...</div>;
 
@@ -103,7 +103,14 @@ export default function Home() {
       </div>
       <div className={classNames(isToggled || isMobile ? 'grid-cols-1' : 'grid-cols-2', 'grid gap-4 mt-3')}>
         {fontList.map((font: FontType, i) => (
-          <FontListCard key={i} id={i} onClick={onClick} font={font} typeText={value} fontSize={fontSize} />
+          <FontListCard
+            key={i}
+            id={i}
+            onClick={() => onClickFont(font.nameEn, i)}
+            font={font}
+            typeText={value}
+            fontSize={fontSize}
+          />
         ))}
       </div>
     </main>
