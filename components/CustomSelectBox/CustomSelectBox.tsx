@@ -20,7 +20,7 @@ const CustomSelectBox = ({ initialValue, setInitialValue, options, unit }: Custo
       {({ open }) => (
         <>
           <div className="relative flex items-center ">
-            <Listbox.Button className="hover:bg-darkblue dark:text-white hover:text-white relative w-full cursor-default rounded-xl bg-secondary py-1.5 pl-3 pr-10 text-left text-darkblue  focus:outline-none  sm:text-sm sm:leading-6">
+            <Listbox.Button className="hover:bg-[#fcd25d] dark:text-white hover:text-white relative w-full cursor-default rounded-xl bg-secondary py-1.5 pl-3 pr-10 text-left text-darkblue  focus:outline-none  sm:text-sm sm:leading-6">
               <span className="block w-full py-1 text-base font-medium truncate">
                 {initialValue.value} {unit}
               </span>
