@@ -10,7 +10,6 @@ type FontListType = {
 };
 
 const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) => {
-  console.log('font', typeText);
   const fontStyle = {
     fontFamily: `${font.fileName} , 'font-acre', sans-serif`,
     src: `url(/fonts/${font.fileName}/${font.fontStyle}.ttf)`,
