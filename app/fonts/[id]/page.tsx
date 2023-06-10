@@ -26,13 +26,13 @@ function Page() {
   const { data } = useCSVConvert('/fonts/data/font.csv');
 
   useEffect(() => {
-    if (params.id) {
-      const index = params.id.split('-').pop();
-      if (index) {
-        if (!font) {
-          console.log(index, font);
+    const index = params.id.split('-').pop();
+    if (index) {
+      if (!font) {
+        console.log(index, font);
 
-          const fontData: FontType = data[parseInt(index)];
+        const fontData: FontType = data[parseInt(index)];
+        if (fontData) {
           const styles = fontData.fontStyle.split(' ');
           const dataStyles: FontType[] = styles.map((style) => {
             return { ...fontData, fontStyle: style };
