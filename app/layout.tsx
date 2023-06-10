@@ -3,6 +3,8 @@ import localFont from 'next/font/local';
 import GoogleAnalytics from '@hooks/GoogleAnalytics';
 import { HotJar } from '@hooks/index';
 import Providers from './Providers';
+import GoogleAnalytics from '@hooks/GoogleAnalytics';
+import { HotJar } from '@hooks/index';
 
 const myLocalFont = localFont({
   src: [
