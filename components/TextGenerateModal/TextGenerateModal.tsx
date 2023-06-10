@@ -52,7 +52,7 @@ const TextGenerateModal = ({ open, setOpen }: TextGenerateModalType) => {
                 <div className="">
                   <div className="mt-3 text-center sm:mt-5">
                     <div className="flex-row justify-between md:flex hidden">
-                      <div className="flex-row justify-around w-4/6 ">
+                      <div className="flex-row justify-around w-4/6 flex">
                         <label className="relative block w-4/6">
                           <span className="absolute inset-y-0 left-0 flex items-center pl-1">
                             <MagnifyingGlassIcon className="w-10 h-10 p-1 " />
