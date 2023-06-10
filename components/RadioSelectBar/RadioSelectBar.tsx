@@ -42,19 +42,14 @@ export default function RadioSelectBar({
         'flex flex-row items-center w-full p-2  rounded-full shadow-md bg-secondary radio'
       )}
     >
-      <CustomSelectBox
-        initialValue={fontSize}
-        options={options}
-        setInitialValue={setFontSize}
-        unit="px"
-      />
+      <CustomSelectBox initialValue={fontSize} options={options} setInitialValue={setFontSize} unit="px" />
       <input
         type="range"
         min="1"
         max="280"
         value={fontSize.value}
         onChange={handleSliderChange}
-        className="w-full h-2 ml-2 mr-4 rounded-full outline-none appearance-none bg-darkblue"
+        className="w-full h-2 ml-2 mr-4 rounded-full outline-none appearance-none bg-darkblue accent-lightblue"
       />
     </div>
   );

@@ -3,47 +3,47 @@
 @tailwind utilities;
 
 @layer base {
-	body {
-		@apply dark:bg-darkblue bg-primary;
-	}
+  body {
+    @apply dark:bg-lightblue bg-primary;
+  }
 }
 
-input[type="checkbox"] {
-	/* removing default appearance */
-	-webkit-appearance: none;
-	appearance: none;
-	/* creating a custom design */
-	width: 1.2em;
-	height: 1.2em;
-	/* border-radius: 0.15em; */
-	/* margin-right: 0.5em; */
-	border: 0.15em solid #edb92b;
-	/* outline: none; */
-	/* cursor: pointer; */
-	display: flex;
-	align-items: center;
-	justify-content: center;
+input[type='checkbox'] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 1.2em;
+  height: 1.2em;
+  /* border-radius: 0.15em; */
+  /* margin-right: 0.5em; */
+  border: 0.15em solid #edb92b;
+  /* outline: none; */
+  /* cursor: pointer; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 input:checked::before {
-	content: "\2714";
-	font-size: 1em;
-	color: #edb92b;
+  content: '\2714';
+  font-size: 1em;
+  color: #edb92b;
 }
 
 input:checked {
-	background-color: #292d53;
+  background-color: #292d53;
 }
 
 .box {
-	position: relative;
+  position: relative;
 }
 
-.input {
-	transition: 2.5s;
+.searchInput {
+  transition: 2s;
 }
 .radio {
-	transition: 2s;
+  transition: 2s;
 }
 
 /* .box:hover input { */
@@ -51,32 +51,31 @@ input:checked {
 /* } */
 
 .box .icon {
-	color: #ffd52d;
-	transition: 0.2s;
+  transition: 0.2s;
 }
 
 .box:hover .icon {
-	opacity: 0;
-	z-index: -1;
+  opacity: 0;
+  z-index: -1;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 /* For IE, Edge and Firefox */
 .scrollbar-hide {
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 /*======================
     404 page
 =======================*/
 
 .page_404 {
-	display: flex;
-	justify-content: center;
-	margin-top: 8rem;
-	background: transparent;
-	font-family: "Arvo", serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  background: transparent;
+  font-family: 'Arvo', serif;
 }

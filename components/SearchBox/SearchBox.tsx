@@ -42,38 +42,34 @@ const SearchBox = ({
           rows={5}
           cols={100}
           placeholder="လက်တည့်စမ်းရန်"
-          className="peer h-full min-h-[100px] w-full resize-none sm:border-b-2 sm:border-b-secondary dark:bg-darkblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
+          className="peer h-full min-h-[100px] w-full resize-none sm:border-b-2 sm:border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
         />
       </div>
-      <div className="items-center justify-between hidden p-4 sm:flex ">
+      <div className="items-center justify-between hidden p-4 sm:flex">
         <div
-          className="flex w-12 cursor-pointer box hover:w-full"
+          className={`flex w-12 cursor-pointer box hover:w-full transition-all duration-500  ${
+            isHovered ? 'w-full' : ''
+          }`}
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
         >
           <input
             type="text"
-            className="box-border w-12 h-12 p-2 pl-4 text-white border-4 rounded-full outline-none text-md input border-secondary hover:rounded-md bg-darkblue hover:w-full "
+            className="box-border w-12  h-12 p-2 pl-4 text-white border rounded-full outline-none text-md searchInput border-secondary hover:rounded-md bg-lightblue hover:w-full "
             name="txt"
           />
-          <MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary " />
+          <MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary  text-darkblue" />
         </div>
         <RadioSelectBar
           fontSize={fontSize}
           setFontSize={setFontSize}
           handleSliderChange={handleSliderChange}
           isHovered={isHovered}
-          customClassName="ml-2 mr-2"
+          customClassName="ml-4 mr-2"
         />
 
         {checked.map(({ task, done }, i) => (
-          <CheckBox
-            key={i}
-            task={task}
-            done={done}
-            i={i}
-            handleCheckBoxChange={handleCheckBoxChange}
-          />
+          <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
         ))}
       </div>
     </div>

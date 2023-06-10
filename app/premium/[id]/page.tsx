@@ -49,7 +49,7 @@ const Premium = () => {
                   rows={5}
                   cols={100}
                   placeholder="လက်တည့်စမ်းရန်"
-                  className="peer h-full min-h-[100px] w-full resize-none sm:border-b-2 sm:border-b-secondary dark:bg-darkblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
+                  className="peer h-full min-h-[100px] w-full resize-none sm:border-b-2 sm:border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
                 />
               </div>
               <div className="items-center justify-between hidden p-4 sm:flex ">
