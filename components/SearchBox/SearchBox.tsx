@@ -18,8 +18,8 @@ const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont
   const [isHovered, setIsHovered] = useState(false);
 
   const [fontSize, setFontSize] = useState<SelectOptionType>({
-    label: '12',
-    value: '12',
+    label: '24',
+    value: '24',
   });
 
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {

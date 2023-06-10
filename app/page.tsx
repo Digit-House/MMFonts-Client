@@ -3,7 +3,7 @@
 import { QueueListIcon } from '@heroicons/react/20/solid';
 import { TableCellsIcon } from '@heroicons/react/24/outline';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FontListCard, SearchBox } from '@components/index';
 import { FontType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
@@ -15,22 +15,24 @@ function classNames(...classes: (string | boolean)[]): string {
 
 export default function Home() {
   const { data } = useCSVConvert('/fonts/data/font.csv');
-  console.log('DTA', data);
+
+  const [fontList, setFontList] = useState<FontType[]>(data);
 
   const [value, setValue] = useState<string>('');
 
-  const [fontSize, setFont] = useState<number>(0);
+  const [fontSize, setFont] = useState<number>(24);
 
   const [isToggled, setIsToggled] = useState<boolean>(false);
   const { isMobile } = useIsMobile();
-  const [checked, setChecked] = useState<{ task: string; done: boolean }[]>([
-    { task: 'ဇော်ဂျီ', done: false },
-    { task: 'ယူနီကုဒ်', done: false },
+  const [checked, setChecked] = useState<{ task: string; done: boolean; value: string }[]>([
+    { task: 'ဇော်ဂျီ', done: false, value: 'zawgyi' },
+    { task: 'ယူနီကုဒ်', done: false, value: 'unicode' },
   ]);
   const router = useRouter();
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setValue(event.target.value);
+    console.log(event.target.value);
   };
 
   const handleCheckBoxChange = (done: boolean, i: number) => {
@@ -39,7 +41,13 @@ export default function Home() {
     const checkedClone = [...checked];
     checkedClone[i] = tmp;
     setChecked([...checkedClone]);
+    const filterData = data.filter((font) => font.fontSupportType === tmp.value);
+    setFontList(filterData);
   };
+
+  useEffect(() => {
+    if (fontList.length === 0) setFontList(data);
+  }, [data]);
 
   const onClick = (id: number) => {
     router.push(`/fonts/${id}`);
@@ -94,7 +102,7 @@ export default function Home() {
         <TableCellsIcon className="hidden w-8 h-8 text-secondary sm:flex" onClick={() => setIsToggled(false)} />
       </div>
       <div className={classNames(isToggled || isMobile ? 'grid-cols-1' : 'grid-cols-2', 'grid gap-4 mt-3')}>
-        {data.map((font: FontType, i) => (
+        {fontList.map((font: FontType, i) => (
           <FontListCard key={i} id={i} onClick={onClick} font={font} typeText={value} fontSize={fontSize} />
         ))}
       </div>
