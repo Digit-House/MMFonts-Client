@@ -1,5 +1,4 @@
 'use client';
-import classNames from 'classnames';
 import React from 'react';
 import { PremiumCard } from '@components/index';
 import useIsMobile from '@hooks/useIsMobile';

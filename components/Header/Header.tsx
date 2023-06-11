@@ -1,10 +1,9 @@
 'use client';
 
-import { Bars3Icon } from '@heroicons/react/24/outline';
+import { Bars3Icon , MoonIcon, SunIcon } from '@heroicons/react/24/outline';
 import { useTheme } from 'next-themes';
 import { useState } from 'react';
 import { LogoMenu, NavMenu } from '..';
-import { MoonIcon, SunIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
