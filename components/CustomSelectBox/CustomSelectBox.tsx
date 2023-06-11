@@ -11,29 +11,26 @@ type CustomSelectBoxType = {
   initialValue: SelectOptionType;
   setInitialValue: React.Dispatch<React.SetStateAction<SelectOptionType>>;
   options: SelectOptionType[];
+  isRounded?: boolean;
   unit?: string;
 };
 
-const CustomSelectBox = ({
-  initialValue,
-  setInitialValue,
-  options,
-  unit,
-}: CustomSelectBoxType) => {
+const CustomSelectBox = ({ initialValue, setInitialValue, options, unit, isRounded = false }: CustomSelectBoxType) => {
   return (
     <Listbox value={initialValue} onChange={setInitialValue}>
       {({ open }) => (
         <>
-          <div className="relative flex items-center">
-            <Listbox.Button className="hover:bg-lightblue  relative w-full cursor-default rounded-xl bg-secondary py-1.5 pl-3 pr-10 text-left text-darkblue  focus:outline-none  sm:text-sm sm:leading-6">
+          <div className="relative flex items-center ">
+            <Listbox.Button
+              className={`hover:bg-[#fcd25d] text-darkblue relative w-full cursor-default  ${
+                isRounded ? 'rounded-full' : 'rounded-sm'
+              } bg-secondary py-1.5 pl-3 pr-10 text-left   focus:outline-none sm:text-sm sm:leading-6`}
+            >
               <span className="block w-full py-1 text-base font-medium truncate">
                 {initialValue.value} {unit}
               </span>
               <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
-                <ChevronUpDownIcon
-                  className="w-5 h-5 text-gray-400"
-                  aria-hidden="true"
-                />
+                <ChevronUpDownIcon className="w-5 h-5 text-gray-400" aria-hidden="true" />
               </span>
             </Listbox.Button>
             <Transition
@@ -43,7 +40,7 @@ const CustomSelectBox = ({
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Listbox.Options className="absolute z-10 w-full py-1 mt-1 overflow-auto text-base rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm bg-lightblue">
+              <Listbox.Options className="absolute z-10 w-full py-1 mt-1 overflow-auto text-base rounded-md shadow-lg max-h-60  border-2 border-secondary focus:outline-none sm:text-sm dark:bg-lightblue bg-primary ">
                 {options.map((option) => (
                   <Listbox.Option
                     key={option.label}
@@ -58,12 +55,7 @@ const CustomSelectBox = ({
                     {({ selected, active }) => {
                       return (
                         <>
-                          <span
-                            className={classNames(
-                              selected ? 'font-bold' : 'font-normal',
-                              'block truncate'
-                            )}
-                          >
+                          <span className={classNames(selected ? 'font-bold' : 'font-normal', 'block truncate')}>
                             {option.value}
                           </span>
 
@@ -74,10 +66,7 @@ const CustomSelectBox = ({
                                 'absolute inset-y-0 right-0 flex items-center pr-4'
                               )}
                             >
-                              <CheckIcon
-                                className="w-5 h-5"
-                                aria-hidden="true"
-                              />
+                              <CheckIcon className="w-5 h-5" aria-hidden="true" />
                             </span>
                           ) : null}
                         </>

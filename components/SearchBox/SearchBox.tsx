@@ -45,21 +45,23 @@ const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont
           rows={5}
           cols={100}
           placeholder="လက်တည့်စမ်းရန်"
-          className="peer h-full min-h-[100px] w-full resize-none sm:border-b-2 sm:border-b-secondary dark:bg-darkblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
+          className="peer h-full min-h-[100px] w-full resize-none sm:border-b-2 sm:border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
         />
       </div>
       <div className="flex items-center justify-evenly  py-2 ">
         <div
-          className="flex w-12 cursor-pointer box hover:w-full"
+          className={`flex w-12 cursor-pointer box hover:w-full transition-all duration-500  ${
+            isHovered ? 'w-full' : ''
+          }`}
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
         >
           <input
             type="text"
-            className="box-border w-12 h-12 p-2 pl-4 text-white border-4 rounded-full outline-none text-md input border-secondary hover:rounded-md bg-darkblue hover:w-full "
+            className="box-border w-12  h-12 p-2 pl-4 text-white border rounded-full outline-none text-md searchInput border-secondary hover:rounded-md bg-lightblue hover:w-full "
             name="txt"
           />
-          <MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary " />
+          <MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary  text-darkblue" />
         </div>
         <div className="flex flex-row m-auto justify-between w-full">
           <RadioSelectBar

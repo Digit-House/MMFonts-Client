@@ -19,8 +19,8 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) =
 
   return (
     <div
-      className="flex-1 p-2 border-2 rounded cursor-pointer"
-      style={{ boxShadow: ' 2px 2px 0px #292D53 ' }}
+      className="flex-1 p-2 border-2 rounded cursor-pointer "
+      style={{ boxShadow: ' 2px 2px 0px' }}
       onClick={() => onClick(id)}
     >
       <div className="flex flex-row justify-between">
@@ -28,7 +28,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) =
           <div className="text-base font-medium">{font.name}</div>
           <div className="text-sm mt-2">{font.fontStyle}</div>
         </div>
-        <div className="inline-flex items-center justify-center p-2 text-center rounded-full bg-secondary">
+        <div className="inline-flex items-center justify-center p-2 text-center rounded-full bg-secondary text-darkblue">
           <p className="text-sm">{font.fontSupportType}</p>
         </div>
       </div>

@@ -12,3 +12,4 @@ export { default as TextGenerateModal } from './TextGenerateModal/TextGenerateMo
 export { default as FontListPremiumCard } from './FontListPremiumCard/FontListPremiumCard';
 export { default as CustomSelectBox } from './CustomSelectBox/CustomSelectBox';
 export { default as PremiumCard } from './premiumCard/premiumCard';
+export { default as TextGenerateComponent } from './TextGenerateComponent/TextGenerateComponent';
