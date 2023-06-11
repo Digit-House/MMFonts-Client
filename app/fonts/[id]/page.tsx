@@ -83,9 +83,10 @@ function Page() {
                 setFontSize={setFontSize}
                 handleSliderChange={handleSliderChange}
                 customClassName="mr-2"
+                isWidthFull={true}
               />
               <p
-                className="px-3 py-2 border-2 border-black rounded-sm cursor-pointer border-sm bg-secondary"
+                className="p-3 border-2 border-black rounded-sm cursor-pointer bg-secondary text-darkblue"
                 onClick={() => setOpen(true)}
               >
                 စာထုတ်ရန်
@@ -96,7 +97,7 @@ function Page() {
         <div className="block mt-5 sm:hidden">
           <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
           <div
-            className="flex items-center justify-center px-3 py-2 mx-3 mt-5 border-2 border-black rounded-sm cursor-pointer border-sm bg-secondary"
+            className="flex items-center justify-center px-3 py-2 mx-3 mt-5 border-2 border-black rounded-sm cursor-pointer border-sm bg-secondary text-darkblue"
             onClick={() => setOpen(true)}
           >
             <p>စာထုတ်ရန်</p>

@@ -28,7 +28,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) =
           <div className="text-base font-medium">{font.name}</div>
           <div className="text-sm mt-2">{font.fontStyle}</div>
         </div>
-        <div className="inline-flex items-center justify-center p-2 text-center rounded-full bg-secondary">
+        <div className="inline-flex items-center justify-center p-2 text-center rounded-full bg-secondary text-darkblue">
           <p className="text-sm">{font.fontSupportType}</p>
         </div>
       </div>
