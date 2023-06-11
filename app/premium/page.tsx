@@ -12,7 +12,7 @@ const Page = () => {
 
   return (
     <div className="flex items-center justify-center ">
-      <div className={classNames(isMobile ? 'grid-cols-1' : 'grid-cols-3', 'grid gap-4 mt-3  w-full 2xl:w-3/4 ')}>
+      <div className="grid-cols-1 md:grid-cols-3 grid gap-4 mt-3  w-full 2xl:w-3/4 ">
         {array.map((i) => (
           <PremiumCard image={fontCoverImage} key={i} id={i} />
         ))}

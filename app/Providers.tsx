@@ -16,7 +16,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <Header />
       {pathname.includes('fonts') && <DetailNavMenu />}
-      <div className="px-10">{children}</div>
+      <div className="px-5 lg:px-10">{children}</div>
       <Footer />
     </ThemeProvider>
   );
