@@ -6,12 +6,15 @@ type FontListType = {
   typeText: string | undefined;
   id: number;
   font: FontType;
+  fontSize: number;
 };
 
-const FontListCard = ({ onClick, id, font, typeText }: FontListType) => {
+const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) => {
   const fontStyle = {
     fontFamily: `${font.fileName} , 'font-acre', sans-serif`,
     src: `url(/fonts/${font.fileName}/${font.fontStyle}.ttf)`,
+    fontSize: `${fontSize}px`,
+    lineHeight: `${fontSize + 20}px`,
   };
 
   return (
@@ -29,8 +32,9 @@ const FontListCard = ({ onClick, id, font, typeText }: FontListType) => {
           <p className="text-sm">{font.fontSupportType}</p>
         </div>
       </div>
-      <div className="pt-2 text-4xl break-words h-40">
+      <div className="pt-2 text-4xl break-words">
         <p style={{ ...fontStyle }}>{typeText || 'ကောင်းသော နံနက်ခင်း ပါ'}</p>
+        <div className="h-10"></div>
       </div>
     </div>
   );

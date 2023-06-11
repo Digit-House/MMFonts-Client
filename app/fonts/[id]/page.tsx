@@ -1,21 +1,47 @@
 'use client';
 
 import classNames from 'classnames';
-import React, { useState } from 'react';
+import { useParams } from 'next/navigation';
+import React, { useEffect, useState } from 'react';
 import { FontListDetailCard, RadioSelectBar, TextGenerateModal } from '@components/index';
-import { SelectOptionType } from '@core/golobalTypes';
+import { FontType, SelectOptionType } from '@core/golobalTypes';
+import useCSVConvert from '@hooks/useCSVConvert';
 import useIsMobile from '@hooks/useIsMobile';
 
-const array = Array.from({ length: 10 }, (_, index) => index + 1);
-
 function Page() {
+  const params = useParams();
+
   const [value, setValue] = useState<string>('');
   const [fontSize, setFontSize] = useState<SelectOptionType>({
-    label: '12',
-    value: '12',
+    label: '20',
+    value: '20',
   });
   const [open, setOpen] = useState<boolean>(false);
+  const [font, setFont] = useState<FontType | null>();
+  const [fontStyles, setFontStyles] = useState<FontType[]>();
   const { isMobile } = useIsMobile();
+
+  const { data } = useCSVConvert('/fonts/data/font.csv');
+
+  useEffect(() => {
+    const index = params.id.split('-').pop();
+    if (index) {
+      if (!font) {
+        console.log(index, font);
+
+        const fontData: FontType = data[parseInt(index)];
+        if (fontData) {
+          const styles = fontData.fontStyle.split(' ');
+          const dataStyles: FontType[] = styles.map((style) => {
+            return { ...fontData, fontStyle: style };
+          });
+
+          setFontStyles([...dataStyles]);
+          setFont(fontData);
+        }
+      }
+    }
+  }, [params, font]);
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setValue(event.target.value);
@@ -25,12 +51,14 @@ function Page() {
     setFontSize({ label: event.target.value, value: event.target.value });
   };
 
+  if (!font) return <div>Loading...</div>;
+
   return (
     <div className="">
       <div>
         <div className="flex-col hidden sm:flex">
-          <p>ဖောင့်အမည်</p>
-          <p>ဖန်တီးသူ အမည်မသိ</p>
+          <p>{font.fileName}</p>
+          <p>{font.createdBy || 'အမည်မသိ'}</p>
         </div>
         <div className="py-6 mr-5 text-right bock sm:hidden">
           <p className="">အကြောင်းနှင့်မူပိုင်ခွင့်</p>
@@ -79,9 +107,10 @@ function Page() {
         <p className="flex-1 text-xl font-bold">ဖောင့်ပုံစံများ</p>
       </div>
       <div className={classNames(isMobile ? 'grid-cols-1' : 'grid-cols-2', 'grid gap-4 mt-3')}>
-        {array.map((i) => (
-          <FontListDetailCard key={i} />
-        ))}
+        {fontStyles &&
+          fontStyles?.map((fontData, index) => (
+            <FontListDetailCard key={index} font={fontData} size={fontSize.value} fontText={value} />
+          ))}
       </div>
       <TextGenerateModal open={open} setOpen={setOpen} />
     </div>

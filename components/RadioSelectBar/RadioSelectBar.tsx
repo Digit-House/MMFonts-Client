@@ -37,16 +37,16 @@ export default function RadioSelectBar({
   return (
     <div
       className={classNames(
-        isHovered ? 'w-1/4' : 'w-full',
+        isHovered ? 'w-2/4' : 'w-3/4',
         customClassName,
-        'flex flex-row items-center w-full p-2  rounded-full shadow-md bg-secondary radio'
+        'flex flex-row items-center w-full p-1 rounded-full shadow-md bg-secondary radio'
       )}
     >
       <CustomSelectBox initialValue={fontSize} options={options} setInitialValue={setFontSize} unit="px" />
       <input
         type="range"
         min="1"
-        max="280"
+        max="96"
         value={fontSize.value}
         onChange={handleSliderChange}
         className="w-full h-2 ml-2 mr-4 rounded-full outline-none appearance-none bg-darkblue accent-lightblue"

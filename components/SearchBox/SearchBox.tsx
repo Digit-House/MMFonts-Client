@@ -7,26 +7,29 @@ import { CheckBox, RadioSelectBar } from '..';
 type SearchBoxType = {
   value: string;
   handleChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
-  fontSize: {
-    label: string;
-    value: string;
-  };
-  handleSliderChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   handleCheckBoxChange: (d: boolean, i: number) => void;
   checked: { task: string; done: boolean }[];
-  setFontSize: React.Dispatch<React.SetStateAction<SelectOptionType>>;
+  setFont: React.Dispatch<React.SetStateAction<number>>;
 };
 
-const SearchBox = ({
-  value,
-  handleChange,
-  fontSize,
-  handleSliderChange,
-  handleCheckBoxChange,
-  checked,
-  setFontSize,
-}: SearchBoxType) => {
+const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont }: SearchBoxType) => {
+  let sliderTimeout: NodeJS.Timeout;
+
   const [isHovered, setIsHovered] = useState(false);
+
+  const [fontSize, setFontSize] = useState<SelectOptionType>({
+    label: '24',
+    value: '24',
+  });
+
+  const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    clearTimeout(sliderTimeout);
+    setFontSize({ label: event.target.value, value: event.target.value });
+
+    sliderTimeout = setTimeout(() => {
+      setFont(parseInt(event.target.value));
+    }, 1000);
+  };
 
   const handleHover = () => {
     setIsHovered(!isHovered);
@@ -45,7 +48,7 @@ const SearchBox = ({
           className="peer h-full min-h-[100px] w-full resize-none sm:border-b-2 sm:border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
         />
       </div>
-      <div className="items-center justify-between hidden p-4 sm:flex">
+      <div className="flex items-center justify-evenly  py-2 ">
         <div
           className={`flex w-12 cursor-pointer box hover:w-full transition-all duration-500  ${
             isHovered ? 'w-full' : ''
@@ -60,17 +63,21 @@ const SearchBox = ({
           />
           <MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary  text-darkblue" />
         </div>
-        <RadioSelectBar
-          fontSize={fontSize}
-          setFontSize={setFontSize}
-          handleSliderChange={handleSliderChange}
-          isHovered={isHovered}
-          customClassName="ml-4 mr-2"
-        />
+        <div className="flex flex-row m-auto justify-between w-full">
+          <RadioSelectBar
+            fontSize={fontSize}
+            setFontSize={setFontSize}
+            handleSliderChange={handleSliderChange}
+            isHovered={isHovered}
+            customClassName="ml-2 mr-2 flex-2"
+          />
 
-        {checked.map(({ task, done }, i) => (
-          <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
-        ))}
+          <div className="flex flex-row mx-2 mr-auto items-center">
+            {checked.map(({ task, done }, i) => (
+              <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
