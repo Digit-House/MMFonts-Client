@@ -1,12 +1,10 @@
 'use client';
 
-import classNames from 'classnames';
 import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import { FontListDetailCard, RadioSelectBar, TextGenerateModal } from '@components/index';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
-import useIsMobile from '@hooks/useIsMobile';
 
 function Page() {
   const params = useParams();
@@ -19,7 +17,6 @@ function Page() {
   const [open, setOpen] = useState<boolean>(false);
   const [font, setFont] = useState<FontType | null>();
   const [fontStyles, setFontStyles] = useState<FontType[]>();
-  const { isMobile } = useIsMobile();
 
   const { data } = useCSVConvert('/fonts/data/font.csv');
 
@@ -107,7 +104,7 @@ function Page() {
       <div className="flex flex-row items-center mt-10">
         <p className="flex-1 text-xl font-bold">ဖောင့်ပုံစံများ</p>
       </div>
-      <div className={classNames(isMobile ? 'grid-cols-1' : 'grid-cols-2', 'grid gap-4 mt-3')}>
+      <div className="grid-cols-1 md:grid-cols-2 grid gap-4 mt-3">
         {fontStyles &&
           fontStyles?.map((fontData, index) => (
             <FontListDetailCard key={index} font={fontData} size={fontSize.value} fontText={value} />

@@ -7,11 +7,6 @@ import { useCallback, useEffect, useState } from 'react';
 import { FontListCard, SearchBox } from '@components/index';
 import { FontType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
-import useIsMobile from '@hooks/useIsMobile';
-
-function classNames(...classes: (string | boolean)[]): string {
-  return classes.filter(Boolean).join(' ');
-}
 
 export default function Home() {
   const { data } = useCSVConvert('/fonts/data/font.csv');
@@ -23,7 +18,6 @@ export default function Home() {
   const [fontSize, setFont] = useState<number>(24);
 
   const [isToggled, setIsToggled] = useState<boolean>(false);
-  const { isMobile } = useIsMobile();
   const [checked, setChecked] = useState<{ task: string; done: boolean; value: string }[]>([
     { task: 'ဇော်ဂျီ', done: false, value: 'zawgyi' },
     { task: 'ယူနီကုဒ်', done: false, value: 'unicode' },
@@ -101,7 +95,7 @@ export default function Home() {
         <QueueListIcon className="hidden w-8 h-8 mr-3 text-secondary sm:flex" onClick={() => setIsToggled(true)} />
         <TableCellsIcon className="hidden w-8 h-8 text-secondary sm:flex" onClick={() => setIsToggled(false)} />
       </div>
-      <div className={classNames(isToggled || isMobile ? 'grid-cols-1' : 'grid-cols-2', 'grid gap-4 mt-3')}>
+      <div className={`${isToggled ? 'grid-cols-1' : 'md:grid-cols-2'}  grid gap-4 mt-3`}>
         {fontList.map((font: FontType, i) => (
           <FontListCard
             key={i}
