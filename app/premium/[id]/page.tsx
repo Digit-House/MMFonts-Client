@@ -15,13 +15,13 @@ const Premium = () => {
     setFontSize({ label: event.target.value, value: event.target.value });
   };
   return (
-    <div>
+    <div className="mx-0 lg:mx-32 w-auto">
       <div className="flex justify-between flex-row items-center p-5">
         <div>
           <p className="mb-1 font-medium">ဖောင့်အမည််</p>
           <p className="font-medium">ဖန်တီးသူအမည််</p>
         </div>
-        <div className="flex items-center justify-center px-3 py-2 mx-3 mt-5 border-2 border-black rounded-sm cursor-pointer border-sm bg-secondary">
+        <div className="flex items-center justify-center px-5 py-2  border-2 border-black rounded-sm cursor-pointer bg-secondary shadow text-darkblue">
           <p>ဝယ်ယူရန်</p>
         </div>
       </div>

@@ -18,7 +18,7 @@ const FontListDetailCard = ({ font, size, fontText }: FontListDetailCardType) =>
   console.log('FONST', fontStyle);
 
   return (
-    <div className="flex-1 p-2 border-2 rounded cursor-pointer" style={{ boxShadow: ' 2px 2px 0px' }}>
+    <div className="w-full overflow-hidden p-2 border-2 rounded cursor-pointer" style={{ boxShadow: ' 2px 2px 0px' }}>
       <div className="flex flex-row justify-between">
         <div className="">
           <div className="text-base font-medium">ဖောင့်စတိုင် - {font.fontStyle}</div>
@@ -32,7 +32,7 @@ const FontListDetailCard = ({ font, size, fontText }: FontListDetailCardType) =>
         >
           {fontText || 'ကောင်းသောနံနက်ခင်းပါ'}
         </p>
-        <div className="h-20" />
+        <div className="h-10" />
       </div>
     </div>
   );

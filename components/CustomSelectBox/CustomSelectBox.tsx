@@ -1,11 +1,8 @@
 import { Listbox, Transition } from '@headlessui/react';
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid';
 import React, { Fragment } from 'react';
+import { classNames } from '@core/classnames';
 import { SelectOptionType } from '@core/golobalTypes';
-
-function classNames(...classes: (string | boolean)[]): string {
-  return classes.filter(Boolean).join(' ');
-}
 
 type CustomSelectBoxType = {
   initialValue: SelectOptionType;
