@@ -1,10 +1,10 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { FontType } from '@core/golobalTypes';
+import { FontType, PremiumFontType } from '@core/golobalTypes';
 
 const useCSVConvert = (csvFilePath: string) => {
-  const [data, setData] = useState<FontType[]>([]);
+  const [data, setData] = useState<FontType[] | PremiumFontType[]>([]);
 
   useEffect(() => {
     fetch(csvFilePath)

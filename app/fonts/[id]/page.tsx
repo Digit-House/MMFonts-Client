@@ -21,7 +21,7 @@ function Page() {
   const [fontStyles, setFontStyles] = useState<FontType[]>();
   const { isMobile } = useIsMobile();
 
-  const { data } = useCSVConvert('/fonts/data/font.csv');
+  const { data } = useCSVConvert('/fonts/data/font.csv') as { data: FontType[] };
 
   useEffect(() => {
     const index = params.id.split('-').pop();

@@ -11,3 +11,9 @@ export interface FontType {
   createdBy: string;
   fontStyle: string;
 }
+
+export interface PremiumFontType extends FontType {
+  fbLink: string;
+  images: string;
+  price: string;
+}
