@@ -11,7 +11,7 @@ const PremiumCard = ({ image, id }: PremiumCardType) => {
   const router = useRouter();
 
   return (
-    <div>
+    <div className="px-2">
       <p className="mb-1">ဖောင့်အမည််</p>
       <p className="mb-1 text-sm">ဖန်တီးသူအမည််</p>
       <div style={{ boxShadow: ' 2px 2px 0px #292D53 ' }} className="w-fit rounded-md border-2">

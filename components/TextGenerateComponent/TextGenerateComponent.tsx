@@ -8,12 +8,16 @@ const options = [
   { label: 'စာကြောင်း', value: 'စာကြောင်း' },
 ];
 
-const TextGenerateComponent = () => {
+type TextGenerateComponentType = {
+  customClassNames?: string;
+};
+
+const TextGenerateComponent = ({ customClassNames }: TextGenerateComponentType) => {
   const [optionValue, setOptionValue] = useState(options[0]);
   const currentRoute = usePathname();
   const renderText = currentRoute === '/lorem' ? 'စာထုတ်ရန်' : 'ပြီးပြီ';
   return (
-    <div className="mt-3 text-center sm:mt-5">
+    <div className={customClassNames}>
       <div className="flex-row justify-between md:flex hidden">
         <div className="flex-row  w-4/6 flex">
           <label className="relative block w-4/6 mr-3">
@@ -31,7 +35,7 @@ const TextGenerateComponent = () => {
             ၅
           </p>
         </div>
-        <p className="rounded-sm bg-secondary w-auto h-auto flex items-center justify-center px-3 text-darkblue shadow font-semibold  ">
+        <p className="rounded-sm bg-secondary w-auto h-auto flex items-center justify-center px-3 text-darkblue shadow font-semibold">
           {renderText}
         </p>
       </div>
@@ -39,7 +43,7 @@ const TextGenerateComponent = () => {
         <div className="flex flex-row justify-between mb-2">
           <label className="relative block w-4/6">
             <span className="absolute inset-y-0 left-0 flex items-center pl-1">
-              <MagnifyingGlassIcon className="w-10 h-10 p-1 text-darkblue" />
+              <MagnifyingGlassIcon className="w-10 h-10 p-2 text-darkblue" />
             </span>
             <input
               className="w-full py-2 pl-10 pr-4 border rounded-full shadow bg-secondary border-secondary focus:outline-none"

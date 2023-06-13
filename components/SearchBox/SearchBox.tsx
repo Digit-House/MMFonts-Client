@@ -32,6 +32,9 @@ const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont
   };
 
   const handleHover = () => {
+    /*  setTimeout(() => {
+      setIsHovered(!isHovered);
+    }, 100); // */
     setIsHovered(!isHovered);
   };
 
@@ -40,15 +43,15 @@ const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont
       <div>
         <textarea
           name="postContent"
-          value={value}
-          onChange={handleChange}
           rows={5}
           cols={100}
+          value={value}
+          onChange={handleChange}
           placeholder="လက်တည့်စမ်းရန်"
-          className="peer h-full min-h-[100px] w-full resize-none sm:border-b-2 sm:border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
+          className="peer min-h-[150px] md:min-h-[100px] h-auto w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
         />
       </div>
-      <div className="flex items-center justify-evenly  py-2 ">
+      <div className="hidden items-center justify-evenly  py-2 md:flex">
         <div
           className={`flex w-12 cursor-pointer box hover:w-full transition-all duration-500  ${
             isHovered ? 'w-full' : ''
@@ -58,7 +61,7 @@ const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont
         >
           <input
             type="text"
-            className="box-border w-12  h-12 p-2 pl-4 text-white border rounded-full outline-none text-md searchInput border-secondary hover:rounded-md bg-lightblue hover:w-full "
+            className="box-border w-12  h-12 p-2 pl-4 text-white border-2 rounded-full outline-none text-md searchInput border-secondary hover:rounded-md bg-lightblue hover:w-full "
             name="txt"
           />
           <MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary  text-darkblue" />
@@ -79,6 +82,41 @@ const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont
           </div>
         </div>
       </div>
+      <form className="block sm:hidden">
+        <div className="flex flex-row items-center justify-between my-3">
+          <div
+            className={`flex w-12 cursor-pointer box hover:w-full transition-all duration-500   ${
+              isHovered ? 'w-full' : ''
+            }`}
+            onMouseEnter={() => {
+              setTimeout(() => {
+                setIsHovered(!isHovered);
+              }, 100);
+            }}
+            onMouseLeave={() => {
+              setTimeout(() => {
+                setIsHovered(!isHovered);
+              }, 1000);
+            }}
+          >
+            <input
+              type="text"
+              className="box-border w-12  h-12 p-2  text-white border-2 rounded-full outline-none text-md searchInput border-secondary hover:rounded-md bg-lightblue hover:w-full "
+              name="txt"
+            />
+            <MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary  text-darkblue" />
+          </div>
+
+          {
+            <div className={`${!isHovered ? 'flex ' : 'hidden'} flex-row  `}>
+              {checked.map(({ task, done }, i) => (
+                <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
+              ))}
+            </div>
+          }
+        </div>
+        <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
+      </form>
     </div>
   );
 };

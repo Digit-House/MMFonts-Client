@@ -1,3 +1,4 @@
+import { classNames } from '@core/classnames';
 import { SelectOptionType } from '@core/golobalTypes';
 import { CustomSelectBox } from '..';
 
@@ -15,9 +16,6 @@ const options = [
   { label: '184', value: '184' },
   { label: '280', value: '280' },
 ];
-function classNames(...classes: (string | boolean | undefined)[]): string {
-  return classes.filter(Boolean).join(' ');
-}
 
 type RadioSelectBarType = {
   fontSize: SelectOptionType;

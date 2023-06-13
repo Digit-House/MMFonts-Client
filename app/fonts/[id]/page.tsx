@@ -1,12 +1,10 @@
 'use client';
 
-import classNames from 'classnames';
 import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
-import { FontListDetailCard, RadioSelectBar, TextGenerateModal } from '@components/index';
+import { DetailNavMenu, FontListDetailCard, RadioSelectBar, TextGenerateModal } from '@components/index';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
-import useIsMobile from '@hooks/useIsMobile';
 
 function Page() {
   const params = useParams();
@@ -19,7 +17,6 @@ function Page() {
   const [open, setOpen] = useState<boolean>(false);
   const [font, setFont] = useState<FontType | null>();
   const [fontStyles, setFontStyles] = useState<FontType[]>();
-  const { isMobile } = useIsMobile();
 
   const { data } = useCSVConvert('/fonts/data/font.csv');
 
@@ -54,16 +51,9 @@ function Page() {
   if (!font) return <div>Loading...</div>;
 
   return (
-    <div className="">
+    <div className="mx-0 lg:mx-32 w-auto">
+      <DetailNavMenu fontName={font.fileName} createdBy={font.createdBy} />
       <div>
-        <div className="flex-col hidden sm:flex">
-          <p>{font.fileName}</p>
-          <p>{font.createdBy || 'အမည်မသိ'}</p>
-        </div>
-        <div className="py-6 mr-5 text-right bock sm:hidden">
-          <p className="">အကြောင်းနှင့်မူပိုင်ခွင့်</p>
-        </div>
-
         <div className="flex items-center justify-center mt-5">
           <div className="p-4 border-2 rounded-md border-darkblue dark:border-white">
             <div>
@@ -107,7 +97,7 @@ function Page() {
       <div className="flex flex-row items-center mt-10">
         <p className="flex-1 text-xl font-bold">ဖောင့်ပုံစံများ</p>
       </div>
-      <div className={classNames(isMobile ? 'grid-cols-1' : 'grid-cols-2', 'grid gap-4 mt-3')}>
+      <div className="flex-1  mt-3 ">
         {fontStyles &&
           fontStyles?.map((fontData, index) => (
             <FontListDetailCard key={index} font={fontData} size={fontSize.value} fontText={value} />
