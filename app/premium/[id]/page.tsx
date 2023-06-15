@@ -1,14 +1,12 @@
 'use client';
-import Image from 'next/image';
-import React, { useState } from 'react';
-import Slider from 'react-slick';
-import { FontListPremiumCard, RadioSelectBar } from '@components/index';
-import { SelectOptionType } from '@core/golobalTypes';
-import fontCoverImage from '@public/fontcoverimage.jpg';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
-const array = Array.from({ length: 10 }, (_, index) => index + 1);
+import Image from 'next/image';
+import { useParams } from 'next/navigation';
+import React, { useCallback, useEffect, useState } from 'react';
+import Slider from 'react-slick';
+import { RadioSelectBar } from '@components/index';
+import { PremiumFontType, SelectOptionType } from '@core/golobalTypes';
+import useCSVConvert from '@hooks/useCSVConvert';
 
 const settings = {
   dots: false,
@@ -18,28 +16,42 @@ const settings = {
   slidesToScroll: 1,
   initialSlide: 1,
   responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-    {
-      breakpoint: 640,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
+    { breakpoint: 1024, settings: { slidesToShow: 3 } },
+    { breakpoint: 640, settings: { slidesToShow: 2 } },
+    { breakpoint: 480, settings: { slidesToShow: 1 } },
   ],
 };
 
 const Premium = () => {
+  const { data } = useCSVConvert('/fonts/data/premium.csv') as { data: PremiumFontType[] };
+
+  const [currentFont, setCurrentFont] = useState<PremiumFontType | null>();
+  const [images, setImages] = useState<{ src: string }[]>([]);
+  const params = useParams();
+  console.log('DTAA', data);
+  useEffect(() => {
+    const index = params.id.split('-').pop();
+    console.log('INE', index, params, data);
+    if (data && index) {
+      if (currentFont) return;
+      getFontDetail(parseInt(index));
+    }
+  }, [data]);
+
+  const getFontDetail = useCallback((position: number) => {
+    const fontData: PremiumFontType = data[position];
+    console.log('fontData ', fontData);
+    const imgs = fontData?.images.split(' ');
+    console.log('IME ', imgs);
+    const updateURLs = imgs?.map((img) => {
+      return {
+        src: `/images/premium/${fontData.fileName}/${img}`,
+      };
+    });
+    setCurrentFont(fontData);
+    setImages(updateURLs);
+  }, []);
+
   const [fontSize, setFontSize] = useState<SelectOptionType>({
     label: '12',
     value: '12',
@@ -48,24 +60,27 @@ const Premium = () => {
     setFontSize({ label: event.target.value, value: event.target.value });
   };
 
+  if (!currentFont) return <div>Loading...</div>;
   return (
     <div>
       <div className="flex flex-row items-center justify-between p-5">
         <div>
-          <p className="mb-1 font-medium">ဖောင့်အမည််</p>
-          <p className="font-medium">ဖန်တီးသူအမည််</p>
+          <p className="mb-1 font-medium">{currentFont?.name}</p>
+          <p className="font-medium">{currentFont?.createdBy}</p>
         </div>
         <div className="flex items-center justify-center px-5 py-2 border-2 border-black rounded-sm shadow cursor-pointer bg-secondary text-darkblue">
           <p>ဝယ်ယူရန်</p>
         </div>
       </div>
       <Slider {...settings} className="mx-5 md:0 ">
-        {array.map((i) => (
+        {' '}
+        {images.map((img, index) => (
           <Image
-            key={i}
-            src={fontCoverImage}
+            key={index}
+            src={img.src}
+            width={400}
+            height={400}
             alt="Picture of the myanmar fonts"
-            placeholder="blur"
             priority
             className="mb-1 border-2 rounded-lg "
           />
@@ -89,11 +104,7 @@ const Premium = () => {
               </div>
             </div>
           </div>
-
-          <p className="mt-5 mb-5 font-medium">ဖောင့်ပုံစံများ</p>
-          {array.map((i) => (
-            <FontListPremiumCard key={i} />
-          ))}
+          <p className="mb-5 mt-5 font-medium">ဖောင့်ပုံစံများ</p>
         </div>
       </div>
     </div>

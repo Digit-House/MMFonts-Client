@@ -1,27 +1,29 @@
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import React from 'react';
+import { PremiumFontType } from '@core/golobalTypes';
 
 type PremiumCardType = {
-  image: StaticImageData;
+  font: PremiumFontType;
   id: number;
 };
 
-const PremiumCard = ({ image, id }: PremiumCardType) => {
+const PremiumCard = ({ font, id }: PremiumCardType) => {
   const router = useRouter();
 
   return (
     <div className="px-2 mx-auto ">
-      <p className="mb-1">ဖောင့်အမည််</p>
-      <p className="mb-1 text-sm">ဖန်တီးသူအမည််</p>
+      <p className="mb-1">{font.name}</p>
+      <p className="mb-1 text-sm">{font.createdBy}</p>
       <div style={{ boxShadow: ' 2px 2px 0px #292D53 ' }} className="border-2 rounded-md w-fit">
         <Image
-          src={image}
+          width={320}
+          height={320}
+          src={`/images/premium/${font.fileName}/${font.images.split(' ')[0]}`}
           alt="Picture of the author"
-          placeholder="blur"
           priority
           className=" max-w-[320px]"
-          onClick={() => router.push(`/premium/${id}`)}
+          onClick={() => router.push(`/premium/${font.nameEn}-${id}`)}
         />
       </div>
     </div>
