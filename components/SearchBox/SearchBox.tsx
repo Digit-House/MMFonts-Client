@@ -58,7 +58,7 @@ const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont
         >
           <input
             type="text"
-            className="box-border w-12 h-12 p-2 pl-4 text-white border-2 rounded-full outline-none text-md searchInput border-secondary hover:rounded-md bg-lightblue hover:w-full "
+            className="box-border w-12 h-12 p-2 pl-4 text-white border-2 rounded-full outline-none text-md searchInput border-secondary hover:rounded-md dark:bg-lightblue bg-primary hover:w-full "
             name="txt"
           />
           <MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary text-darkblue" />
@@ -99,7 +99,7 @@ const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont
           >
             <input
               type="text"
-              className="box-border w-12 h-12 p-2 text-white border-2 rounded-full outline-none text-md searchInput border-secondary hover:rounded-md bg-lightblue hover:w-full "
+              className="box-border w-12 h-12 p-2 text-white border-2 rounded-full outline-none text-md searchInput dark:bg-lightblue bg-primary border-secondary hover:rounded-md hover:w-full "
               name="txt"
             />
             <MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary text-darkblue" />
