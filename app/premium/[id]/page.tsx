@@ -1,4 +1,5 @@
 'use client';
+
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import React, { useCallback, useEffect, useState } from 'react';
@@ -27,7 +28,7 @@ const Premium = () => {
   const [currentFont, setCurrentFont] = useState<PremiumFontType | null>();
   const [images, setImages] = useState<{ src: string }[]>([]);
   const params = useParams();
-
+  console.log('DTAA', data);
   useEffect(() => {
     const index = params.id.split('-').pop();
     console.log('INE', index, params, data);
@@ -35,7 +36,7 @@ const Premium = () => {
       if (currentFont) return;
       getFontDetail(parseInt(index));
     }
-  }, [data, params]);
+  }, [data]);
 
   const getFontDetail = useCallback((position: number) => {
     const fontData: PremiumFontType = data[position];
