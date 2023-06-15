@@ -37,7 +37,7 @@ export default function RadioSelectBar({
   return (
     <div
       className={classNames(
-        isHovered && isHovered ? 'w-1/2' : `${isWidthFull ? 'w-2/3' : 'w-full'}`,
+        isHovered && isHovered ? 'w-1/2' : `${isWidthFull ? 'w-full' : 'w-full md:w-2/3'}`,
         customClassName,
         'flex flex-row items-center  p-1 rounded-full shadow-md bg-secondary radio'
       )}

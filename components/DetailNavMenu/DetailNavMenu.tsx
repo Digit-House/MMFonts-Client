@@ -15,7 +15,7 @@ const DetailNavMenu = ({ fontName, createdBy = 'အမည်မသိ' }: Detail
   };
 
   return (
-    <div className="mx-2 mt-5 text-lg py-5">
+    <div className="text-lg ">
       <div className="flex flex-row justify-between ">
         <div className="flex flex-col items-left">
           <p className="mr-5 font-medium ">{fontName}</p>
@@ -29,7 +29,7 @@ const DetailNavMenu = ({ fontName, createdBy = 'အမည်မသိ' }: Detail
           <div className="relative">
             <EllipsisHorizontalIcon className="w-10 h-10 text-secondary" onClick={showModal} />
             {!isHide && (
-              <div className="absolute p-2 leading-normal border-2 right-3 bg-primary rounded dark:bg-lightblue min-w-max">
+              <div className="absolute p-2 leading-normal border-2 rounded right-3 bg-primary dark:bg-lightblue min-w-max">
                 <div className="flex flex-row justify-between mb-2 ">
                   <p>အစီရင်ခံရန်</p>
                   <XMarkIcon className="w-6" onClick={showModal} />
@@ -42,7 +42,7 @@ const DetailNavMenu = ({ fontName, createdBy = 'အမည်မသိ' }: Detail
           </div>
         </div>
       </div>
-      <p className="flex  md:hidden mt-5 justify-end">အကြောင်းနှင့်မူပိုင်ခွင့်</p>
+      <p className="flex justify-end mt-5 md:hidden">အကြောင်းနှင့်မူပိုင်ခွင့်</p>
     </div>
   );
 };

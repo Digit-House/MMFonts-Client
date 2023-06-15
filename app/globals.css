@@ -79,3 +79,9 @@ input:checked {
   background: transparent;
   font-family: 'Arvo', serif;
 }
+
+.slick-prev:before,
+.slick-next:before {
+  color: #edb92b !important;
+  font-size: 23px !important;
+}

@@ -11,17 +11,16 @@ const PremiumCard = ({ image, id }: PremiumCardType) => {
   const router = useRouter();
 
   return (
-    <div className="px-2">
+    <div className="px-2 mx-auto ">
       <p className="mb-1">ဖောင့်အမည််</p>
       <p className="mb-1 text-sm">ဖန်တီးသူအမည််</p>
-      <div style={{ boxShadow: ' 2px 2px 0px #292D53 ' }} className="w-fit rounded-md border-2">
+      <div style={{ boxShadow: ' 2px 2px 0px #292D53 ' }} className="border-2 rounded-md w-fit">
         <Image
           src={image}
-          width={400}
           alt="Picture of the author"
           placeholder="blur"
           priority
-          className=""
+          className=" max-w-[320px]"
           onClick={() => router.push(`/premium/${id}`)}
         />
       </div>
