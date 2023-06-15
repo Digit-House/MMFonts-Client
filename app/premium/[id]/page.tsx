@@ -32,7 +32,7 @@ const Premium = () => {
   useEffect(() => {
     const index = params.id.split('-').pop();
     console.log('INE', index, params, data);
-    if (data) {
+    if (data && index) {
       if (currentFont) return;
       getFontDetail(parseInt(index));
     }
