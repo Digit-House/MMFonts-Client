@@ -1,12 +1,41 @@
 'use client';
 import Image from 'next/image';
-import React, { useState } from 'react';
-import { FontListPremiumCard, RadioSelectBar } from '@components/index';
-import { SelectOptionType } from '@core/golobalTypes';
-import fontCoverImage from '@public/fontcoverimage.jpg';
+import { useParams } from 'next/navigation';
+import React, { useCallback, useEffect, useState } from 'react';
+import { RadioSelectBar } from '@components/index';
+import { PremiumFontType, SelectOptionType } from '@core/golobalTypes';
+import useCSVConvert from '@hooks/useCSVConvert';
 
 const Premium = () => {
-  const array = Array.from({ length: 10 }, (_, index) => index + 1);
+  const { data } = useCSVConvert('/fonts/data/premium.csv') as { data: PremiumFontType[] };
+
+  const [currentFont, setCurrentFont] = useState<PremiumFontType | null>();
+  const [images, setImages] = useState<{ src: string }[]>([]);
+  const params = useParams();
+
+  useEffect(() => {
+    const index = params.id.split('-').pop();
+    console.log('INE', index, params, data);
+    if (data) {
+      if (currentFont) return;
+      getFontDetail(parseInt(index));
+    }
+  }, [data, params]);
+
+  const getFontDetail = useCallback((position: number) => {
+    const fontData: PremiumFontType = data[position];
+    console.log('fontData ', fontData);
+    const imgs = fontData?.images.split(' ');
+    console.log('IME ', imgs);
+    const updateURLs = imgs?.map((img) => {
+      return {
+        src: `/images/premium/${fontData.fileName}/${img}`,
+      };
+    });
+    setCurrentFont(fontData);
+    setImages(updateURLs);
+  }, []);
+
   const [fontSize, setFontSize] = useState<SelectOptionType>({
     label: '12',
     value: '12',
@@ -14,26 +43,27 @@ const Premium = () => {
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFontSize({ label: event.target.value, value: event.target.value });
   };
+
+  if (!currentFont) return <div>Loading...</div>;
   return (
     <div>
       <div className="flex justify-between flex-row items-center p-5">
         <div>
-          <p className="mb-1 font-medium">ဖောင့်အမည််</p>
-          <p className="font-medium">ဖန်တီးသူအမည််</p>
+          <p className="mb-1 font-medium">{currentFont?.name}</p>
+          <p className="font-medium">{currentFont?.createdBy}</p>
         </div>
         <div className="flex items-center justify-center px-3 py-2 mx-3 mt-5 border-2 border-black rounded-sm cursor-pointer border-sm bg-secondary">
           <p>ဝယ်ယူရန်</p>
         </div>
       </div>
       <div className="flex flex-1 flex-row overflow-y-scroll scrollbar-hide  h-60">
-        {array.map((i) => (
+        {images.map((img, index) => (
           <Image
-            key={i}
-            src={fontCoverImage}
+            key={index}
+            src={img.src}
             width={400}
             height={400}
             alt="Picture of the myanmar fonts"
-            placeholder="blur"
             priority
             className="rounded-lg border-2 mb-1"
           />
@@ -58,9 +88,6 @@ const Premium = () => {
             </div>
           </div>
           <p className="mb-5 mt-5 font-medium">ဖောင့်ပုံစံများ</p>
-          {array.map((i) => (
-            <FontListPremiumCard key={i} />
-          ))}
         </div>
       </div>
     </div>

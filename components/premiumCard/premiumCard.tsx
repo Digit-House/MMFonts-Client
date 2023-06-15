@@ -23,7 +23,7 @@ const PremiumCard = ({ font, id }: PremiumCardType) => {
           alt="Picture of the author"
           priority
           className=""
-          onClick={() => router.push(`/premium/${id}`)}
+          onClick={() => router.push(`/premium/${font.nameEn}-${id}`)}
         />
       </div>
     </div>
