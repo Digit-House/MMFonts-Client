@@ -32,14 +32,11 @@ const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont
   };
 
   const handleHover = () => {
-    /*  setTimeout(() => {
-      setIsHovered(!isHovered);
-    }, 100); // */
     setIsHovered(!isHovered);
   };
 
   return (
-    <div className="p-4 border-2 rounded-md border-darkblue dark:border-white ">
+    <div className="p-4 border-2 rounded-md border-darkblue dark:border-white mx-14 md:mx-20 lg:mx-26 xl:mx-auto max-w-[794px]">
       <div>
         <textarea
           name="postContent"
@@ -51,7 +48,7 @@ const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont
           className="peer min-h-[150px] md:min-h-[100px] h-auto w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
         />
       </div>
-      <div className="hidden items-center justify-evenly  py-2 md:flex">
+      <div className="items-center hidden py-2 justify-evenly md:flex">
         <div
           className={`flex w-12 cursor-pointer box hover:w-full transition-all duration-500  ${
             isHovered ? 'w-full' : ''
@@ -61,28 +58,29 @@ const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont
         >
           <input
             type="text"
-            className="box-border w-12  h-12 p-2 pl-4 text-white border-2 rounded-full outline-none text-md searchInput border-secondary hover:rounded-md bg-lightblue hover:w-full "
+            className="box-border w-12 h-12 p-2 pl-4 text-white border-2 rounded-full outline-none text-md searchInput border-secondary hover:rounded-md dark:bg-lightblue bg-primary hover:w-full "
             name="txt"
           />
-          <MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary  text-darkblue" />
+          <MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary text-darkblue" />
         </div>
-        <div className="flex flex-row m-auto justify-between w-full">
+        <div className="flex flex-row justify-between w-full m-auto">
           <RadioSelectBar
             fontSize={fontSize}
             setFontSize={setFontSize}
             handleSliderChange={handleSliderChange}
             isHovered={isHovered}
-            customClassName="ml-2 mr-2 flex-2"
+            customClassName="ml-2 mr-2"
+            isWidthFull={true}
           />
 
-          <div className="flex flex-row mx-2 mr-auto items-center">
+          <div className="flex flex-row items-center mx-2 mr-auto">
             {checked.map(({ task, done }, i) => (
               <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
             ))}
           </div>
         </div>
       </div>
-      <form className="block sm:hidden">
+      <form className="block md:hidden">
         <div className="flex flex-row items-center justify-between my-3">
           <div
             className={`flex w-12 cursor-pointer box hover:w-full transition-all duration-500   ${
@@ -101,14 +99,14 @@ const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont
           >
             <input
               type="text"
-              className="box-border w-12  h-12 p-2  text-white border-2 rounded-full outline-none text-md searchInput border-secondary hover:rounded-md bg-lightblue hover:w-full "
+              className="box-border w-12 h-12 p-2 text-white border-2 rounded-full outline-none text-md searchInput dark:bg-lightblue bg-primary border-secondary hover:rounded-md hover:w-full "
               name="txt"
             />
-            <MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary  text-darkblue" />
+            <MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary text-darkblue" />
           </div>
 
           {
-            <div className={`${!isHovered ? 'flex ' : 'hidden'} flex-row  `}>
+            <div className={`${!isHovered ? 'flex ' : 'hidden'} flex-row`}>
               {checked.map(({ task, done }, i) => (
                 <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
               ))}

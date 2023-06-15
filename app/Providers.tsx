@@ -13,7 +13,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <Header />
-      <div className="px-5 lg:px-10">{children}</div>
+      <div className="mx-5 sm:mx-10 md:mx-24 lg:mx-auto max-w-[996px] mt-5 lg:mt-10">{children}</div>
       <Footer />
     </ThemeProvider>
   );

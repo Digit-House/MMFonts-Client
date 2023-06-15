@@ -1,4 +1,6 @@
 import './globals.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import localFont from 'next/font/local';
 import GoogleAnalytics from '@hooks/GoogleAnalytics';
 import { HotJar } from '@hooks/index';

@@ -51,11 +51,11 @@ function Page() {
   if (!font) return <div>Loading...</div>;
 
   return (
-    <div className="mx-0 lg:mx-32 w-auto">
+    <div>
       <DetailNavMenu fontName={font.fileName} createdBy={font.createdBy} />
       <div>
         <div className="flex items-center justify-center mt-5">
-          <div className="p-4 border-2 rounded-md border-darkblue dark:border-white">
+          <div className="p-4 border-2 rounded-md border-darkblue dark:border-white mx-14 md:mx-20 lg:mx-26 xl:mx-auto max-w-[794px]">
             <div>
               <textarea
                 name="postContent"
@@ -64,19 +64,13 @@ function Page() {
                 rows={5}
                 cols={100}
                 placeholder="လက်တည့်စမ်းရန်"
-                className="peer h-full min-h-[100px] w-full resize-none sm:border-b-2 sm:border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
+                className="peer h-full min-h-[100px] w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
               />
             </div>
-            <div className="items-center justify-between hidden p-4 sm:flex ">
-              <RadioSelectBar
-                fontSize={fontSize}
-                setFontSize={setFontSize}
-                handleSliderChange={handleSliderChange}
-                customClassName="mr-2"
-                isWidthFull={true}
-              />
+            <div className="flex flex-col md:justify-between md:items-center md:flex-row ">
+              <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
               <p
-                className="p-3 border-2 border-black rounded-sm cursor-pointer bg-secondary text-darkblue"
+                className="flex items-center justify-center p-3 mt-5 border-2 rounded-sm cursor-pointer md:mt-0 border-sm border-darkblue bg-secondary text-darkblue"
                 onClick={() => setOpen(true)}
               >
                 စာထုတ်ရန်
@@ -84,20 +78,11 @@ function Page() {
             </div>
           </div>
         </div>
-        <div className="block mt-5 sm:hidden">
-          <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
-          <div
-            className="flex items-center justify-center px-3 py-2 mx-3 mt-5 border-2 border-black rounded-sm cursor-pointer border-sm bg-secondary text-darkblue"
-            onClick={() => setOpen(true)}
-          >
-            <p>စာထုတ်ရန်</p>
-          </div>
-        </div>
       </div>
       <div className="flex flex-row items-center mt-10">
         <p className="flex-1 text-xl font-bold">ဖောင့်ပုံစံများ</p>
       </div>
-      <div className="flex-1  mt-3 ">
+      <div className="flex-1 mt-3 ">
         {fontStyles &&
           fontStyles?.map((fontData, index) => (
             <FontListDetailCard key={index} font={fontData} size={fontSize.value} fontText={value} />

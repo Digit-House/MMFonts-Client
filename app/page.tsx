@@ -23,6 +23,8 @@ export default function Home() {
     { task: 'ယူနီကုဒ်', done: false, value: 'unicode' },
   ]);
   const router = useRouter();
+  /*  alert(window.innerWidth);
+  alert(window.innerHeight); */
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setValue(event.target.value);
@@ -50,8 +52,8 @@ export default function Home() {
   if (data.length === 0) return <div>Loading...</div>;
 
   return (
-    <main className="mx-0 lg:mx-32 w-auto">
-      <div className="flex items-center justify-center mt-5">
+    <main>
+      <div className="flex items-center justify-center">
         <SearchBox
           value={value}
           handleChange={handleChange}
