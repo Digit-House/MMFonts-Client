@@ -7,11 +7,6 @@ import { useCallback, useEffect, useState } from 'react';
 import { FontListCard, SearchBox } from '@components/index';
 import { FontType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
-import useIsMobile from '@hooks/useIsMobile';
-
-function classNames(...classes: (string | boolean)[]): string {
-  return classes.filter(Boolean).join(' ');
-}
 
 export default function Home() {
   const { data } = useCSVConvert('/fonts/data/font.csv');
@@ -23,12 +18,13 @@ export default function Home() {
   const [fontSize, setFont] = useState<number>(24);
 
   const [isToggled, setIsToggled] = useState<boolean>(false);
-  const { isMobile } = useIsMobile();
   const [checked, setChecked] = useState<{ task: string; done: boolean; value: string }[]>([
     { task: 'ဇော်ဂျီ', done: false, value: 'zawgyi' },
     { task: 'ယူနီကုဒ်', done: false, value: 'unicode' },
   ]);
   const router = useRouter();
+  /*  alert(window.innerWidth);
+  alert(window.innerHeight); */
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setValue(event.target.value);
@@ -56,8 +52,8 @@ export default function Home() {
   if (data.length === 0) return <div>Loading...</div>;
 
   return (
-    <main className="">
-      <div className="flex items-center justify-center mt-5">
+    <main>
+      <div className="flex items-center justify-center">
         <SearchBox
           value={value}
           handleChange={handleChange}
@@ -66,42 +62,12 @@ export default function Home() {
           checked={checked}
         />
       </div>
-      {/* <form className="block sm:hidden">
-				<div className="flex flex-row items-center">
-					<label className="relative flex-1 block m-2">
-						<span className="absolute inset-y-0 left-0 flex items-center pl-1">
-							<MagnifyingGlassIcon className="w-10 h-10 p-1 " />
-						</span>
-						<input
-							className="w-full py-2 pl-10 pr-4 border rounded-full shadow bg-secondary border-secondary focus:outline-none"
-							placeholder="Enter your keyword to search"
-							type="text"
-						/>
-					</label>
-					<div>
-						{checked.map(({ task, done }, i) => (
-							<CheckBox
-								key={i}
-								task={task}
-								done={done}
-								i={i}
-								handleCheckBoxChange={handleCheckBoxChange}
-							/>
-						))}
-					</div>
-				</div>
-				<RadioSelectBar
-					fontSize={fontSize}
-					setFontSize={setFontSize}
-					handleSliderChange={handleSliderChange}
-				/>
-			</form> */}
       <div className="flex flex-row items-center mt-10">
         <p className="flex-1 text-xl font-bold">ဖောင့်ပုံစံ စုစုပေါင်း {data.length}</p>
         <QueueListIcon className="hidden w-8 h-8 mr-3 text-secondary sm:flex" onClick={() => setIsToggled(true)} />
         <TableCellsIcon className="hidden w-8 h-8 text-secondary sm:flex" onClick={() => setIsToggled(false)} />
       </div>
-      <div className={classNames(isToggled || isMobile ? 'grid-cols-1' : 'grid-cols-2', 'grid gap-4 mt-3')}>
+      <div className={`${isToggled ? 'grid-cols-1' : 'md:grid-cols-2'}  grid gap-4 mt-3 w-full `}>
         {fontList.map((font: FontType, i) => (
           <FontListCard
             key={i}

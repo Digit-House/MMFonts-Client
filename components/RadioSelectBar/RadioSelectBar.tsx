@@ -1,3 +1,4 @@
+import { classNames } from '@core/classnames';
 import { SelectOptionType } from '@core/golobalTypes';
 import { CustomSelectBox } from '..';
 
@@ -15,9 +16,6 @@ const options = [
   { label: '184', value: '184' },
   { label: '280', value: '280' },
 ];
-function classNames(...classes: (string | boolean | undefined)[]): string {
-  return classes.filter(Boolean).join(' ');
-}
 
 type RadioSelectBarType = {
   fontSize: SelectOptionType;
@@ -39,7 +37,7 @@ export default function RadioSelectBar({
   return (
     <div
       className={classNames(
-        isHovered && isHovered ? 'w-1/2' : `${isWidthFull ? 'w-2/3' : 'w-full'}`,
+        isHovered && isHovered ? 'w-1/2' : `${isWidthFull ? 'w-full' : 'w-full md:w-2/3'}`,
         customClassName,
         'flex flex-row items-center  p-1 rounded-full shadow-md bg-secondary radio'
       )}

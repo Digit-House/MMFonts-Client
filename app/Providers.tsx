@@ -1,13 +1,11 @@
 'use client';
 
 import { ThemeProvider } from 'next-themes';
-import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
-import { DetailNavMenu, Footer, Header } from '@components/index';
+import { Footer, Header } from '@components/index';
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
   const [mounted, setMounted] = useState(false);
-  const pathname = usePathname();
   useEffect(() => setMounted(true), []);
 
   if (!mounted) return null;
@@ -15,8 +13,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <Header />
-      {pathname.includes('fonts') && <DetailNavMenu />}
-      <div className="px-10">{children}</div>
+      <div className="mx-5 sm:mx-10 md:mx-24 lg:mx-auto max-w-[996px] mt-5 lg:mt-10">{children}</div>
       <Footer />
     </ThemeProvider>
   );

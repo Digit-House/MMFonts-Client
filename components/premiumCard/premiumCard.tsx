@@ -12,17 +12,17 @@ const PremiumCard = ({ font, id }: PremiumCardType) => {
   const router = useRouter();
 
   return (
-    <div>
+    <div className="px-2 mx-auto ">
       <p className="mb-1">{font.name}</p>
       <p className="mb-1 text-sm">{font.createdBy}</p>
-      <div style={{ boxShadow: ' 2px 2px 0px #292D53 ' }} className="w-fit rounded-md border-2 cursor-pointer">
+      <div style={{ boxShadow: ' 2px 2px 0px #292D53 ' }} className="border-2 rounded-md w-fit">
         <Image
-          src={`/images/premium/${font.images.split(' ')[0]}`}
-          width={400}
-          height={400}
+          width={320}
+          height={320}
+          src={`/images/premium/${font.fileName}/${font.images.split(' ')[0]}`}
           alt="Picture of the author"
           priority
-          className=""
+          className=" max-w-[320px]"
           onClick={() => router.push(`/premium/${font.nameEn}-${id}`)}
         />
       </div>

@@ -32,12 +32,7 @@ interface NavMenuProps {
   switchTheme: () => void;
 }
 
-export default function NavMenu({
-  mobileMenuOpen,
-  setMobileMenuOpen,
-  isLightTheme,
-  switchTheme,
-}: NavMenuProps) {
+export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightTheme, switchTheme }: NavMenuProps) {
   const pathname = usePathname();
 
   const activeLink =
@@ -49,11 +44,7 @@ export default function NavMenu({
     <>
       <div className="items-center hidden lg:flex lg:gap-x-12">
         {menuItems.map((item) => (
-          <Link
-            key={item.title}
-            href={item.href}
-            className={pathname == item.href ? activeLink : unactiveLink}
-          >
+          <Link key={item.title} href={item.href} className={pathname == item.href ? activeLink : unactiveLink}>
             {item.title}
           </Link>
         ))}
@@ -62,32 +53,16 @@ export default function NavMenu({
             onClick={switchTheme}
             className="flex items-center justify-center w-8 h-8 bg-yellow-500 rounded-full checked"
           >
-            {isLightTheme ? (
-              <SunIcon className="w-6 h-6" />
-            ) : (
-              <MoonIcon className="w-6 h-6" />
-            )}
+            {isLightTheme ? <SunIcon className="w-6 h-6" /> : <MoonIcon className="w-6 h-6" />}
           </button>
         </div>
       </div>
-
-      <Dialog
-        as="div"
-        className="lg:hidden"
-        open={mobileMenuOpen}
-        onClose={setMobileMenuOpen}
-      >
+      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full px-6 py-6 overflow-y-auto bg-primary dark:bg-lightblue sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <Image
-                className="w-auto h-10"
-                src="/icon.png"
-                width={80}
-                height={80}
-                alt="mm fonts collection logo"
-              />
+              <Image className="w-auto h-10" src="/icon.png" width={80} height={80} alt="mm fonts collection logo" />
             </a>
             <button
               type="button"
