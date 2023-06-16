@@ -28,29 +28,30 @@ const Premium = () => {
   const [currentFont, setCurrentFont] = useState<PremiumFontType | null>();
   const [images, setImages] = useState<{ src: string }[]>([]);
   const params = useParams();
-  console.log('DTAA', data);
+
   useEffect(() => {
     const index = params.id.split('-').pop();
-    console.log('INE', index, params, data);
     if (data && index) {
       if (currentFont) return;
       getFontDetail(parseInt(index));
     }
   }, [data]);
 
-  const getFontDetail = useCallback((position: number) => {
-    const fontData: PremiumFontType = data[position];
-    console.log('fontData ', fontData);
-    const imgs = fontData?.images.split(' ');
-    console.log('IME ', imgs);
-    const updateURLs = imgs?.map((img) => {
-      return {
-        src: `/images/premium/${fontData.fileName}/${img}`,
-      };
-    });
-    setCurrentFont(fontData);
-    setImages(updateURLs);
-  }, []);
+  const getFontDetail = useCallback(
+    (position: number) => {
+      const fontData: PremiumFontType = data[position];
+      const imgs = fontData?.images.split(' ');
+      console.log('IME ', imgs);
+      const updateURLs = imgs?.map((img) => {
+        return {
+          src: `/images/premium/${fontData.fileName}/${img}`,
+        };
+      });
+      setCurrentFont(fontData);
+      setImages(updateURLs);
+    },
+    [data]
+  );
 
   const [fontSize, setFontSize] = useState<SelectOptionType>({
     label: '12',
@@ -104,7 +105,7 @@ const Premium = () => {
               </div>
             </div>
           </div>
-          <p className="mb-5 mt-5 font-medium">ဖောင့်ပုံစံများ</p>
+          <p className="mt-5 mb-5 font-medium">ဖောင့်ပုံစံများ</p>
         </div>
       </div>
     </div>
