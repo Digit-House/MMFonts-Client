@@ -12,9 +12,8 @@ const options = [
 ];
 
 const parargraph =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-
-const sentence = 'Hello Kaung Htet Naing';
+  'အချက်အလက်များထည့်သွင်းနေဆဲဖြစ်ပါသဖြင့်အများအယွင်းများတွေ.ရှိပါကအကြောင်းကြားပေးရန်နှင့်ရန်နှင့် မူလဖန်တီးသူအနေနှင့်ထည့်သွင်းလိုပါကအသိပေးအကြောင်းကြားရန်ဆက်သွယ်ရန်Formမှတစ်ဆင့်ဖိတ်ခေါ်လိုပါသည်။ အခြားလိုအပ်ချက်များကိုလည်း အကြံပေးနိုင်ပါသည်။';
+const sentence = 'အချက်အလက်များထည့်သွင်းနေဆဲဖြစ်ပါသဖြင့်အများအယွင်းများတွေ.ရှိပါကအကြောင်းကြားပေးရန်';
 
 const TextGenerateComponent = () => {
   const { data } = useCSVConvert('/fonts/data/font.csv') as { data: PremiumFontType[] };
@@ -46,7 +45,7 @@ const TextGenerateComponent = () => {
     return value;
   };
 
-  const generateLoremIpsum = (device: string) => {
+  const generateLoremIpsum = (device: 'mobile' | 'desktop') => {
     const value = inputDetect(device);
     const numParagraphs = parseInt(value || '0', 10);
     if (isNaN(numParagraphs)) {
@@ -54,11 +53,8 @@ const TextGenerateComponent = () => {
     }
     const paragraphs: JSX.Element[] = [];
     for (let i = 0; i < numParagraphs; i++) {
-      if (optionValue.value === 'စာပိုဒ်') {
-        paragraphs.push(<p key={i}>{parargraph}</p>);
-      } else {
-        paragraphs.push(<p key={i}>{sentence}</p>);
-      }
+      const content = optionValue.value === 'စာပိုဒ်' ? parargraph : sentence;
+      paragraphs.push(<p key={i}>{content}</p>);
     }
     setGeneratedText(paragraphs);
   };
@@ -140,7 +136,7 @@ const TextGenerateComponent = () => {
         </div>
         <button
           className="flex items-center justify-center w-auto h-auto px-3 font-semibold rounded-sm shadow bg-secondary text-darkblue"
-          onClick={() => generateLoremIpsum('Destop')}
+          onClick={() => generateLoremIpsum('desktop')}
         >
           {renderText}
         </button>
