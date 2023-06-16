@@ -23,7 +23,7 @@ const CustomSelectBox = ({ initialValue, setInitialValue, options, unit, isRound
                 isRounded ? 'rounded-full' : 'rounded-sm'
               } bg-secondary py-1.5 pl-3 pr-10 text-left   focus:outline-none sm:text-sm sm:leading-6`}
             >
-              <span className="block w-full py-1 text-base font-medium truncate">
+              <span className="block w-16 py-1 text-base font-medium truncate">
                 {initialValue.value} {unit}
               </span>
               <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
@@ -37,7 +37,7 @@ const CustomSelectBox = ({ initialValue, setInitialValue, options, unit, isRound
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Listbox.Options className="absolute z-10 w-full py-1 mt-1 overflow-auto text-base rounded-md shadow-lg max-h-60  border-2 border-secondary focus:outline-none sm:text-sm dark:bg-lightblue bg-primary ">
+              <Listbox.Options className="absolute z-10 w-full py-1 mt-1 overflow-auto text-base border-2 rounded-md shadow-lg max-h-60 border-secondary focus:outline-none sm:text-sm dark:bg-lightblue bg-primary ">
                 {options.map((option) => (
                   <Listbox.Option
                     key={option.label}
@@ -55,7 +55,6 @@ const CustomSelectBox = ({ initialValue, setInitialValue, options, unit, isRound
                           <span className={classNames(selected ? 'font-bold' : 'font-normal', 'block truncate')}>
                             {option.value}
                           </span>
-
                           {selected ? (
                             <span
                               className={classNames(

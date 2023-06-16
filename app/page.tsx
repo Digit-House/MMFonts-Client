@@ -23,8 +23,6 @@ export default function Home() {
     { task: 'ယူနီကုဒ်', done: false, value: 'unicode' },
   ]);
   const router = useRouter();
-  /*  alert(window.innerWidth);
-  alert(window.innerHeight); */
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setValue(event.target.value);
