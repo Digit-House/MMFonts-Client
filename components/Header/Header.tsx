@@ -1,8 +1,9 @@
 'use client';
 
-import { Bars3Icon , MoonIcon, SunIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon } from '@heroicons/react/24/outline';
 import { useTheme } from 'next-themes';
 import { useState } from 'react';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { LogoMenu, NavMenu } from '..';
 
 export default function Header() {
@@ -32,12 +33,13 @@ export default function Header() {
             </button>
           </div>
           <div className="items-center justify-center ml-5">
-            <button
-              onClick={switchTheme}
-              className="flex items-center justify-center w-8 h-8 bg-yellow-500 rounded-full checked"
-            >
-              {currentTheme === 'light' ? <SunIcon className="w-18 h-18" /> : <MoonIcon className="w-18 h-18" />}
-            </button>
+            <DarkModeSwitch
+              checked={currentTheme === 'light'}
+              onChange={switchTheme}
+              size={24}
+              sunColor="#E4D1AC"
+              moonColor="#add"
+            />
           </div>
         </div>
         <LogoMenu />

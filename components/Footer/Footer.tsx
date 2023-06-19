@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full px-4 mx-auto mt-32 max-w-container sm:px-6 lg:px-8">
+    <footer className="w-full px-4 mx-auto mt-20 max-w-container sm:px-6 lg:px-8">
       <div className="">
         <p className="mt-5 text-sm leading-6 text-center text-slate-500">
           © 2023 Myanmar Fonts Collection. All rights reserved.

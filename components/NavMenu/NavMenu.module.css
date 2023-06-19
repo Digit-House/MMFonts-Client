@@ -1,15 +1,15 @@
 .nav {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: #282c34;
-	color: white;
-	height: 100vh;
-	width: 200px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	transition: transform 0.3s ease-in-out;
-	z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
 }

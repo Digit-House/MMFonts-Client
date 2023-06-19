@@ -1,10 +1,12 @@
 'use client';
 
 import { Dialog } from '@headlessui/react';
-import { MoonIcon, SunIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { XMarkIcon } from '@heroicons/react/24/outline';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 const menuItems = [
   {
@@ -34,28 +36,32 @@ interface NavMenuProps {
 
 export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightTheme, switchTheme }: NavMenuProps) {
   const pathname = usePathname();
-
-  const activeLink =
-    'border-b-2 border-blue-500 text-sm  font-bold leading-6 tracking-wide text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300';
-  const unactiveLink =
-    'text-sm font-semibold leading-6 tracking-wide text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300';
+  const activeLink = 'relative font-medium leading-6 tracking-wide ';
+  const unactiveLink = 'relative text-sm font-semibold leading-6 tracking-wide ';
 
   return (
     <>
       <div className="items-center hidden lg:flex lg:gap-x-12">
         {menuItems.map((item) => (
-          <Link key={item.title} href={item.href} className={pathname == item.href ? activeLink : unactiveLink}>
-            {item.title}
-          </Link>
+          <motion.div whileHover={{ scale: 1.2 }} key={item.title}>
+            <Link href={item.href} className={pathname == item.href ? activeLink : unactiveLink}>
+              {item.href === pathname && (
+                <motion.span
+                  layoutId="underline"
+                  className="absolute top-full left-0 block h-[1px] bg-darkblue dark:bg-white w-full"
+                />
+              )}
+              {item.title}
+            </Link>
+          </motion.div>
         ))}
-        <div className="items-center justify-center w-20">
-          <button
-            onClick={switchTheme}
-            className="flex items-center justify-center w-8 h-8 bg-yellow-500 rounded-full checked"
-          >
-            {isLightTheme ? <SunIcon className="w-6 h-6" /> : <MoonIcon className="w-6 h-6" />}
-          </button>
-        </div>
+        <DarkModeSwitch
+          checked={isLightTheme}
+          onChange={switchTheme}
+          size={30}
+          sunColor="#E4D1AC"
+          moonColor="#365880"
+        />
       </div>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />

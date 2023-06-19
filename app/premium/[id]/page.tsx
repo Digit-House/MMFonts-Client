@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import React, { useCallback, useEffect, useState } from 'react';
 import Slider from 'react-slick';
-import { RadioSelectBar } from '@components/index';
+import { FramerMotionWrapper, RadioSelectBar, TextGenerateModal } from '@components/index';
 import { PremiumFontType, SelectOptionType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
 
@@ -14,7 +14,7 @@ const settings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
-  initialSlide: 1,
+  initialSlide: 0,
   responsive: [
     { breakpoint: 1024, settings: { slidesToShow: 3 } },
     { breakpoint: 640, settings: { slidesToShow: 2 } },
@@ -28,6 +28,7 @@ const Premium = () => {
   const [currentFont, setCurrentFont] = useState<PremiumFontType | null>();
   const [images, setImages] = useState<{ src: string }[]>([]);
   const params = useParams();
+  const [open, setOpen] = useState<boolean>(false);
 
   useEffect(() => {
     const index = params.id.split('-').pop();
@@ -63,7 +64,7 @@ const Premium = () => {
 
   if (!currentFont) return <div>Loading...</div>;
   return (
-    <div>
+    <FramerMotionWrapper>
       <div className="flex flex-row items-center justify-between p-5">
         <div>
           <p className="mb-1 font-medium">{currentFont?.name}</p>
@@ -73,18 +74,17 @@ const Premium = () => {
           <p>ဝယ်ယူရန်</p>
         </div>
       </div>
-      <Slider {...settings} className="mx-5 md:0 ">
-        {' '}
+      <Slider {...settings} className="flex justify-center h-48 mx-5 md:0 ">
         {images.map((img, index) => (
-          <Image
-            key={index}
-            src={img.src}
-            width={400}
-            height={400}
-            alt="Picture of the myanmar fonts"
-            priority
-            className="mb-1 border-2 rounded-lg "
-          />
+          <div key={index} className="relative w-full h-48">
+            <Image
+              src={img.src}
+              className="w-auto mb-1 border-2 rounded-lg "
+              fill
+              alt="Picture of the myanmar fonts"
+              priority
+            />
+          </div>
         ))}
       </Slider>
       <div className="flex flex-col items-center justify-center">
@@ -100,15 +100,22 @@ const Premium = () => {
                   className="peer h-full min-h-[100px] w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
                 />
               </div>
-              <div className="">
+              <div className="flex flex-col py-2 md:justify-between md:items-center md:flex-row">
                 <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
+                <p
+                  className="flex items-center justify-center p-3 mt-5 border-2 rounded-sm cursor-pointer md:mt-0 border-sm border-darkblue bg-secondary text-darkblue"
+                  onClick={() => setOpen(true)}
+                >
+                  စာထုတ်ရန်
+                </p>
               </div>
             </div>
           </div>
           <p className="mt-5 mb-5 font-medium">ဖောင့်ပုံစံများ</p>
         </div>
       </div>
-    </div>
+      <TextGenerateModal open={open} setOpen={setOpen} />
+    </FramerMotionWrapper>
   );
 };
 

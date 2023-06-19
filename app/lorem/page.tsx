@@ -1,9 +1,13 @@
 'use client';
 import React from 'react';
-import { TextGenerateComponent } from '@components/index';
+import { FramerMotionWrapper, TextGenerateComponent } from '@components/index';
 
 const Lorem = () => {
-  return <TextGenerateComponent />;
+  return (
+    <FramerMotionWrapper>
+      <TextGenerateComponent />
+    </FramerMotionWrapper>
+  );
 };
 
 export default Lorem;

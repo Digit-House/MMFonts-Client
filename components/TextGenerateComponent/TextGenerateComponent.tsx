@@ -17,7 +17,7 @@ const sentence = 'အချက်အလက်များထည့်သွင�
 
 const TextGenerateComponent = () => {
   const { data } = useCSVConvert('/fonts/data/font.csv') as { data: PremiumFontType[] };
-  const [filterFontNames, setfilterFontNames] = useState<FontType[]>([]);
+  const [filterFontNames, setFilterFontNames] = useState<FontType[]>([]);
   const [inputValue, setInputValue] = useState<string>('');
   const [optionValue, setOptionValue] = useState(options[0]);
   const [open, setOpen] = useState<boolean>(false);
@@ -73,6 +73,9 @@ const TextGenerateComponent = () => {
       filterSearch();
       setOpen(true);
     }
+    if (inputValue.length == 0) {
+      setOpen(false);
+    }
   }, [inputValue]);
 
   const filterSearch = () => {
@@ -81,7 +84,7 @@ const TextGenerateComponent = () => {
       const formattedInput = inputValue.toLowerCase().replace(/\s/g, '');
       return formattedName.includes(formattedInput);
     });
-    setfilterFontNames(filterData);
+    setFilterFontNames(filterData);
   };
 
   return (
