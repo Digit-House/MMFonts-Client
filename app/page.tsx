@@ -6,16 +6,17 @@ import { useRouter } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
 import { FontListCard, FramerMotionWrapper, SearchBox } from '@components/index';
 import filterSearch from '@core/filterSearch';
-import { FontType } from '@core/golobalTypes';
+import { FontType, SelectOptionType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
 
 export default function Home() {
   const { data } = useCSVConvert('/fonts/data/font.csv');
-
   const [fontList, setFontList] = useState<FontType[]>(data);
   const [value, setValue] = useState<string>('');
-  const [fontSize, setFont] = useState<number>(24);
-
+  const [fontSize, setFontSize] = useState<SelectOptionType>({
+    label: '24',
+    value: '24',
+  });
   const [isToggled, setIsToggled] = useState<boolean>(false);
   const [checked, setChecked] = useState<{ task: string; done: boolean; value: string }[]>([
     { task: 'ဇော်ဂျီ', done: false, value: 'zawgyi' },
@@ -59,7 +60,8 @@ export default function Home() {
             filterOnChange={inputOnChange}
             value={value}
             handleChange={handleChange}
-            setFont={setFont}
+            fontSize={fontSize}
+            setFontSize={setFontSize}
             handleCheckBoxChange={handleCheckBoxChange}
             checked={checked}
           />
@@ -77,7 +79,7 @@ export default function Home() {
               onClick={() => onClickFont(font.nameEn, i)}
               font={font}
               typeText={value}
-              fontSize={fontSize}
+              fontSize={parseInt(fontSize.value)}
             />
           ))}
         </div>

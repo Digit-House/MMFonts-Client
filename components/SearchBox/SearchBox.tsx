@@ -10,26 +10,26 @@ type SearchBoxType = {
   handleChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
   handleCheckBoxChange: (d: boolean, i: number) => void;
   checked: { task: string; done: boolean }[];
-  setFont: React.Dispatch<React.SetStateAction<number>>;
+  setFontSize: React.Dispatch<React.SetStateAction<SelectOptionType>>;
+  fontSize: SelectOptionType;
 };
 
-const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont, filterOnChange }: SearchBoxType) => {
+const SearchBox = ({
+  value,
+  handleChange,
+  handleCheckBoxChange,
+  checked,
+  setFontSize,
+  filterOnChange,
+  fontSize,
+}: SearchBoxType) => {
   let sliderTimeout: NodeJS.Timeout;
 
   const [isHovered, setIsHovered] = useState(false);
 
-  const [fontSize, setFontSize] = useState<SelectOptionType>({
-    label: '24',
-    value: '24',
-  });
-
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     clearTimeout(sliderTimeout);
     setFontSize({ label: event.target.value, value: event.target.value });
-
-    sliderTimeout = setTimeout(() => {
-      setFont(parseInt(event.target.value));
-    }, 1000);
   };
 
   const handleHover = () => {
