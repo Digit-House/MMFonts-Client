@@ -32,54 +32,40 @@ const SearchBox = ({
     setFontSize({ label: event.target.value, value: event.target.value });
   };
 
-  const handleHover = () => {
-    setIsHovered(!isHovered);
-  };
-
   return (
     <div className="p-4 border-2 rounded-md border-darkblue dark:border-white mx-14 md:mx-20 lg:mx-26 xl:mx-auto max-w-[794px]">
-      <div>
-        <textarea
-          name="postContent"
-          rows={5}
-          cols={100}
-          value={value}
-          onChange={handleChange}
-          placeholder="လက်တည့်စမ်းရန်"
-          className="peer min-h-[150px] md:min-h-[100px] h-auto w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
-        />
-      </div>
-      <div className="items-center hidden py-2 justify-evenly md:flex">
-        <div
-          className={`flex w-12 cursor-pointer box hover:w-full transition-all duration-500  ${
-            isHovered ? 'w-full' : ''
-          }`}
-          onMouseEnter={handleHover}
-          onMouseLeave={handleHover}
-        >
+      <textarea
+        name="postContent"
+        rows={5}
+        cols={100}
+        value={value}
+        onChange={handleChange}
+        placeholder="လက်တည့်စမ်းရန်"
+        className="peer min-h-[150px] md:min-h-[100px] h-auto w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
+      />
+      <div className="items-stretch hidden h-auto py-2 md:flex gap-x-2">
+        <div className="relative w-1/2">
+          <span className="absolute inset-y-0 left-0 flex items-center pl-1">
+            <MagnifyingGlassIcon className="w-10 h-10 p-2 text-darkblue" />
+          </span>
           <input
             onChange={filterOnChange}
+            className="w-full h-12 pl-12 py-2 pr-4 border border-none rounded-full shadow text-darkblue bg-secondary focus:outline-none focus:placeholder:text-[#a11d33] "
+            placeholder="ဖောင့်ရှာရန်"
             type="text"
-            className="box-border w-12 h-12 p-2 pl-4 text-white border-2 rounded-full outline-none text-md searchInput border-secondary hover:rounded-md dark:bg-lightblue bg-primary hover:w-full "
-            name="txt"
           />
-          <MagnifyingGlassIcon className="absolute w-12 h-12 p-2 rounded-full shadow-md cursor-pointer icon bg-secondary text-darkblue" />
         </div>
-        <div className="flex flex-row justify-between w-full m-auto">
-          <RadioSelectBar
-            fontSize={fontSize}
-            setFontSize={setFontSize}
-            handleSliderChange={handleSliderChange}
-            isHovered={isHovered}
-            customClassName="ml-2 mr-2"
-            isWidthFull={true}
-          />
 
-          <div className="flex flex-row items-center mx-2 mr-auto">
-            {checked.map(({ task, done }, i) => (
-              <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
-            ))}
-          </div>
+        <RadioSelectBar
+          fontSize={fontSize}
+          setFontSize={setFontSize}
+          handleSliderChange={handleSliderChange}
+          isWidthFull
+        />
+        <div>
+          {checked.map(({ task, done }, i) => (
+            <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
+          ))}
         </div>
       </div>
       <form className="block md:hidden">
@@ -108,7 +94,7 @@ const SearchBox = ({
           </div>
 
           {
-            <div className={`${!isHovered ? 'flex ' : 'hidden'} flex-row`}>
+            <div className={`${!isHovered ? 'flex gap-2' : 'hidden'} flex-row`}>
               {checked.map(({ task, done }, i) => (
                 <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
               ))}
