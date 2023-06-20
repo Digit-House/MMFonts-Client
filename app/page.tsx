@@ -28,13 +28,28 @@ export default function Home() {
     setValue(event.target.value);
   };
 
+  /* eslint-disable */
   const handleCheckBoxChange = (done: boolean, i: number) => {
     const tmp = checked[i];
     tmp.done = !done;
     const checkedClone = [...checked];
     checkedClone[i] = tmp;
     setChecked([...checkedClone]);
-    const filterData = data.filter((font) => font.fontSupportType === tmp.value);
+    const filterData: FontType[] = [];
+
+    if (!checked[0].done && checked[1].done) {
+      console.log(checked[1].done);
+      filterData.push(...data.filter((font) => font.fontSupportType === checked[1].value));
+    }
+    if (checked[0].done && !checked[1].done) {
+      filterData.push(...data.filter((font) => font.fontSupportType === checked[0].value));
+    }
+    if (checked[0].done && checked[1].done) {
+      filterData.push(...data);
+    }
+    if (!checked[0].done && !checked[1].done) {
+      filterData.push(...data);
+    }
     setFontList(filterData);
   };
 
