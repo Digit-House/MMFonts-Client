@@ -36,7 +36,6 @@ export default function Home() {
     checkedClone[i] = tmp;
     setChecked([...checkedClone]);
     const filterData: FontType[] = [];
-
     if (!checked[0].done && checked[1].done) {
       console.log(checked[1].done);
       filterData.push(...data.filter((font) => font.fontSupportType === checked[1].value));
