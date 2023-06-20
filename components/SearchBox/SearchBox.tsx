@@ -6,29 +6,30 @@ import { CheckBox, RadioSelectBar } from '..';
 
 type SearchBoxType = {
   value: string;
+  filterOnChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   handleChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
   handleCheckBoxChange: (d: boolean, i: number) => void;
   checked: { task: string; done: boolean }[];
-  setFont: React.Dispatch<React.SetStateAction<number>>;
+  setFontSize: React.Dispatch<React.SetStateAction<SelectOptionType>>;
+  fontSize: SelectOptionType;
 };
 
-const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont }: SearchBoxType) => {
+const SearchBox = ({
+  value,
+  handleChange,
+  handleCheckBoxChange,
+  checked,
+  setFontSize,
+  filterOnChange,
+  fontSize,
+}: SearchBoxType) => {
   let sliderTimeout: NodeJS.Timeout;
 
   const [isHovered, setIsHovered] = useState(false);
 
-  const [fontSize, setFontSize] = useState<SelectOptionType>({
-    label: '24',
-    value: '24',
-  });
-
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     clearTimeout(sliderTimeout);
     setFontSize({ label: event.target.value, value: event.target.value });
-
-    sliderTimeout = setTimeout(() => {
-      setFont(parseInt(event.target.value));
-    }, 1000);
   };
 
   const handleHover = () => {
@@ -57,6 +58,7 @@ const SearchBox = ({ value, handleChange, handleCheckBoxChange, checked, setFont
           onMouseLeave={handleHover}
         >
           <input
+            onChange={filterOnChange}
             type="text"
             className="box-border w-12 h-12 p-2 pl-4 text-white border-2 rounded-full outline-none text-md searchInput border-secondary hover:rounded-md dark:bg-lightblue bg-primary hover:w-full "
             name="txt"

@@ -36,6 +36,8 @@ module.exports = {
       secondary: '#EDB92B',
       darkblue: '#292D53',
       lightblue: '#365880',
+      softblue: '#4d6c91',
+      softgold: '#e2c38a',
     },
   },
   plugins: [],

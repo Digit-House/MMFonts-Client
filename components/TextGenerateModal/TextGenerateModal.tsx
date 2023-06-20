@@ -24,7 +24,7 @@ const TextGenerateModal = ({ open, setOpen }: TextGenerateModalType) => {
           <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-75" />
         </Transition.Child>
         <div className="fixed inset-0 z-10 overflow-y-auto">
-          <div className="flex items-end justify-center min-h-full p-4 sm:items-center sm:p-0">
+          <div className="flex items-center justify-center min-h-full p-4 sm:items-center sm:p-0">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"

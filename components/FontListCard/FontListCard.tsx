@@ -19,7 +19,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) =
 
   return (
     <div
-      className="w-full p-2 overflow-hidden border-2 rounded cursor-pointer"
+      className="w-full p-2 overflow-hidden border-2 rounded cursor-pointer select-none dark:hover:bg-softblue hover:bg-softgold"
       style={{ boxShadow: ' 2px 2px 0px' }}
       onClick={() => onClick(id)}
     >

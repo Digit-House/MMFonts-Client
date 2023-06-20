@@ -2,7 +2,13 @@
 
 import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
-import { DetailNavMenu, FontListDetailCard, RadioSelectBar, TextGenerateModal } from '@components/index';
+import {
+  DetailNavMenu,
+  FontListDetailCard,
+  FramerMotionWrapper,
+  RadioSelectBar,
+  TextGenerateModal,
+} from '@components/index';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
 
@@ -51,7 +57,7 @@ function Page() {
   if (!font) return <div>Loading...</div>;
 
   return (
-    <div>
+    <FramerMotionWrapper>
       <DetailNavMenu fontName={font.fileName} createdBy={font.createdBy} />
       <div>
         <div className="flex items-center justify-center mt-5">
@@ -67,7 +73,7 @@ function Page() {
                 className="peer h-full min-h-[100px] w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
               />
             </div>
-            <div className="flex flex-col md:justify-between md:items-center md:flex-row ">
+            <div className="flex flex-col py-2 md:justify-between md:items-center md:flex-row">
               <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
               <p
                 className="flex items-center justify-center p-3 mt-5 border-2 rounded-sm cursor-pointer md:mt-0 border-sm border-darkblue bg-secondary text-darkblue"
@@ -82,14 +88,14 @@ function Page() {
       <div className="flex flex-row items-center mt-10">
         <p className="flex-1 text-xl font-bold">ဖောင့်ပုံစံများ</p>
       </div>
-      <div className="flex-1 mt-3 ">
+      <div className="flex-1 mt-3">
         {fontStyles &&
           fontStyles?.map((fontData, index) => (
             <FontListDetailCard key={index} font={fontData} size={fontSize.value} fontText={value} />
           ))}
       </div>
       <TextGenerateModal open={open} setOpen={setOpen} />
-    </div>
+    </FramerMotionWrapper>
   );
 }
 
