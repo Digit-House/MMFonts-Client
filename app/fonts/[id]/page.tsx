@@ -6,6 +6,7 @@ import {
   DetailNavMenu,
   FontListDetailCard,
   FramerMotionWrapper,
+  Loading,
   RadioSelectBar,
   TextGenerateModal,
 } from '@components/index';
@@ -54,7 +55,7 @@ function Page() {
     setFontSize({ label: event.target.value, value: event.target.value });
   };
 
-  if (!font) return <div>Loading...</div>;
+  if (!font) return <Loading />;
 
   return (
     <FramerMotionWrapper>
