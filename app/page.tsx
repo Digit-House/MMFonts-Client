@@ -4,7 +4,7 @@ import { QueueListIcon } from '@heroicons/react/20/solid';
 import { TableCellsIcon } from '@heroicons/react/24/outline';
 import { useRouter } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
-import { FontListCard, FramerMotionWrapper, SearchBox } from '@components/index';
+import { FontListCard, FramerMotionWrapper, Loading, SearchBox } from '@components/index';
 import filterSearch from '@core/filterSearch';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
@@ -65,7 +65,7 @@ export default function Home() {
     setFontList(filterSearch(event, data));
   };
 
-  if (data.length === 0) return <div>Loading...</div>;
+  if (data.length === 0) return <Loading />;
 
   return (
     <main>

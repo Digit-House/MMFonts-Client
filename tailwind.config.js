@@ -18,9 +18,41 @@ module.exports = {
           '90%': { transform: 'translate(2px, 2px) rotate(0deg)' },
           '100%': { transform: 'translate(1px, -2px) rotate(-1deg)' },
         },
+        moveLetter: {
+          '0%': { transform: 'translateX(-15vw)', opacity: '0' },
+          '33.3%': { transform: 'translateX(0) ', opacity: '1' },
+          '66%': { transform: 'translateX(0)', opacity: '1' },
+          '100%': { transform: 'translateX(15vw) ', opacity: '0' },
+        },
+        movingLine: {
+          '0%': {
+            opacity: '0',
+            width: '0',
+          },
+          '33.3%': {
+            opacity: '0.8',
+            width: '100%',
+          },
+          '66%': {
+            opacity: '0.8',
+            width: '100%',
+          },
+          '85%': {
+            width: '0',
+            left: 'initial',
+            right: '0',
+            opacity: '1',
+          },
+          '100%': {
+            opacity: '0',
+            width: '0',
+          },
+        },
       },
       animation: {
         shake: 'wiggle 0.8s linear infinite',
+        moveLetters: 'moveLetter 2.4s infinite ease-in-out',
+        moveLine: 'movingLine 2.4s infinite ease-in-out',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -40,5 +72,10 @@ module.exports = {
       softgold: '#e2c38a',
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('child', '& > *');
+      addVariant('child-hover', '& > *:hover');
+    },
+  ],
 };
