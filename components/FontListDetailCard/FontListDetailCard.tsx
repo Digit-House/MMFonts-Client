@@ -15,7 +15,6 @@ const FontListDetailCard = ({ font, size, fontText }: FontListDetailCardType) =>
     lineHeight: `${parseInt(size) + 20}px`,
     fontWeight: font.fontStyle,
   };
-  console.log('FONST', fontStyle);
 
   return (
     <div

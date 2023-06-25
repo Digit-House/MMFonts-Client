@@ -3,29 +3,12 @@
 import { Dialog } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
+import Link from 'next-intl/link';
 import Image from 'next/image';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
-
-const menuItems = [
-  {
-    title: 'မာတိကာ',
-    href: '/',
-  },
-  {
-    title: 'အခကြေးငွေဖြင့်',
-    href: '/premium',
-  },
-  {
-    title: 'စာထုတ်ရန်',
-    href: '/lorem',
-  },
-  {
-    title: 'ကျွန်တော်တို့အကြောင်း',
-    href: '/contact-us',
-  },
-];
+import { LangSelectBox } from '..';
 
 interface NavMenuProps {
   mobileMenuOpen: boolean;
@@ -38,7 +21,26 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
   const pathname = usePathname();
   const activeLink = 'relative font-medium leading-6 tracking-wide ';
   const unactiveLink = 'relative text-sm font-semibold leading-6 tracking-wide ';
+  const t = useTranslations('Index');
 
+  const menuItems = [
+    {
+      title: t('content'),
+      href: '/',
+    },
+    {
+      title: t('premium'),
+      href: '/premium',
+    },
+    {
+      title: t('generate'),
+      href: '/lorem',
+    },
+    {
+      title: t('about-us'),
+      href: '/contact-us',
+    },
+  ];
   return (
     <>
       <div className="items-center hidden lg:flex lg:gap-x-12">
@@ -55,6 +57,8 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
             </Link>
           </motion.div>
         ))}
+        <LangSelectBox />
+
         <DarkModeSwitch
           checked={isLightTheme}
           onChange={switchTheme}

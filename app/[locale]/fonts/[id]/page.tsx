@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import {
@@ -24,6 +25,7 @@ function Page() {
   const [open, setOpen] = useState<boolean>(false);
   const [font, setFont] = useState<FontType | null>();
   const [fontStyles, setFontStyles] = useState<FontType[]>();
+  const t = useTranslations('Index');
 
   const { data } = useCSVConvert('/fonts/data/font.csv') as { data: FontType[] };
 
@@ -80,14 +82,14 @@ function Page() {
                 className="flex items-center justify-center p-3 mt-5 border-2 rounded-sm cursor-pointer md:mt-0 border-sm border-darkblue bg-secondary text-darkblue"
                 onClick={() => setOpen(true)}
               >
-                စာထုတ်ရန်
+                {t('generate')}
               </p>
             </div>
           </div>
         </div>
       </div>
       <div className="flex flex-row items-center mt-10">
-        <p className="flex-1 text-xl font-bold">ဖောင့်ပုံစံများ</p>
+        <p className="flex-1 text-xl font-bold">{t('fonts')}</p>
       </div>
       <div className="flex-1 mt-3">
         {fontStyles &&
