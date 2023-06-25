@@ -1,5 +1,6 @@
 'use client';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 import { SelectOptionType } from '@core/golobalTypes';
 import { CheckBox, RadioSelectBar } from '..';
@@ -24,7 +25,7 @@ const SearchBox = ({
   fontSize,
 }: SearchBoxType) => {
   let sliderTimeout: NodeJS.Timeout;
-
+  const t = useTranslations('Index');
   const [isHovered, setIsHovered] = useState(false);
 
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -34,15 +35,17 @@ const SearchBox = ({
 
   return (
     <div className="p-4 border-2 rounded-md border-darkblue dark:border-white mx-14 md:mx-20 lg:mx-26 xl:mx-auto max-w-[794px]">
-      <textarea
-        name="postContent"
-        rows={5}
-        cols={100}
-        value={value}
-        onChange={handleChange}
-        placeholder="လက်တည့်စမ်းရန်"
-        className="peer min-h-[150px] md:min-h-[100px] h-auto w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
-      />
+      <div>
+        <textarea
+          name="postContent"
+          rows={5}
+          cols={100}
+          value={value}
+          onChange={handleChange}
+          placeholder={t('type-something')}
+          className="peer min-h-[150px] md:min-h-[100px] h-auto w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
+        />
+      </div>
       <div className="items-stretch hidden h-auto py-2 md:flex gap-x-2">
         <div className="relative w-1/2">
           <span className="absolute inset-y-0 left-0 flex items-center pl-1">

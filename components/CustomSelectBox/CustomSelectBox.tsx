@@ -31,7 +31,7 @@ const CustomSelectBox = ({
             } bg-secondary py-1.5 pl-3 pr-10 text-left  focus:outline-none sm:text-sm sm:leading-6`}
           >
             <span className={`block ${!unit ? 'w-16' : 'w-auto'} py-1 text-base font-medium truncate`}>
-              {initialValue.value} {unit}
+              {initialValue.label} {unit}
             </span>
             <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
               <ChevronUpDownIcon className="w-5 h-5 text-gray-400" aria-hidden="true" />
@@ -60,7 +60,7 @@ const CustomSelectBox = ({
                     return (
                       <>
                         <span className={classNames(selected ? 'font-bold' : 'font-normal', 'block truncate')}>
-                          {option.value}
+                          {option.label}
                         </span>
                         {selected ? (
                           <span

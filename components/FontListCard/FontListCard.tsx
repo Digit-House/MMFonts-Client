@@ -1,3 +1,4 @@
+import { usePathname } from 'next/navigation';
 import React from 'react';
 import { FontType } from '@core/golobalTypes';
 
@@ -16,6 +17,19 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) =
     fontSize: `${fontSize}px`,
     lineHeight: `${fontSize + 20}px`,
   };
+  const pathname = usePathname();
+  const isEnglish = pathname.includes('en');
+  const fontSupportType = () => {
+    if (!isEnglish) {
+      if (font.fontSupportType === 'zawgyi') {
+        return 'ဇော်ဂျီ';
+      } else {
+        return 'ယူနီကုဒ်';
+      }
+    } else {
+      return font.fontSupportType;
+    }
+  };
 
   return (
     <div
@@ -29,7 +43,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) =
           <div className="mt-2 text-sm">{font.fontStyle}</div>
         </div>
         <div className="inline-flex items-center justify-center w-10 h-10 rounded-full md:w-14 md:h-14 bg-secondary">
-          <p className="text-[0.6rem] md:text-sm text-darkblue ">{font.fontSupportType}</p>
+          <p className="text-[0.6rem] md:text-sm text-darkblue ">{fontSupportType()}</p>
         </div>
       </div>
       <div className="pt-2 text-4xl break-words">

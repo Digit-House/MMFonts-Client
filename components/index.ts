@@ -14,3 +14,5 @@ export { default as CustomSelectBox } from './CustomSelectBox/CustomSelectBox';
 export { default as PremiumCard } from './premiumCard/premiumCard';
 export { default as TextGenerateComponent } from './TextGenerateComponent/TextGenerateComponent';
 export { default as FramerMotionWrapper } from './FramerMotionWrapper/FramerMotionWrapper';
+export { default as Loading } from './Loading/Loading';
+export { default as LangSelectBox } from './LangSelectBox/LangSelectBox';
