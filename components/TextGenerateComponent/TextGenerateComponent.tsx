@@ -1,31 +1,32 @@
 import { Transition } from '@headlessui/react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import { useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import { FontType, PremiumFontType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
 import { CustomSelectBox } from '..';
 
-const options = [
-  { label: 'စာပိုဒ်', value: 'စာပိုဒ်' },
-  { label: 'စာကြောင်း', value: 'စာကြောင်း' },
-];
-
 const parargraph =
   'အချက်အလက်များထည့်သွင်းနေဆဲဖြစ်ပါသဖြင့်အများအယွင်းများတွေ.ရှိပါကအကြောင်းကြားပေးရန်နှင့်ရန်နှင့် မူလဖန်တီးသူအနေနှင့်ထည့်သွင်းလိုပါကအသိပေးအကြောင်းကြားရန်ဆက်သွယ်ရန်Formမှတစ်ဆင့်ဖိတ်ခေါ်လိုပါသည်။ အခြားလိုအပ်ချက်များကိုလည်း အကြံပေးနိုင်ပါသည်။';
 const sentence = 'အချက်အလက်များထည့်သွင်းနေဆဲဖြစ်ပါသဖြင့်အများအယွင်းများတွေ.ရှိပါကအကြောင်းကြားပေးရန်';
 
 const TextGenerateComponent = () => {
+  const t = useTranslations('Index');
+  const options = [
+    { label: t('paragraph'), value: 'စာပိုဒ်' },
+    { label: t('sentence'), value: 'စာကြောင်း' },
+  ];
   const { data } = useCSVConvert('/fonts/data/font.csv') as { data: PremiumFontType[] };
   const [filterFontNames, setFilterFontNames] = useState<FontType[]>([]);
   const [inputValue, setInputValue] = useState<string>('');
   const [optionValue, setOptionValue] = useState(options[0]);
   const [open, setOpen] = useState<boolean>(false);
   const currentRoute = usePathname();
-  const renderText = currentRoute === '/lorem' ? 'စာထုတ်ရန်' : 'ပြီးပြီ';
+  const renderText = currentRoute === '/lorem' ? t('generate') : t('done');
   const countInputRef = useRef<HTMLInputElement | null>(null);
   const countMobileInputRef = useRef<HTMLInputElement | null>(null);
-  const paragraphRef = useRef<HTMLParagraphElement | null>(null);
+  const paragraphRef = useRef<HTMLParagraphElement>(null);
   const [generatedText, setGeneratedText] = useState<JSX.Element[]>([]);
 
   useEffect(() => {
@@ -100,7 +101,7 @@ const TextGenerateComponent = () => {
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 className="w-full py-2 pl-12 pr-4 border border-none rounded-full shadow text-darkblue bg-secondary focus:outline-none "
-                placeholder="ရှာရန်"
+                placeholder={t('search')}
                 type="text"
               />
             </div>
@@ -187,16 +188,6 @@ const TextGenerateComponent = () => {
           >
             {renderText}
           </button>
-        </div>
-        <div className="flex flex-row justify-between">
-          <CustomSelectBox options={options} initialValue={optionValue} setInitialValue={setOptionValue} />
-          <input
-            ref={countMobileInputRef}
-            type="number"
-            className="flex items-center justify-center w-auto h-auto px-3 rounded-sm shadow bg-secondary text-darkblue"
-            min={1}
-            max={10}
-          />
         </div>
       </div>
       <p className="py-6 mb-5 text-base font-semibold leading-loose tracking-wide text-left " ref={paragraphRef}>

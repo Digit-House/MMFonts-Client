@@ -4,7 +4,7 @@ import { Bars3Icon } from '@heroicons/react/24/outline';
 import { useTheme } from 'next-themes';
 import { useState } from 'react';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
-import { LogoMenu, NavMenu } from '..';
+import { LangSelectBox, LogoMenu, NavMenu } from '..';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -32,7 +32,7 @@ export default function Header() {
               <Bars3Icon className="w-8 h-8" aria-hidden="true" />
             </button>
           </div>
-          <div className="items-center justify-center ml-5">
+          <div className="items-center justify-center ml-4">
             <DarkModeSwitch
               checked={currentTheme === 'light'}
               onChange={switchTheme}
@@ -42,7 +42,12 @@ export default function Header() {
             />
           </div>
         </div>
-        <LogoMenu />
+        <div className="flex flex-row items-center gap-3">
+          <div className="flex lg:hidden">
+            <LangSelectBox />
+          </div>
+          <LogoMenu />
+        </div>
         <NavMenu
           switchTheme={switchTheme}
           isLightTheme={currentTheme === 'light'}

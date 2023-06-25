@@ -10,7 +10,6 @@ const useCSVConvert = (csvFilePath: string) => {
     fetch(csvFilePath)
       .then((response) => response.text())
       .then((csvData) => {
-        console.log('CCS', csvData);
         const lines = csvData.split('\n');
         const headers = lines[0].split(',');
         const jsonData = [];

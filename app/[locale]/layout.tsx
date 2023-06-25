@@ -1,7 +1,9 @@
 import './globals.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { NextIntlClientProvider } from 'next-intl';
 import localFont from 'next/font/local';
+import { notFound } from 'next/navigation';
 import GoogleAnalytics from '@hooks/GoogleAnalytics';
 import { HotJar } from '@hooks/index';
 import Providers from './Providers';
@@ -9,36 +11,36 @@ import Providers from './Providers';
 const myLocalFont = localFont({
   src: [
     {
-      path: '../public/fonts/site/AcreMMVariable-Thin.ttf',
+      path: '../../public/fonts/site/AcreMMVariable-Thin.ttf',
       weight: '100',
     },
     {
-      path: '../public/fonts/site/AcreMMVariable-ExtraLight.ttf',
+      path: '../../public/fonts/site/AcreMMVariable-ExtraLight.ttf',
       weight: '200',
     },
     {
-      path: '../public/fonts/site/AcreMMVariable-Light.ttf',
+      path: '../../public/fonts/site/AcreMMVariable-Light.ttf',
       weight: '300',
     },
     {
-      path: '../public/fonts/site/AcreMMVariable-Regular.ttf',
+      path: '../../public/fonts/site/AcreMMVariable-Regular.ttf',
       weight: '400',
     },
     {
-      path: '../public/fonts/site/AcreMMVariable-DemiBold.ttf',
+      path: '../../public/fonts/site/AcreMMVariable-DemiBold.ttf',
       weight: '500',
     },
     {
-      path: '../public/fonts/site/AcreMMVariable-Demi.ttf',
+      path: '../../public/fonts/site/AcreMMVariable-Demi.ttf',
       weight: '600',
     },
 
     {
-      path: '../public/fonts/site/AcreMMVariable-Bold.ttf',
+      path: '../../public/fonts/site/AcreMMVariable-Bold.ttf',
       weight: '700',
     },
     {
-      path: '../public/fonts/site/AcreMMVariable-Black.ttf',
+      path: '../../public/fonts/site/AcreMMVariable-Black.ttf',
       weight: '800',
     },
   ],
@@ -70,16 +72,35 @@ export const metadata = {
   manifest: '/manifest.json',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+interface RootLayoutProps {
+  children: React.ReactNode;
+  params: {
+    locale: string;
+  };
+}
+
+export function generateStaticParams() {
+  return [{ locale: 'mm' }, { locale: 'en' }];
+}
+
+export default async function RootLayout({ children, params: { locale } }: RootLayoutProps) {
+  let messages;
+  try {
+    messages = (await import(`../../messages/${locale}.json`)).default;
+  } catch (error) {
+    notFound();
+  }
   return (
-    <html lang="en">
+    <html lang={locale}>
       {process.env.NEXT_PUBLIC_GA_TRAKCING_ID && (
         <GoogleAnalytics GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_TRAKCING_ID} />
       )}
       <HotJar />
-      <body className={`${myLocalFont.variable} font-acre `}>
-        <Providers>{children}</Providers>
-      </body>
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <body className={`${myLocalFont.variable} font-acre `}>
+          <Providers>{children}</Providers>
+        </body>
+      </NextIntlClientProvider>
     </html>
   );
 }

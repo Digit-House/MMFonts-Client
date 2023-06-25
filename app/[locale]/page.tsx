@@ -2,6 +2,7 @@
 
 import { QueueListIcon } from '@heroicons/react/20/solid';
 import { TableCellsIcon } from '@heroicons/react/24/outline';
+import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
 import { FontListCard, FramerMotionWrapper, Loading, SearchBox } from '@components/index';
@@ -10,6 +11,7 @@ import { FontType, SelectOptionType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
 
 export default function Home() {
+  const t = useTranslations('Index');
   const { data } = useCSVConvert('/fonts/data/font.csv');
   const [fontList, setFontList] = useState<FontType[]>(data);
   const [value, setValue] = useState<string>('');
@@ -19,8 +21,8 @@ export default function Home() {
   });
   const [isToggled, setIsToggled] = useState<boolean>(false);
   const [checked, setChecked] = useState<{ task: string; done: boolean; value: string }[]>([
-    { task: 'ဇော်ဂျီ', done: false, value: 'zawgyi' },
-    { task: 'ယူနီကုဒ်', done: false, value: 'unicode' },
+    { task: t('zaw-gyi'), done: false, value: 'zawgyi' },
+    { task: t('unicode'), done: false, value: 'unicode' },
   ]);
   const router = useRouter();
 
@@ -28,7 +30,6 @@ export default function Home() {
     setValue(event.target.value);
   };
 
-  /* eslint-disable */
   const handleCheckBoxChange = (done: boolean, i: number) => {
     const tmp = checked[i];
     tmp.done = !done;
@@ -36,18 +37,13 @@ export default function Home() {
     checkedClone[i] = tmp;
     setChecked([...checkedClone]);
     const filterData: FontType[] = [];
+    const [firstChecked, secondChecked] = checkedClone;
 
-    if (!checked[0].done && checked[1].done) {
-      console.log(checked[1].done);
-      filterData.push(...data.filter((font) => font.fontSupportType === checked[1].value));
-    }
-    if (checked[0].done && !checked[1].done) {
-      filterData.push(...data.filter((font) => font.fontSupportType === checked[0].value));
-    }
-    if (checked[0].done && checked[1].done) {
-      filterData.push(...data);
-    }
-    if (!checked[0].done && !checked[1].done) {
+    if (!firstChecked.done && secondChecked.done) {
+      filterData.push(...data.filter((font) => font.fontSupportType === secondChecked.value));
+    } else if (firstChecked.done && !secondChecked.done) {
+      filterData.push(...data.filter((font) => font.fontSupportType === firstChecked.value));
+    } else {
       filterData.push(...data);
     }
     setFontList(filterData);
@@ -82,7 +78,7 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-row items-center mt-10">
-          <p className="flex-1 text-xl font-bold">ဖောင့်ပုံစံ စုစုပေါင်း {data.length}</p>
+          <p className="flex-1 text-xl font-bold">{`${t('fonts')}  ${data.length}`}</p>
           <QueueListIcon className="hidden w-8 h-8 mr-3 text-secondary sm:flex" onClick={() => setIsToggled(true)} />
           <TableCellsIcon className="hidden w-8 h-8 text-secondary sm:flex" onClick={() => setIsToggled(false)} />
         </div>

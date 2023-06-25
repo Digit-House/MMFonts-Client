@@ -1,5 +1,6 @@
 'use client';
 import { EllipsisHorizontalIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 
 type DetailNavMenuType = {
@@ -7,8 +8,9 @@ type DetailNavMenuType = {
   createdBy: string;
 };
 
-const DetailNavMenu = ({ fontName, createdBy = 'အမည်မသိ' }: DetailNavMenuType) => {
+const DetailNavMenu = ({ fontName, createdBy }: DetailNavMenuType) => {
   const [isHide, setIsHide] = useState<boolean>(true);
+  const t = useTranslations('Index');
 
   const showModal = () => {
     setIsHide((prev) => !prev);
@@ -19,12 +21,12 @@ const DetailNavMenu = ({ fontName, createdBy = 'အမည်မသိ' }: Detail
       <div className="flex flex-row justify-between ">
         <div className="flex flex-col items-left">
           <p className="mr-5 font-medium ">{fontName}</p>
-          <p className="text-sm">{createdBy}</p>
+          <p className="text-sm">{createdBy === undefined && t('create-by')}</p>
         </div>
         <div className="flex flex-row items-center">
-          <p className="hidden mr-5 md:flex">အကြောင်းနှင့်မူပိုင်ခွင့်</p>
+          <p className="hidden mr-5 md:flex">{t('terms-and-conditions')}</p>
           <p className="p-4 px-3 py-2 mr-4 border-2 border-black rounded-sm bg-secondary text-darkblue">
-            ဒေါင်းလော့လုပ်ရန်
+            {t('download')}
           </p>
           <div className="relative">
             <EllipsisHorizontalIcon className="w-10 h-10 text-secondary" onClick={showModal} />
