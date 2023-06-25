@@ -16,7 +16,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
       <div className="flex flex-col min-h-screen">
         <Header />
         <AnimatePresence mode="wait">
-          <div className="flex-grow mx-5 mt-5 sm:mx-10 md:mx-24 lg:mx-auto lg:mt-10">{children}</div>
+          <div className="flex-grow mx-5 mt-5 sm:mx-10 md:mx-24 max-w-[996px] lg:mx-auto lg:mt-10">{children}</div>
         </AnimatePresence>
         <Footer />
       </div>
