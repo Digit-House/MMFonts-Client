@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-export default function handler(req, res) {
+export default function handler(req: any, res: any) {
   const param = req.query;
   console.log(param, 'param');
   const fontDir = path.join(process.cwd(), 'public', 'fonts', param.name);

@@ -17,7 +17,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) =
     fontSize: `${fontSize}px`,
     lineHeight: `${fontSize + 20}px`,
   };
-  const pathname = usePathname();
+  const pathname: any = usePathname();
   const isEnglish = pathname.includes('en');
   const fontSupportType = () => {
     if (!isEnglish) {

@@ -15,7 +15,7 @@ import { FontType, SelectOptionType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
 
 function Page() {
-  const params = useParams();
+  const params: any = useParams();
 
   const [value, setValue] = useState<string>('');
   const [fontSize, setFontSize] = useState<SelectOptionType>({

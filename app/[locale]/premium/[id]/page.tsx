@@ -27,7 +27,7 @@ const Premium = () => {
 
   const [currentFont, setCurrentFont] = useState<PremiumFontType | null>();
   const [images, setImages] = useState<{ src: string }[]>([]);
-  const params = useParams();
+  const params: any = useParams();
   const [open, setOpen] = useState<boolean>(false);
 
   useEffect(() => {
