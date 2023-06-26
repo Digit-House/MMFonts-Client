@@ -15,7 +15,7 @@ import { FontType, SelectOptionType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
 
 function Page() {
-  const params = useParams();
+  const params: any = useParams();
 
   const [value, setValue] = useState<string>('');
   const [fontSize, setFontSize] = useState<SelectOptionType>({
@@ -28,6 +28,7 @@ function Page() {
   const t = useTranslations('Index');
 
   const { data } = useCSVConvert('/fonts/data/font.csv') as { data: FontType[] };
+  console.log(data);
 
   useEffect(() => {
     const index = params.id.split('-').pop();
@@ -57,11 +58,13 @@ function Page() {
     setFontSize({ label: event.target.value, value: event.target.value });
   };
 
+  console.log(font);
+
   if (!font) return <Loading />;
 
   return (
     <FramerMotionWrapper>
-      <DetailNavMenu fontName={font.fileName} createdBy={font.createdBy} />
+      <DetailNavMenu fileName={font.fileName} fontName={font.fileName} createdBy={font.createdBy} />
       <div>
         <div className="flex items-center justify-center mt-5">
           <div className="p-4 border-2 rounded-md border-darkblue dark:border-white mx-14 md:mx-20 lg:mx-26 xl:mx-auto max-w-[794px]">
@@ -94,7 +97,7 @@ function Page() {
       <div className="flex-1 mt-3">
         {fontStyles &&
           fontStyles?.map((fontData, index) => (
-            <FontListDetailCard key={index} font={fontData} size={fontSize.value} fontText={value} />
+            <FontListDetailCard key={index} font={fontData} size={fontSize.value} fontText={value} id={index} />
           ))}
       </div>
       <TextGenerateModal open={open} setOpen={setOpen} />
