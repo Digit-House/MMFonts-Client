@@ -66,7 +66,7 @@ function Page() {
     <FramerMotionWrapper>
       <DetailNavMenu fileName={font.fileName} fontName={font.fileName} createdBy={font.createdBy} />
       <div>
-        <div className="flex items-center justify-center mt-5">
+        <div className="flex items-center justify-center mt-5 ">
           <div className="p-4 border-2 rounded-md border-darkblue dark:border-white mx-14 md:mx-20 lg:mx-26 xl:mx-auto max-w-[794px]">
             <div>
               <textarea
@@ -94,7 +94,7 @@ function Page() {
       <div className="flex flex-row items-center mt-10">
         <p className="flex-1 text-xl font-bold">{t('fonts')}</p>
       </div>
-      <div className="flex-1 mt-3">
+      <div className="grid flex-1 gap-4 mt-3">
         {fontStyles &&
           fontStyles?.map((fontData, index) => (
             <FontListDetailCard key={index} font={fontData} size={fontSize.value} fontText={value} id={index} />

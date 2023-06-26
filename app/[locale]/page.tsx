@@ -1,10 +1,9 @@
 'use client';
 
-import { QueueListIcon } from '@heroicons/react/20/solid';
-import { TableCellsIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { FontListCard, FramerMotionWrapper, Loading, SearchBox } from '@components/index';
 import filterSearch from '@core/filterSearch';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
@@ -20,16 +19,18 @@ export default function Home() {
     value: '24',
   });
   const [isToggled, setIsToggled] = useState<boolean>(false);
+  const [offset, setOffset] = useState<number>(1);
+
   const [checked, setChecked] = useState<{ task: string; done: boolean; value: string }[]>([
     { task: t('zaw-gyi'), done: false, value: 'zawgyi' },
     { task: t('unicode'), done: false, value: 'unicode' },
   ]);
   const router = useRouter();
-  const containerRef = useRef(null);
 
   const handleScroll = useCallback(() => {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
-    if (scrollTop + clientHeight >= scrollHeight && fontList.length !== data.length) {
+    if (scrollTop + clientHeight > scrollHeight - 50 && fontList.length !== data.length) {
+      setOffset((prev) => prev + 1);
       const remainingData = data.slice(fontList.length, fontList.length + 8);
       setFontList((prevFontList) => [...prevFontList, ...remainingData]);
     }
@@ -80,7 +81,7 @@ export default function Home() {
   if (fontList.length === 0) return <Loading />;
 
   return (
-    <main ref={containerRef}>
+    <main>
       <FramerMotionWrapper>
         <div className="flex items-center justify-center">
           <SearchBox
@@ -95,10 +96,16 @@ export default function Home() {
         </div>
         <div className="flex flex-row items-center mt-10">
           <p className="flex-1 text-xl font-bold">{`${t('fonts')}  ${data.length}`}</p>
-          <QueueListIcon className="hidden w-8 h-8 mr-3 text-secondary sm:flex" onClick={() => setIsToggled(true)} />
-          <TableCellsIcon className="hidden w-8 h-8 text-secondary sm:flex" onClick={() => setIsToggled(false)} />
+          <div className="hidden gap-2 sm:flex">
+            <div className="relative w-8 h-8" onClick={() => setIsToggled(true)}>
+              <Image alt="rows" src="/icons8-columns.png" fill />
+            </div>
+            <div className="relative w-8 h-8" onClick={() => setIsToggled(false)}>
+              <Image alt="columns" src="/icons8-columns.png" fill className="transform rotate-90" />
+            </div>
+          </div>
         </div>
-        <div className={`${isToggled ? 'grid-cols-1' : 'md:grid-cols-2'}  grid gap-4 mt-3 w-full `}>
+        <div className={`${isToggled ? 'grid-cols-1' : 'sm:grid-cols-2'}  grid gap-4 mt-3 w-full `}>
           {fontList.map((font: FontType, i) => (
             <FontListCard
               key={i}
@@ -107,6 +114,7 @@ export default function Home() {
               font={font}
               typeText={value}
               fontSize={parseInt(fontSize.value)}
+              offset={offset}
             />
           ))}
         </div>

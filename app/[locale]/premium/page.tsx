@@ -7,7 +7,6 @@ import useCSVConvert from '@hooks/useCSVConvert';
 const Page = () => {
   const { data } = useCSVConvert('/fonts/data/premium.csv') as { data: PremiumFontType[] };
   const [fonts, setFonts] = React.useState<PremiumFontType[]>([]);
-
   useEffect(() => {
     if (data.length > 0) {
       setFonts(data);
