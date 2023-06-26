@@ -4,7 +4,7 @@ import { QueueListIcon } from '@heroicons/react/20/solid';
 import { TableCellsIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { FontListCard, FramerMotionWrapper, Loading, SearchBox } from '@components/index';
 import filterSearch from '@core/filterSearch';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
@@ -13,7 +13,7 @@ import useCSVConvert from '@hooks/useCSVConvert';
 export default function Home() {
   const t = useTranslations('Index');
   const { data } = useCSVConvert('/fonts/data/font.csv');
-  const [fontList, setFontList] = useState<FontType[]>(data);
+  const [fontList, setFontList] = useState<FontType[]>([]);
   const [value, setValue] = useState<string>('');
   const [fontSize, setFontSize] = useState<SelectOptionType>({
     label: '24',
@@ -25,6 +25,22 @@ export default function Home() {
     { task: t('unicode'), done: false, value: 'unicode' },
   ]);
   const router = useRouter();
+  const containerRef = useRef(null);
+
+  const handleScroll = useCallback(() => {
+    const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+    if (scrollTop + clientHeight >= scrollHeight && fontList.length !== data.length) {
+      const remainingData = data.slice(fontList.length, fontList.length + 8);
+      setFontList((prevFontList) => [...prevFontList, ...remainingData]);
+    }
+  }, [data, fontList.length]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [handleScroll]);
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setValue(event.target.value);
@@ -50,7 +66,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    if (fontList.length === 0) setFontList(data);
+    if (fontList.length === 0) setFontList(data.slice(0, 8));
   }, [data]);
 
   const onClickFont = useCallback((name: string, id: number) => {
@@ -61,10 +77,10 @@ export default function Home() {
     setFontList(filterSearch(event, data));
   };
 
-  if (data.length === 0) return <Loading />;
+  if (fontList.length === 0) return <Loading />;
 
   return (
-    <main>
+    <main ref={containerRef}>
       <FramerMotionWrapper>
         <div className="flex items-center justify-center">
           <SearchBox

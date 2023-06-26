@@ -97,7 +97,7 @@ function Page() {
       <div className="flex-1 mt-3">
         {fontStyles &&
           fontStyles?.map((fontData, index) => (
-            <FontListDetailCard key={index} font={fontData} size={fontSize.value} fontText={value} />
+            <FontListDetailCard key={index} font={fontData} size={fontSize.value} fontText={value} id={index} />
           ))}
       </div>
       <TextGenerateModal open={open} setOpen={setOpen} />
