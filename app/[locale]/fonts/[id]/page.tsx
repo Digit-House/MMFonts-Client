@@ -28,7 +28,6 @@ function Page() {
   const t = useTranslations('Index');
 
   const { data } = useCSVConvert('/fonts/data/font.csv') as { data: FontType[] };
-  console.log(data);
 
   useEffect(() => {
     const index = params.id.split('-').pop();

@@ -13,6 +13,14 @@ type DetailNavMenuType = {
 const DetailNavMenu = ({ fontName, fileName, createdBy }: DetailNavMenuType) => {
   const [isHide, setIsHide] = useState<boolean>(true);
   const t = useTranslations('Index');
+  const [showAlert, setShowAlert] = useState<boolean>(false);
+
+  const handleButtonClick = () => {
+    setShowAlert(true);
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 3000);
+  };
 
   const showModal = () => {
     setIsHide((prev) => !prev);
@@ -48,7 +56,10 @@ const DetailNavMenu = ({ fontName, fileName, createdBy }: DetailNavMenuType) => 
         link.click();
       });
     } catch (error) {
-      alert('Not availabe');
+      setShowAlert(true);
+      setTimeout(() => {
+        setShowAlert(false);
+      }, 3000);
     }
   };
 
@@ -61,18 +72,25 @@ const DetailNavMenu = ({ fontName, fileName, createdBy }: DetailNavMenuType) => 
         </div>
         <div className="flex flex-row items-center">
           <p className="hidden mr-5 md:flex">{t('terms-and-conditions')}</p>
-          <p
-            onClick={() => {
-              handleDownload(fileName);
-            }}
-            className="cursor-pointer p-4 px-3 py-2 mr-4 border-2 border-black rounded-sm bg-secondary text-darkblue"
-          >
-            {t('download')}
-          </p>
+          <div className="relative">
+            <p
+              onClick={() => {
+                handleDownload(fileName);
+              }}
+              className="p-4 px-3 py-2 mr-4 border-2 border-black rounded-sm cursor-pointer bg-secondary text-darkblue"
+            >
+              {t('download')}
+            </p>
+            {showAlert && (
+              <div className="absolute p-2 leading-normal border-2 rounded right-3 bg-primary dark:bg-lightblue min-w-max">
+                <p>Download ရယူရန်မရသေးပါ။ အဆင်မပြေမှုအတွက်တောင်းပန်ပါတယ်။</p>
+              </div>
+            )}
+          </div>
           <div className="relative">
             <EllipsisHorizontalIcon className="w-10 h-10 text-secondary" onClick={showModal} />
             {!isHide && (
-              <div className="absolute p-2 leading-normal border-2 rounded right-3 bg-primary dark:bg-lightblue min-w-max">
+              <div className="absolute p-2 leading-normal border-2 rounded bg-primary dark:bg-lightblue min-w-max">
                 <div className="flex flex-row justify-between mb-2 ">
                   <p>အစီရင်ခံရန်</p>
                   <XMarkIcon className="w-6" onClick={showModal} />
