@@ -20,8 +20,6 @@ const options = [
 type RadioSelectBarType = {
   fontSize: SelectOptionType;
   setFontSize: React.Dispatch<React.SetStateAction<SelectOptionType>>;
-  isHovered?: boolean;
-  customClassName?: string | undefined;
   handleSliderChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   isWidthFull?: boolean;
 };
@@ -30,16 +28,13 @@ export default function RadioSelectBar({
   fontSize,
   setFontSize,
   handleSliderChange,
-  isHovered,
-  customClassName,
   isWidthFull = false,
 }: RadioSelectBarType) {
   return (
     <div
       className={classNames(
-        isHovered && isHovered ? 'w-1/2' : `${isWidthFull ? 'w-full' : 'w-full md:w-2/3'}`,
-        customClassName,
-        'flex flex-row items-center  p-1 rounded-full shadow-md bg-secondary radio'
+        isWidthFull ? 'w-1/2' : 'w-full md:w-2/3',
+        'flex flex-row items-center  p-1 rounded-full shadow-md bg-secondary radio h-12'
       )}
     >
       <CustomSelectBox

@@ -9,9 +9,10 @@ type FontListType = {
   id: number;
   font: FontType;
   fontSize: number;
+  offset: number;
 };
 
-const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) => {
+const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontListType) => {
   const fontStyle = {
     fontFamily: `${font.fileName} , 'font-acre', sans-serif`,
     src: `url(/fonts/${font.fileName}/${font.fontStyle}.ttf)`,
@@ -32,7 +33,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) =
     }
   };
   const PAGE_COUNT = 8;
-  const recalculatedDelay = id >= PAGE_COUNT * 2 ? (id - PAGE_COUNT) / 10 : id / 10;
+  const recalculatedDelay = id >= PAGE_COUNT * 2 ? (id - PAGE_COUNT * (offset - 1)) / 15 : id / 15;
 
   return (
     <motion.div
@@ -57,9 +58,9 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) =
         }}
         className="flex flex-row justify-between"
       >
-        <div className="">
+        <div className="max-w-[80%]">
           <motion.div className="text-base font-medium">{font.name}</motion.div>
-          <div className="mt-2 text-sm">{font.fontStyle}</div>
+          <div className="mt-2 text-sm">{font.fontStyle.replace(/ /g, ', ')}</div>
         </div>
         <div className="inline-flex items-center justify-center w-10 h-10 rounded-full md:w-14 md:h-14 bg-secondary">
           <p className="text-[0.6rem] md:text-sm text-darkblue ">{fontSupportType()}</p>

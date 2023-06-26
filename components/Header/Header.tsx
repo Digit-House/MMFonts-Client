@@ -38,7 +38,7 @@ export default function Header() {
               onChange={switchTheme}
               size={24}
               sunColor="#E4D1AC"
-              moonColor="#add"
+              moonColor="#365880"
             />
           </div>
         </div>

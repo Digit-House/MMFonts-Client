@@ -58,7 +58,6 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
           </motion.div>
         ))}
         <LangSelectBox />
-
         <DarkModeSwitch
           checked={isLightTheme}
           onChange={switchTheme}
