@@ -75,7 +75,7 @@ function Page() {
                 onChange={handleChange}
                 rows={5}
                 cols={100}
-                placeholder="လက်တည့်စမ်းရန်"
+                placeholder={t('type-something')}
                 className="peer h-full min-h-[100px] w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
               />
             </div>
