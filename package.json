@@ -22,6 +22,7 @@
     "eslint-config-next": "13.4.4",
     "framer-motion": "^10.12.16",
     "fs": "^0.0.1-security",
+    "jszip": "^3.10.1",
     "next": "13.4.4",
     "next-intl": "3.0.0-beta.3",
     "next-themes": "^0.2.1",

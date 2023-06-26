@@ -17,7 +17,12 @@ const nextConfig = {
       ],
     });
 
-    return config;
+    return {
+      ...config,
+    };
+  },
+  experimental: {
+    serverActions: true,
   },
 };
 
