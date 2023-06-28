@@ -34,7 +34,7 @@ const LangSelectBox = () => {
             <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3  text-left  shadow-sm ring-1 ring-inset ring-secondary focus:outline-none focus:ring-2 focus:ring-secondary sm:text-sm sm:leading-6">
               <span className="flex items-center ">
                 <img src={initialValue.avatar} alt="national flag" className="flex-shrink-0 w-5 h-5 rounded-full " />
-                <span className="block w-10 mx-3 truncate text-darkblue">{initialValue.name}</span>
+                <span className="block w-10 h-5 mx-3 truncate text-darkblue">{initialValue.name}</span>
               </span>
             </Listbox.Button>
 
@@ -57,7 +57,7 @@ const LangSelectBox = () => {
                     {({ selected }) => (
                       <Link href={href} locale={lang.locale} className="flex items-center py-2 pl-3">
                         <img src={lang.avatar} alt="" className="flex-shrink-0 w-5 h-5 rounded-full" />
-                        <span className={classNames(selected ? 'font-bold' : 'font-normal', 'ml-3 block truncate')}>
+                        <span className={classNames(selected ? 'font-bold' : 'font-normal', 'ml-3 h-5')}>
                           {lang.name}
                         </span>
                       </Link>

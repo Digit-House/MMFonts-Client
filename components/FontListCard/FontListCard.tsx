@@ -18,6 +18,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
     src: `url(/fonts/${font.fileName}/${font.fontStyle}.ttf)`,
     fontSize: `${fontSize}px`,
     lineHeight: `${fontSize + 20}px`,
+    margin: '10px 0',
   };
   const pathname: any = usePathname();
   const isEnglish = pathname.includes('en');
@@ -44,8 +45,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
         ease: [0.25, 0.25, 0, 1],
         delay: recalculatedDelay,
       }}
-      className="w-full p-2 overflow-hidden border-2 rounded cursor-pointer select-none dark:hover:bg-softblue hover:bg-softgold"
-      style={{ boxShadow: ' 2px 2px 0px' }}
+      className="w-full p-5 overflow-hidden border-2 rounded shadow-md  dark:text-[white] cursor-pointer select-none dark:hover:bg-softblue hover:bg-softgold"
       onClick={() => onClick(id)}
     >
       <motion.div
@@ -59,8 +59,8 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
         className="flex flex-row justify-between"
       >
         <div className="max-w-[80%]">
-          <motion.div className="text-base font-medium">{font.name}</motion.div>
-          <div className="mt-2 text-sm">{font.fontStyle.replace(/ /g, ', ')}</div>
+          <motion.div className="text-lg font-bold ">{font.name}</motion.div>
+          <div className="mt-2 text-sm text-[#A8AAAD] dark:text-[#949BA0]">{font.fontStyle.replace(/ /g, ', ')}</div>
         </div>
         <div className="inline-flex items-center justify-center w-10 h-10 rounded-full md:w-14 md:h-14 bg-secondary">
           <p className="text-[0.6rem] md:text-sm text-darkblue ">{fontSupportType()}</p>
@@ -79,7 +79,6 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
         >
           {typeText || 'ကောင်းသော နံနက်ခင်း ပါ'}
         </motion.p>
-        <div className="h-10"></div>
       </div>
     </motion.div>
   );

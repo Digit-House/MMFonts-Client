@@ -95,8 +95,10 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-row items-center mt-10">
-          <p className="flex-1 text-xl font-bold">{`${t('fonts')}  ${data.length}`}</p>
-          <div className="hidden gap-2 sm:flex">
+          <p className="flex-1 text-md  mt-1  text-[#A8AAAD] dark:text-[#949BA0]">{`  ${data.length} ${t('fonts')} of ${
+            data.length
+          } `}</p>
+          <div className="items-center hidden gap-2 sm:flex">
             <div className="relative w-8 h-8" onClick={() => setIsToggled(true)}>
               <Image alt="rows" src="/icons8-columns.png" fill />
             </div>
