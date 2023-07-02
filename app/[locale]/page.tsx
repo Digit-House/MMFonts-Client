@@ -1,5 +1,6 @@
 'use client';
 
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
@@ -21,7 +22,7 @@ export default function Home() {
   });
   const [isToggled, setIsToggled] = useState<boolean>(false);
   const [offset, setOffset] = useState<number>(1);
-  const searchBoxRef = useRef<HTMLDivElement>(null);
+  const searchBoxRef = useRef(null);
   const [isSearchBoxScrolled, setIsSearchBoxScrolled] = useState<boolean>(false);
   const [checked, setChecked] = useState<{ task: string; done: boolean; value: string }[]>([
     { task: t('zaw-gyi'), done: false, value: 'zawgyi' },
@@ -40,9 +41,17 @@ export default function Home() {
 
   const handleSearchBoxScroll = useCallback(() => {
     const searchBoxElement = searchBoxRef.current;
-    if (searchBoxElement && searchBoxElement.getBoundingClientRect().top <= 0) {
+    const searchBoxTopOffset =
+      searchBoxElement.getBoundingClientRect().height + searchBoxElement.getBoundingClientRect().top;
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    if (searchBoxElement.getBoundingClientRect().top <= 0) {
       setIsSearchBoxScrolled(true);
     } else setIsSearchBoxScrolled(false);
+
+    /* if (scrollTop > searchBoxTopOffset) {
+      setIsSearchBoxScrolled(true);
+    } else setIsSearchBoxScrolled(false); */
   }, []);
 
   useEffect(() => {
@@ -95,12 +104,15 @@ export default function Home() {
     setFontList(filterSearch(event, data));
   };
 
+  const { scrollY } = useScroll();
+  const scrollHeight = useTransform(scrollY, [140, 142], ['251px', '66px']);
+
   if (data.length === 0) return <Loading />;
 
   return (
     <main className="flex-grow h-full mt-5">
       <FramerMotionWrapper>
-        <div
+        <motion.div
           className={classNames(isSearchBoxScrolled && 'sticky top-0 z-10', 'w-full bg-primary dark:bg-lightblue ')}
           ref={searchBoxRef}
         >
@@ -114,7 +126,7 @@ export default function Home() {
             handleCheckBoxChange={handleCheckBoxChange}
             checked={checked}
           />
-        </div>
+        </motion.div>
         <div className="lg:w-[996px] max-w-[996px] sm:mx-10 md:mx-24 lg:mx-auto lg:mt-10 mx-5">
           <div className="flex flex-row items-center mt-10 ">
             <p className="flex-1 text-xl font-bold">{`${t('fonts')}  ${data.length}`}</p>
