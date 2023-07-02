@@ -81,7 +81,7 @@ function Page() {
             <div className="flex flex-col py-2 md:justify-between md:items-center md:flex-row">
               <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
               <p
-                className="flex items-center justify-center p-3 mt-5 border-2 rounded-sm cursor-pointer md:mt-0 border-sm border-darkblue bg-secondary text-darkblue"
+                className="flex items-center justify-center p-3 mt-5 border-2 rounded-md cursor-pointer md:mt-0 border-sm border-darkblue bg-secondary text-darkblue"
                 onClick={() => setOpen(true)}
               >
                 {t('generate')}

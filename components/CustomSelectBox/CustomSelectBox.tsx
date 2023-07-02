@@ -11,6 +11,7 @@ type CustomSelectBoxType = {
   isRounded?: boolean;
   customClassName?: string;
   unit?: string;
+  shadow?: boolean;
 };
 
 const CustomSelectBox = ({
@@ -20,6 +21,7 @@ const CustomSelectBox = ({
   unit,
   customClassName,
   isRounded = false,
+  shadow = false,
 }: CustomSelectBoxType) => {
   return (
     <Listbox value={initialValue} onChange={setInitialValue}>
@@ -27,8 +29,10 @@ const CustomSelectBox = ({
         <div className={`relative  items-center ${customClassName ? customClassName : 'flex'}`}>
           <Listbox.Button
             className={`hover:bg-[#fcd25d] text-darkblue relative w-full cursor-default  ${
-              isRounded ? 'rounded-full' : 'rounded-sm'
-            } bg-secondary py-1.5 pl-3 pr-10 text-left  focus:outline-none sm:text-sm sm:leading-6`}
+              isRounded ? 'rounded-full' : 'rounded-md'
+            } bg-secondary py-1.5 pl-3 pr-10 text-left  focus:outline-none sm:text-sm sm:leading-6 ${
+              shadow && 'shadow'
+            }`}
           >
             <span className={`block ${!unit ? 'w-16' : 'w-auto'} py-1 text-base font-medium truncate`}>
               {initialValue.label} {unit}

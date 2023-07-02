@@ -77,7 +77,7 @@ const DetailNavMenu = ({ fontName, fileName, createdBy }: DetailNavMenuType) => 
               onClick={() => {
                 handleDownload(fileName);
               }}
-              className="p-4 px-3 py-2 mr-4 border-2 border-black rounded-sm cursor-pointer bg-secondary text-darkblue"
+              className="p-4 px-3 py-2 mr-4 border-2 border-black rounded-md cursor-pointer bg-secondary text-darkblue"
             >
               {t('download')}
             </p>

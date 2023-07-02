@@ -70,7 +70,7 @@ const Premium = () => {
           <p className="mb-1 font-medium">{currentFont?.name}</p>
           <p className="font-medium">{currentFont?.createdBy}</p>
         </div>
-        <div className="flex items-center justify-center px-5 py-2 border-2 border-black rounded-sm shadow cursor-pointer bg-secondary text-darkblue">
+        <div className="flex items-center justify-center px-5 py-2 border-2 border-black rounded-md shadow cursor-pointer bg-secondary text-darkblue">
           <p>ဝယ်ယူရန်</p>
         </div>
       </div>
