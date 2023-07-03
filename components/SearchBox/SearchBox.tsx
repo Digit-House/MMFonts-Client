@@ -1,5 +1,6 @@
 'use client';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import React from 'react';
 import { classNames } from '@core/classnames';
@@ -37,50 +38,7 @@ const SearchBox = ({
 
   return (
     <>
-      <div
-        className={classNames(
-          isSearchBoxScrolled ? '' : 'hidden',
-          'w-full  border-b-2 shadow-lg dark:bg-lightblue border-b-secondary '
-        )}
-      >
-        <div className="lg:w-[996px] max-w-[996px]  sm:mx-10 md:mx-24 lg:mx-auto lg:mt-10 mx-5 flex flex-row items-center gap-2 py-2 flex-wrap md:flex-nowrap">
-          <input
-            value={value}
-            onChange={handleChange}
-            placeholder={t('type-something')}
-            className="peer flex-[1_0_70%] md:flex-none h-auto order-first md:w-[30%] grow resize-none border-2 shadow rounded-md border-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline focus:placeholder:text-[#a11d33] outline-0 "
-          />
-          <div className="relative grow md:w-[30%] md:grow-0 w-[40%]">
-            <span className="absolute inset-y-0 left-0 flex items-center pl-1">
-              <MagnifyingGlassIcon className="w-10 h-10 p-2 text-darkblue" />
-            </span>
-            <input
-              onChange={filterOnChange}
-              className="w-full h-12 pl-12 py-2 pr-4 border border-none rounded-md shadow text-darkblue bg-secondary focus:outline-none focus:placeholder:text-[#a11d33] "
-              placeholder={t('search')}
-              type="text"
-            />
-          </div>
-          <RadioSelectBar
-            fontSize={fontSize}
-            setFontSize={setFontSize}
-            handleSliderChange={handleSliderChange}
-            customClassName="grow rounded-md md:w-[30%] md:grow-0 w-[40%]"
-            selectBoxRounded={false}
-          />
-          <div className="flex flex-col -order-2 md:order-1">
-            {checked.map(({ task, done }, i) => (
-              <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
-            ))}
-          </div>
-        </div>
-      </div>
-      <div
-        className={classNames(
-          isSearchBoxScrolled ? 'hidden' : 'block',
-          'lg:w-[996px] max-w-[996px] sm:mx-10 md:mx-24 lg:mx-auto lg:mt-10 mx-5 '
-        )}
-      >
+      <div className={classNames('lg:w-[996px] max-w-[996px] sm:mx-10 md:mx-24 lg:mx-auto lg:mt-10 mx-5 ')}>
         <div className="p-4 border-2 rounded-md border-darkblue dark:border-white mx-14 md:mx-20 lg:mx-26 xl:mx-auto max-w-[794px]">
           <textarea
             name="postContent"
@@ -117,6 +75,48 @@ const SearchBox = ({
           </div>
         </div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={isSearchBoxScrolled ? { opacity: 1, y: 0 } : { opacity: 0 }}
+        transition={{ duration: isSearchBoxScrolled ? 0.3 : 0 }}
+        className={classNames(
+          isSearchBoxScrolled ? 'fixed top-0 z-10 ' : 'h-0',
+          'w-full  border-b-2 shadow-lg dark:bg-lightblue border-b-secondary bg-primary'
+        )}
+      >
+        <div className="lg:w-[996px] max-w-[996px]  sm:mx-10 md:mx-24 lg:mx-auto  mx-5 flex flex-row items-center gap-2 py-2 flex-wrap md:flex-nowrap">
+          <input
+            value={value}
+            onChange={handleChange}
+            placeholder={t('type-something')}
+            className="peer flex-[1_0_70%] md:flex-none h-auto order-first md:w-[30%] grow resize-none border-2 shadow rounded-md border-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline focus:placeholder:text-[#a11d33] outline-0 "
+          />
+          <div className="relative grow md:w-[30%] md:grow-0 w-[40%]">
+            <span className="absolute inset-y-0 left-0 flex items-center pl-1">
+              <MagnifyingGlassIcon className="w-10 h-10 p-2 text-darkblue" />
+            </span>
+            <input
+              onChange={filterOnChange}
+              className="w-full h-12 pl-12 py-2 pr-4 border border-none rounded-md shadow text-darkblue bg-secondary focus:outline-none focus:placeholder:text-[#a11d33] "
+              placeholder={t('search')}
+              type="text"
+            />
+          </div>
+          <RadioSelectBar
+            fontSize={fontSize}
+            setFontSize={setFontSize}
+            handleSliderChange={handleSliderChange}
+            customClassName="grow rounded-md md:w-[30%] md:grow-0 w-[40%]"
+            selectBoxRounded={false}
+            isSticky={true}
+          />
+          <div className="flex flex-col -order-2 md:order-1">
+            {checked.map(({ task, done }, i) => (
+              <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
+            ))}
+          </div>
+        </div>
+      </motion.div>
     </>
   );
 };

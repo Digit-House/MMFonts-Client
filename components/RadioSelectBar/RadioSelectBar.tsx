@@ -23,6 +23,7 @@ type RadioSelectBarType = {
   handleSliderChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   selectBoxRounded?: boolean;
   customClassName?: string;
+  isSticky?: boolean;
 };
 
 export default function RadioSelectBar({
@@ -31,6 +32,7 @@ export default function RadioSelectBar({
   handleSliderChange,
   customClassName,
   selectBoxRounded = true,
+  isSticky = false,
 }: RadioSelectBarType) {
   return (
     <div
@@ -45,6 +47,8 @@ export default function RadioSelectBar({
         setInitialValue={setFontSize}
         unit="px"
         isRounded={selectBoxRounded}
+        customClassName={isSticky ? 'flex-1' : 'flex'}
+        isSticky={isSticky}
       />
       <input
         type="range"

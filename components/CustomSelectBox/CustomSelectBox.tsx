@@ -12,6 +12,7 @@ type CustomSelectBoxType = {
   customClassName?: string;
   unit?: string;
   shadow?: boolean;
+  isSticky?: boolean;
 };
 
 const CustomSelectBox = ({
@@ -22,6 +23,7 @@ const CustomSelectBox = ({
   customClassName,
   isRounded = false,
   shadow = false,
+  isSticky,
 }: CustomSelectBoxType) => {
   return (
     <Listbox value={initialValue} onChange={setInitialValue}>
@@ -48,7 +50,11 @@ const CustomSelectBox = ({
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Listbox.Options className="absolute z-10 w-full py-1 mt-1 overflow-auto text-base border-2 rounded-md shadow-lg max-h-60 border-secondary focus:outline-none sm:text-sm dark:bg-lightblue bg-primary ">
+            <Listbox.Options
+              className={`absolute z-10 w-full py-1 mt-1 overflow-auto text-base border-2 rounded-md shadow-lg ${
+                isSticky ? 'max-h-28' : 'max-h-60'
+              } border-secondary focus:outline-none sm:text-sm dark:bg-lightblue bg-primary`}
+            >
               {options.map((option) => (
                 <Listbox.Option
                   key={option.label}
