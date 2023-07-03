@@ -78,7 +78,7 @@ export default function Home() {
     setFontList(filterSearch(event, data));
   };
 
-  if (fontList.length === 0) return <Loading />;
+  if (data.length === 0) return <Loading />;
 
   return (
     <main>
@@ -120,6 +120,11 @@ export default function Home() {
             />
           ))}
         </div>
+        {fontList.length == 0 && (
+          <div className="flex items-center justify-center h-[100px] ">
+            <p className="text-2xl font-semibold tracking-widest">{t('not-found-fontlist')}</p>
+          </div>
+        )}
       </FramerMotionWrapper>
     </main>
   );
