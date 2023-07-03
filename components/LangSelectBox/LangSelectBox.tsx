@@ -21,9 +21,9 @@ const languages = [
 ];
 
 const LangSelectBox = () => {
-  const pathname: any = usePathname();
-  const [initialValue, setInitialValue] = useState(pathname.includes('en') ? languages[1] : languages[0]);
-  const href: any = pathname.includes('en') ? pathname.replace('en', '') : pathname;
+  const pathname = usePathname();
+  const [initialValue, setInitialValue] = useState(pathname && pathname.includes('en') ? languages[1] : languages[0]);
+  const href = pathname && pathname.includes('en') ? pathname.replace('en', '') : pathname;
 
   return (
     <Listbox value={initialValue} onChange={setInitialValue}>

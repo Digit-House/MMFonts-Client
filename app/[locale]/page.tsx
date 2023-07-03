@@ -2,11 +2,12 @@
 
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
 import { FontListCard, FramerMotionWrapper, Loading, SearchBox } from '@components/index';
 import filterSearch from '@core/filterSearch';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
+import NumberConverter from '@core/NumberConverter';
 import useCSVConvert from '@hooks/useCSVConvert';
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
     { task: t('unicode'), done: false, value: 'unicode' },
   ]);
   const router = useRouter();
+  const pathname = usePathname();
 
   const handleScroll = useCallback(() => {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
@@ -95,9 +97,11 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-row items-center mt-10">
-          <p className="flex-1 mt-1 text-sm font-medium text-md text-secondaryText dark:text-darkSecondaryText">{`  ${
-            data.length
-          } ${t('fonts')} of ${data.length} `}</p>
+          <p className="flex-1 mt-1 text-sm font-medium text-md text-secondaryText dark:text-darkSecondaryText">
+            {pathname && pathname.includes('en')
+              ? ` ${fontList.length} of ${data.length} fonts`
+              : `ဖောင့် ${NumberConverter(data.length)} မှ ${NumberConverter(fontList.length)}`}
+          </p>
           <div className="items-center hidden gap-2 cursor-pointer sm:flex">
             <div className="relative w-8 h-8" onClick={() => setIsToggled(true)}>
               <Image alt="rows" src="/icons8-columns.png" fill />
