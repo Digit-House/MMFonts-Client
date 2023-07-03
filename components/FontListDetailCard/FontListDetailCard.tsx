@@ -29,8 +29,7 @@ const FontListDetailCard = ({ font, size, fontText, id }: FontListDetailCardType
         ease: [0.25, 0.25, 0, 1],
         delay: recalculatedDelay,
       }}
-      className="w-full p-2 overflow-hidden border-2 rounded cursor-pointer select-none dark:hover:bg-softblue hover:bg-softgold"
-      style={{ boxShadow: ' 2px 2px 0px' }}
+      className="w-full p-2 overflow-hidden border-2 rounded shadow-md cursor-pointer select-none dark:hover:bg-softblue hover:bg-softgold"
     >
       <motion.div
         initial={{ opacity: 0 }}

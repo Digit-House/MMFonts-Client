@@ -28,7 +28,7 @@ const CustomSelectBox = ({
           <Listbox.Button
             className={`hover:bg-[#fcd25d] text-darkblue relative w-full cursor-default  ${
               isRounded ? 'rounded-full' : 'rounded-sm'
-            } bg-secondary py-1.5 pl-3 pr-10 text-left  focus:outline-none sm:text-sm sm:leading-6`}
+            } bg-secondary py-1.5 pl-3 pr-10 text-left  focus:outline-none sm:text-sm sm:leading-6 cursor-pointer`}
           >
             <span className={`block ${!unit ? 'w-16' : 'w-auto'} py-1 text-base font-medium truncate`}>
               {initialValue.label} {unit}

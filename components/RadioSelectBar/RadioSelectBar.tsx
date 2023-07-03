@@ -50,7 +50,7 @@ export default function RadioSelectBar({
         max="96"
         value={fontSize.value}
         onChange={handleSliderChange}
-        className="w-full h-2 ml-2 mr-4 rounded-full outline-none appearance-none bg-darkblue accent-lightblue"
+        className="w-full h-2 ml-2 mr-4 rounded-full outline-none appearance-none cursor-pointer bg-darkblue accent-lightblue"
       />
     </div>
   );

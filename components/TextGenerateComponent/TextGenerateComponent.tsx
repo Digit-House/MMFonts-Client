@@ -132,7 +132,7 @@ const TextGenerateComponent = () => {
         </div>
       </div>
       <p
-        className="w-auto py-6 mb-5 text-base font-semibold leading-loose tracking-wide text-left break-words selection:bg-[#b7b7a4]"
+        className="w-auto py-6 mb-5 text-base font-semibold leading-loose tracking-wide text-left break-words "
         ref={paragraphRef}
       >
         {generatedText.length > 0

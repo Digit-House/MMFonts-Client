@@ -45,7 +45,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
         ease: [0.25, 0.25, 0, 1],
         delay: recalculatedDelay,
       }}
-      className="w-full p-5 overflow-hidden border-2 rounded shadow-md  dark:text-[white] cursor-pointer select-none dark:hover:bg-softblue hover:bg-softgold"
+      className="w-full p-5 overflow-hidden border-2 rounded shadow-md  dark:text-[white] cursor-pointer select-none dark:hover:bg-softblue hover:bg-softgold hover:shadow-xl"
       onClick={() => onClick(id)}
     >
       <motion.div
@@ -59,11 +59,13 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
         className="flex flex-row justify-between"
       >
         <div className="max-w-[80%]">
-          <motion.div className="text-lg font-bold ">{font.name}</motion.div>
-          <div className="mt-2 text-sm text-[#A8AAAD] dark:text-[#949BA0]">{font.fontStyle.replace(/ /g, ', ')}</div>
+          <motion.div className="text-lg font-bold tracking-wider">{font.name}</motion.div>
+          <div className="mt-2 text-sm tracking-wide text-secondaryText dark:text-darkSecondaryText">
+            {font.fontStyle.replace(/ /g, ', ')}
+          </div>
         </div>
-        <div className="inline-flex items-center justify-center w-10 h-10 rounded-full md:w-14 md:h-14 bg-secondary">
-          <p className="text-[0.6rem] md:text-sm text-darkblue ">{fontSupportType()}</p>
+        <div className="inline-flex items-center justify-center w-10 h-10 rounded-full shadow-2xl md:w-14 md:h-14 bg-secondary">
+          <p className="text-[0.6rem] md:text-sm text-darkblue font-semibold">{fontSupportType()}</p>
         </div>
       </motion.div>
       <div className="pt-2 text-4xl break-words">
