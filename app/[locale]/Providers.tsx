@@ -19,7 +19,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
         <Header />
         <AnimatePresence mode="wait">
           {pathname && pathname?.length > 3 ? (
-            <div className="flex-grow mx-5 mt-5 sm:mx-10 md:mx-24  h-full lg:mx-auto lg:mt-10 lg:w-[996px] max-w-[996px]">
+            <div className="flex-grow mx-5 mt-5 sm:mx-10 md:mx-24  h-full lg:mx-auto lg:mt-10 lg:w-[996px] max-w-[996px] selection:bg-[#b7b7a4]">
               {children}
             </div>
           ) : (

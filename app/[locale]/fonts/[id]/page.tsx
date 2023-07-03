@@ -91,7 +91,9 @@ function Page() {
         </div>
       </div>
       <div className="flex flex-row items-center mt-10">
-        <p className="flex-1 text-xl font-bold">{t('fonts')}</p>
+        <p className="flex-1 text-sm font-medium text-md text-secondaryText dark:text-darkSecondaryText">
+          {t('fonts')}
+        </p>
       </div>
       <div className="grid flex-1 gap-4 mt-3">
         {fontStyles &&
