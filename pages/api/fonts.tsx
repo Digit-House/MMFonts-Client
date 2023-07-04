@@ -3,11 +3,9 @@ import path from 'path';
 
 export default function handler(req: any, res: any) {
   const param = req.query;
-  console.log(param, 'param');
   const fontDir = path.join(process.cwd(), 'public', 'fonts', param.name);
 
   fs.readdir(fontDir, (err, files) => {
-    console.log('darae');
     if (err) {
       res.status(500).json({ error: 'Failed to read font directory' });
       return;

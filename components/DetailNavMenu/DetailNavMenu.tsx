@@ -33,7 +33,6 @@ const DetailNavMenu = ({ fontName, fileName, createdBy }: DetailNavMenuType) => 
       const data = await response.json();
       const zip = new JSZip();
       const folder: any = zip.folder('fonts');
-      console.log(data);
 
       // Define the font files to include in the zip
       const fontFiles = data;

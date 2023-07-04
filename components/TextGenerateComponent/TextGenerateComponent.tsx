@@ -62,7 +62,6 @@ const TextGenerateComponent = () => {
 
   const inputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (inputRef.current && inputRef.current.value.length > 0) {
-      console.log('typing');
       setOpen(true);
     } else setOpen(false);
 
