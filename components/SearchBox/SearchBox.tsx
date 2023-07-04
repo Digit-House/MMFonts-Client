@@ -9,6 +9,7 @@ import { CheckBox, RadioSelectBar } from '..';
 
 type SearchBoxType = {
   value: string;
+  searchValue: string;
   filterOnChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   handleChange: (event: React.ChangeEvent<HTMLTextAreaElement> | React.ChangeEvent<HTMLInputElement>) => void;
   handleCheckBoxChange: (d: boolean, i: number) => void;
@@ -20,6 +21,7 @@ type SearchBoxType = {
 
 const SearchBox = ({
   value,
+  searchValue,
   handleChange,
   handleCheckBoxChange,
   checked,
@@ -55,6 +57,7 @@ const SearchBox = ({
                 <MagnifyingGlassIcon className="w-10 h-10 p-2 text-darkblue" />
               </span>
               <input
+                value={searchValue}
                 onChange={filterOnChange}
                 className="w-full h-12 pl-12 py-2 pr-4 border border-none rounded-full shadow text-darkblue bg-secondary focus:outline-none focus:placeholder:text-[#a11d33] "
                 placeholder={t('search')}
@@ -96,6 +99,7 @@ const SearchBox = ({
               <MagnifyingGlassIcon className="w-10 h-10 p-2 text-darkblue" />
             </span>
             <input
+              value={searchValue}
               onChange={filterOnChange}
               className="w-full h-12 pl-12 py-2 pr-4 border border-none rounded-md shadow text-darkblue bg-secondary focus:outline-none focus:placeholder:text-[#a11d33] "
               placeholder={t('search')}

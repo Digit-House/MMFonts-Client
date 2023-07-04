@@ -14,7 +14,9 @@ export default function Home() {
   const t = useTranslations('Index');
   const { data } = useCSVConvert('/fonts/data/font.csv');
   const [fontList, setFontList] = useState<FontType[]>([]);
+  const [copyFontList, setCopyFontList] = useState<FontType[]>([]);
   const [value, setValue] = useState<string>('');
+  const [searchValue, setSearchValue] = useState<string>('');
   const [fontSize, setFontSize] = useState<SelectOptionType>({
     label: '24',
     value: '24',
@@ -29,15 +31,17 @@ export default function Home() {
   ]);
   const router = useRouter();
   const pathname = usePathname();
+  const prevFontLists = useRef<FontType[]>([]);
 
   const handleScroll = useCallback(() => {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
-    if (scrollTop + clientHeight > scrollHeight - 50 && fontList.length !== data.length) {
+
+    if (scrollTop + clientHeight > scrollHeight - 50 && fontList.length !== copyFontList.length) {
       setOffset((prev) => prev + 1);
-      const remainingData = data.slice(fontList.length, fontList.length + 8);
-      setFontList((prevFontList) => [...prevFontList, ...remainingData]);
+      const remainingData = fontList.slice(copyFontList.length, copyFontList.length + 8);
+      setCopyFontList((prevFontList) => [...prevFontList, ...remainingData]);
     }
-  }, [data, fontList.length]);
+  }, [copyFontList, fontList]);
 
   const handleSearchBoxScroll = useCallback(() => {
     const searchBoxElement = searchBoxRef.current;
@@ -73,39 +77,46 @@ export default function Home() {
     setChecked([...checkedClone]);
     const filterData: FontType[] = [];
     const [firstChecked, secondChecked] = checkedClone;
-
     if (!firstChecked.done && secondChecked.done) {
-      filterData.push(...data.filter((font) => font.fontSupportType === secondChecked.value));
+      filterData.push(...fontList.filter((font) => font.fontSupportType === secondChecked.value));
     } else if (firstChecked.done && !secondChecked.done) {
-      filterData.push(...data.filter((font) => font.fontSupportType === firstChecked.value));
+      filterData.push(...fontList.filter((font) => font.fontSupportType === firstChecked.value));
     } else {
-      filterData.push(...data);
+      prevFontLists.current.length > 0 ? filterData.push(...prevFontLists.current) : filterData.push(...data);
     }
     setFontList(filterData);
   };
 
   useEffect(() => {
-    if (fontList.length === 0) setFontList(data.slice(0, 8));
+    if (fontList.length === 0) setFontList(data);
+    if (copyFontList.length === 0) setCopyFontList(data.slice(0, 8));
   }, [data]);
 
-  const onClickFont = useCallback((name: string, id: number) => {
+  useEffect(() => {
+    setCopyFontList(fontList.slice(0, 8));
+  }, [fontList]);
+
+  const onClickFont = (name: string, id: number) => {
     router.push(`/fonts/${name.split(' ').join('-')}-${id}`);
-  }, []);
+  };
 
   const inputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchValue(event.target.value);
     setFontList(filterSearch(event, data));
+    prevFontLists.current = filterSearch(event, data);
   };
 
   if (data.length === 0) return <Loading />;
 
   return (
-    <main className="flex-grow h-full mt-5">
+    <main className="flex-grow h-full mt-5 ">
       <FramerMotionWrapper>
         <div className="w-full bg-primary dark:bg-lightblue" ref={searchBoxRef}>
           <SearchBox
             isSearchBoxScrolled={isSearchBoxScrolled}
             filterOnChange={inputOnChange}
             value={value}
+            searchValue={searchValue}
             handleChange={handleChange}
             fontSize={fontSize}
             setFontSize={setFontSize}
@@ -113,41 +124,43 @@ export default function Home() {
             checked={checked}
           />
         </div>
-        <div className="lg:w-[996px] max-w-[996px] sm:mx-10 md:mx-24 lg:mx-auto lg:mt-10 mx-5">
-          <div className="flex flex-row items-center mt-10 ">
-            <p className="flex-1 mt-1 text-sm font-medium text-md text-secondaryText dark:text-darkSecondaryText">
-              {pathname && pathname.includes('en')
-                ? ` ${fontList.length} of ${data.length} fonts`
-                : `ဖောင့် ${NumberConverter(data.length)} မှ ${NumberConverter(fontList.length)}`}
-            </p>
-            <div className="items-center hidden gap-2 cursor-pointer sm:flex">
-              <div className="relative w-8 h-8" onClick={() => setIsToggled(true)}>
-                <Image alt="rows" src="/icons8-columns.png" fill />
-              </div>
-              <div className="relative w-8 h-8" onClick={() => setIsToggled(false)}>
-                <Image alt="columns" src="/icons8-columns.png" fill className="transform rotate-90" />
+        <div className="md:min-h-[1000px] min-h-[800px]">
+          <div className="lg:w-[996px] max-w-[996px] sm:mx-10 md:mx-24 lg:mx-auto lg:mt-10 mx-5 ">
+            <div className="flex flex-row items-center mt-10 ">
+              <p className="flex-1 mt-1 text-sm font-medium text-md text-secondaryText dark:text-darkSecondaryText">
+                {pathname && pathname.includes('en')
+                  ? ` ${fontList.length} of ${data.length} fonts`
+                  : `ဖောင့် ${NumberConverter(data.length)} မှ ${NumberConverter(fontList.length)}`}
+              </p>
+              <div className="items-center hidden gap-2 cursor-pointer sm:flex">
+                <div className="relative w-8 h-8" onClick={() => setIsToggled(true)}>
+                  <Image alt="rows" src="/icons8-columns.png" fill />
+                </div>
+                <div className="relative w-8 h-8" onClick={() => setIsToggled(false)}>
+                  <Image alt="columns" src="/icons8-columns.png" fill className="transform rotate-90" />
+                </div>
               </div>
             </div>
-          </div>
-          <div className={`${isToggled ? 'grid-cols-1' : 'sm:grid-cols-2'}  grid gap-4 mt-3 w-full `}>
-            {fontList.map((font: FontType, i) => (
-              <FontListCard
-                key={i}
-                id={i}
-                onClick={() => onClickFont(font.nameEn, i)}
-                font={font}
-                typeText={value}
-                fontSize={parseInt(fontSize.value)}
-                offset={offset}
-              />
-            ))}
+            {fontList.length == 0 && (
+              <div className="flex items-center justify-center h-[300px]">
+                <p className="text-2xl font-semibold tracking-widest">{t('not-found-fontlist')}</p>
+              </div>
+            )}
+            <div className={`${isToggled ? 'grid-cols-1' : 'sm:grid-cols-2'}  grid gap-4 mt-3 w-full `}>
+              {copyFontList.map((font: FontType, i) => (
+                <FontListCard
+                  key={i}
+                  id={i}
+                  onClick={() => onClickFont(font.nameEn, i)}
+                  font={font}
+                  typeText={value}
+                  fontSize={parseInt(fontSize.value)}
+                  offset={offset}
+                />
+              ))}
+            </div>
           </div>
         </div>
-        {fontList.length == 0 && (
-          <div className="flex items-center justify-center h-[100px] ">
-            <p className="text-2xl font-semibold tracking-widest">{t('not-found-fontlist')}</p>
-          </div>
-        )}
       </FramerMotionWrapper>
     </main>
   );

@@ -15,7 +15,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen ">
         <Header />
         <AnimatePresence mode="wait">
           {pathname && pathname?.length > 3 ? (

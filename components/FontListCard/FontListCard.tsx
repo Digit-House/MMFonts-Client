@@ -65,7 +65,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
           </div>
         </div>
         <div className="inline-flex items-center justify-center w-10 h-10 rounded-full shadow-2xl md:w-14 md:h-14 bg-secondary">
-          <p className="text-[0.6rem] md:text-sm text-darkblue font-semibold">{fontSupportType()}</p>
+          <p className="text-[0.6rem] md:text-xs text-darkblue font-semibold ">{fontSupportType()}</p>
         </div>
       </motion.div>
       <div className="pt-2 text-4xl break-words">
