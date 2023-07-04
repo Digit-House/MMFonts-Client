@@ -41,7 +41,7 @@ const SearchBox = ({
   return (
     <>
       <div className={classNames('lg:w-[996px] max-w-[996px] sm:mx-10 md:mx-24 lg:mx-auto lg:mt-10 mx-5 ')}>
-        <div className="p-4 border-2 rounded-md border-darkblue dark:border-white mx-14 md:mx-20 lg:mx-26 xl:mx-auto max-w-[794px]">
+        <div className="p-4 border-2 rounded-md border-darkblue dark:border-white sm:mx-14 md:mx-20 lg:mx-26 xl:mx-auto max-w-[794px]">
           <textarea
             name="postContent"
             rows={5}
@@ -49,7 +49,7 @@ const SearchBox = ({
             value={value}
             onChange={handleChange}
             placeholder={t('type-something')}
-            className="peer min-h-[150px] md:min-h-[100px] h-auto w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 focus:placeholder:text-[#a11d33]"
+            className="peer min-h-[50px] md:min-h-[100px] h-auto w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 focus:placeholder:text-[#a11d33]"
           />
           <div className="flex flex-row flex-wrap items-stretch flex-1 h-auto gap-2 py-2 md:flex-nowrap">
             <div className="relative flex-[1_0_10%] md:w-[45%] md:flex-none order-first">

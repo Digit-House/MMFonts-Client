@@ -23,7 +23,7 @@ export default function Header() {
       >
         <div className="max-w-[996px] flex items-center w-full  justify-between mx-auto">
           <div className="flex items-center lg:hidden ">
-            <div className="px-5 ">
+            <div className="flex items-center px-5">
               <button
                 type="button"
                 className="-m-2.5 inline-flex items-center justify-center rounded-md  text-gray-700"

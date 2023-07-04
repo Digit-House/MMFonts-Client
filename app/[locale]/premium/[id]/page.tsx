@@ -42,7 +42,6 @@ const Premium = () => {
     (position: number) => {
       const fontData: PremiumFontType = data[position];
       const imgs = fontData?.images.split(' ');
-      console.log('IME ', imgs);
       const updateURLs = imgs?.map((img) => {
         return {
           src: `/images/premium/${fontData.fileName}/${img}`,

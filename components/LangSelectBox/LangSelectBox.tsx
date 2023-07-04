@@ -34,6 +34,7 @@ const LangSelectBox = () => {
               <span className="flex items-center ">
                 <div className="relative w-5 h-5">
                   <Image
+                    sizes="100vw"
                     src={initialValue.avatar}
                     alt="national flag"
                     className="flex-shrink-0 object-fill rounded-full "
@@ -62,7 +63,7 @@ const LangSelectBox = () => {
                     {({ selected }) => (
                       <Link href={href} locale={lang.locale} className="flex items-center py-2 pl-3">
                         <div className="relative w-5 h-5">
-                          <Image src={lang.avatar} alt="" className="flex-shrink-0 rounded-full" fill />
+                          <Image sizes="100vw" src={lang.avatar} alt="" className="flex-shrink-0 rounded-full" fill />
                         </div>
                         <span className={classNames(selected ? 'font-bold' : 'font-normal', 'ml-3 h-5')}>
                           {lang.name}
