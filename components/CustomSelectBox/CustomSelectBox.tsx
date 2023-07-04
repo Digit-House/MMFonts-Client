@@ -11,6 +11,8 @@ type CustomSelectBoxType = {
   isRounded?: boolean;
   customClassName?: string;
   unit?: string;
+  shadow?: boolean;
+  isSticky?: boolean;
 };
 
 const CustomSelectBox = ({
@@ -20,6 +22,8 @@ const CustomSelectBox = ({
   unit,
   customClassName,
   isRounded = false,
+  shadow = false,
+  isSticky,
 }: CustomSelectBoxType) => {
   return (
     <Listbox value={initialValue} onChange={setInitialValue}>
@@ -28,7 +32,9 @@ const CustomSelectBox = ({
           <Listbox.Button
             className={`hover:bg-[#fcd25d] text-darkblue relative w-full cursor-default  ${
               isRounded ? 'rounded-full' : 'rounded-sm'
-            } bg-secondary py-1.5 pl-3 pr-10 text-left  focus:outline-none sm:text-sm sm:leading-6`}
+            } bg-secondary py-1.5 pl-3 pr-10 text-left  focus:outline-none sm:text-sm sm:leading-6 cursor-pointer  ${
+              shadow && 'shadow'
+            }`}
           >
             <span className={`block ${!unit ? 'w-16' : 'w-auto'} py-1 text-base font-medium truncate`}>
               {initialValue.label} {unit}
@@ -44,7 +50,11 @@ const CustomSelectBox = ({
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Listbox.Options className="absolute z-10 w-full py-1 mt-1 overflow-auto text-base border-2 rounded-md shadow-lg max-h-60 border-secondary focus:outline-none sm:text-sm dark:bg-lightblue bg-primary ">
+            <Listbox.Options
+              className={`absolute z-10 w-full py-1 mt-1 overflow-auto text-base border-2 rounded-md shadow-lg ${
+                isSticky ? 'max-h-28' : 'max-h-60'
+              } border-secondary focus:outline-none sm:text-sm dark:bg-lightblue bg-primary`}
+            >
               {options.map((option) => (
                 <Listbox.Option
                   key={option.label}

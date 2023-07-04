@@ -21,19 +21,23 @@ type RadioSelectBarType = {
   fontSize: SelectOptionType;
   setFontSize: React.Dispatch<React.SetStateAction<SelectOptionType>>;
   handleSliderChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  isWidthFull?: boolean;
+  selectBoxRounded?: boolean;
+  customClassName?: string;
+  isSticky?: boolean;
 };
 
 export default function RadioSelectBar({
   fontSize,
   setFontSize,
   handleSliderChange,
-  isWidthFull = false,
+  customClassName,
+  selectBoxRounded = true,
+  isSticky = false,
 }: RadioSelectBarType) {
   return (
     <div
       className={classNames(
-        isWidthFull ? 'w-1/2' : 'w-full md:w-2/3',
+        customClassName ? customClassName : 'w-full md:w-2/3',
         'flex flex-row items-center  p-1 rounded-full shadow-md bg-secondary radio h-12'
       )}
     >
@@ -42,7 +46,9 @@ export default function RadioSelectBar({
         options={options}
         setInitialValue={setFontSize}
         unit="px"
-        isRounded={true}
+        isRounded={selectBoxRounded}
+        customClassName={isSticky ? 'flex-1' : 'flex'}
+        isSticky={isSticky}
       />
       <input
         type="range"
@@ -50,7 +56,7 @@ export default function RadioSelectBar({
         max="96"
         value={fontSize.value}
         onChange={handleSliderChange}
-        className="w-full h-2 ml-2 mr-4 rounded-full outline-none appearance-none bg-darkblue accent-lightblue"
+        className="w-full h-2 ml-2 mr-4 rounded-full outline-none appearance-none cursor-pointer bg-darkblue accent-lightblue"
       />
     </div>
   );

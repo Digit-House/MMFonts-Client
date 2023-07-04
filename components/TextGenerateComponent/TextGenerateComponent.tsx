@@ -80,7 +80,7 @@ const TextGenerateComponent = () => {
             <input
               ref={inputRef}
               onChange={inputOnChange}
-              className="w-full py-2 pl-12 pr-4 border border-none rounded-full shadow text-darkblue bg-secondary focus:outline-none focus:placeholder:text-[#a11d33]"
+              className="w-full py-2 pl-12 pr-4 border border-none rounded-full drop-shadow	 text-darkblue bg-secondary focus:outline-none focus:placeholder:text-[#a11d33]"
               placeholder={t('search')}
               type="text"
             />
@@ -114,17 +114,18 @@ const TextGenerateComponent = () => {
           initialValue={optionValue}
           setInitialValue={setOptionValue}
           customClassName="flex-1 md:flex-none"
+          shadow
         />
         <input
           ref={countInputRef}
           type="number"
-          className="flex flex-1 w-20 h-auto px-3 rounded-sm shadow bg-secondary text-darkblue md:flex-none focus:outline-none"
+          className="flex flex-1 w-20 h-auto px-3 rounded-md shadow bg-secondary text-darkblue md:flex-none focus:outline-none"
           min={1}
           max={10}
         />
         <div className="flex flex-1 md:justify-end md:flex-1">
           <button
-            className="flex items-center justify-center w-full h-auto px-3 font-semibold rounded-sm shadow md:w-auto bg-secondary text-darkblue"
+            className="flex items-center justify-center w-full h-auto px-3 font-semibold rounded-md shadow md:w-auto bg-secondary text-darkblue"
             onClick={() => generateLoremIpsum('desktop')}
           >
             {renderText}
@@ -132,7 +133,7 @@ const TextGenerateComponent = () => {
         </div>
       </div>
       <p
-        className="w-auto py-6 mb-5 text-base font-semibold leading-loose tracking-wide text-left break-words selection:bg-[#b7b7a4]"
+        className="w-auto py-6 mb-5 text-base font-semibold leading-loose tracking-wide text-left break-words "
         ref={paragraphRef}
       >
         {generatedText.length > 0

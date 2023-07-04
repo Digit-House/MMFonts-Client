@@ -21,6 +21,7 @@
     "contact-us": "Contact Us",
     "type-something": "Type Something",
     "create-by": "Unknown",
-    "search": "search"
+    "search": "search",
+    "not-found-fontlist": "Can't find any fonts."
   }
 }

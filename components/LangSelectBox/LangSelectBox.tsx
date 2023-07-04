@@ -1,5 +1,6 @@
 import { Listbox, Transition } from '@headlessui/react';
 import Link from 'next-intl/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import React, { Fragment, useState } from 'react';
 import { classNames } from '@core/classnames';
@@ -8,15 +9,13 @@ const languages = [
   {
     id: 1,
     name: 'Myan',
-    avatar:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Flag_of_Myanmar.svg/255px-Flag_of_Myanmar.svg.png',
+    avatar: '/myanmar_flag.png',
     locale: 'my',
   },
   {
     id: 2,
     name: 'Eng',
-    avatar:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/255px-Flag_of_the_United_Kingdom_%281-2%29.svg.png',
+    avatar: '/unitedkingdom_flag.png',
     locale: 'en',
   },
 ];
@@ -31,13 +30,19 @@ const LangSelectBox = () => {
       {({ open }) => (
         <>
           <div className="relative ">
-            <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3  text-left  shadow-sm ring-1 ring-inset ring-secondary focus:outline-none focus:ring-2 focus:ring-secondary sm:text-sm sm:leading-6">
+            <Listbox.Button className="relative w-full  rounded-md bg-white py-1.5 pl-3  text-left  shadow-sm ring-1  ring-secondary focus:outline-none focus:ring-2 focus:ring-secondary sm:text-sm sm:leading-6 cursor-pointer">
               <span className="flex items-center ">
-                <img src={initialValue.avatar} alt="national flag" className="flex-shrink-0 w-5 h-5 rounded-full " />
-                <span className="block w-10 mx-3 truncate text-darkblue">{initialValue.name}</span>
+                <div className="relative w-5 h-5">
+                  <Image
+                    src={initialValue.avatar}
+                    alt="national flag"
+                    className="flex-shrink-0 object-fill rounded-full "
+                    fill
+                  />
+                </div>
+                <span className="block w-10 h-5 mx-3 truncate text-darkblue">{initialValue.name}</span>
               </span>
             </Listbox.Button>
-
             <Transition
               show={open}
               as={Fragment}
@@ -56,8 +61,10 @@ const LangSelectBox = () => {
                   >
                     {({ selected }) => (
                       <Link href={href} locale={lang.locale} className="flex items-center py-2 pl-3">
-                        <img src={lang.avatar} alt="" className="flex-shrink-0 w-5 h-5 rounded-full" />
-                        <span className={classNames(selected ? 'font-bold' : 'font-normal', 'ml-3 block truncate')}>
+                        <div className="relative w-5 h-5">
+                          <Image src={lang.avatar} alt="" className="flex-shrink-0 rounded-full" fill />
+                        </div>
+                        <span className={classNames(selected ? 'font-bold' : 'font-normal', 'ml-3 h-5')}>
                           {lang.name}
                         </span>
                       </Link>

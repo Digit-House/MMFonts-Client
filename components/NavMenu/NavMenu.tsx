@@ -19,8 +19,8 @@ interface NavMenuProps {
 
 export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightTheme, switchTheme }: NavMenuProps) {
   const pathname = usePathname();
-  const activeLink = 'relative font-medium leading-6 tracking-wide ';
-  const unactiveLink = 'relative text-sm font-semibold leading-6 tracking-wide ';
+  const activeLink = 'relative font-bold leading-6 tracking-wide text-base';
+  const unactiveLink = 'relative  font-semibold leading-6 tracking-wide text-base';
   const t = useTranslations('Index');
 
   const menuItems = [
@@ -50,9 +50,10 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
               {item.href === pathname && (
                 <motion.span
                   layoutId="underline"
-                  className="absolute top-full left-0 block h-[1px] bg-darkblue dark:bg-white w-full"
+                  className="absolute top-full left-0 block h-[1px] bg-darkblue dark:bg-white w-full "
                 />
               )}
+
               {item.title}
             </Link>
           </motion.div>

@@ -28,11 +28,11 @@ const ContactUs = () => {
       <div className="flex flex-col items-center justify-center flex-1 text-left md:text-center">
         <div className="w-full mt-10 mb-10 md:w-3/4">
           <p className="mb-3 text-xl font-semibold">{t('purpose')}</p>
-          <p className="mb-8 text-base">{t('purpose-paragraph')}</p>
+          <p className="mb-8 text-base text-secondaryText dark:text-darkSecondaryText">{t('purpose-paragraph')}</p>
           <p className="mb-3 text-xl font-medium">{t('copyright')}</p>
-          <p className="mb-8 text-base">{t('copyright-paragraph')}</p>
+          <p className="mb-8 text-base text-secondaryText dark:text-darkSecondaryText">{t('copyright-paragraph')}</p>
           <p className="mb-3 text-xl font-medium">{t('support-us')}</p>
-          <p className="text-base">{t('support-us-paragraph')}</p>
+          <p className="text-base text-secondaryText dark:text-darkSecondaryText">{t('support-us-paragraph')}</p>
         </div>
         <div className="flex flex-col w-full md:w-2/5 lg:w-2/6 ">
           <p className="mb-3 text-xl font-medium">{t('contact-us')}</p>
