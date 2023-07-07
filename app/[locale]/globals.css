@@ -85,3 +85,13 @@ input:checked {
   color: #edb92b !important;
   font-size: 23px !important;
 }
+
+@font-face {
+  font-family: 'GoldmanBold';
+  src: local('GoldmanBold'), url('/fonts/KHN/MyanmarSquareLight_volt.ttf') format('truetype');
+  font-weight: bold;
+}
+
+.font-local {
+  font-family: 'GoldmanBold';
+}

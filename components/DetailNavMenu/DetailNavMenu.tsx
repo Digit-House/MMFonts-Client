@@ -27,7 +27,6 @@ const DetailNavMenu = ({ fontName, fileName, createdBy }: DetailNavMenuType) => 
   };
 
   const handleDownload = async (name: string) => {
-    console.log(name, 'name');
     try {
       const response = await fetch(`/api/fonts?name=${name}`);
       const data = await response.json();
