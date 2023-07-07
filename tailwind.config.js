@@ -72,8 +72,6 @@ module.exports = {
       softgold: '#e2c38a',
       secondaryText: '#4e4f51',
       darkSecondaryText: '#949BA0',
-      secondaryText: '#4e4f51',
-      darkSecondaryText: '#949BA0',
     },
   },
   plugins: [
