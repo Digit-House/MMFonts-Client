@@ -1,5 +1,4 @@
 'use client';
-import { EllipsisHorizontalIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import JSZip from 'jszip';
 import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
@@ -66,10 +65,10 @@ const DetailNavMenu = ({ fontName, fileName, createdBy }: DetailNavMenuType) => 
       <div className="flex flex-row justify-between ">
         <div className="flex flex-col items-left">
           <p className="mr-5 font-medium ">{fontName}</p>
-          <p className="text-sm">{createdBy === undefined && t('create-by')}</p>
+          <p className="text-sm">{createdBy === undefined ? t('create-by') : createdBy}</p>
         </div>
         <div className="flex flex-row items-center">
-          <p className="hidden mr-5 md:flex">{t('terms-and-conditions')}</p>
+          {/* <p className="hidden mr-5 md:flex">{t('terms-and-conditions')}</p> */}
           <div className="relative">
             <p
               onClick={() => {
@@ -85,7 +84,7 @@ const DetailNavMenu = ({ fontName, fileName, createdBy }: DetailNavMenuType) => 
               </div>
             )}
           </div>
-          <div className="relative">
+          {/* <div className="relative">
             <EllipsisHorizontalIcon className="w-10 h-10 text-secondary" onClick={showModal} />
             {!isHide && (
               <div className="absolute p-2 leading-normal border-2 rounded bg-primary dark:bg-lightblue min-w-max">
@@ -98,7 +97,7 @@ const DetailNavMenu = ({ fontName, fileName, createdBy }: DetailNavMenuType) => 
                 <p>ဒီဖောင့်ကိုအခကြေးငွေပေးဆောင်ရပါမည်</p>
               </div>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
       <p className="flex justify-end mt-5 md:hidden">အကြောင်းနှင့်မူပိုင်ခွင့်</p>

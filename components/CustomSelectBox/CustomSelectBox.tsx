@@ -61,7 +61,7 @@ const CustomSelectBox = ({
                   className={({ active }) =>
                     classNames(
                       active ? 'bg-darkblue text-primary' : 'text-black',
-                      'relative cursor-default select-none py-2 pl-3 pr-9'
+                      'relative cursor-default select-none  py-1 pl-3 pr-9 '
                     )
                   }
                   value={option}
@@ -69,14 +69,14 @@ const CustomSelectBox = ({
                   {({ selected, active }) => {
                     return (
                       <>
-                        <span className={classNames(selected ? 'font-bold' : 'font-normal', 'block truncate')}>
+                        <span className={classNames(selected ? 'font-bold' : 'font-normal', 'block truncate py-1 ')}>
                           {option.label}
                         </span>
                         {selected ? (
                           <span
                             className={classNames(
                               active ? 'text-white' : 'text-black',
-                              'absolute inset-y-0 right-0 flex items-center pr-4'
+                              'absolute inset-y-0 right-0 flex items-center pr-4 '
                             )}
                           >
                             <CheckIcon className="w-5 h-5" aria-hidden="true" />

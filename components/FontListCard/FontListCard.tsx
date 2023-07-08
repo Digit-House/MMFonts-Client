@@ -34,7 +34,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
     }
   };
   const PAGE_COUNT = 8;
-  const recalculatedDelay = id >= PAGE_COUNT * 2 ? (id - PAGE_COUNT * (offset - 1)) / 15 : id / 15;
+  const recalculatedDelay = id >= PAGE_COUNT ? (id - PAGE_COUNT * (offset - 1)) / 15 : id / 10;
 
   return (
     <motion.div
