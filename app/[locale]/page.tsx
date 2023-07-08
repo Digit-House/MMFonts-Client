@@ -150,7 +150,7 @@ export default function Home() {
               {copyFontList.map((font: FontType, i) => (
                 <FontListCard
                   key={i}
-                  id={i}
+                  id={i + 1}
                   onClick={() => onClickFont(font.nameEn, i)}
                   font={font}
                   typeText={value}

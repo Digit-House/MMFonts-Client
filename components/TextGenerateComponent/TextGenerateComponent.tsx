@@ -9,8 +9,8 @@ import useCSVConvert from '@hooks/useCSVConvert';
 import { CustomSelectBox } from '..';
 
 const parargraph =
-  'အချက်အလက်များထည့်သွင်းနေဆဲဖြစ်ပါသဖြင့်အများအယွင်းများတွေ.ရှိပါကအကြောင်းကြားပေးရန်နှင့်ရန်နှင့် မူလဖန်တီးသူအနေနှင့်ထည့်သွင်းလိုပါကအသိပေးအကြောင်းကြားရန်ဆက်သွယ်ရန်Formမှတစ်ဆင့်ဖိတ်ခေါ်လိုပါသည်။ အခြားလိုအပ်ချက်များကိုလည်း အကြံပေးနိုင်ပါသည်။';
-const sentence = 'အချက်အလက်များထည့်သွင်းနေဆဲဖြစ်ပါသဖြင့်အများအယွင်းများတွေ.ရှိပါကအကြောင်းကြားပေးရန်';
+  'မြန်မာဘာသာစကားသည် မြန်မာနိုင်ငံ၏ ရုံးသုံး ဘာသာစကားဖြစ်သည်။ ဗမာလူမျိုးနှင့် ဗမာနွယ်ဝင်(ဓနု၊ အင်းသား၊ တောင်ရိုးနှင့် ယော)တို့၏ ဇာတိစကားဖြစ်သည်။ ဗမာလူမျိုးတို့သည် တိဘက်-ဗမာနွယ် ဘာသာစကားများ ပြောဆိုသည့် လူမျိုးနွယ်စုကြီးမှ အကြီးဆုံးသော လူမျိုးဖြစ်သည်။ လူဦးရေ ၃၈သန်းကျော်ခန့်သည် မြန်မာဘာသာစကားကို မိခင်ဘာသာစကား အနေဖြင့် သုံး၍ မြန်မာတိုင်းရင်သားများသည် ဒုတိယဘာသာစကား အနေဖြင့် သုံးသည်။ မြန်မာဘာသာစကားသည် တိဘက်-ဗမာနွယ် ဘာသာစကားများ အုပ်စုတွင် ပါဝင်သည်။ တိဘက်-ဗမာနွယ် ဘာသာစကားများ အုပ်စုသည် တရုတ်-တိဗက်နွယ် ဘာသာစကားများ မိသားစု ထဲတွင် ပါသည်။ မြန်မာဘာသာသည် တက်ကျသံရှိသော ၊ နိမ့်မြင့်အမှတ်အသားရှိ ဖြစ်သော၊ ဧကဝဏ္ဏစကားလုံး အလွန်များသော ဘာသာစကား ဖြစ်သည်။ ကတ္တား-ကံ-တြိယာ စကားလုံးအစီအစဉ်ဖြင့် ရေးသော သရုပ်ခွဲဘာသာစကား လည်းဖြစ်သည်။ မြန်မာအက္ခရာများသည် ဗြာဟ္မီအက္ခရာ မှ ဆင်းသက်လာသည်။';
+const sentence = 'မြန်မာဘာသာစကားသည် တရုတ်-တိဗက်နွယ် ဘာသာစကား မိသားစု ၏ ဗမာနွယ်ဘာသာစကားများ  မှ တစ်ခုဖြစ်သည်';
 
 const TextGenerateComponent = () => {
   const t = useTranslations('Index');
@@ -28,6 +28,7 @@ const TextGenerateComponent = () => {
   const paragraphRef = useRef<HTMLParagraphElement | null>(null);
   const [generatedText, setGeneratedText] = useState<JSX.Element[]>([]);
   const inputRef = useRef<HTMLInputElement | null>(null);
+  const [fontName, setFontName] = useState<string>('');
 
   useEffect(() => {
     if (countInputRef.current) {
@@ -55,6 +56,7 @@ const TextGenerateComponent = () => {
         paragraphRef.current.setAttribute('src', font.fileName);
     }
     setOpen(false);
+    setFontName(font.fileName);
     if (inputRef.current) {
       inputRef.current.value = '';
     }
@@ -79,7 +81,7 @@ const TextGenerateComponent = () => {
             <input
               ref={inputRef}
               onChange={inputOnChange}
-              className="w-full py-2 pl-12 pr-4 border border-none rounded-full drop-shadow	 text-darkblue bg-secondary focus:outline-none focus:placeholder:text-[#a11d33]"
+              className="w-full py-2 pl-4 pr-4 border border-none rounded-full drop-shadow	 text-darkblue bg-secondary focus:outline-none focus:placeholder:text-[#a11d33]"
               placeholder={t('search')}
               type="text"
             />
@@ -131,12 +133,16 @@ const TextGenerateComponent = () => {
           </button>
         </div>
       </div>
-      <p
-        className="w-auto py-6 mb-5 text-base font-semibold leading-loose tracking-wide text-left break-words "
-        ref={paragraphRef}
-      >
+      <div className="flex items-center h-12 py-1 ">
+        {fontName.length > 0 && <p className="text-xl font-semibold tracking-wide">{fontName}</p>}
+      </div>
+      <p className="w-auto py-3 text-base leading-loose tracking-wide text-left break-words " ref={paragraphRef}>
         {generatedText.length > 0
-          ? generatedText.map((paragraph, index) => <React.Fragment key={index}>{paragraph}</React.Fragment>)
+          ? generatedText.map((paragraph, index) => (
+              <p key={index} className="mb-2">
+                {paragraph}
+              </p>
+            ))
           : parargraph}
       </p>
     </div>

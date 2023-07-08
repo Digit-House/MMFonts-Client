@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
-import { FramerMotionWrapper, PremiumCard } from '@components/index';
+import { FramerMotionWrapper, Loading, PremiumCard } from '@components/index';
 import { PremiumFontType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
 
@@ -12,6 +12,8 @@ const Page = () => {
       setFonts(data);
     }
   }, [data]);
+
+  if (data.length > 0) return <Loading waitingText={true} />;
 
   return (
     <FramerMotionWrapper>

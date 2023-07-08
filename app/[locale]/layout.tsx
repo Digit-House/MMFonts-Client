@@ -1,9 +1,9 @@
 import './globals.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import localFont from 'next/font/local';
-import Head from 'next/head';
 import { notFound } from 'next/navigation';
 import GoogleAnalytics from '@hooks/GoogleAnalytics';
 import { HotJar } from '@hooks/index';
@@ -47,7 +47,7 @@ const myLocalFont = localFont({
   variable: '--font-acre',
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: { default: 'Myanmar Fonts Hub', template: '%s | Myanmar Fonts Hub' },
   description:
     "MmFontsHub.com is Myanmar's premier online platform for fonts, catering specifically to the needs of the Myanmar community. Our website offers a vast collection of high-quality fonts, carefully curated and optimized for various projects, including web design, graphic design, branding, and more. Discover an extensive range of traditional and contemporary fonts, all conveniently accessible in one place. Whether you're a professional designer or an enthusiast, MmFontsHub.com provides the perfect resource to enhance your creative projects and express your unique style in the Myanmar language.",
@@ -94,25 +94,6 @@ export default async function RootLayout({ children, params: { locale } }: RootL
 
   return (
     <html lang={locale} translate="no">
-      <Head>
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.mmfontshub.com/" />
-        <meta property="og:title" content="Myanmar Fonts Hub" />
-        <meta
-          property="og:description"
-          content="MmFontsHub.com is Myanmar's premier online platform for fonts, catering specifically to the needs of the Myanmar community. Our website offers a vast collection of high-quality fonts, carefully curated and optimized for various projects, including web design, graphic design, branding, and more. Discover an extensive range of traditional and contemporary fonts, all conveniently accessible in one place. Whether you're a professional designer or an enthusiast, MmFontsHub.com provides the perfect resource to enhance your creative projects and express your unique style in the Myanmar language."
-        />
-        <meta property="og:image" content="/images/banner.png" />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.mmfontshub.com/" />
-        <meta property="twitter:title" content="Myanmar Fonts Hub" />
-        <meta
-          property="twitter:description"
-          content="MmFontsHub.com is Myanmar's premier online platform for fonts, catering specifically to the needs of the Myanmar community. Our website offers a vast collection of high-quality fonts, carefully curated and optimized for various projects, including web design, graphic design, branding, and more. Discover an extensive range of traditional and contemporary fonts, all conveniently accessible in one place. Whether you're a professional designer or an enthusiast, MmFontsHub.com provides the perfect resource to enhance your creative projects and express your unique style in the Myanmar language."
-        />
-        <meta property="twitter:image" content="/images/banner.png" />
-      </Head>
       {process.env.NEXT_PUBLIC_GA_TRAKCING_ID && (
         <GoogleAnalytics GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_TRAKCING_ID} />
       )}
