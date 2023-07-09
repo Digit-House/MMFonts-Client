@@ -21,10 +21,8 @@ const useCSVConvert = (csvFilePath: string) => {
           for (let j = 0; j < headers.length; j++) {
             font[headers[j]] = currentLine[j];
           }
-
           jsonData.push(font);
         }
-
         setData(jsonData);
       })
       .catch((err: Error) => {

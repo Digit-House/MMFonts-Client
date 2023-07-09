@@ -97,7 +97,7 @@ export default function Home() {
   }, [fontList]);
 
   const onClickFont = (name: string, id: number) => {
-    router.push(`/fonts/${name.split(' ').join('-')}-${id}`);
+    router.push(`/fonts/${name.split(' ').join('+')}-${id}`);
   };
 
   const inputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
