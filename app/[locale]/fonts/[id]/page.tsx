@@ -59,10 +59,6 @@ function Page() {
 
   return (
     <FramerMotionWrapper>
-      <head>
-        <title>{font.fileName}</title>
-        <meta name="title" content={font.fileName} />
-      </head>
       <DetailNavMenu fileName={font.fileName} fontName={font.fileName} createdBy={font.createdBy} />
       <div>
         <div className="flex items-center justify-center mt-5 ">

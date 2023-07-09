@@ -34,11 +34,11 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
     },
     {
       title: t('generate'),
-      href: '/lorem',
+      href: '/mmtextsgenerator',
     },
     {
       title: t('about-us'),
-      href: '/contact-us',
+      href: '/about-us',
     },
   ];
   return (
