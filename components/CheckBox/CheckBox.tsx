@@ -10,6 +10,7 @@ type CheckBoxType = {
 const CheckBox = ({ handleCheckBoxChange, done, i, task }: CheckBoxType) => {
   return (
     <div className="flex items-center h-6 w-max">
+      <label className="sr-only">choose font type</label>
       <input
         aria-describedby="comments-description"
         type="checkbox"

@@ -9,6 +9,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { LangSelectBox } from '..';
+import Logo from '/public/icon.png';
 
 interface NavMenuProps {
   mobileMenuOpen: boolean;
@@ -72,7 +73,15 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full px-6 py-6 overflow-y-auto bg-primary dark:bg-lightblue sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <Image className="w-auto h-10" src="/icon.png" width={80} height={80} alt="mm fonts collection logo" />
+              <Image
+                className="w-auto h-10"
+                src={Logo}
+                width={80}
+                height={80}
+                alt="mm fonts collection logo"
+                sizes="100vw"
+                placeholder="blur"
+              />
             </a>
             <button
               type="button"
