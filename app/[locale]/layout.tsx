@@ -5,8 +5,6 @@ import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import localFont from 'next/font/local';
 import { notFound } from 'next/navigation';
-import GoogleAnalytics from '@hooks/GoogleAnalytics';
-import { HotJar } from '@hooks/index';
 import Providers from './Providers';
 
 const myLocalFont = localFont({
@@ -85,6 +83,8 @@ export function generateStaticParams() {
   return [{ locale: 'mm' }, { locale: 'en' }];
 }
 
+export const revalidate = 60;
+
 export default async function RootLayout({ children, params: { locale } }: RootLayoutProps) {
   let messages;
   try {
@@ -95,10 +95,6 @@ export default async function RootLayout({ children, params: { locale } }: RootL
 
   return (
     <html lang={locale} translate="no">
-      {process.env.NEXT_PUBLIC_GA_TRAKCING_ID && (
-        <GoogleAnalytics GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_TRAKCING_ID} />
-      )}
-      <HotJar />
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body className={`${myLocalFont.variable} font-acre `}>
           <Providers>{children}</Providers>

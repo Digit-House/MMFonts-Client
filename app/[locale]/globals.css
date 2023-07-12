@@ -35,30 +35,6 @@ input:checked {
   background-color: #292d53;
 }
 
-.box {
-  position: relative;
-}
-
-.searchInput {
-  transition: 2s;
-}
-.radio {
-  transition: 2s;
-}
-
-/* .box:hover input { */
-/* width: 400px; */
-/* } */
-
-.box .icon {
-  transition: 0.2s;
-}
-
-.box:hover .icon {
-  opacity: 0;
-  z-index: -1;
-}
-
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }

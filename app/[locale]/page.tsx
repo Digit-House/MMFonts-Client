@@ -9,6 +9,7 @@ import filterSearch from '@core/filterSearch';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
 import NumberConverter from '@core/NumberConverter';
 import useCSVConvert from '@hooks/useCSVConvert';
+import RowsIcon from '/public/icons8-columns.png';
 
 export default function Home() {
   const t = useTranslations('Index');
@@ -134,10 +135,25 @@ export default function Home() {
               </p>
               <div className="items-center hidden gap-2 cursor-pointer sm:flex">
                 <div className="relative w-8 h-8" onClick={() => setIsToggled(true)}>
-                  <Image alt="rows" src="/icons8-columns.png" fill />
+                  <Image
+                    alt="rows"
+                    src={RowsIcon}
+                    fill
+                    style={{ objectFit: 'cover', objectPosition: 'center' }}
+                    placeholder="blur"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                 </div>
                 <div className="relative w-8 h-8" onClick={() => setIsToggled(false)}>
-                  <Image alt="columns" src="/icons8-columns.png" fill className="transform rotate-90" />
+                  <Image
+                    alt="columns"
+                    src={RowsIcon}
+                    fill
+                    className="transform rotate-90"
+                    style={{ objectFit: 'cover', objectPosition: 'center' }}
+                    placeholder="blur"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                 </div>
               </div>
             </div>

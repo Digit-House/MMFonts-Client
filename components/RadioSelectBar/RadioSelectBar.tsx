@@ -50,6 +50,7 @@ export default function RadioSelectBar({
         customClassName={isSticky ? 'flex-1' : 'flex'}
         isSticky={isSticky}
       />
+      <label className="sr-only">pixel range bar</label>
       <input
         type="range"
         min="1"

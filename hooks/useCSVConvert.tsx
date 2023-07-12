@@ -7,7 +7,7 @@ const useCSVConvert = (csvFilePath: string) => {
   const [data, setData] = useState<FontType[] | PremiumFontType[]>([]);
 
   useEffect(() => {
-    fetch(csvFilePath)
+    fetch(csvFilePath, { next: { revalidate: 60 } })
       .then((response) => response.text())
       .then((csvData) => {
         const lines = csvData.split('\n');
