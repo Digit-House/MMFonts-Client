@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint:fix": "next lint --fix --ext .jsx --ext .tsx --ext .ts --ext .js --ext .test.js ./"
+    "lint:fix": "next lint --fix --ext .jsx --ext .tsx --ext .ts --ext .js --ext .test.js ./",
+    "generate-ff": "node ./scripts/generateFontFace.js"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",

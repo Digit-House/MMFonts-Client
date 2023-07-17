@@ -13,15 +13,18 @@ type FontListType = {
 };
 
 const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontListType) => {
+  console.log('FONT ', font);
   const fontStyle = {
-    fontFamily: `${font.fileName} , 'font-acre', sans-serif`,
-    src: `url(/fonts/${font.fileName}/${font.fontStyle}.ttf)`,
+    fontFamily: `${font.fileName} , sans-serif`,
     fontSize: `${fontSize}px`,
     lineHeight: `${fontSize + 20}px`,
+    fontWeight: font.fontStyle,
     margin: '10px 0',
   };
+
   const pathname: any = usePathname();
   const isEnglish = pathname.includes('en');
+
   const fontSupportType = () => {
     if (!isEnglish) {
       if (font.fontSupportType === 'zawgyi') {
@@ -33,6 +36,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
       return font.fontSupportType;
     }
   };
+
   const PAGE_COUNT = 8;
   const recalculatedDelay = id >= PAGE_COUNT ? (id - PAGE_COUNT * (offset - 1)) / 15 : id / 10;
 
