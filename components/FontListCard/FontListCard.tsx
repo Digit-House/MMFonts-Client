@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import React from 'react';
 import { FontType } from '@core/golobalTypes';
+import Rabbit from '@core/Rabbit';
 
 type FontListType = {
   onClick: (id: number) => void;
@@ -39,6 +40,12 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
 
   const PAGE_COUNT = 8;
   const recalculatedDelay = id >= PAGE_COUNT ? (id - PAGE_COUNT * (offset - 1)) / 15 : id / 10;
+
+  const convertText = (text: string | undefined) => {
+    const isUni = font.fontSupportType === 'unicode';
+    if (isUni) return text || 'ကောင်းသော နံနက်ခင်း ပါ';
+    return Rabbit.uni2zg(text || 'ကောင်းသော နံနက်ခင်း ပါ');
+  };
 
   return (
     <motion.div
@@ -83,7 +90,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
           }}
           style={{ ...fontStyle }}
         >
-          {typeText || 'ကောင်းသော နံနက်ခင်း ပါ'}
+          {convertText(typeText)}
         </motion.p>
       </div>
     </motion.div>

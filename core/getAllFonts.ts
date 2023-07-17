@@ -1,7 +1,7 @@
 const getAllFonts = () => {
   return [
     'Myanmar 3',
-    'Zaw-gyi ONE',
+    'ZawgyiOne',
     'Padauk',
     'Pyidaungsu',
     'Win Uni Innwa',
