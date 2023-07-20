@@ -93,7 +93,7 @@
     "nameEn": "WinResearcher",
     "name": "ဝင်းရီဆက်ချာ",
     "fileName": "WinResearcher",
-    "fontSupportType": "win",
+    "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -120,7 +120,7 @@
     "nameEn": "WinYangon",
     "name": "ဝင်းရန်ကုန်",
     "fileName": "WnYangon",
-    "fontSupportType": "win",
+    "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -147,7 +147,7 @@
     "nameEn": "AungSan",
     "name": "အောင်ဆန်း",
     "fileName": "AungSan",
-    "fontSupportType": "zawgyi",
+    "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -156,7 +156,7 @@
     "nameEn": "CeCollection",
     "name": "စီအီးကော်လက်ရှင်",
     "fileName": "CeCollection",
-    "fontSupportType": "zawgyi",
+    "fontSupportType": "unicode",
     "fontStyle": "ClassicNormal ClassicRegular ExecelMedium ExcelNormal FreehandNormal HandWriteNormal HorizontalThickBold Normal RoyalOutline TitleNormal TransparentBold TrueOutlineNormal",
     "createdBy": "",
     "English Support": ""

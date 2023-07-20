@@ -43,6 +43,8 @@ const LangSelectBox = () => {
                     className="flex-shrink-0 "
                     fill
                     placeholder="blur"
+                    priority={false}
+                    quality={50}
                   />
                 </div>
                 <span className="block w-10 h-5 mx-3 font-semibold truncate text-darkblue">{initialValue.name}</span>
@@ -75,6 +77,8 @@ const LangSelectBox = () => {
                             fill
                             placeholder="blur"
                             style={{ objectFit: 'cover', objectPosition: 'center' }}
+                            priority={false}
+                            quality={50}
                           />
                         </div>
                         <span
