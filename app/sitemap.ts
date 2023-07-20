@@ -1,9 +1,9 @@
 import { MetadataRoute } from 'next';
-import getAllFonts from '@core/getAllFonts';
+import { getAllFontsName } from '@core/getFonts';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://www.mmfontshub.com';
-  const fonts = getAllFonts();
+  const fonts = getAllFontsName();
   const fontUrls = fonts.map((font, index) => {
     const fontName = font.replaceAll(' ', '+');
 

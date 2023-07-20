@@ -6,14 +6,14 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { FontListCard, FramerMotionWrapper, RivLoading, SearchBox } from '@components/index';
 import filterSearch from '@core/filterSearch';
+import { getFontsArray } from '@core/getFonts';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
 import NumberConverter from '@core/NumberConverter';
-import useCSVConvert from '@hooks/useCSVConvert';
 import RowsIcon from '/public/icons8-columns.png';
 
 export default function Home() {
+  const data = getFontsArray();
   const t = useTranslations('Index');
-  const { data } = useCSVConvert('/fonts/data/font.csv');
   const [fontList, setFontList] = useState<FontType[]>([]);
   const [copyFontList, setCopyFontList] = useState<FontType[]>([]);
   const [value, setValue] = useState<string>('');
@@ -97,8 +97,8 @@ export default function Home() {
     setCopyFontList(fontList.slice(0, 8));
   }, [fontList]);
 
-  const onClickFont = (name: string, id: number) => {
-    router.push(`/fonts/${name.split(' ').join('+')}-${id}`);
+  const onClickFont = (name: string) => {
+    router.push(`/fonts/${name}`);
   };
 
   const inputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -167,7 +167,7 @@ export default function Home() {
                 <FontListCard
                   key={i}
                   id={i + 1}
-                  onClick={() => onClickFont(font.nameEn, i)}
+                  onClick={() => onClickFont(font.nameEn)}
                   font={font}
                   typeText={value}
                   fontSize={parseInt(fontSize.value)}

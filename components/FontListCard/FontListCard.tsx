@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import React from 'react';
+import { convertText } from '@core/fontCovert';
 import { FontType } from '@core/golobalTypes';
 
 type FontListType = {
@@ -13,12 +14,10 @@ type FontListType = {
 };
 
 const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontListType) => {
-  console.log('FONT ', font);
   const fontStyle = {
-    fontFamily: `${font.fileName} , sans-serif`,
+    fontFamily: `${font.fileName}`,
     fontSize: `${fontSize}px`,
     lineHeight: `${fontSize + 20}px`,
-    fontWeight: font.fontStyle,
     margin: '10px 0',
   };
 
@@ -29,8 +28,10 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
     if (!isEnglish) {
       if (font.fontSupportType === 'zawgyi') {
         return 'ဇော်ဂျီ';
-      } else {
+      } else if (font.fontSupportType === 'unicode') {
         return 'ယူနီကုဒ်';
+      } else {
+        return 'ဝင်းဖောင့်';
       }
     } else {
       return font.fontSupportType;
@@ -83,7 +84,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
           }}
           style={{ ...fontStyle }}
         >
-          {typeText || 'ကောင်းသော နံနက်ခင်း ပါ'}
+          {convertText(font, typeText)}
         </motion.p>
       </div>
     </motion.div>
