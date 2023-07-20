@@ -84,9 +84,16 @@
 
 @font-face {
   font-family: 'M-Myanmar1';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/M-Myanmar1/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/M-Myanmar1/Bold.ttf') format('truetype');
+  font-weight: Bold;
+  font-style: Bold;
+}
+
+@font-face {
+  font-family: 'M-Myanmar1';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/M-Myanmar1/Normal.ttf') format('truetype');
+  font-weight: Normal;
+  font-style: Normal;
 }
 
 @font-face {
@@ -294,14 +301,14 @@
 
 @font-face {
   font-family: 'WinYadanapon';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinYadanapon/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinYadanapon/Normal.ttf') format('truetype');
+  font-weight: Normal;
+  font-style: Normal;
 }
 
 @font-face {
-  font-family: 'Myananda';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Myananda/Regular.ttf') format('truetype');
+  font-family: 'MyaNanda';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyaNanda/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
 }

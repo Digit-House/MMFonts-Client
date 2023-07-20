@@ -16,10 +16,9 @@ type FontListType = {
 const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontListType) => {
   console.log('FONT ', font);
   const fontStyle = {
-    fontFamily: `${font.fileName} , sans-serif`,
+    fontFamily: `${font.fileName}`,
     fontSize: `${fontSize}px`,
     lineHeight: `${fontSize + 20}px`,
-    fontWeight: font.fontStyle,
     margin: '10px 0',
   };
 
