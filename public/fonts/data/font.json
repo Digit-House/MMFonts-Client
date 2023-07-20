@@ -1,0 +1,1532 @@
+{
+  "Myanmar-3": {
+    "nameEn": "Myanmar-3",
+    "name": "မြန်မာ 3",
+    "fileName": "Myanmar3",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Myanmar Natural Language Processing (NLP) Research Center",
+    "English Support": ""
+  },
+  "ZawgyiOne": {
+    "nameEn": "ZawgyiOne",
+    "name": "ဇော်ဂျီဝမ်း",
+    "fileName": "ZawgyiOne",
+    "fontSupportType": "zawgyi",
+    "fontStyle": "Regular",
+    "createdBy": "Zaw Win Myat",
+    "English Support": ""
+  },
+  "Padauk": {
+    "nameEn": "Padauk",
+    "name": "ပိတောက်",
+    "fileName": "Padauk",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "Pyidaungsu": {
+    "nameEn": "Pyidaungsu",
+    "name": "ပြည်ထောင်စု",
+    "fileName": "Pyidaungsu",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular Bold Numbers",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "Win-Uni-Innwa": {
+    "nameEn": "Win-Uni-Innwa",
+    "name": "ဝင်းယူနီအင်းဝ",
+    "fileName": "WinUniInna",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "Uni-Burma": {
+    "nameEn": "Uni-Burma",
+    "name": "ယူနီဘားမား",
+    "fileName": "UniBurma",
+    "fontSupportType": "unicode",
+    "fontStyle": "Medium FreeHand FFSerif Medium_Serief Regular_MSSerif",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "M-Myanmar1": {
+    "nameEn": "M-Myanmar1",
+    "name": "အမ်မြန်မာဝမ်း",
+    "fileName": "M-Myanmar1",
+    "fontSupportType": "unicode",
+    "fontStyle": "Bold Normal",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "M-Myanmar2": {
+    "nameEn": "M-Myanmar2",
+    "name": "အမ်မြန်မာတူး",
+    "fileName": "M-Myanmar2",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "Kannaka": {
+    "nameEn": "Kannaka",
+    "name": "ကနက",
+    "fileName": "Kannaka",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "Tharlon": {
+    "nameEn": "Tharlon",
+    "name": "သလွန်",
+    "fileName": "Tharlon",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "WinResearcher": {
+    "nameEn": "WinResearcher",
+    "name": "ဝင်းရီဆက်ချာ",
+    "fileName": "WinResearcher",
+    "fontSupportType": "win",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "WinTaungyi": {
+    "nameEn": "WinTaungyi",
+    "name": "ဝင်းတောင်ကြီး",
+    "fileName": "WinTaungyi",
+    "fontSupportType": "win",
+    "fontStyle": "Regular Bold",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "WinSittway": {
+    "nameEn": "WinSittway",
+    "name": "ဝင်းစစ်တွေ",
+    "fileName": "WinSittway",
+    "fontSupportType": "win",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "WinYangon": {
+    "nameEn": "WinYangon",
+    "name": "ဝင်းရန်ကုန်",
+    "fileName": "WnYangon",
+    "fontSupportType": "win",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "WinKalaw": {
+    "nameEn": "WinKalaw",
+    "name": "ဝင်းကလော",
+    "fileName": "WinKalaw",
+    "fontSupportType": "win",
+    "fontStyle": "Regular Bold",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "WinInnwa": {
+    "nameEn": "WinInnwa",
+    "name": "ဝင်းအင်းဝ",
+    "fileName": "WinInnwa",
+    "fontSupportType": "win",
+    "fontStyle": "Regular Normal",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "AungSan": {
+    "nameEn": "AungSan",
+    "name": "အောင်ဆန်း",
+    "fileName": "AungSan",
+    "fontSupportType": "zawgyi",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "CeCollection": {
+    "nameEn": "CeCollection",
+    "name": "စီအီးကော်လက်ရှင်",
+    "fileName": "CeCollection",
+    "fontSupportType": "zawgyi",
+    "fontStyle": "ClassicNormal ClassicRegular ExecelMedium ExcelNormal FreehandNormal HandWriteNormal HorizontalThickBold Normal RoyalOutline TitleNormal TransparentBold TrueOutlineNormal",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "WinBurmese": {
+    "nameEn": "WinBurmese",
+    "name": "ဝင်းဗားမိ",
+    "fileName": "WinBurmese",
+    "fontSupportType": "win",
+    "fontStyle": "Bold Normal",
+    "createdBy": "Win Tun (Mr Burma)",
+    "English Support": ""
+  },
+  "WinPyinOoLwin": {
+    "nameEn": "WinPyinOoLwin",
+    "name": "ဝင်းပြင်ဦးလွင်",
+    "fileName": "WinPyinOoLwin",
+    "fontSupportType": "win",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "WinMandalay": {
+    "nameEn": "WinMandalay",
+    "name": "ဝင်းမန္တလေး",
+    "fileName": "WinMandalay",
+    "fontSupportType": "win",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "WinYadanapon": {
+    "nameEn": "WinYadanapon",
+    "name": "ဝင်းရတနာပုံ",
+    "fileName": "WinYadanapon",
+    "fontSupportType": "win",
+    "fontStyle": "Normal",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "MyaNanda": {
+    "nameEn": "MyaNanda",
+    "name": "မြနန္ဒာ",
+    "fileName": "MyaNanda",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "KNU": {
+    "nameEn": "KNU",
+    "name": "ကေအန်ယူ",
+    "fileName": "KNU",
+    "fontSupportType": "zawgyi",
+    "fontStyle": "Normal",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "karen-flower": {
+    "nameEn": "karen-flower",
+    "name": "ကရင်ဖလားဝါး",
+    "fileName": "karen-flower",
+    "fontSupportType": "zawgyi",
+    "fontStyle": "Normal",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "ShweThay": {
+    "nameEn": "ShweThay",
+    "name": "ရွှေသွေး",
+    "fileName": "ShweThay",
+    "fontSupportType": "win",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "WinHaka": {
+    "nameEn": "WinHaka",
+    "name": "ဝင်းဟားခါး",
+    "fileName": "WinHaka",
+    "fontSupportType": "win",
+    "fontStyle": "Regular Normal",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "ShwePro": {
+    "nameEn": "ShwePro",
+    "name": "ရွှေပရို",
+    "fileName": "ShwePro",
+    "fontSupportType": "win",
+    "fontStyle": "BoldItalic Condense_Normal Expand_Normal ExtraHeavy_Bold Heavy_Bold Hollow_Bold Italic Medium_Bold MediumHollow_Bold Ribbon_BoldItalic Serif_Bold Tall_Normal Wide_Bold",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "KarenLawplah": {
+    "nameEn": "KarenLawplah",
+    "name": "ကရင်လောဖ",
+    "fileName": "KarenLawplah",
+    "fontSupportType": "zawgyi",
+    "fontStyle": "Regular Bold",
+    "createdBy": "Lawplah Min",
+    "English Support": ""
+  },
+  "Suukyi": {
+    "nameEn": "Suukyi",
+    "name": "စုကြည်",
+    "fileName": "Suukyi",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "WinLoikaw": {
+    "nameEn": "WinLoikaw",
+    "name": "ဝင်းလွိုင်ကော်",
+    "fileName": "WinLoikaw",
+    "fontSupportType": "zawgyi",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "WinPhaan": {
+    "nameEn": "WinPhaan",
+    "name": "ဝင်းဘားအံ",
+    "fileName": "WinPhaan",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Zaw Htut",
+    "English Support": ""
+  },
+  "WinMawlamyine": {
+    "nameEn": "WinMawlamyine",
+    "name": "ဝင်းမော်လမြိုင်",
+    "fileName": "WinMawlamyine",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Zaw Htut",
+    "English Support": ""
+  },
+  "KarenHlaing": {
+    "nameEn": "KarenHlaing",
+    "name": "ကရင်လှုိင်း",
+    "fileName": "KarenHlaing",
+    "fontSupportType": "",
+    "fontStyle": "Regular Normal Medium Normal_Bold Light",
+    "createdBy": "Win Tun & Maung Han",
+    "English Support": ""
+  },
+  "WinKyaukTan": {
+    "nameEn": "WinKyaukTan",
+    "name": "ဝင်းကျောက်တံ",
+    "fileName": "WinKyaukTan",
+    "fontSupportType": "",
+    "fontStyle": "Regular Normal A",
+    "createdBy": "Zaw Htut",
+    "English Support": ""
+  },
+  "WinInnLay": {
+    "nameEn": "WinInnLay",
+    "name": "ဝင်းအင်းလေး",
+    "fileName": "WinInnLay",
+    "fontSupportType": "",
+    "fontStyle": "Regular Normal A",
+    "createdBy": "Zaw Htut",
+    "English Support": ""
+  },
+  "Karen3-0": {
+    "nameEn": "Karen3-0",
+    "name": "ကရင်၃_၀",
+    "fileName": "Karen3-0",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "WinKyaeMone": {
+    "nameEn": "WinKyaeMone",
+    "name": "ဝင်းကြေးမုံ",
+    "fileName": "WinKyaeMone",
+    "fontSupportType": "",
+    "fontStyle": "Regular A",
+    "createdBy": "Zaw Htut",
+    "English Support": ""
+  },
+  "WinYaway": {
+    "nameEn": "WinYaway",
+    "name": "ဝင်းရဝေ",
+    "fileName": "WinYaway",
+    "fontSupportType": "",
+    "fontStyle": "Heavy",
+    "createdBy": "Win Tun",
+    "English Support": ""
+  },
+  "WinThanLyin": {
+    "nameEn": "WinThanLyin",
+    "name": "ဝင်းသံလွင်",
+    "fileName": "WinThanLyin",
+    "fontSupportType": "",
+    "fontStyle": "Regular A",
+    "createdBy": "Zaw Htut",
+    "English Support": ""
+  },
+  "WinZin": {
+    "nameEn": "WinZin",
+    "name": "ဝင်းဇင်း",
+    "fileName": "WinZin",
+    "fontSupportType": "",
+    "fontStyle": "ExtraHeavy",
+    "createdBy": "Win Tun",
+    "English Support": ""
+  },
+  "LmYadanapon": {
+    "nameEn": "LmYadanapon",
+    "name": "အယ်လ်အမ်ရတနာပုံ",
+    "fileName": "LmYadanapon",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Lwin Moe",
+    "English Support": ""
+  },
+  "LmShweMinthamee": {
+    "nameEn": "LmShweMinthamee",
+    "name": "အယ်လ်အမ်ရွှေမင်းသမီး",
+    "fileName": "LmShweMinthamee",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Lwin Moe",
+    "English Support": ""
+  },
+  "LmYadana": {
+    "nameEn": "LmYadana",
+    "name": "အယ်လ်အမ်ရတနာ",
+    "fileName": "LmYadana",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Lwin Moe",
+    "English Support": ""
+  },
+  "LmMyaNanda": {
+    "nameEn": "LmMyaNanda",
+    "name": "အယ်လ်အမ်မြန္ဒာ",
+    "fileName": "LmMyaNanda",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Lwin Moe",
+    "English Support": ""
+  },
+  "LmZarmaniHeavy": {
+    "nameEn": "LmZarmaniHeavy",
+    "name": "အယ်လ်အမ်ဇာနည်ဟယ်ဘီး",
+    "fileName": "LmZarmaniHeavy",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Lwin Moe",
+    "English Support": ""
+  },
+  "LmLwin": {
+    "nameEn": "LmLwin",
+    "name": "အယ်လ်အမ်လွင်",
+    "fileName": "LmLwin",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Lwin Moe",
+    "English Support": ""
+  },
+  "LmMaNinPhu": {
+    "nameEn": "LmMaNinPhu",
+    "name": "အယ်လ်အမ်မနှင်းဖူး",
+    "fileName": "LmMaNinPhu",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "ABSDF",
+    "English Support": ""
+  },
+  "LmChaTateLay": {
+    "nameEn": "LmChaTateLay",
+    "name": "အယ်လ်အမ်ချာတိတ်လေး",
+    "fileName": "LmChaTateLay",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "ABSDF",
+    "English Support": ""
+  },
+  "AcademyFlowerTrue": {
+    "nameEn": "AcademyFlowerTrue",
+    "name": "အကယ်ဒမီဖလားဝါးထရူး",
+    "fileName": "AcademyFlowerTrue",
+    "fontSupportType": "",
+    "fontStyle": "Italic",
+    "createdBy": "Khin Mg Latt",
+    "English Support": ""
+  },
+  "WinChoNew": {
+    "nameEn": "WinChoNew",
+    "name": "ဝင်းချိုနယူး",
+    "fileName": "WinChoNew",
+    "fontSupportType": "",
+    "fontStyle": "A",
+    "createdBy": "Win Tun",
+    "English Support": ""
+  },
+  "A-TypeWriter": {
+    "nameEn": "A-TypeWriter",
+    "name": "အေတိုက်ရိုက်တာ",
+    "fileName": "A_TypeWriter",
+    "fontSupportType": "",
+    "fontStyle": "Normal Bold",
+    "createdBy": "A & T Computer Group",
+    "English Support": ""
+  },
+  "WinTagaung": {
+    "nameEn": "WinTagaung",
+    "name": "ဝင်းတောင်ကြီး",
+    "fileName": "WinTagaung",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Win Tun",
+    "English Support": ""
+  },
+  "Perpetua": {
+    "nameEn": "Perpetua",
+    "name": "ပါပီတူး",
+    "fileName": "Perpetua",
+    "fontSupportType": "",
+    "fontStyle": "Italic BoldItalic TtilingMT_Bold TitlingMT_Light",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "WinBago": {
+    "nameEn": "WinBago",
+    "name": "ဝင်းပဲခူး",
+    "fileName": "WinBago",
+    "fontSupportType": "",
+    "fontStyle": "A",
+    "createdBy": "M.C.C ENGINEER GROUP",
+    "English Support": ""
+  },
+  "U4AhLone": {
+    "nameEn": "U4AhLone",
+    "name": "ယူဖိုးအလုံ",
+    "fileName": "U4AhLone",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "U4Bahan": {
+    "nameEn": "U4Bahan",
+    "name": "ယူဖိုးဗဟန်း",
+    "fileName": "U4Bahan",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "U4BoTaTaung": {
+    "nameEn": "U4BoTaTaung",
+    "name": "ယူဖိုးဗိုလ်တထောင်",
+    "fileName": "U4bBoTaTaung",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "U4DagonMyoThit": {
+    "nameEn": "U4DagonMyoThit",
+    "name": "ယူဖိုးဒဂုံမြို့သစ်",
+    "fileName": "U4DagonMyoThit",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "U4KaMarYut": {
+    "nameEn": "U4KaMarYut",
+    "name": "ယူဖိုးကမာရွတ်",
+    "fileName": "U4KaMarYut",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "U4LanMaDaw": {
+    "nameEn": "U4LanMaDaw",
+    "name": "ယူဖိုးလမ်းမတော်",
+    "fileName": "U4LanMaDaw",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "U4LaTha": {
+    "nameEn": "U4LaTha",
+    "name": "ယူဖိုးလသာ",
+    "fileName": "U4LaTha",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "U4Mingalardon": {
+    "nameEn": "U4Mingalardon",
+    "name": "ယူဖိုးမင်္ဂလာဒုံ",
+    "fileName": "U4Mingalardon",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "U4PaZunDaung": {
+    "nameEn": "U4PaZunDaung",
+    "name": "ယူဖိုးပုဇွန်တောင်",
+    "fileName": "U4PaZunDaung",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "U4ThaKeTa": {
+    "nameEn": "U4ThaKeTa",
+    "name": "ယူဖိုးသာကေတ",
+    "fileName": "U4ThaKeTa",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "",
+    "English Support": ""
+  },
+  "A_Pagan": {
+    "nameEn": "A_Pagan",
+    "name": "အေပုဂံ",
+    "fileName": "A_Pagan",
+    "fontSupportType": "",
+    "fontStyle": "Normal Heavy",
+    "createdBy": "A & T Group",
+    "English Support": ""
+  },
+  "KingPress": {
+    "nameEn": "KingPress",
+    "name": "ကင်းဂရက်စ်",
+    "fileName": "KingPress",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Fontographer 3.5",
+    "English Support": ""
+  },
+  "ArtTrue": {
+    "nameEn": "ArtTrue",
+    "name": "အက်ထရု",
+    "fileName": "ArtTrue",
+    "fontSupportType": "",
+    "fontStyle": "Regular Italic",
+    "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
+    "English Support": ""
+  },
+  "WinThaYeyKitTaRa": {
+    "nameEn": "WinThaYeyKitTaRa",
+    "name": "ဝင်းသရေခေတ္တရာ",
+    "fileName": "WinThaYeyKitTaRa",
+    "fontSupportType": "",
+    "fontStyle": "A",
+    "createdBy": "M.C.C ENGINEER GROUP",
+    "English Support": ""
+  },
+  "AeyarModernTrue": {
+    "nameEn": "AeyarModernTrue",
+    "name": "အေရာမော်ဒန်ထရု",
+    "fileName": "AeyarModernTrue",
+    "fontSupportType": "",
+    "fontStyle": "Bold Italic BoldItalic Normal",
+    "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
+    "English Support": ""
+  },
+  "Image": {
+    "nameEn": "Image",
+    "name": "အင်းမေ့",
+    "fileName": "Image",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Sein Arka Computers",
+    "English Support": ""
+  },
+  "KgMyanmar": {
+    "nameEn": "KgMyanmar",
+    "name": "ကေဂျီမြန်မာ",
+    "fileName": "KgMyanmar",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "King Computer",
+    "English Support": ""
+  },
+  "WinMonotype": {
+    "nameEn": "WinMonotype",
+    "name": "ဝင်းမိုနိုတိုက်",
+    "fileName": "WinMonotype",
+    "fontSupportType": "",
+    "fontStyle": "A",
+    "createdBy": "Zaw Htut",
+    "English Support": ""
+  },
+  "KingYoma": {
+    "nameEn": "KingYoma",
+    "name": "ကင်းရိုးမ",
+    "fileName": "KingYoma",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "King Computer",
+    "English Support": ""
+  },
+  "WinCourier": {
+    "nameEn": "WinCourier",
+    "name": "ဝင်းကာရီရာ",
+    "fileName": "WinCourier",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Win Tun (Mr Burma)",
+    "English Support": ""
+  },
+  "WinHanPagan": {
+    "nameEn": "WinHanPagan",
+    "name": "ဝင်းဟန်ပုဂံ",
+    "fileName": "WInHanPagan",
+    "fontSupportType": "",
+    "fontStyle": "A",
+    "createdBy": "Win Tun & Maung Han",
+    "English Support": ""
+  },
+  "SakPeacock": {
+    "nameEn": "SakPeacock",
+    "name": "အက်စ်အေကေပီးကော့",
+    "fileName": "SakPeacock",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Sein Arka Computers",
+    "English Support": ""
+  },
+  "AyarNadiTrue": {
+    "nameEn": "AyarNadiTrue",
+    "name": "ဧရာနဒီထရု",
+    "fileName": "AyarNadiTrue",
+    "fontSupportType": "",
+    "fontStyle": "Normal Italic",
+    "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
+    "English Support": ""
+  },
+  "WinPonnyaCond": {
+    "nameEn": "WinPonnyaCond",
+    "name": "ဝင်းပုညကုန်း",
+    "fileName": "WinPonnyaCond",
+    "fontSupportType": "",
+    "fontStyle": "Light Bold ExtraBold",
+    "createdBy": "Win Tun (Mr Burma) & Maung Han",
+    "English Support": ""
+  },
+  "HanNweThaKi": {
+    "nameEn": "HanNweThaKi",
+    "name": "ဟန်နွယ်သာကီ",
+    "fileName": "HanNweThaKi",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Maung Han",
+    "English Support": ""
+  },
+  "HanOvelInserat": {
+    "nameEn": "HanOvelInserat",
+    "name": "ဟန်အိုဗယ်အင်းစက်",
+    "fileName": "HanOvelInserat",
+    "fontSupportType": "",
+    "fontStyle": "Heavy",
+    "createdBy": "Maung Han",
+    "English Support": ""
+  },
+  "HanPoppa": {
+    "nameEn": "HanPoppa",
+    "name": "ဟန်ပုပ္ပါး",
+    "fileName": "HanPoppa",
+    "fontSupportType": "",
+    "fontStyle": "Heavy",
+    "createdBy": "Maung Han",
+    "English Support": ""
+  },
+  "WinThanLwin": {
+    "nameEn": "WinThanLwin",
+    "name": "ဝင်းသံလွင်",
+    "fileName": "WinThanLwin",
+    "fontSupportType": "",
+    "fontStyle": "Bold",
+    "createdBy": "M.C.C ENGINEER GROUP",
+    "English Support": ""
+  },
+  "WinSuuKyi": {
+    "nameEn": "WinSuuKyi",
+    "name": "ဝင်းစုကြည်",
+    "fileName": "WinSuuKyi",
+    "fontSupportType": "",
+    "fontStyle": "Normal Italic",
+    "createdBy": "Win Tun (Mr Burma)",
+    "English Support": ""
+  },
+  "Harrington": {
+    "nameEn": "Harrington",
+    "name": "ဟယ်ရီတန်",
+    "fileName": "Harrington",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "The Font Bureau",
+    "English Support": ""
+  },
+  "Burma": {
+    "nameEn": "Burma",
+    "name": "ဗမာ",
+    "fileName": "Burma",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Win Tun (Mr Burma) & Maung Han",
+    "English Support": ""
+  },
+  "Popa": {
+    "nameEn": "Popa",
+    "name": "ပုပ္ပါး",
+    "fileName": "Popa",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Gustaaf Houtman",
+    "English Support": ""
+  },
+  "InGyin": {
+    "nameEn": "InGyin",
+    "name": "အင်ကြင်း",
+    "fileName": "InGyin",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Win Tun",
+    "English Support": ""
+  },
+  "A_Rose": {
+    "nameEn": "A_Rose",
+    "name": "အေရို့စ်",
+    "fileName": "A_Rose",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "A & T Computer Group",
+    "English Support": ""
+  },
+  "AcademyThickTrue": {
+    "nameEn": "AcademyThickTrue",
+    "name": "အကယ်ဒမီသစ်ထရု",
+    "fileName": "AcademyThickTrue",
+    "fontSupportType": "",
+    "fontStyle": "Normal Bold Italic BoldItalic",
+    "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
+    "English Support": ""
+  },
+  "WinCho": {
+    "nameEn": "WinCho",
+    "name": "ဝင်းချို",
+    "fileName": "WinCho",
+    "fontSupportType": "",
+    "fontStyle": "A",
+    "createdBy": "Win Tun (Mr Burma)",
+    "English Support": ""
+  },
+  "WinCircle": {
+    "nameEn": "WinCircle",
+    "name": "ဝင်းဆိုင်ကယ်",
+    "fileName": "WinCircle",
+    "fontSupportType": "",
+    "fontStyle": "Bold Medium ExtraBold",
+    "createdBy": "Win Tun (Mr Burma)",
+    "English Support": ""
+  },
+  "ShweYee": {
+    "nameEn": "ShweYee",
+    "name": "ရွှေရီ",
+    "fileName": "ShweYee",
+    "fontSupportType": "",
+    "fontStyle": "ExtraLight",
+    "createdBy": "Maung Maung Tun",
+    "English Support": ""
+  },
+  "HarlowSolid": {
+    "nameEn": "HarlowSolid",
+    "name": "ဟာလိုဆောလစ်",
+    "fileName": "HarlowSolid",
+    "fontSupportType": "",
+    "fontStyle": "Italic",
+    "createdBy": "URW Software",
+    "English Support": ""
+  },
+  "WinTypeWriter": {
+    "nameEn": "WinTypeWriter",
+    "name": "ဝင်းတိုက်ရိုက်တာ",
+    "fileName": "WinTypeWriter",
+    "fontSupportType": "",
+    "fontStyle": "Normal Bold ExtraBold",
+    "createdBy": "Win Tun (Mr Burma)",
+    "English Support": ""
+  },
+  "AeyarNadiPlainTrue": {
+    "nameEn": "AeyarNadiPlainTrue",
+    "name": "ဧရာနဒီပလိန်းထရု",
+    "fileName": "AeyarNadiPlainTrue",
+    "fontSupportType": "",
+    "fontStyle": "Normal Italic",
+    "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
+    "English Support": ""
+  },
+  "WinHlaing": {
+    "nameEn": "WinHlaing",
+    "name": "ဝင်းလှိုင်",
+    "fileName": "WinHlaing",
+    "fontSupportType": "",
+    "fontStyle": "Medium",
+    "createdBy": "Win Tun (Mr Burma)",
+    "English Support": ""
+  },
+  "WinDawei": {
+    "nameEn": "WinDawei",
+    "name": "ဝင်းထားဝယ်",
+    "fileName": "WinDawei",
+    "fontSupportType": "",
+    "fontStyle": "A",
+    "createdBy": "M.C.C ENGINEER GROUP",
+    "English Support": ""
+  },
+  "A_Pinya": {
+    "nameEn": "A_Pinya",
+    "name": "အေပင်းယ",
+    "fileName": "A_Pinya",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Photographer 3.5",
+    "English Support": ""
+  },
+  "WinPyuCond": {
+    "nameEn": "WinPyuCond",
+    "name": "ဝင်းဖြူကုန်း",
+    "fileName": "WinPhyuCond",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Win Tun (Mr Burma)",
+    "English Support": ""
+  },
+  "WinHan": {
+    "nameEn": "WinHan",
+    "name": "ဝင်းဟန်",
+    "fileName": "WinHan",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Win Tun and Maung Han",
+    "English Support": ""
+  },
+  "WorldNet": {
+    "nameEn": "WorldNet",
+    "name": "ဝေါနက်",
+    "fileName": "WorldNet",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Iconian font",
+    "English Support": ""
+  },
+  "KTO": {
+    "nameEn": "KTO",
+    "name": "ကေတီအို",
+    "fileName": "KTO",
+    "fontSupportType": "",
+    "fontStyle": "KTO_1 KTO_2 KTO_3 KTO_4 KTO_5",
+    "createdBy": "Htun Oo",
+    "English Support": ""
+  },
+  "KgThunder": {
+    "nameEn": "KgThunder",
+    "name": "ကေဂျီသန္တာ",
+    "fileName": "KgThunder",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "King Computer",
+    "English Support": ""
+  },
+  "WorldMath": {
+    "nameEn": "WorldMath",
+    "name": "ဝေါမက်",
+    "fileName": "WorldMath",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Aphabets",
+    "English Support": ""
+  },
+  "WinHeho": {
+    "nameEn": "WinHeho",
+    "name": "ဝင်းဟဲဟိုး",
+    "fileName": "WinHeho",
+    "fontSupportType": "",
+    "fontStyle": "A",
+    "createdBy": "M.C.C ENGINEER GROUP",
+    "English Support": ""
+  },
+  "SakRoyal": {
+    "nameEn": "SakRoyal",
+    "name": "အက်စ်အေကေရိုင်ရယ်",
+    "fileName": "SakRoyal",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Sein Arka Computers",
+    "English Support": ""
+  },
+  "SakPadamya": {
+    "nameEn": "SakPadamya",
+    "name": "အက်စ်အေကေပတ္တမြား",
+    "fileName": "SakPadamya",
+    "fontSupportType": "",
+    "fontStyle": "Noraml",
+    "createdBy": "Sein Arka Computers",
+    "English Support": ""
+  },
+  "SakTwoLine": {
+    "nameEn": "SakTwoLine",
+    "name": "အက်စ်အေကေတူးလိုင်း",
+    "fileName": "SakTwoLine",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Sein Arka Computers",
+    "English Support": ""
+  },
+  "SakThick": {
+    "nameEn": "SakThick",
+    "name": "အက်စ်အေကေသစ်",
+    "fileName": "SakThick",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Sein Arka Computers",
+    "English Support": ""
+  },
+  "WinChin": {
+    "nameEn": "WinChin",
+    "name": "ဝင်းချင်း",
+    "fileName": "WinChin",
+    "fontSupportType": "",
+    "fontStyle": "A",
+    "createdBy": "M.C.C ENGINEER GROUP",
+    "English Support": ""
+  },
+  "WinEllipse": {
+    "nameEn": "WinEllipse",
+    "name": "ဝင်းအီလစ်",
+    "fileName": "WinEllipse",
+    "fontSupportType": "",
+    "fontStyle": "ExtraHeavy",
+    "createdBy": "Win Tun (Mr Burma)",
+    "English Support": ""
+  },
+  "SakSeinArka": {
+    "nameEn": "SakSeinArka",
+    "name": "အက်စ်အေကေစိမ်းအာကာ",
+    "fileName": "SakSeinArka",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Sein Arka Computers",
+    "English Support": ""
+  },
+  "Ha2Line": {
+    "nameEn": "Ha2Line",
+    "name": "အိတ်အေတူးလိုင်း",
+    "fileName": "Ha2Line",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Han Than Htun, Sett Aung Khaing",
+    "English Support": ""
+  },
+  "WinLaSho": {
+    "nameEn": "WinLaSho",
+    "name": "ဝင်းလားရှိုး",
+    "fileName": "WinLaSho",
+    "fontSupportType": "",
+    "fontStyle": "A",
+    "createdBy": "Zaw Htut",
+    "English Support": ""
+  },
+  "WinMap": {
+    "nameEn": "WinMap",
+    "name": "ဝင်းမက်",
+    "fileName": "WinMap",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Win Tun (Mr Burma)",
+    "English Support": ""
+  },
+  "WinPyu": {
+    "nameEn": "WinPyu",
+    "name": "ဝင်းဖြူး",
+    "fileName": "WinPyu",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Win Tun (Mr Burma)",
+    "English Support": ""
+  },
+  "H2Lines": {
+    "nameEn": "H2Lines",
+    "name": "အိတ်တူးလိုင်း",
+    "fileName": "H2Lines",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "Han Than Htun",
+    "English Support": ""
+  },
+  "WinEra": {
+    "nameEn": "WinEra",
+    "name": "ဝင်းအီရာ",
+    "fileName": "WinEra",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Win Tun (Mr Burma)",
+    "English Support": ""
+  },
+  "WhPonnya": {
+    "nameEn": "WhPonnya",
+    "name": "ဒဗလျူးအိတ်ပုည",
+    "fileName": "WhPonnya",
+    "fontSupportType": "",
+    "fontStyle": "Bold Light",
+    "createdBy": "Win Tun & Maung Han",
+    "English Support": ""
+  },
+  "Kg": {
+    "nameEn": "Kg",
+    "name": "ကေဂျီ",
+    "fileName": "Kg",
+    "fontSupportType": "",
+    "fontStyle": "Normal",
+    "createdBy": "King Computer",
+    "English Support": ""
+  },
+  "KgOvalflat": {
+    "nameEn": "KgOvalflat",
+    "name": "ကေဂျီအိုဗယ်ဖလတ်",
+    "fileName": "KgOvalflat",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "King Computer",
+    "English Support": ""
+  },
+  "KgChit": {
+    "nameEn": "KgChit",
+    "name": "ကေဂျီချစ်",
+    "fileName": "KgChit",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "King Computer",
+    "English Support": ""
+  },
+  "KgFuncy": {
+    "nameEn": "KgFuncy",
+    "name": "ကေဂျီဖန်စီ",
+    "fileName": "KgFuncy",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Myint Lwynn under support of Tint Lwynn(I.C.S.T)-King Computer",
+    "English Support": ""
+  },
+  "KgNand": {
+    "nameEn": "KgNand",
+    "name": "ကေဂျီနန့်",
+    "fileName": "KgNand",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "King Computer",
+    "English Support": ""
+  },
+  "MasterpieceDesign": {
+    "nameEn": "MasterpieceDesign",
+    "name": "မာစတာပိစ့်ဒီဇိုင်း",
+    "fileName": "MasterpieceDesign",
+    "fontSupportType": "",
+    "fontStyle": "Bold Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceDesignOutline": {
+    "nameEn": "MasterpieceDesignOutline",
+    "name": "မာစတာပိစ့်ဒီဇိုင်းအောက်လိုင်း",
+    "fileName": "MasterpieceDesignOutline",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceDiploma": {
+    "nameEn": "MasterpieceDiploma",
+    "name": "မာစတာပိစ့်ဒီပလိုမာ",
+    "fileName": "MasterpieceDiploma",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceDiplomaOutline": {
+    "nameEn": "MasterpieceDiplomaOutline",
+    "name": "မာစတာပိစ့်ဒီပလိုမာအောက်လိုင်း",
+    "fileName": "MasterpieceDiplomaOutline",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceFreehand": {
+    "nameEn": "MasterpieceFreehand",
+    "name": "မာစတာပိစ့်ဖရီးဟန်း",
+    "fileName": "MasterpieceFreehand",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceHand": {
+    "nameEn": "MasterpieceHand",
+    "name": "မာစတာပိစ့်ဟန်း",
+    "fileName": "MasterpieceHand",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceKids": {
+    "nameEn": "MasterpieceKids",
+    "name": "မာစတာပိစ့်ကစ်",
+    "fileName": "MasterpieceKids",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceNormal": {
+    "nameEn": "MasterpieceNormal",
+    "name": "မာစတာပိစ့်နော်မယ်",
+    "fileName": "MasterpieceNormal",
+    "fontSupportType": "",
+    "fontStyle": "Regular Bold",
+    "createdBy": "Myo Gyi",
+    "English Support": ""
+  },
+  "MasterpieceNormalOutline": {
+    "nameEn": "MasterpieceNormalOutline",
+    "name": "မာစတာပိစ့်နောမယ်အောက်လိုင်း",
+    "fileName": "MasterpieceNormalOutline",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Myo Gyi",
+    "English Support": ""
+  },
+  "MasterpieceOctagon": {
+    "nameEn": "MasterpieceOctagon",
+    "name": "မာစတာပိစ့်အောက်တဂွန်",
+    "fileName": "MasterpieceOctagon",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceOctagonOutline": {
+    "nameEn": "MasterpieceOctagonOutline",
+    "name": "မာစတာပိစ့်အောက်တဂွန်အောက်လိုင်း",
+    "fileName": "MasterpieceOctagonOutline",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceOctagonCrack": {
+    "nameEn": "MasterpieceOctagonCrack",
+    "name": "မာစတာပိစ့်အောက်တဂွန်ခရက်စ်",
+    "fileName": "MasterpieceOctagonCrack",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceOctangonLines": {
+    "nameEn": "MasterpieceOctangonLines",
+    "name": "မာစတာပိစ့်အော်တဂွန်လိုင်း",
+    "fileName": "MasterpieceOctagonLines",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceOval": {
+    "nameEn": "MasterpieceOval",
+    "name": "မာစတာပိစ့်အိုဗယ်",
+    "fileName": "MasterpieceOval",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceRectangle": {
+    "nameEn": "MasterpieceRectangle",
+    "name": "မာစတာပိစ့်ရက်တန်ဂယ်",
+    "fileName": "MasterpieceRectangle",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceRectangleOutline": {
+    "nameEn": "MasterpieceRectangleOutline",
+    "name": "မာစတာပိစ့်ရက်တန်ဂယ်အောက်လိုင်း",
+    "fileName": "MasterpieceRectangleOutline",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceRound": {
+    "nameEn": "MasterpieceRound",
+    "name": "မာစတာပိစ့်ဝရောင်း",
+    "fileName": "MasterpieceRound",
+    "fontSupportType": "",
+    "fontStyle": "Regular Bold",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceSemiOval": {
+    "nameEn": "MasterpieceSemiOval",
+    "name": "မာစတာပိစ့်စီးမီးအိုဗယ်",
+    "fileName": "MasterpieceSemiOval",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Ne Lin Oo",
+    "English Support": ""
+  },
+  "MasterpieceSemiOvalOutline": {
+    "nameEn": "MasterpieceSemiOvalOutline",
+    "name": "မာစတာပိစ့်စီးမီးအိုဗယ်အောက်လိုင်း",
+    "fileName": "MasterpieceSemiOvalOutline",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Ne Lin Oo",
+    "English Support": ""
+  },
+  "MasterpieceShade": {
+    "nameEn": "MasterpieceShade",
+    "name": "မာစတာပိစ့်ရှိတ်",
+    "fileName": "MasterpieceShade",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceShadeOutline": {
+    "nameEn": "MasterpieceShadeOutline",
+    "name": "မာစတာပိစ့်ရှိတ်အောက်လိုင်း",
+    "fileName": "MasterpieceShadeOutline",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceStroke": {
+    "nameEn": "MasterpieceStroke",
+    "name": "မာစတာပိစ့်စတုတ်",
+    "fileName": "MasterpieceStroke",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceStrokeTwin": {
+    "nameEn": "MasterpieceStrokeTwin",
+    "name": "မာစတာပိစ့်စတုတ်တွင်",
+    "fileName": "MasterpieceStrokeTwin",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceV0Stroke": {
+    "nameEn": "MasterpieceV0Stroke",
+    "name": "မာစတာပိစ့်ဗွီဇီရိုးစတုတ်",
+    "fileName": "MasterpieceV0Stroke",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MasterpieceV0StrokeTwin": {
+    "nameEn": "MasterpieceV0StrokeTwin",
+    "name": "မာစတာပိစ့်ဗီဇီရိုးစတုတ်တွင်",
+    "fileName": "MasterpieceV0StrokeTwin",
+    "fontSupportType": "",
+    "fontStyle": "Regular",
+    "createdBy": "Cotoe",
+    "English Support": ""
+  },
+  "MyanmarYinmar": {
+    "nameEn": "MyanmarYinmar",
+    "name": "မြန်မာယင်မာ",
+    "fileName": "MyanmarYinmar",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarAngoun": {
+    "nameEn": "MyanmarAngoun",
+    "name": "မြန်မာအာဂွန်",
+    "fileName": "MyanmarAngoun",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarChatu": {
+    "nameEn": "MyanmarChatu",
+    "name": "မြန်မာချာတူး",
+    "fileName": "MyanmarChatu",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular Light",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarGantgaw": {
+    "nameEn": "MyanmarGantgaw",
+    "name": "မြန်မာဂန့်ဂေါ",
+    "fileName": "MyanmarGantgaw",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarKhyay": {
+    "nameEn": "MyanmarKhyay",
+    "name": "မြန်မာခွေး",
+    "fileName": "MyanmarKhyay",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarKuttar": {
+    "nameEn": "MyanmarKuttar",
+    "name": "မြန်မာကူတာ",
+    "fileName": "MyanmarKuttar",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarNayone": {
+    "nameEn": "MyanmarNayone",
+    "name": "မြန်မာနယုန်",
+    "fileName": "MyanmarNayone",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarNjaun": {
+    "nameEn": "MyanmarNjaun",
+    "name": "မြန်မာအန်ဂျန်",
+    "fileName": "MyanmarNjaun",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarPauklay": {
+    "nameEn": "MyanmarPauklay",
+    "name": "မြန်မာပေါက်လေး",
+    "fileName": "MyanmarPauklay",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarPhetsot": {
+    "nameEn": "MyanmarPhetsot",
+    "name": "မြန်မာဖက်ဆော့",
+    "fileName": "MyanmarPhetsot",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarPhiksel": {
+    "nameEn": "MyanmarPhiksel",
+    "name": "မြန်မာဖစ်ဆယ်",
+    "fileName": "MyanmarPhiksel",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular Smooth",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarPonenyet": {
+    "nameEn": "MyanmarPonenyet",
+    "name": "မြန်မာပုံနရိပ်",
+    "fileName": "MyanmarPonenyet",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regualr",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarSabae": {
+    "nameEn": "MyanmarSabae",
+    "name": "မြန်မာစံပယ်",
+    "fileName": "MyanmarSabae",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarSagar": {
+    "nameEn": "MyanmarSagar",
+    "name": "မြန်မာစကား",
+    "fileName": "MyanmarSagar",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarSanpya": {
+    "nameEn": "MyanmarSanpya",
+    "name": "မြန်မာစံပြ",
+    "fileName": "MyanmarSanpya",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MynmarSansPro": {
+    "nameEn": "MynmarSansPro",
+    "name": "မြန်မာစံပရို",
+    "fileName": "MyanmarSansPro",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarSquareLight": {
+    "nameEn": "MyanmarSquareLight",
+    "name": "မြန်မာစကွဲးလိုက်",
+    "fileName": "MyanmarSquareLight",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarTagu": {
+    "nameEn": "MyanmarTagu",
+    "name": "မြန်မာတန်ခူး",
+    "fileName": "MyanmarTagu",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarThuriya": {
+    "nameEn": "MyanmarThuriya",
+    "name": "မြန်မာသူရိယ",
+    "fileName": "MyanmarThuriya",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  },
+  "MyanmarWaso": {
+    "nameEn": "MyanmarWaso",
+    "name": "မြန်မာဝါဆို",
+    "fileName": "MyanmarWaso",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Danh Hong",
+    "English Support": ""
+  }
+}

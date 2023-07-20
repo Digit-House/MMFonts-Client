@@ -6,7 +6,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import { FramerMotionWrapper, RadioSelectBar, TextGenerateModal } from '@components/index';
 import { PremiumFontType, SelectOptionType } from '@core/golobalTypes';
-import useCSVConvert from '@hooks/useCSVConvert';
+import useCSVConvert from '@hooks/useFontsArray';
 
 const settings = {
   dots: false,

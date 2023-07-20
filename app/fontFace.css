@@ -147,7 +147,7 @@
 
 @font-face {
   font-family: 'WinYangon';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinYangon/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WnYangon/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
 }
@@ -1595,8 +1595,162 @@
 }
 
 @font-face {
+  font-family: '';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts//.ttf') format('truetype');
+  font-weight: ;
+  font-style: ;
+}
+
+@font-face {
   font-family: 'MyanmarYinmar';
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarYinmar/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarAngoun';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarAngoun/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarChatu';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarChatu/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarChatu';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarChatu/Light.ttf') format('truetype');
+  font-weight: Light;
+  font-style: Light;
+}
+
+@font-face {
+  font-family: 'MyanmarGantgaw';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarGantgaw/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarKhyay';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarKhyay/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarKuttar';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarKuttar/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarNayone';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarNayone/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarNjaun';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarNjaun/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarPauklay';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarPauklay/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarPhetsot';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarPhetsot/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarPhiksel';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarPhiksel/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarPhiksel';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarPhiksel/Smooth.ttf') format('truetype');
+  font-weight: Smooth;
+  font-style: Smooth;
+}
+
+@font-face {
+  font-family: 'MyanmarPonenyet';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarPonenyet/Regualr.ttf') format('truetype');
+  font-weight: Regualr;
+  font-style: Regualr;
+}
+
+@font-face {
+  font-family: 'MyanmarSabae';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarSabae/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarSagar';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarSagar/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarSanpya';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarSanpya/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MynmarSansPro';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarSansPro/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarSquareLight';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarSquareLight/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarTagu';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarTagu/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarThuriya';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarThuriya/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+}
+
+@font-face {
+  font-family: 'MyanmarWaso';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarWaso/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
 }

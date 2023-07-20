@@ -12,7 +12,7 @@ import {
   TextGenerateModal,
 } from '@components/index';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
-import useCSVConvert from '@hooks/useCSVConvert';
+import useFont from '@hooks/useFont';
 
 function Page() {
   const params: any = useParams();
@@ -23,29 +23,28 @@ function Page() {
     value: '20',
   });
   const [open, setOpen] = useState<boolean>(false);
-  const [font, setFont] = useState<FontType | null>();
   const [fontStyles, setFontStyles] = useState<FontType[]>();
   const t = useTranslations('Index');
 
-  const { data } = useCSVConvert('/fonts/data/font.csv') as { data: FontType[] };
+  const { data: font } = useFont(params.id) as { data: FontType };
 
   useEffect(() => {
-    const index = params.id.split('-').pop();
-    if (index) {
-      if (!font) {
-        const fontData: FontType = data[parseInt(index)];
-        if (fontData) {
-          const styles = fontData.fontStyle.split(' ');
-          const dataStyles: FontType[] = styles.map((style) => {
-            return { ...fontData, fontStyle: style };
-          });
+    if (font) {
+      const styles = font.fontStyle.split(' ');
 
-          setFontStyles([...dataStyles]);
-          setFont(fontData);
-        }
-      }
+      const fonts = styles.map((style) => {
+        return {
+          name: font.name,
+          nameEn: style,
+          fontStyle: style,
+          fontSupportType: font.fontSupportType,
+          fileName: font.fileName,
+          createdBy: font.createdBy,
+        };
+      });
+      setFontStyles(fonts);
     }
-  }, [params, font]);
+  }, [font]);
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setValue(event.target.value);

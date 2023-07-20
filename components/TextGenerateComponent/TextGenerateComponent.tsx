@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import filterSearch from '@core/filterSearch';
 import { FontType, PremiumFontType } from '@core/golobalTypes';
-import useCSVConvert from '@hooks/useCSVConvert';
+import useCSVConvert from '@hooks/useFontsArray';
 import { CustomSelectBox } from '..';
 
 const parargraph =

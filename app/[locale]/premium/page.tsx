@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { FramerMotionWrapper, Loading, PremiumCard } from '@components/index';
 import { PremiumFontType } from '@core/golobalTypes';
-import useCSVConvert from '@hooks/useCSVConvert';
+import useCSVConvert from '@hooks/useFontsArray';
 
 const Page = () => {
   const { data } = useCSVConvert('/fonts/data/premium.csv') as { data: PremiumFontType[] };
