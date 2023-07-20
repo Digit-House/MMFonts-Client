@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { FontListCard, FramerMotionWrapper, Loading, SearchBox } from '@components/index';
+import { FontListCard, FramerMotionWrapper, RivLoading, SearchBox } from '@components/index';
 import filterSearch from '@core/filterSearch';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
 import NumberConverter from '@core/NumberConverter';
@@ -107,7 +107,7 @@ export default function Home() {
     prevFontLists.current = filterSearch(event, data);
   };
 
-  if (data.length === 0) return <Loading />;
+  if (data.length === 0) return <RivLoading />;
 
   return (
     <main className="flex-grow h-full mt-5 ">
