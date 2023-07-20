@@ -22,7 +22,7 @@ const settings = {
 };
 
 const Premium = () => {
-  const data = [];
+  const data: any = [];
 
   const [currentFont, setCurrentFont] = useState<PremiumFontType | null>();
   const [images, setImages] = useState<{ src: string }[]>([]);
