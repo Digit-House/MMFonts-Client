@@ -84,16 +84,9 @@
 
 @font-face {
   font-family: 'M-Myanmar1';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/M-Myanmar1/Bold.ttf') format('truetype');
-  font-weight: Bold;
-  font-style: Bold;
-}
-
-@font-face {
-  font-family: 'M-Myanmar1';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/M-Myanmar1/Normal.ttf') format('truetype');
-  font-weight: Normal;
-  font-style: Normal;
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/M-Myanmar1/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
 }
 
 @font-face {
@@ -147,7 +140,7 @@
 
 @font-face {
   font-family: 'WinYangon';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WnYangon/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinYangon/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
 }
