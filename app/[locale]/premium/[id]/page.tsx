@@ -6,7 +6,6 @@ import React, { useCallback, useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import { FramerMotionWrapper, RadioSelectBar, RivLoading, TextGenerateModal } from '@components/index';
 import { PremiumFontType, SelectOptionType } from '@core/golobalTypes';
-import useCSVConvert from '@core/getFontsArray';
 
 const settings = {
   dots: false,
@@ -23,7 +22,7 @@ const settings = {
 };
 
 const Premium = () => {
-  const { data } = useCSVConvert('/fonts/data/premium.csv') as { data: PremiumFontType[] };
+  const data = [];
 
   const [currentFont, setCurrentFont] = useState<PremiumFontType | null>();
   const [images, setImages] = useState<{ src: string }[]>([]);

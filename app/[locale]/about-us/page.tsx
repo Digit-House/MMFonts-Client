@@ -18,7 +18,8 @@ const ContactUs = () => {
         }, 3000);
       },
       (err) => {
-        console.log('failed to copy', err.mesage);
+        // eslint-disable-next-line no-console
+        console.error('Async: Could not copy text: ', err);
       }
     );
   };
