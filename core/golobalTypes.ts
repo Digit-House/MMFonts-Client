@@ -17,3 +17,7 @@ export interface PremiumFontType extends FontType {
   images: string;
   price: string;
 }
+
+export interface FontJsonType {
+  [fontName: string]: FontType;
+}

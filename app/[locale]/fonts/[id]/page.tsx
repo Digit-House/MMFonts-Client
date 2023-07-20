@@ -26,7 +26,7 @@ function Page() {
   const [fontStyles, setFontStyles] = useState<FontType[]>();
   const t = useTranslations('Index');
 
-  const font = getFontByName(params.id) as { data: FontType };
+  const font = getFontByName(params.id) as FontType;
 
   useEffect(() => {
     if (font) {

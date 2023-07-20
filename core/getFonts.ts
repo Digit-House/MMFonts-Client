@@ -1,4 +1,5 @@
 import fontJson from '../public/fonts/data/font.json';
+import { FontJsonType, FontType } from './golobalTypes';
 
 export const getAllFontsName = () => {
   const fontsName = Object.keys(fontJson);
@@ -10,7 +11,8 @@ export const getFontsArray = () => {
   return array;
 };
 
-export const getFontByName = (fontName: string) => {
-  const font = fontJson[fontName];
+export const getFontByName = (fontName: string): FontType | undefined => {
+  const fontJsonWithIndex = fontJson as FontJsonType;
+  const font = fontJsonWithIndex[fontName];
   return font;
 };
