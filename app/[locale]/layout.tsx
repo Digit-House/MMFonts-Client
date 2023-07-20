@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import localFont from 'next/font/local';
+import Head from 'next/head';
 import { notFound } from 'next/navigation';
 import Providers from './Providers';
 
@@ -95,6 +96,14 @@ export default async function RootLayout({ children, params: { locale } }: RootL
 
   return (
     <html lang={locale} translate="no">
+      <Head>
+        <link rel="preload" href="/loading.riv" as="fetch" crossOrigin="anonymous" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: 'history.scrollRestoration = "manual"',
+          }}
+        />
+      </Head>
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body className={`${myLocalFont.variable} font-acre `}>
           <Providers>{children}</Providers>

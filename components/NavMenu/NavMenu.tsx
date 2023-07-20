@@ -54,7 +54,6 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
                   className="absolute top-full left-0 block h-[1px] bg-darkblue dark:bg-white w-full "
                 />
               )}
-
               {item.title}
             </Link>
           </motion.div>

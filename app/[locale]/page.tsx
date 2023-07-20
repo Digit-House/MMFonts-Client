@@ -4,16 +4,16 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { FontListCard, FramerMotionWrapper, Loading, SearchBox } from '@components/index';
+import { FontListCard, FramerMotionWrapper, RivLoading, SearchBox } from '@components/index';
 import filterSearch from '@core/filterSearch';
+import { getFontsArray } from '@core/getFonts';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
 import NumberConverter from '@core/NumberConverter';
-import useFontsArray from '@hooks/useFontsArray';
 import RowsIcon from '/public/icons8-columns.png';
 
 export default function Home() {
+  const data = getFontsArray();
   const t = useTranslations('Index');
-  const { data } = useFontsArray();
   const [fontList, setFontList] = useState<FontType[]>([]);
   const [copyFontList, setCopyFontList] = useState<FontType[]>([]);
   const [value, setValue] = useState<string>('');
@@ -107,7 +107,7 @@ export default function Home() {
     prevFontLists.current = filterSearch(event, data);
   };
 
-  if (data.length === 0) return <Loading />;
+  if (data.length === 0) return <RivLoading />;
 
   return (
     <main className="flex-grow h-full mt-5 ">

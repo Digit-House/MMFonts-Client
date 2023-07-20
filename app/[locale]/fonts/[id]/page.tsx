@@ -11,8 +11,8 @@ import {
   RadioSelectBar,
   TextGenerateModal,
 } from '@components/index';
+import { getFontByName } from '@core/getFonts';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
-import useFont from '@hooks/useFont';
 
 function Page() {
   const params: any = useParams();
@@ -26,7 +26,7 @@ function Page() {
   const [fontStyles, setFontStyles] = useState<FontType[]>();
   const t = useTranslations('Index');
 
-  const { data: font } = useFont(params.id) as { data: FontType };
+  const font = getFontByName(params.id) as { data: FontType };
 
   useEffect(() => {
     if (font) {

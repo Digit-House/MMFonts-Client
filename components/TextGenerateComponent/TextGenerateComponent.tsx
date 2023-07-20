@@ -4,8 +4,8 @@ import { useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import filterSearch from '@core/filterSearch';
-import { FontType, PremiumFontType } from '@core/golobalTypes';
-import useCSVConvert from '@hooks/useFontsArray';
+import { getFontsArray } from '@core/getFonts';
+import { FontType } from '@core/golobalTypes';
 import { CustomSelectBox } from '..';
 
 const parargraph =
@@ -18,7 +18,9 @@ const TextGenerateComponent = () => {
     { label: t('paragraph'), value: 'စာပိုဒ်' },
     { label: t('sentence'), value: 'စာကြောင်း' },
   ];
-  const { data } = useCSVConvert('/fonts/data/font.csv') as { data: PremiumFontType[] };
+
+  const data = getFontsArray();
+
   const [filterFontNames, setFilterFontNames] = useState<FontType[]>([]);
   const [optionValue, setOptionValue] = useState(options[0]);
   const [open, setOpen] = useState<boolean>(false);

@@ -16,3 +16,4 @@ export { default as TextGenerateComponent } from './TextGenerateComponent/TextGe
 export { default as FramerMotionWrapper } from './FramerMotionWrapper/FramerMotionWrapper';
 export { default as Loading } from './Loading/Loading';
 export { default as LangSelectBox } from './LangSelectBox/LangSelectBox';
+export { default as RivLoading } from './RivLoading/RivLoading';
