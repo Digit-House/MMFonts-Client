@@ -29,6 +29,7 @@ function generateFontFaceCSS(fontFamily, fontUrl, fontStyle) {
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/${fontUrl}/${style}.ttf') format('truetype');
   font-weight: ${style};
   font-style: ${style};
+  font-display: swap;
 }`
   );
 
@@ -36,4 +37,3 @@ function generateFontFaceCSS(fontFamily, fontUrl, fontStyle) {
 }
 
 generateFontFace();
-// src: url('/public/fonts/${fontUrl}/${style}.ttf') format('truetype');

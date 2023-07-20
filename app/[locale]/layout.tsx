@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import localFont from 'next/font/local';
 import Head from 'next/head';
 import { notFound } from 'next/navigation';
+import { getFontsArray } from '@core/getFonts';
 import Providers from './Providers';
 
 const myLocalFont = localFont({
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
       url: '/apple-touch-icon.png',
     },
   },
-  creator: 'KAUNG HTET NAING',
+  creator: 'Digital House Team',
   publisher: 'Digital House Myanmar',
   manifest: '/manifest.json',
 };
@@ -84,6 +85,19 @@ export function generateStaticParams() {
   return [{ locale: 'mm' }, { locale: 'en' }];
 }
 
+const generateFontLink = () => {
+  const fontsLink = getFontsArray().map((font) => {
+    const styleLinks = font.fontStyle
+      .split(' ')
+      .map(
+        (style) =>
+          `https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/${font.fileName}/${style}.ttf`
+      );
+    return styleLinks.join('\n');
+  });
+  return fontsLink;
+};
+
 export const revalidate = 60;
 
 export default async function RootLayout({ children, params: { locale } }: RootLayoutProps) {
@@ -97,6 +111,9 @@ export default async function RootLayout({ children, params: { locale } }: RootL
   return (
     <html lang={locale} translate="no">
       <Head>
+        {generateFontLink().map((link) => (
+          <link rel="preload" href={link} as="font" crossOrigin="anonymous" key={link} />
+        ))}
         <link rel="preload" href="/loading.riv" as="fetch" crossOrigin="anonymous" />
         <script
           dangerouslySetInnerHTML={{
