@@ -1,7 +1,12 @@
+import { usePathname } from 'next/navigation';
 import React from 'react';
 
 const Loading = ({ waitingText = false }: { waitingText?: boolean }) => {
-  const text = !waitingText ? ['ခ', 'ဏ', 'စော', 'င့်', 'ဆို', 'င်း', 'ပါ'] : ['မ', 'ရ', 'နိုင်', 'သေး', 'ပါ'];
+  const pathname = usePathname();
+  const comingSoon = pathname?.includes('en')
+    ? ['C', 'o', 'm', 'i', 'n', 'g', ' ', 'S', 'o', 'o', 'n']
+    : ['မ', 'ကြာ', 'မီ', 'ရ', 'ပါ', 'မည်'];
+  const text = !waitingText ? ['ခ', 'ဏ', 'စော', 'င့်', 'ဆို', 'င်း', 'ပါ'] : comingSoon;
 
   return (
     <div className="flex items-center justify-center select-none h-[600px]">

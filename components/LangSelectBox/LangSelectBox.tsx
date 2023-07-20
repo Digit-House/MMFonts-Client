@@ -74,6 +74,7 @@ const LangSelectBox = () => {
                             className="flex-shrink-0 rounded-full"
                             fill
                             placeholder="blur"
+                            style={{ objectFit: 'cover', objectPosition: 'center' }}
                           />
                         </div>
                         <span

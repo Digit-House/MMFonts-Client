@@ -5,7 +5,7 @@ const NumberConverter = (number: number) => {
   };
 
   const convertNumber = (num: number) => {
-    const englishDigits = num.toString().split('');
+    const englishDigits = num?.toString().split('');
     const myanmarDigits = englishDigits.map((digit) => convertToMyanmarNumber(parseInt(digit)));
 
     return myanmarDigits.join('');

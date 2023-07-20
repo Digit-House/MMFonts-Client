@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import React, { useCallback, useEffect, useState } from 'react';
 import Slider from 'react-slick';
-import { FramerMotionWrapper, RadioSelectBar, TextGenerateModal } from '@components/index';
+import { FramerMotionWrapper, RadioSelectBar, RivLoading, TextGenerateModal } from '@components/index';
 import { PremiumFontType, SelectOptionType } from '@core/golobalTypes';
 import useCSVConvert from '@hooks/useCSVConvert';
 
@@ -61,7 +61,7 @@ const Premium = () => {
     setFontSize({ label: event.target.value, value: event.target.value });
   };
 
-  if (!currentFont) return <div>Loading...</div>;
+  if (!currentFont) return <RivLoading />;
   return (
     <FramerMotionWrapper>
       <div className="flex flex-row items-center justify-between p-5">
