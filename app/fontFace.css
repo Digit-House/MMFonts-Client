@@ -3,6 +3,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Myanmar3/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ZawgyiOne/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Padauk/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -24,6 +27,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Pyidaungsu/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -31,6 +35,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Pyidaungsu/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -38,6 +43,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Pyidaungsu/Numbers.ttf') format('truetype');
   font-weight: Numbers;
   font-style: Numbers;
+  font-display: swap;
 }
 
 @font-face {
@@ -45,6 +51,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinUniInna/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -52,6 +59,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/UniBurma/Medium.ttf') format('truetype');
   font-weight: Medium;
   font-style: Medium;
+  font-display: swap;
 }
 
 @font-face {
@@ -59,6 +67,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/UniBurma/FreeHand.ttf') format('truetype');
   font-weight: FreeHand;
   font-style: FreeHand;
+  font-display: swap;
 }
 
 @font-face {
@@ -66,6 +75,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/UniBurma/FFSerif.ttf') format('truetype');
   font-weight: FFSerif;
   font-style: FFSerif;
+  font-display: swap;
 }
 
 @font-face {
@@ -73,6 +83,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/UniBurma/Medium_Serief.ttf') format('truetype');
   font-weight: Medium_Serief;
   font-style: Medium_Serief;
+  font-display: swap;
 }
 
 @font-face {
@@ -80,6 +91,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/UniBurma/Regular_MSSerif.ttf') format('truetype');
   font-weight: Regular_MSSerif;
   font-style: Regular_MSSerif;
+  font-display: swap;
 }
 
 @font-face {
@@ -87,6 +99,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/M-Myanmar1/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -94,6 +107,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/M-Myanmar1/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -101,6 +115,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/M-Myanmar2/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -108,6 +123,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Kannaka/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -115,6 +131,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Tharlon/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -122,6 +139,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinResearcher/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -129,6 +147,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinTaungyi/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -136,6 +155,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinTaungyi/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -143,6 +163,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinSittway/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -150,6 +171,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WnYangon/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -157,6 +179,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinKalaw/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -164,6 +187,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinKalaw/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -171,6 +195,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinInnwa/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -178,6 +203,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinInnwa/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -185,6 +211,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AungSan/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -192,6 +219,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/ClassicNormal.ttf') format('truetype');
   font-weight: ClassicNormal;
   font-style: ClassicNormal;
+  font-display: swap;
 }
 
 @font-face {
@@ -199,6 +227,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/ClassicRegular.ttf') format('truetype');
   font-weight: ClassicRegular;
   font-style: ClassicRegular;
+  font-display: swap;
 }
 
 @font-face {
@@ -206,6 +235,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/ExecelMedium.ttf') format('truetype');
   font-weight: ExecelMedium;
   font-style: ExecelMedium;
+  font-display: swap;
 }
 
 @font-face {
@@ -213,6 +243,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/ExcelNormal.ttf') format('truetype');
   font-weight: ExcelNormal;
   font-style: ExcelNormal;
+  font-display: swap;
 }
 
 @font-face {
@@ -220,6 +251,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/FreehandNormal.ttf') format('truetype');
   font-weight: FreehandNormal;
   font-style: FreehandNormal;
+  font-display: swap;
 }
 
 @font-face {
@@ -227,6 +259,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/HandWriteNormal.ttf') format('truetype');
   font-weight: HandWriteNormal;
   font-style: HandWriteNormal;
+  font-display: swap;
 }
 
 @font-face {
@@ -234,6 +267,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/HorizontalThickBold.ttf') format('truetype');
   font-weight: HorizontalThickBold;
   font-style: HorizontalThickBold;
+  font-display: swap;
 }
 
 @font-face {
@@ -241,6 +275,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -248,6 +283,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/RoyalOutline.ttf') format('truetype');
   font-weight: RoyalOutline;
   font-style: RoyalOutline;
+  font-display: swap;
 }
 
 @font-face {
@@ -255,6 +291,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/TitleNormal.ttf') format('truetype');
   font-weight: TitleNormal;
   font-style: TitleNormal;
+  font-display: swap;
 }
 
 @font-face {
@@ -262,6 +299,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/TransparentBold.ttf') format('truetype');
   font-weight: TransparentBold;
   font-style: TransparentBold;
+  font-display: swap;
 }
 
 @font-face {
@@ -269,6 +307,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/TrueOutlineNormal.ttf') format('truetype');
   font-weight: TrueOutlineNormal;
   font-style: TrueOutlineNormal;
+  font-display: swap;
 }
 
 @font-face {
@@ -276,6 +315,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinBurmese/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -283,6 +323,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinBurmese/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -290,6 +331,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinPyinOoLwin/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -297,6 +339,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinMandalay/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -304,6 +347,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinYadanapon/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -311,6 +355,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyaNanda/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -318,6 +363,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KNU/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -325,6 +371,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/karen-flower/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -332,6 +379,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShweThay/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -339,6 +387,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinHaka/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -346,6 +395,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinHaka/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -353,6 +403,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/BoldItalic.ttf') format('truetype');
   font-weight: BoldItalic;
   font-style: BoldItalic;
+  font-display: swap;
 }
 
 @font-face {
@@ -360,6 +411,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Condense_Normal.ttf') format('truetype');
   font-weight: Condense_Normal;
   font-style: Condense_Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -367,6 +419,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Expand_Normal.ttf') format('truetype');
   font-weight: Expand_Normal;
   font-style: Expand_Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -374,6 +427,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/ExtraHeavy_Bold.ttf') format('truetype');
   font-weight: ExtraHeavy_Bold;
   font-style: ExtraHeavy_Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -381,6 +435,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Heavy_Bold.ttf') format('truetype');
   font-weight: Heavy_Bold;
   font-style: Heavy_Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -388,6 +443,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Hollow_Bold.ttf') format('truetype');
   font-weight: Hollow_Bold;
   font-style: Hollow_Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -395,6 +451,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Italic.ttf') format('truetype');
   font-weight: Italic;
   font-style: Italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -402,6 +459,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Medium_Bold.ttf') format('truetype');
   font-weight: Medium_Bold;
   font-style: Medium_Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -409,6 +467,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/MediumHollow_Bold.ttf') format('truetype');
   font-weight: MediumHollow_Bold;
   font-style: MediumHollow_Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -416,6 +475,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Ribbon_BoldItalic.ttf') format('truetype');
   font-weight: Ribbon_BoldItalic;
   font-style: Ribbon_BoldItalic;
+  font-display: swap;
 }
 
 @font-face {
@@ -423,6 +483,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Serif_Bold.ttf') format('truetype');
   font-weight: Serif_Bold;
   font-style: Serif_Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -430,6 +491,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Tall_Normal.ttf') format('truetype');
   font-weight: Tall_Normal;
   font-style: Tall_Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -437,6 +499,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Wide_Bold.ttf') format('truetype');
   font-weight: Wide_Bold;
   font-style: Wide_Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -444,6 +507,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KarenLawplah/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -451,6 +515,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KarenLawplah/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -458,6 +523,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Suukyi/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -465,6 +531,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinLoikaw/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -472,6 +539,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinPhaan/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -479,6 +547,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinMawlamyine/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -486,6 +555,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KarenHlaing/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -493,6 +563,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KarenHlaing/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -500,6 +571,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KarenHlaing/Medium.ttf') format('truetype');
   font-weight: Medium;
   font-style: Medium;
+  font-display: swap;
 }
 
 @font-face {
@@ -507,6 +579,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KarenHlaing/Normal_Bold.ttf') format('truetype');
   font-weight: Normal_Bold;
   font-style: Normal_Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -514,6 +587,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KarenHlaing/Light.ttf') format('truetype');
   font-weight: Light;
   font-style: Light;
+  font-display: swap;
 }
 
 @font-face {
@@ -521,6 +595,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinKyaukTan/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -528,6 +603,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinKyaukTan/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -535,6 +611,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinKyaukTan/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
+  font-display: swap;
 }
 
 @font-face {
@@ -542,6 +619,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinInnLay/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -549,6 +627,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinInnLay/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -556,6 +635,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinInnLay/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
+  font-display: swap;
 }
 
 @font-face {
@@ -563,6 +643,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Karen3-0/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -570,6 +651,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinKyaeMone/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -577,6 +659,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinKyaeMone/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
+  font-display: swap;
 }
 
 @font-face {
@@ -584,6 +667,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinYaway/Heavy.ttf') format('truetype');
   font-weight: Heavy;
   font-style: Heavy;
+  font-display: swap;
 }
 
 @font-face {
@@ -591,6 +675,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinThanLyin/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -598,6 +683,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinThanLyin/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
+  font-display: swap;
 }
 
 @font-face {
@@ -605,6 +691,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinZin/ExtraHeavy.ttf') format('truetype');
   font-weight: ExtraHeavy;
   font-style: ExtraHeavy;
+  font-display: swap;
 }
 
 @font-face {
@@ -612,6 +699,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmYadanapon/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -619,6 +707,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmShweMinthamee/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -626,6 +715,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmYadana/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -633,6 +723,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmMyaNanda/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -640,6 +731,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmZarmaniHeavy/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -647,6 +739,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmLwin/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -654,6 +747,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmMaNinPhu/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -661,6 +755,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmChaTateLay/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -668,6 +763,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AcademyFlowerTrue/Italic.ttf') format('truetype');
   font-weight: Italic;
   font-style: Italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -675,6 +771,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinChoNew/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
+  font-display: swap;
 }
 
 @font-face {
@@ -682,6 +779,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/A_TypeWriter/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -689,6 +787,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/A_TypeWriter/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -696,6 +795,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinTagaung/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -703,6 +803,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Perpetua/Italic.ttf') format('truetype');
   font-weight: Italic;
   font-style: Italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -710,6 +811,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Perpetua/BoldItalic.ttf') format('truetype');
   font-weight: BoldItalic;
   font-style: BoldItalic;
+  font-display: swap;
 }
 
 @font-face {
@@ -717,6 +819,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Perpetua/TtilingMT_Bold.ttf') format('truetype');
   font-weight: TtilingMT_Bold;
   font-style: TtilingMT_Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -724,6 +827,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Perpetua/TitlingMT_Light.ttf') format('truetype');
   font-weight: TitlingMT_Light;
   font-style: TitlingMT_Light;
+  font-display: swap;
 }
 
 @font-face {
@@ -731,6 +835,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinBago/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
+  font-display: swap;
 }
 
 @font-face {
@@ -738,6 +843,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/U4AhLone/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -745,6 +851,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/U4Bahan/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -752,6 +859,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/U4bBoTaTaung/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -759,6 +867,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/U4DagonMyoThit/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -766,6 +875,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/U4KaMarYut/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -773,6 +883,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/U4LanMaDaw/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -780,6 +891,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/U4LaTha/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -787,6 +899,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/U4Mingalardon/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -794,6 +907,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/U4PaZunDaung/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -801,6 +915,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/U4ThaKeTa/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -808,6 +923,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/A_Pagan/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -815,6 +931,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/A_Pagan/Heavy.ttf') format('truetype');
   font-weight: Heavy;
   font-style: Heavy;
+  font-display: swap;
 }
 
 @font-face {
@@ -822,6 +939,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KingPress/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -829,6 +947,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ArtTrue/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -836,6 +955,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ArtTrue/Italic.ttf') format('truetype');
   font-weight: Italic;
   font-style: Italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -843,6 +963,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinThaYeyKitTaRa/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
+  font-display: swap;
 }
 
 @font-face {
@@ -850,6 +971,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AeyarModernTrue/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -857,6 +979,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AeyarModernTrue/Italic.ttf') format('truetype');
   font-weight: Italic;
   font-style: Italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -864,6 +987,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AeyarModernTrue/BoldItalic.ttf') format('truetype');
   font-weight: BoldItalic;
   font-style: BoldItalic;
+  font-display: swap;
 }
 
 @font-face {
@@ -871,6 +995,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AeyarModernTrue/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -878,6 +1003,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Image/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -885,6 +1011,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KgMyanmar/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -892,6 +1019,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinMonotype/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
+  font-display: swap;
 }
 
 @font-face {
@@ -899,6 +1027,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KingYoma/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -906,6 +1035,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinCourier/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -913,6 +1043,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WInHanPagan/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
+  font-display: swap;
 }
 
 @font-face {
@@ -920,6 +1051,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/SakPeacock/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -927,6 +1059,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AyarNadiTrue/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -934,6 +1067,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AyarNadiTrue/Italic.ttf') format('truetype');
   font-weight: Italic;
   font-style: Italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -941,6 +1075,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinPonnyaCond/Light.ttf') format('truetype');
   font-weight: Light;
   font-style: Light;
+  font-display: swap;
 }
 
 @font-face {
@@ -948,6 +1083,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinPonnyaCond/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -955,6 +1091,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinPonnyaCond/ExtraBold.ttf') format('truetype');
   font-weight: ExtraBold;
   font-style: ExtraBold;
+  font-display: swap;
 }
 
 @font-face {
@@ -962,6 +1099,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/HanNweThaKi/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -969,6 +1107,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/HanOvelInserat/Heavy.ttf') format('truetype');
   font-weight: Heavy;
   font-style: Heavy;
+  font-display: swap;
 }
 
 @font-face {
@@ -976,6 +1115,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/HanPoppa/Heavy.ttf') format('truetype');
   font-weight: Heavy;
   font-style: Heavy;
+  font-display: swap;
 }
 
 @font-face {
@@ -983,6 +1123,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinThanLwin/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -990,6 +1131,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinSuuKyi/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -997,6 +1139,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinSuuKyi/Italic.ttf') format('truetype');
   font-weight: Italic;
   font-style: Italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -1004,6 +1147,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Harrington/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1011,6 +1155,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Burma/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1018,6 +1163,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Popa/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1025,6 +1171,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/InGyin/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1032,6 +1179,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/A_Rose/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1039,6 +1187,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AcademyThickTrue/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1046,6 +1195,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AcademyThickTrue/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -1053,6 +1203,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AcademyThickTrue/Italic.ttf') format('truetype');
   font-weight: Italic;
   font-style: Italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -1060,6 +1211,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AcademyThickTrue/BoldItalic.ttf') format('truetype');
   font-weight: BoldItalic;
   font-style: BoldItalic;
+  font-display: swap;
 }
 
 @font-face {
@@ -1067,6 +1219,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinCho/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
+  font-display: swap;
 }
 
 @font-face {
@@ -1074,6 +1227,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinCircle/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -1081,6 +1235,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinCircle/Medium.ttf') format('truetype');
   font-weight: Medium;
   font-style: Medium;
+  font-display: swap;
 }
 
 @font-face {
@@ -1088,6 +1243,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinCircle/ExtraBold.ttf') format('truetype');
   font-weight: ExtraBold;
   font-style: ExtraBold;
+  font-display: swap;
 }
 
 @font-face {
@@ -1095,6 +1251,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShweYee/ExtraLight.ttf') format('truetype');
   font-weight: ExtraLight;
   font-style: ExtraLight;
+  font-display: swap;
 }
 
 @font-face {
@@ -1102,6 +1259,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/HarlowSolid/Italic.ttf') format('truetype');
   font-weight: Italic;
   font-style: Italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -1109,6 +1267,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinTypeWriter/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1116,6 +1275,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinTypeWriter/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -1123,6 +1283,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinTypeWriter/ExtraBold.ttf') format('truetype');
   font-weight: ExtraBold;
   font-style: ExtraBold;
+  font-display: swap;
 }
 
 @font-face {
@@ -1130,6 +1291,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AeyarNadiPlainTrue/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1137,6 +1299,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AeyarNadiPlainTrue/Italic.ttf') format('truetype');
   font-weight: Italic;
   font-style: Italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -1144,6 +1307,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinHlaing/Medium.ttf') format('truetype');
   font-weight: Medium;
   font-style: Medium;
+  font-display: swap;
 }
 
 @font-face {
@@ -1151,6 +1315,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinDawei/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
+  font-display: swap;
 }
 
 @font-face {
@@ -1158,6 +1323,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/A_Pinya/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1165,6 +1331,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinPhyuCond/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1172,6 +1339,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinHan/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1179,6 +1347,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WorldNet/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1186,6 +1355,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KTO/KTO_1.ttf') format('truetype');
   font-weight: KTO_1;
   font-style: KTO_1;
+  font-display: swap;
 }
 
 @font-face {
@@ -1193,6 +1363,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KTO/KTO_2.ttf') format('truetype');
   font-weight: KTO_2;
   font-style: KTO_2;
+  font-display: swap;
 }
 
 @font-face {
@@ -1200,6 +1371,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KTO/KTO_3.ttf') format('truetype');
   font-weight: KTO_3;
   font-style: KTO_3;
+  font-display: swap;
 }
 
 @font-face {
@@ -1207,6 +1379,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KTO/KTO_4.ttf') format('truetype');
   font-weight: KTO_4;
   font-style: KTO_4;
+  font-display: swap;
 }
 
 @font-face {
@@ -1214,6 +1387,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KTO/KTO_5.ttf') format('truetype');
   font-weight: KTO_5;
   font-style: KTO_5;
+  font-display: swap;
 }
 
 @font-face {
@@ -1221,6 +1395,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KgThunder/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1228,6 +1403,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WorldMath/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1235,6 +1411,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinHeho/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
+  font-display: swap;
 }
 
 @font-face {
@@ -1242,6 +1419,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/SakRoyal/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1249,6 +1427,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/SakPadamya/Noraml.ttf') format('truetype');
   font-weight: Noraml;
   font-style: Noraml;
+  font-display: swap;
 }
 
 @font-face {
@@ -1256,6 +1435,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/SakTwoLine/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1263,6 +1443,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/SakThick/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1270,6 +1451,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinChin/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
+  font-display: swap;
 }
 
 @font-face {
@@ -1277,6 +1459,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinEllipse/ExtraHeavy.ttf') format('truetype');
   font-weight: ExtraHeavy;
   font-style: ExtraHeavy;
+  font-display: swap;
 }
 
 @font-face {
@@ -1284,6 +1467,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/SakSeinArka/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1291,6 +1475,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Ha2Line/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1298,6 +1483,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinLaSho/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
+  font-display: swap;
 }
 
 @font-face {
@@ -1305,6 +1491,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinMap/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1312,6 +1499,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinPyu/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1319,6 +1507,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/H2Lines/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1326,6 +1515,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinEra/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1333,6 +1523,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WhPonnya/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -1340,6 +1531,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WhPonnya/Light.ttf') format('truetype');
   font-weight: Light;
   font-style: Light;
+  font-display: swap;
 }
 
 @font-face {
@@ -1347,6 +1539,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Kg/Normal.ttf') format('truetype');
   font-weight: Normal;
   font-style: Normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -1354,6 +1547,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KgOvalflat/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1361,6 +1555,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KgChit/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1368,6 +1563,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KgFuncy/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1375,6 +1571,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KgNand/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1382,6 +1579,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceDesign/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -1389,6 +1587,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceDesign/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1396,6 +1595,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceDesignOutline/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1403,6 +1603,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceDiploma/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1410,6 +1611,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceDiplomaOutline/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1417,6 +1619,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceFreehand/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1424,6 +1627,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceHand/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1431,6 +1635,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceKids/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1438,6 +1643,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceNormal/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1445,6 +1651,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceNormal/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -1452,6 +1659,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceNormalOutline/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1459,6 +1667,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceOctagon/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1466,6 +1675,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceOctagonOutline/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1473,6 +1683,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceOctagonCrack/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1480,6 +1691,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceOctagonLines/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1487,6 +1699,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceOval/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1494,6 +1707,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceRectangle/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1501,6 +1715,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceRectangleOutline/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1508,6 +1723,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceRound/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1515,6 +1731,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceRound/Bold.ttf') format('truetype');
   font-weight: Bold;
   font-style: Bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -1522,6 +1739,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceSemiOval/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1529,6 +1747,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceSemiOvalOutline/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1536,6 +1755,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceShade/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1543,6 +1763,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceShadeOutline/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1550,6 +1771,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceStroke/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1557,6 +1779,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceStrokeTwin/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1564,6 +1787,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceV0Stroke/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1571,6 +1795,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MasterpieceV0StrokeTwin/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1578,6 +1803,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarYinmar/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1585,6 +1811,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarAngoun/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1592,6 +1819,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarChatu/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1599,6 +1827,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarChatu/Light.ttf') format('truetype');
   font-weight: Light;
   font-style: Light;
+  font-display: swap;
 }
 
 @font-face {
@@ -1606,6 +1835,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarGantgaw/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1613,6 +1843,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarKhyay/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1620,6 +1851,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarKuttar/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1627,6 +1859,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarNayone/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1634,6 +1867,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarNjaun/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1641,6 +1875,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarPauklay/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1648,6 +1883,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarPhetsot/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1655,6 +1891,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarPhiksel/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1662,6 +1899,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarPhiksel/Smooth.ttf') format('truetype');
   font-weight: Smooth;
   font-style: Smooth;
+  font-display: swap;
 }
 
 @font-face {
@@ -1669,6 +1907,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarPonenyet/Regualr.ttf') format('truetype');
   font-weight: Regualr;
   font-style: Regualr;
+  font-display: swap;
 }
 
 @font-face {
@@ -1676,6 +1915,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarSabae/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1683,6 +1923,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarSagar/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1690,6 +1931,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarSanpya/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1697,6 +1939,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarSansPro/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1704,6 +1947,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarSquareLight/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1711,6 +1955,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarTagu/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1718,6 +1963,7 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarThuriya/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
 
 @font-face {
@@ -1725,4 +1971,5 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarWaso/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
 }
