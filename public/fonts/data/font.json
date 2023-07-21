@@ -210,7 +210,7 @@
     "nameEn": "KNU",
     "name": "ကေအန်ယူ",
     "fileName": "KNU",
-    "fontSupportType": "zawgyi",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "",
     "English Support": ""
@@ -219,7 +219,7 @@
     "nameEn": "karen-flower",
     "name": "ကရင်ဖလားဝါး",
     "fileName": "karen-flower",
-    "fontSupportType": "zawgyi",
+    "fontSupportType": "unicode",
     "fontStyle": "Normal",
     "createdBy": "",
     "English Support": ""
@@ -228,7 +228,7 @@
     "nameEn": "ShweThay",
     "name": "ရွှေသွေး",
     "fileName": "ShweThay",
-    "fontSupportType": "win",
+    "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -246,7 +246,7 @@
     "nameEn": "ShwePro",
     "name": "ရွှေပရို",
     "fileName": "ShwePro",
-    "fontSupportType": "win",
+    "fontSupportType": "unicode",
     "fontStyle": "BoldItalic Condense_Normal Expand_Normal ExtraHeavy_Bold Heavy_Bold Hollow_Bold Italic Medium_Bold MediumHollow_Bold Ribbon_BoldItalic Serif_Bold Tall_Normal Wide_Bold",
     "createdBy": "",
     "English Support": ""
@@ -273,7 +273,7 @@
     "nameEn": "WinLoikaw",
     "name": "ဝင်းလွိုင်ကော်",
     "fileName": "WinLoikaw",
-    "fontSupportType": "zawgyi",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -282,7 +282,7 @@
     "nameEn": "WinPhaan",
     "name": "ဝင်းဘားအံ",
     "fileName": "WinPhaan",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Zaw Htut",
     "English Support": ""
@@ -291,7 +291,7 @@
     "nameEn": "WinMawlamyine",
     "name": "ဝင်းမော်လမြိုင်",
     "fileName": "WinMawlamyine",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Zaw Htut",
     "English Support": ""
@@ -300,7 +300,7 @@
     "nameEn": "KarenHlaing",
     "name": "ကရင်လှုိင်း",
     "fileName": "KarenHlaing",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular Normal Medium Normal_Bold Light",
     "createdBy": "Win Tun & Maung Han",
     "English Support": ""
@@ -309,7 +309,7 @@
     "nameEn": "WinKyaukTan",
     "name": "ဝင်းကျောက်တံ",
     "fileName": "WinKyaukTan",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular Normal A",
     "createdBy": "Zaw Htut",
     "English Support": ""
@@ -318,7 +318,7 @@
     "nameEn": "WinInnLay",
     "name": "ဝင်းအင်းလေး",
     "fileName": "WinInnLay",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular Normal A",
     "createdBy": "Zaw Htut",
     "English Support": ""
@@ -327,7 +327,7 @@
     "nameEn": "Karen3-0",
     "name": "ကရင်၃_၀",
     "fileName": "Karen3-0",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -336,7 +336,7 @@
     "nameEn": "WinKyaeMone",
     "name": "ဝင်းကြေးမုံ",
     "fileName": "WinKyaeMone",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular A",
     "createdBy": "Zaw Htut",
     "English Support": ""
@@ -345,7 +345,7 @@
     "nameEn": "WinYaway",
     "name": "ဝင်းရဝေ",
     "fileName": "WinYaway",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Heavy",
     "createdBy": "Win Tun",
     "English Support": ""
@@ -354,7 +354,7 @@
     "nameEn": "WinThanLyin",
     "name": "ဝင်းသံလွင်",
     "fileName": "WinThanLyin",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular A",
     "createdBy": "Zaw Htut",
     "English Support": ""
@@ -363,7 +363,7 @@
     "nameEn": "WinZin",
     "name": "ဝင်းဇင်း",
     "fileName": "WinZin",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "ExtraHeavy",
     "createdBy": "Win Tun",
     "English Support": ""
@@ -372,7 +372,7 @@
     "nameEn": "LmYadanapon",
     "name": "အယ်လ်အမ်ရတနာပုံ",
     "fileName": "LmYadanapon",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Lwin Moe",
     "English Support": ""
@@ -381,7 +381,7 @@
     "nameEn": "LmShweMinthamee",
     "name": "အယ်လ်အမ်ရွှေမင်းသမီး",
     "fileName": "LmShweMinthamee",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Lwin Moe",
     "English Support": ""
@@ -390,7 +390,7 @@
     "nameEn": "LmYadana",
     "name": "အယ်လ်အမ်ရတနာ",
     "fileName": "LmYadana",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Lwin Moe",
     "English Support": ""
@@ -399,7 +399,7 @@
     "nameEn": "LmMyaNanda",
     "name": "အယ်လ်အမ်မြန္ဒာ",
     "fileName": "LmMyaNanda",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Lwin Moe",
     "English Support": ""
@@ -408,7 +408,7 @@
     "nameEn": "LmZarmaniHeavy",
     "name": "အယ်လ်အမ်ဇာနည်ဟယ်ဘီး",
     "fileName": "LmZarmaniHeavy",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Lwin Moe",
     "English Support": ""
@@ -417,7 +417,7 @@
     "nameEn": "LmLwin",
     "name": "အယ်လ်အမ်လွင်",
     "fileName": "LmLwin",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Lwin Moe",
     "English Support": ""
@@ -426,7 +426,7 @@
     "nameEn": "LmMaNinPhu",
     "name": "အယ်လ်အမ်မနှင်းဖူး",
     "fileName": "LmMaNinPhu",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "ABSDF",
     "English Support": ""
@@ -435,7 +435,7 @@
     "nameEn": "LmChaTateLay",
     "name": "အယ်လ်အမ်ချာတိတ်လေး",
     "fileName": "LmChaTateLay",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "ABSDF",
     "English Support": ""
@@ -444,7 +444,7 @@
     "nameEn": "AcademyFlowerTrue",
     "name": "အကယ်ဒမီဖလားဝါးထရူး",
     "fileName": "AcademyFlowerTrue",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Italic",
     "createdBy": "Khin Mg Latt",
     "English Support": ""
@@ -453,7 +453,7 @@
     "nameEn": "WinChoNew",
     "name": "ဝင်းချိုနယူး",
     "fileName": "WinChoNew",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "Win Tun",
     "English Support": ""
@@ -462,7 +462,7 @@
     "nameEn": "A-TypeWriter",
     "name": "အေတိုက်ရိုက်တာ",
     "fileName": "A_TypeWriter",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal Bold",
     "createdBy": "A & T Computer Group",
     "English Support": ""
@@ -471,7 +471,7 @@
     "nameEn": "WinTagaung",
     "name": "ဝင်းတောင်ကြီး",
     "fileName": "WinTagaung",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Win Tun",
     "English Support": ""
@@ -480,7 +480,7 @@
     "nameEn": "Perpetua",
     "name": "ပါပီတူး",
     "fileName": "Perpetua",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Italic BoldItalic TtilingMT_Bold TitlingMT_Light",
     "createdBy": "",
     "English Support": ""
@@ -489,7 +489,7 @@
     "nameEn": "WinBago",
     "name": "ဝင်းပဲခူး",
     "fileName": "WinBago",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "M.C.C ENGINEER GROUP",
     "English Support": ""
@@ -498,7 +498,7 @@
     "nameEn": "U4AhLone",
     "name": "ယူဖိုးအလုံ",
     "fileName": "U4AhLone",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -507,7 +507,7 @@
     "nameEn": "U4Bahan",
     "name": "ယူဖိုးဗဟန်း",
     "fileName": "U4Bahan",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -516,7 +516,7 @@
     "nameEn": "U4BoTaTaung",
     "name": "ယူဖိုးဗိုလ်တထောင်",
     "fileName": "U4bBoTaTaung",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -525,7 +525,7 @@
     "nameEn": "U4DagonMyoThit",
     "name": "ယူဖိုးဒဂုံမြို့သစ်",
     "fileName": "U4DagonMyoThit",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -534,7 +534,7 @@
     "nameEn": "U4KaMarYut",
     "name": "ယူဖိုးကမာရွတ်",
     "fileName": "U4KaMarYut",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -543,7 +543,7 @@
     "nameEn": "U4LanMaDaw",
     "name": "ယူဖိုးလမ်းမတော်",
     "fileName": "U4LanMaDaw",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -552,7 +552,7 @@
     "nameEn": "U4LaTha",
     "name": "ယူဖိုးလသာ",
     "fileName": "U4LaTha",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -561,7 +561,7 @@
     "nameEn": "U4Mingalardon",
     "name": "ယူဖိုးမင်္ဂလာဒုံ",
     "fileName": "U4Mingalardon",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -570,7 +570,7 @@
     "nameEn": "U4PaZunDaung",
     "name": "ယူဖိုးပုဇွန်တောင်",
     "fileName": "U4PaZunDaung",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -579,7 +579,7 @@
     "nameEn": "U4ThaKeTa",
     "name": "ယူဖိုးသာကေတ",
     "fileName": "U4ThaKeTa",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -588,7 +588,7 @@
     "nameEn": "A_Pagan",
     "name": "အေပုဂံ",
     "fileName": "A_Pagan",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal Heavy",
     "createdBy": "A & T Group",
     "English Support": ""
@@ -597,7 +597,7 @@
     "nameEn": "KingPress",
     "name": "ကင်းဂရက်စ်",
     "fileName": "KingPress",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Fontographer 3.5",
     "English Support": ""
@@ -606,7 +606,7 @@
     "nameEn": "ArtTrue",
     "name": "အက်ထရု",
     "fileName": "ArtTrue",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular Italic",
     "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
     "English Support": ""
@@ -615,7 +615,7 @@
     "nameEn": "WinThaYeyKitTaRa",
     "name": "ဝင်းသရေခေတ္တရာ",
     "fileName": "WinThaYeyKitTaRa",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "M.C.C ENGINEER GROUP",
     "English Support": ""
@@ -624,7 +624,7 @@
     "nameEn": "AeyarModernTrue",
     "name": "အေရာမော်ဒန်ထရု",
     "fileName": "AeyarModernTrue",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Bold Italic BoldItalic Normal",
     "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
     "English Support": ""
@@ -633,7 +633,7 @@
     "nameEn": "Image",
     "name": "အင်းမေ့",
     "fileName": "Image",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Sein Arka Computers",
     "English Support": ""
@@ -642,7 +642,7 @@
     "nameEn": "KgMyanmar",
     "name": "ကေဂျီမြန်မာ",
     "fileName": "KgMyanmar",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "King Computer",
     "English Support": ""
@@ -651,7 +651,7 @@
     "nameEn": "WinMonotype",
     "name": "ဝင်းမိုနိုတိုက်",
     "fileName": "WinMonotype",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "Zaw Htut",
     "English Support": ""
@@ -660,7 +660,7 @@
     "nameEn": "KingYoma",
     "name": "ကင်းရိုးမ",
     "fileName": "KingYoma",
-    "fontSupportType": "",
+    "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "King Computer",
     "English Support": ""
@@ -669,7 +669,7 @@
     "nameEn": "WinCourier",
     "name": "ဝင်းကာရီရာ",
     "fileName": "WinCourier",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Win Tun (Mr Burma)",
     "English Support": ""
@@ -678,7 +678,7 @@
     "nameEn": "WinHanPagan",
     "name": "ဝင်းဟန်ပုဂံ",
     "fileName": "WInHanPagan",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "Win Tun & Maung Han",
     "English Support": ""
@@ -687,7 +687,7 @@
     "nameEn": "SakPeacock",
     "name": "အက်စ်အေကေပီးကော့",
     "fileName": "SakPeacock",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Sein Arka Computers",
     "English Support": ""
@@ -696,7 +696,7 @@
     "nameEn": "AyarNadiTrue",
     "name": "ဧရာနဒီထရု",
     "fileName": "AyarNadiTrue",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal Italic",
     "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
     "English Support": ""
@@ -705,7 +705,7 @@
     "nameEn": "WinPonnyaCond",
     "name": "ဝင်းပုညကုန်း",
     "fileName": "WinPonnyaCond",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Light Bold ExtraBold",
     "createdBy": "Win Tun (Mr Burma) & Maung Han",
     "English Support": ""
@@ -714,7 +714,7 @@
     "nameEn": "HanNweThaKi",
     "name": "ဟန်နွယ်သာကီ",
     "fileName": "HanNweThaKi",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Maung Han",
     "English Support": ""
@@ -723,7 +723,7 @@
     "nameEn": "HanOvelInserat",
     "name": "ဟန်အိုဗယ်အင်းစက်",
     "fileName": "HanOvelInserat",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Heavy",
     "createdBy": "Maung Han",
     "English Support": ""
@@ -732,7 +732,7 @@
     "nameEn": "HanPoppa",
     "name": "ဟန်ပုပ္ပါး",
     "fileName": "HanPoppa",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Heavy",
     "createdBy": "Maung Han",
     "English Support": ""
@@ -741,7 +741,7 @@
     "nameEn": "WinThanLwin",
     "name": "ဝင်းသံလွင်",
     "fileName": "WinThanLwin",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Bold",
     "createdBy": "M.C.C ENGINEER GROUP",
     "English Support": ""
@@ -750,7 +750,7 @@
     "nameEn": "WinSuuKyi",
     "name": "ဝင်းစုကြည်",
     "fileName": "WinSuuKyi",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal Italic",
     "createdBy": "Win Tun (Mr Burma)",
     "English Support": ""
@@ -759,7 +759,7 @@
     "nameEn": "Harrington",
     "name": "ဟယ်ရီတန်",
     "fileName": "Harrington",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "The Font Bureau",
     "English Support": ""
@@ -768,7 +768,7 @@
     "nameEn": "Burma",
     "name": "ဗမာ",
     "fileName": "Burma",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Win Tun (Mr Burma) & Maung Han",
     "English Support": ""
@@ -777,7 +777,7 @@
     "nameEn": "Popa",
     "name": "ပုပ္ပါး",
     "fileName": "Popa",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Gustaaf Houtman",
     "English Support": ""
@@ -786,7 +786,7 @@
     "nameEn": "InGyin",
     "name": "အင်ကြင်း",
     "fileName": "InGyin",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Win Tun",
     "English Support": ""
@@ -795,7 +795,7 @@
     "nameEn": "A_Rose",
     "name": "အေရို့စ်",
     "fileName": "A_Rose",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "A & T Computer Group",
     "English Support": ""
@@ -804,7 +804,7 @@
     "nameEn": "AcademyThickTrue",
     "name": "အကယ်ဒမီသစ်ထရု",
     "fileName": "AcademyThickTrue",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal Bold Italic BoldItalic",
     "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
     "English Support": ""
@@ -813,7 +813,7 @@
     "nameEn": "WinCho",
     "name": "ဝင်းချို",
     "fileName": "WinCho",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "Win Tun (Mr Burma)",
     "English Support": ""
@@ -822,7 +822,7 @@
     "nameEn": "WinCircle",
     "name": "ဝင်းဆိုင်ကယ်",
     "fileName": "WinCircle",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Bold Medium ExtraBold",
     "createdBy": "Win Tun (Mr Burma)",
     "English Support": ""
@@ -831,7 +831,7 @@
     "nameEn": "ShweYee",
     "name": "ရွှေရီ",
     "fileName": "ShweYee",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "ExtraLight",
     "createdBy": "Maung Maung Tun",
     "English Support": ""
@@ -840,7 +840,7 @@
     "nameEn": "HarlowSolid",
     "name": "ဟာလိုဆောလစ်",
     "fileName": "HarlowSolid",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Italic",
     "createdBy": "URW Software",
     "English Support": ""
@@ -849,7 +849,7 @@
     "nameEn": "WinTypeWriter",
     "name": "ဝင်းတိုက်ရိုက်တာ",
     "fileName": "WinTypeWriter",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal Bold ExtraBold",
     "createdBy": "Win Tun (Mr Burma)",
     "English Support": ""
@@ -858,7 +858,7 @@
     "nameEn": "AeyarNadiPlainTrue",
     "name": "ဧရာနဒီပလိန်းထရု",
     "fileName": "AeyarNadiPlainTrue",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal Italic",
     "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
     "English Support": ""
@@ -867,7 +867,7 @@
     "nameEn": "WinHlaing",
     "name": "ဝင်းလှိုင်",
     "fileName": "WinHlaing",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Medium",
     "createdBy": "Win Tun (Mr Burma)",
     "English Support": ""
@@ -876,7 +876,7 @@
     "nameEn": "WinDawei",
     "name": "ဝင်းထားဝယ်",
     "fileName": "WinDawei",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "M.C.C ENGINEER GROUP",
     "English Support": ""
@@ -885,7 +885,7 @@
     "nameEn": "A_Pinya",
     "name": "အေပင်းယ",
     "fileName": "A_Pinya",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Photographer 3.5",
     "English Support": ""
@@ -894,7 +894,7 @@
     "nameEn": "WinPyuCond",
     "name": "ဝင်းဖြူကုန်း",
     "fileName": "WinPhyuCond",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Win Tun (Mr Burma)",
     "English Support": ""
@@ -903,7 +903,7 @@
     "nameEn": "WinHan",
     "name": "ဝင်းဟန်",
     "fileName": "WinHan",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Win Tun and Maung Han",
     "English Support": ""
@@ -912,7 +912,7 @@
     "nameEn": "WorldNet",
     "name": "ဝေါနက်",
     "fileName": "WorldNet",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Iconian font",
     "English Support": ""
@@ -921,7 +921,7 @@
     "nameEn": "KTO",
     "name": "ကေတီအို",
     "fileName": "KTO",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "KTO_1 KTO_2 KTO_3 KTO_4 KTO_5",
     "createdBy": "Htun Oo",
     "English Support": ""
@@ -930,7 +930,7 @@
     "nameEn": "KgThunder",
     "name": "ကေဂျီသန္တာ",
     "fileName": "KgThunder",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "King Computer",
     "English Support": ""
@@ -939,7 +939,7 @@
     "nameEn": "WorldMath",
     "name": "ဝေါမက်",
     "fileName": "WorldMath",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Aphabets",
     "English Support": ""
@@ -948,7 +948,7 @@
     "nameEn": "WinHeho",
     "name": "ဝင်းဟဲဟိုး",
     "fileName": "WinHeho",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "M.C.C ENGINEER GROUP",
     "English Support": ""
@@ -957,7 +957,7 @@
     "nameEn": "SakRoyal",
     "name": "အက်စ်အေကေရိုင်ရယ်",
     "fileName": "SakRoyal",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Sein Arka Computers",
     "English Support": ""
@@ -966,7 +966,7 @@
     "nameEn": "SakPadamya",
     "name": "အက်စ်အေကေပတ္တမြား",
     "fileName": "SakPadamya",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Noraml",
     "createdBy": "Sein Arka Computers",
     "English Support": ""
@@ -975,7 +975,7 @@
     "nameEn": "SakTwoLine",
     "name": "အက်စ်အေကေတူးလိုင်း",
     "fileName": "SakTwoLine",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Sein Arka Computers",
     "English Support": ""
@@ -984,7 +984,7 @@
     "nameEn": "SakThick",
     "name": "အက်စ်အေကေသစ်",
     "fileName": "SakThick",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Sein Arka Computers",
     "English Support": ""
@@ -993,7 +993,7 @@
     "nameEn": "WinChin",
     "name": "ဝင်းချင်း",
     "fileName": "WinChin",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "M.C.C ENGINEER GROUP",
     "English Support": ""
@@ -1002,7 +1002,7 @@
     "nameEn": "WinEllipse",
     "name": "ဝင်းအီလစ်",
     "fileName": "WinEllipse",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "ExtraHeavy",
     "createdBy": "Win Tun (Mr Burma)",
     "English Support": ""
@@ -1011,7 +1011,7 @@
     "nameEn": "SakSeinArka",
     "name": "အက်စ်အေကေစိမ်းအာကာ",
     "fileName": "SakSeinArka",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Sein Arka Computers",
     "English Support": ""
@@ -1020,7 +1020,7 @@
     "nameEn": "Ha2Line",
     "name": "အိတ်အေတူးလိုင်း",
     "fileName": "Ha2Line",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Han Than Htun, Sett Aung Khaing",
     "English Support": ""
@@ -1029,7 +1029,7 @@
     "nameEn": "WinLaSho",
     "name": "ဝင်းလားရှိုး",
     "fileName": "WinLaSho",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "Zaw Htut",
     "English Support": ""
@@ -1038,7 +1038,7 @@
     "nameEn": "WinMap",
     "name": "ဝင်းမက်",
     "fileName": "WinMap",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Win Tun (Mr Burma)",
     "English Support": ""
@@ -1047,7 +1047,7 @@
     "nameEn": "WinPyu",
     "name": "ဝင်းဖြူး",
     "fileName": "WinPyu",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Win Tun (Mr Burma)",
     "English Support": ""
@@ -1056,7 +1056,7 @@
     "nameEn": "H2Lines",
     "name": "အိတ်တူးလိုင်း",
     "fileName": "H2Lines",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Han Than Htun",
     "English Support": ""
@@ -1065,7 +1065,7 @@
     "nameEn": "WinEra",
     "name": "ဝင်းအီရာ",
     "fileName": "WinEra",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Win Tun (Mr Burma)",
     "English Support": ""
@@ -1074,7 +1074,7 @@
     "nameEn": "WhPonnya",
     "name": "ဒဗလျူးအိတ်ပုည",
     "fileName": "WhPonnya",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Bold Light",
     "createdBy": "Win Tun & Maung Han",
     "English Support": ""
@@ -1083,7 +1083,7 @@
     "nameEn": "Kg",
     "name": "ကေဂျီ",
     "fileName": "Kg",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "King Computer",
     "English Support": ""
@@ -1092,7 +1092,7 @@
     "nameEn": "KgOvalflat",
     "name": "ကေဂျီအိုဗယ်ဖလတ်",
     "fileName": "KgOvalflat",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "King Computer",
     "English Support": ""
@@ -1101,7 +1101,7 @@
     "nameEn": "KgChit",
     "name": "ကေဂျီချစ်",
     "fileName": "KgChit",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "King Computer",
     "English Support": ""
@@ -1110,7 +1110,7 @@
     "nameEn": "KgFuncy",
     "name": "ကေဂျီဖန်စီ",
     "fileName": "KgFuncy",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Myint Lwynn under support of Tint Lwynn(I.C.S.T)-King Computer",
     "English Support": ""
@@ -1119,7 +1119,7 @@
     "nameEn": "KgNand",
     "name": "ကေဂျီနန့်",
     "fileName": "KgNand",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "King Computer",
     "English Support": ""
@@ -1128,7 +1128,7 @@
     "nameEn": "MasterpieceDesign",
     "name": "မာစတာပိစ့်ဒီဇိုင်း",
     "fileName": "MasterpieceDesign",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Bold Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1137,7 +1137,7 @@
     "nameEn": "MasterpieceDesignOutline",
     "name": "မာစတာပိစ့်ဒီဇိုင်းအောက်လိုင်း",
     "fileName": "MasterpieceDesignOutline",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1146,7 +1146,7 @@
     "nameEn": "MasterpieceDiploma",
     "name": "မာစတာပိစ့်ဒီပလိုမာ",
     "fileName": "MasterpieceDiploma",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1155,7 +1155,7 @@
     "nameEn": "MasterpieceDiplomaOutline",
     "name": "မာစတာပိစ့်ဒီပလိုမာအောက်လိုင်း",
     "fileName": "MasterpieceDiplomaOutline",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1164,7 +1164,7 @@
     "nameEn": "MasterpieceFreehand",
     "name": "မာစတာပိစ့်ဖရီးဟန်း",
     "fileName": "MasterpieceFreehand",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1173,7 +1173,7 @@
     "nameEn": "MasterpieceHand",
     "name": "မာစတာပိစ့်ဟန်း",
     "fileName": "MasterpieceHand",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1182,7 +1182,7 @@
     "nameEn": "MasterpieceKids",
     "name": "မာစတာပိစ့်ကစ်",
     "fileName": "MasterpieceKids",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1191,7 +1191,7 @@
     "nameEn": "MasterpieceNormal",
     "name": "မာစတာပိစ့်နော်မယ်",
     "fileName": "MasterpieceNormal",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular Bold",
     "createdBy": "Myo Gyi",
     "English Support": ""
@@ -1200,7 +1200,7 @@
     "nameEn": "MasterpieceNormalOutline",
     "name": "မာစတာပိစ့်နောမယ်အောက်လိုင်း",
     "fileName": "MasterpieceNormalOutline",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Myo Gyi",
     "English Support": ""
@@ -1209,7 +1209,7 @@
     "nameEn": "MasterpieceOctagon",
     "name": "မာစတာပိစ့်အောက်တဂွန်",
     "fileName": "MasterpieceOctagon",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1218,7 +1218,7 @@
     "nameEn": "MasterpieceOctagonOutline",
     "name": "မာစတာပိစ့်အောက်တဂွန်အောက်လိုင်း",
     "fileName": "MasterpieceOctagonOutline",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1227,7 +1227,7 @@
     "nameEn": "MasterpieceOctagonCrack",
     "name": "မာစတာပိစ့်အောက်တဂွန်ခရက်စ်",
     "fileName": "MasterpieceOctagonCrack",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1236,7 +1236,7 @@
     "nameEn": "MasterpieceOctangonLines",
     "name": "မာစတာပိစ့်အော်တဂွန်လိုင်း",
     "fileName": "MasterpieceOctagonLines",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1245,7 +1245,7 @@
     "nameEn": "MasterpieceOval",
     "name": "မာစတာပိစ့်အိုဗယ်",
     "fileName": "MasterpieceOval",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1254,7 +1254,7 @@
     "nameEn": "MasterpieceRectangle",
     "name": "မာစတာပိစ့်ရက်တန်ဂယ်",
     "fileName": "MasterpieceRectangle",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1263,7 +1263,7 @@
     "nameEn": "MasterpieceRectangleOutline",
     "name": "မာစတာပိစ့်ရက်တန်ဂယ်အောက်လိုင်း",
     "fileName": "MasterpieceRectangleOutline",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1272,7 +1272,7 @@
     "nameEn": "MasterpieceRound",
     "name": "မာစတာပိစ့်ဝရောင်း",
     "fileName": "MasterpieceRound",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular Bold",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1281,7 +1281,7 @@
     "nameEn": "MasterpieceSemiOval",
     "name": "မာစတာပိစ့်စီးမီးအိုဗယ်",
     "fileName": "MasterpieceSemiOval",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Ne Lin Oo",
     "English Support": ""
@@ -1290,7 +1290,7 @@
     "nameEn": "MasterpieceSemiOvalOutline",
     "name": "မာစတာပိစ့်စီးမီးအိုဗယ်အောက်လိုင်း",
     "fileName": "MasterpieceSemiOvalOutline",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Ne Lin Oo",
     "English Support": ""
@@ -1299,7 +1299,7 @@
     "nameEn": "MasterpieceShade",
     "name": "မာစတာပိစ့်ရှိတ်",
     "fileName": "MasterpieceShade",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1308,7 +1308,7 @@
     "nameEn": "MasterpieceShadeOutline",
     "name": "မာစတာပိစ့်ရှိတ်အောက်လိုင်း",
     "fileName": "MasterpieceShadeOutline",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1317,7 +1317,7 @@
     "nameEn": "MasterpieceStroke",
     "name": "မာစတာပိစ့်စတုတ်",
     "fileName": "MasterpieceStroke",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1326,7 +1326,7 @@
     "nameEn": "MasterpieceStrokeTwin",
     "name": "မာစတာပိစ့်စတုတ်တွင်",
     "fileName": "MasterpieceStrokeTwin",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1335,7 +1335,7 @@
     "nameEn": "MasterpieceV0Stroke",
     "name": "မာစတာပိစ့်ဗွီဇီရိုးစတုတ်",
     "fileName": "MasterpieceV0Stroke",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
@@ -1344,7 +1344,7 @@
     "nameEn": "MasterpieceV0StrokeTwin",
     "name": "မာစတာပိစ့်ဗီဇီရိုးစတုတ်တွင်",
     "fileName": "MasterpieceV0StrokeTwin",
-    "fontSupportType": "",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
     "English Support": ""
