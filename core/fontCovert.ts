@@ -8,5 +8,9 @@ const default_text_win = 'aumif;aom eHeufcif; yg';
 export const convertText = (font: FontType, text: string | undefined) => {
   if (font.fontSupportType === 'unicode') return text || default_text_uni;
   if (font.fontSupportType === 'zawgyi') return text ? Rabbit.uni2zg(text) : default_text_zaw;
-  if (font.fontSupportType === 'win') return text ? text : default_text_win;
+  if (font.fontSupportType === 'win') {
+    if (!text) return default_text_win;
+    const convertTextZg = Rabbit.uni2zg(text);
+    return Rabbit.zg2win(convertTextZg);
+  }
 };

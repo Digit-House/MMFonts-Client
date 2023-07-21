@@ -3,6 +3,7 @@
 const Rabbit = {
   zg2uni: zg2uni,
   uni2zg: uni2zg,
+  zg2win: zg2win,
 };
 
 function uni2zg(output: string) {
@@ -809,18 +810,166 @@ function zg2uni(output: string) {
   return replace_with_rule(rule, output);
 }
 
-function replace_with_rule(rule: { from: string; to: string }[], output: string) {
+function replace_with_rule(rule: { from: string | number; to: string | number }[], output: string) {
   const max_loop = rule.length;
   for (let i = 0; i < max_loop; i++) {
     const data = rule[i];
-    const from = data['from'];
-    const to = data['to'];
+    let from = data['from'];
+    let to = data['to'];
 
+    if (typeof from === 'number') {
+      from = String.fromCharCode(from);
+    }
+
+    if (typeof to === 'number') {
+      to = String.fromCharCode(to);
+    }
     const from_regex = new RegExp(from, 'g');
     output = output.replace(from_regex, to);
   }
 
   return output;
+}
+
+function zg2win(output: string) {
+  const rule = [
+    { from: 4096, to: 117 },
+    { from: 4097, to: 99 },
+    { from: 4098, to: 42 },
+    { from: 4099, to: 67 },
+    { from: 4100, to: 105 },
+    { from: 4101, to: 112 },
+    { from: 4102, to: 113 },
+    { from: 4103, to: 90 },
+    { from: 4104, to: 245 },
+    { from: 4105, to: 218 },
+    { from: 4106, to: 110 },
+    { from: 4107, to: 35 },
+    { from: 4108, to: 88 },
+    { from: 4109, to: 33 },
+    { from: 4110, to: 161 },
+    { from: 4111, to: 80 },
+    { from: 4112, to: 119 },
+    { from: 4113, to: 120 },
+    { from: 4114, to: 39 },
+    { from: 4115, to: 34 },
+    { from: 4116, to: 101 },
+    { from: 4117, to: 121 },
+    { from: 4118, to: 122 },
+    { from: 4119, to: 65 },
+    { from: 4120, to: 98 },
+    { from: 4121, to: 114 },
+    { from: 4122, to: 44 },
+    { from: 4123, to: 38 },
+    { from: 4124, to: 118 },
+    { from: 4125, to: 234 },
+    { from: 4126, to: 111 },
+    { from: 4127, to: 91 },
+    { from: 4128, to: 86 },
+    { from: 4129, to: 116 },
+    { from: 4131, to: 163 },
+    { from: 4132, to: 254 },
+    { from: 4133, to: 79 },
+    { from: 4134, to: 232 },
+    { from: 4137, to: 235 },
+    { from: 4138, to: 236 },
+    { from: 4139, to: 103 },
+    { from: 4140, to: 109 },
+    { from: 4141, to: 100 },
+    { from: 4142, to: 68 },
+    { from: 4143, to: 107 },
+    { from: 4144, to: 108 },
+    { from: 4145, to: 97 },
+    { from: 4146, to: 74 },
+    { from: 4147, to: 75 },
+    { from: 4148, to: 76 },
+    { from: 4150, to: 72 },
+    { from: 4151, to: 104 },
+    { from: 4152, to: 59 },
+    { from: 4153, to: 102 },
+    { from: 4154, to: 115 },
+    { from: 4155, to: 106 },
+    { from: 4156, to: 71 },
+    { from: 4157, to: 83 },
+    { from: 4160, to: 48 },
+    { from: 4161, to: 49 },
+    { from: 4162, to: 50 },
+    { from: 4163, to: 51 },
+    { from: 4164, to: 52 },
+    { from: 4165, to: 53 },
+    { from: 4166, to: 54 },
+    { from: 4167, to: 55 },
+    { from: 4168, to: 56 },
+    { from: 4169, to: 57 },
+    { from: 4170, to: 63 },
+    { from: 4171, to: 47 },
+    { from: 4172, to: 252 },
+    { from: 4173, to: 237 },
+    { from: 4174, to: 164 },
+    { from: 4175, to: 92 },
+    { from: 4186, to: 58 },
+    { from: 4192, to: 250 },
+    { from: 4193, to: 169 },
+    { from: 4194, to: 190 },
+    { from: 4195, to: 162 },
+    { from: 4196, to: 70 },
+    { from: 4197, to: 246 },
+    { from: 4198, to: 228 },
+    { from: 4199, to: 249 },
+    { from: 4200, to: 198 },
+    { from: 4201, to: 209 },
+    { from: 4202, to: 251 },
+    { from: 4203, to: 241 },
+    { from: 4204, to: 179 },
+    { from: 4205, to: 178 },
+    { from: 4206, to: 215 },
+    { from: 4207, to: 185 },
+    { from: 4208, to: 214 },
+    { from: 4209, to: 229 },
+    { from: 4210, to: 197 },
+    { from: 4211, to: 172 },
+    { from: 4212, to: 166 },
+    { from: 4213, to: 180 },
+    { from: 4214, to: 168 },
+    { from: 4215, to: 233 },
+    { from: 4216, to: 220 },
+    { from: 4217, to: 230 },
+    { from: 4218, to: 193 },
+    { from: 4219, to: 199 },
+    { from: 4220, to: 174 },
+    { from: 4221, to: 223 },
+    { from: 4222, to: 77 },
+    { from: 4223, to: 78 },
+    { from: 4224, to: 66 },
+    { from: 4225, to: 96 },
+    { from: 4226, to: 126 },
+    { from: 4227, to: 238 },
+    { from: 4228, to: 239 },
+    { from: 4229, to: 244 },
+    { from: 4230, to: 243 },
+    { from: 4231, to: 167 },
+    { from: 4232, to: 73 },
+    { from: 4233, to: 170 },
+    { from: 4234, to: 84 },
+    { from: 4235, to: 216 },
+    { from: 4236, to: 208 },
+    { from: 4237, to: 248 },
+    { from: 4238, to: 240 },
+    { from: 4239, to: 69 },
+    { from: 4240, to: 189 },
+    { from: 4241, to: 64 },
+    { from: 4242, to: 124 },
+    { from: 4135, to: 123 }, // Note: There are duplicate cases 4135 and 4221 in the original code.
+    { from: 4243, to: 123 },
+    { from: 4244, to: 89 },
+    { from: 4245, to: 85 },
+    { from: 4246, to: 201 },
+    { from: 4247, to: 165 },
+    { from: 4154, to: 81 }, // Note: There are duplicate cases 4154 and 4221 in the original code.
+    { from: 4221, to: 82 },
+    { from: 4221, to: 87 },
+  ];
+  return replace_with_rule(rule, output);
 }
 
 export default Rabbit;
