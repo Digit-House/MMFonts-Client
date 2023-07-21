@@ -9,7 +9,6 @@
     "terms-and-conditions": "Terms and Conditions",
     "download": "Download",
     "fonts": "Fonts",
-    "done": "Done",
     "paragraph": "paragraph",
     "sentence": "sentence",
     "purpose": "Purpose",
@@ -19,9 +18,11 @@
     "support-us": "Support Us",
     "support-us-paragraph": "Information is still being added, so there are many errors. If there are any, please let me know and if you want to be included as the original creator, please let me know through the contact form. We can also advise on other requirements.",
     "contact-us": "Contact Us",
-    "type-something": "Type Something",
+    "type-something": "Type Something (only Unicode Font supports)",
     "create-by": "Unknown",
     "search": "search fonts",
-    "not-found-fontlist": "Can't find any fonts."
+    "not-found-fontlist": "Can't find any fonts.",
+    "win": "win",
+    "font-types": "font types"
   }
 }

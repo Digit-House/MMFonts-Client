@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import React, { useCallback, useEffect, useState } from 'react';
 import Slider from 'react-slick';
-import { FramerMotionWrapper, RadioSelectBar, RivLoading, TextGenerateModal } from '@components/index';
+import { FramerMotionWrapper, RadioSelectBar, RivLoading } from '@components/index';
 import { PremiumFontType, SelectOptionType } from '@core/golobalTypes';
 
 const settings = {
@@ -27,7 +27,6 @@ const Premium = () => {
   const [currentFont, setCurrentFont] = useState<PremiumFontType | null>();
   const [images, setImages] = useState<{ src: string }[]>([]);
   const params: any = useParams();
-  const [open, setOpen] = useState<boolean>(false);
 
   useEffect(() => {
     const index = params.id.split('-').pop();
@@ -100,19 +99,12 @@ const Premium = () => {
               </div>
               <div className="flex flex-col py-2 md:justify-between md:items-center md:flex-row">
                 <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
-                <p
-                  className="flex items-center justify-center p-3 mt-5 border-2 rounded-sm cursor-pointer md:mt-0 border-sm border-darkblue bg-secondary text-darkblue"
-                  onClick={() => setOpen(true)}
-                >
-                  စာထုတ်ရန်
-                </p>
               </div>
             </div>
           </div>
           <p className="mt-5 mb-5 font-medium">ဖောင့်ပုံစံများ</p>
         </div>
       </div>
-      <TextGenerateModal open={open} setOpen={setOpen} />
     </FramerMotionWrapper>
   );
 };

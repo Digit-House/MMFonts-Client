@@ -7,9 +7,9 @@ export async function generateMetadata(): Promise<Metadata> {
       absolute: 'About Us',
     },
     alternates: {
-      canonical: '/contact',
+      canonical: '/about-us',
       languages: {
-        en: 'en/contact-us',
+        en: 'en/about-us',
       },
     },
   };

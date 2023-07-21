@@ -1,10 +1,12 @@
 'use client';
 
+import { ChevronUpIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { FontListCard, FramerMotionWrapper, RivLoading, SearchBox } from '@components/index';
+import { CheckBox, FontListCard, FramerMotionWrapper, RivLoading, SearchBox } from '@components/index';
+import { classNames } from '@core/classnames';
 import filterSearch from '@core/filterSearch';
 import { getFontsArray } from '@core/getFonts';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
@@ -29,10 +31,12 @@ export default function Home() {
   const [checked, setChecked] = useState<{ task: string; done: boolean; value: string }[]>([
     { task: t('zaw-gyi'), done: false, value: 'zawgyi' },
     { task: t('unicode'), done: false, value: 'unicode' },
+    { task: t('win'), done: false, value: 'win' },
   ]);
   const router = useRouter();
   const pathname = usePathname();
   const prevFontLists = useRef<FontType[]>([]);
+  const [openSelectFontTypes, setOpenSelectFontTypes] = useState<boolean>(false);
 
   const handleScroll = useCallback(() => {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
@@ -133,27 +137,51 @@ export default function Home() {
                   ? ` ${fontList.length} of ${data.length} fonts`
                   : `ဖောင့် ${NumberConverter(data.length)} မှ ${NumberConverter(fontList.length)}`}
               </p>
-              <div className="items-center hidden gap-2 cursor-pointer sm:flex">
-                <div className="relative w-8 h-8" onClick={() => setIsToggled(true)}>
-                  <Image
-                    alt="rows"
-                    src={RowsIcon}
-                    fill
-                    style={{ objectFit: 'cover', objectPosition: 'center' }}
-                    placeholder="blur"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
+              <div className="flex h-6 gap-x-4">
+                <div className="relative select-none ">
+                  <div
+                    className="items-center h-full bg-transparent border rounded-full cursor-pointer "
+                    onClick={() => setOpenSelectFontTypes((prev) => !prev)}
+                  >
+                    <div className="flex flex-row items-center h-full px-4 gap-x-1">
+                      <p className="text-xs">{t('font-types')}</p>
+                      <ChevronUpIcon className={classNames(openSelectFontTypes && 'transform rotate-180', 'w-4')} />
+                    </div>
+                  </div>
+                  {openSelectFontTypes && (
+                    <div className="p-2 mt-1 border rounded-md shadow bg-primary dark:bg-lightblue ">
+                      {checked.map(({ task, done }, i) => (
+                        <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
+                      ))}
+                    </div>
+                  )}
                 </div>
-                <div className="relative w-8 h-8" onClick={() => setIsToggled(false)}>
-                  <Image
-                    alt="columns"
-                    src={RowsIcon}
-                    fill
-                    className="transform rotate-90"
-                    style={{ objectFit: 'cover', objectPosition: 'center' }}
-                    placeholder="blur"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
+                <div className="hidden sm:flex">
+                  <div className="relative w-8 h-full cursor-pointer" onClick={() => setIsToggled(true)}>
+                    <Image
+                      alt="rows"
+                      src={RowsIcon}
+                      fill
+                      style={{ objectFit: 'cover', objectPosition: 'center' }}
+                      placeholder="blur"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      priority={false}
+                      quality={50}
+                    />
+                  </div>
+                  <div className="relative w-8 h-full cursor-pointer" onClick={() => setIsToggled(false)}>
+                    <Image
+                      alt="columns"
+                      src={RowsIcon}
+                      fill
+                      className="transform rotate-90"
+                      style={{ objectFit: 'cover', objectPosition: 'center' }}
+                      placeholder="blur"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      priority={false}
+                      quality={50}
+                    />
+                  </div>
                 </div>
               </div>
             </div>

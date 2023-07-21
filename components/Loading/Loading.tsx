@@ -9,7 +9,7 @@ const Loading = ({ waitingText = false }: { waitingText?: boolean }) => {
   const text = !waitingText ? ['ခ', 'ဏ', 'စော', 'င့်', 'ဆို', 'င်း', 'ပါ'] : comingSoon;
 
   return (
-    <div className="flex items-center justify-center select-none h-[600px]">
+    <div className="flex items-center justify-center select-none h-[500px] ">
       <div className="w-full max-w-[600px] text-center relative ">
         <div className="absolute bottom-0 left-0 w-full h-1 bg-[#a11d33] dark:bg-[#000] rounded-full animate-moveLine"></div>
         <div className="text-[5vw] tracking-widest mb-8 leading-loose flex justify-evenly text-[#a11d33] dark:text-[#000]">
