@@ -3,7 +3,6 @@
 import { AnimatePresence } from 'framer-motion';
 import { ThemeProvider } from 'next-themes';
 import { usePathname } from 'next/navigation';
-import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import { hotjar } from 'react-hotjar';
 import { Footer, Header } from '@components/index';
@@ -12,7 +11,6 @@ import { pageview } from '@core/gtag';
 const Providers = ({ children }: { children: React.ReactNode }) => {
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
-  const router = useRouter();
 
   const hotJarKey = process.env.NEXT_PUBLIC_HOT_JAR;
 
@@ -27,11 +25,10 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
     const handleRouteChange = (url: string) => {
       pageview(url);
     };
-    router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [router.events]);
+    if (pathname) {
+      handleRouteChange(pathname);
+    }
+  }, [pathname]);
 
   if (!mounted) return null;
 
