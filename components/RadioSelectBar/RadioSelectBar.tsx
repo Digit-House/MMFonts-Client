@@ -24,6 +24,7 @@ type RadioSelectBarType = {
   selectBoxRounded?: boolean;
   customClassName?: string;
   isSticky?: boolean;
+  id?: string;
 };
 
 export default function RadioSelectBar({
@@ -33,6 +34,7 @@ export default function RadioSelectBar({
   customClassName,
   selectBoxRounded = true,
   isSticky = false,
+  id,
 }: RadioSelectBarType) {
   return (
     <div
@@ -50,8 +52,11 @@ export default function RadioSelectBar({
         customClassName={isSticky ? 'flex-1' : 'flex'}
         isSticky={isSticky}
       />
-      <label className="sr-only">pixel range bar</label>
+      <label className="sr-only" htmlFor={id}>
+        pixel range bar
+      </label>
       <input
+        id={id}
         type="range"
         min="1"
         max="96"
