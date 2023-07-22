@@ -4,12 +4,21 @@ import { AnimatePresence } from 'framer-motion';
 import { ThemeProvider } from 'next-themes';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
+import { hotjar } from 'react-hotjar';
 import { Footer, Header } from '@components/index';
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
-  useEffect(() => setMounted(true), []);
+
+  const hotJarKey = process.env.NEXT_PUBLIC_HOT_JAR;
+
+  useEffect(() => {
+    setMounted(true);
+    if (hotJarKey) {
+      hotjar.initialize(parseInt(hotJarKey), 1);
+    }
+  }, []);
 
   if (!mounted) return null;
 
