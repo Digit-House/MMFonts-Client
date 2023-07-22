@@ -2,13 +2,13 @@ import { MetadataRoute } from 'next';
 import { getAllFontsName } from '@core/getFonts';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://www.mmfontshub.com';
+  const baseUrl = 'https://mmfontshub.com';
   const fonts = getAllFontsName();
-  const fontUrls = fonts.map((font, index) => {
+  const fontUrls = fonts.map((font) => {
     const fontName = font.replaceAll(' ', '+');
 
     return {
-      url: `${baseUrl}/fonts/${fontName}-${index}`,
+      url: `${baseUrl}/fonts/${fontName}`,
       lastModified: new Date(),
     };
   });
