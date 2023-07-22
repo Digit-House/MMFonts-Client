@@ -8,7 +8,6 @@ export { default as SearchBox } from './SearchBox/SearchBox';
 export { default as DetailNavMenu } from './DetailNavMenu/DetailNavMenu';
 export { default as RadioSelectBar } from './RadioSelectBar/RadioSelectBar';
 export { default as FontListDetailCard } from './FontListDetailCard/FontListDetailCard';
-export { default as TextGenerateModal } from './TextGenerateModal/TextGenerateModal';
 export { default as FontListPremiumCard } from './FontListPremiumCard/FontListPremiumCard';
 export { default as CustomSelectBox } from './CustomSelectBox/CustomSelectBox';
 export { default as PremiumCard } from './premiumCard/premiumCard';

@@ -10,7 +10,7 @@ const Page = () => {
     setFonts([]);
   }, []);
 
-  if (fonts.length > 0) return <Loading waitingText={true} />;
+  if (fonts.length === 0) return <Loading waitingText={true} />;
 
   return (
     <FramerMotionWrapper>

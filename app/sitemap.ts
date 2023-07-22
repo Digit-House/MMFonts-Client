@@ -30,6 +30,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${baseUrl}/mmtextsgenerator`,
       lastModified: new Date(),
     },
+    {
+      url: `${baseUrl}/privacy-policy`,
+      lastModified: new Date(),
+    },
     ...fontUrls,
   ];
 }
