@@ -122,7 +122,7 @@ export default async function RootLayout({ children, params: { locale } }: RootL
         />
       </Head>
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <body className={`${myLocalFont.variable} font-acre `}>
+        <body className={`${myLocalFont.variable} font-acre `} suppressHydrationWarning={true}>
           <Providers>{children}</Providers>
         </body>
       </NextIntlClientProvider>
