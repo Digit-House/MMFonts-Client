@@ -1,5 +1,4 @@
 'use client';
-
 import { ChevronUpIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -81,11 +80,31 @@ export default function Home() {
     checkedClone[i] = tmp;
     setChecked([...checkedClone]);
     const filterData: FontType[] = [];
-    const [firstChecked, secondChecked] = checkedClone;
-    if (!firstChecked.done && secondChecked.done) {
-      filterData.push(...fontList.filter((font) => font.fontSupportType === secondChecked.value));
-    } else if (firstChecked.done && !secondChecked.done) {
+    const [firstChecked, secondChecked, thirdChecked] = checkedClone;
+    if (firstChecked.done && !secondChecked.done && !thirdChecked.done) {
       filterData.push(...fontList.filter((font) => font.fontSupportType === firstChecked.value));
+    } else if (!firstChecked.done && secondChecked.done && !thirdChecked.done) {
+      filterData.push(...fontList.filter((font) => font.fontSupportType === secondChecked.value));
+    } else if (!firstChecked.done && !secondChecked.done && thirdChecked.done) {
+      filterData.push(...fontList.filter((font) => font.fontSupportType === thirdChecked.value));
+    } else if (firstChecked.done && secondChecked.done && !thirdChecked.done) {
+      filterData.push(
+        ...fontList.filter(
+          (font) => font.fontSupportType === firstChecked.value || font.fontSupportType === secondChecked.value
+        )
+      );
+    } else if (!firstChecked.done && secondChecked.done && thirdChecked.done) {
+      filterData.push(
+        ...fontList.filter(
+          (font) => font.fontSupportType === secondChecked.value || font.fontSupportType === thirdChecked.value
+        )
+      );
+    } else if (firstChecked.done && !secondChecked.done && thirdChecked.done) {
+      filterData.push(
+        ...fontList.filter(
+          (font) => font.fontSupportType === firstChecked.value || font.fontSupportType === thirdChecked.value
+        )
+      );
     } else {
       prevFontLists.current.length > 0 ? filterData.push(...prevFontLists.current) : filterData.push(...data);
     }

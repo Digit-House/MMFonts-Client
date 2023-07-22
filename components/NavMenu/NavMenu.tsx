@@ -48,7 +48,7 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
         {menuItems.map((item) => (
           <motion.div whileHover={{ scale: 1.2 }} key={item.title}>
             <Link href={item.href} className={pathname == item.href ? activeLink : unactiveLink}>
-              {item.href === pathname && (
+              {(item.href === pathname || `/en${item.href}` === pathname) && (
                 <motion.span
                   layoutId="underline"
                   className="absolute top-full left-0 block h-[1px] bg-darkblue dark:bg-white w-full "
