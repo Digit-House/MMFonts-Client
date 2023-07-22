@@ -28,18 +28,22 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
     {
       title: t('content'),
       href: '/',
+      locale: '/en',
     },
     {
       title: t('premium'),
       href: '/premium',
+      locale: '/en/premium',
     },
     {
       title: t('generate'),
       href: '/mmtextsgenerator',
+      locale: '/en/mmtextsgenerator',
     },
     {
       title: t('about-us'),
       href: '/about-us',
+      locale: '/en/about-us',
     },
   ];
   return (
@@ -48,7 +52,7 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
         {menuItems.map((item) => (
           <motion.div whileHover={{ scale: 1.2 }} key={item.title}>
             <Link href={item.href} className={pathname == item.href ? activeLink : unactiveLink}>
-              {(item.href === pathname || `/en${item.href}` === pathname) && (
+              {(item.href === pathname || item.locale === pathname) && (
                 <motion.span
                   layoutId="underline"
                   className="absolute top-full left-0 block h-[1px] bg-darkblue dark:bg-white w-full "
