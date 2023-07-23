@@ -79,7 +79,8 @@ export default function Home() {
     const checkedClone = [...checked];
     checkedClone[i] = tmp;
     setChecked([...checkedClone]);
-    const filterData = filterSearch(searchValue, data, checkedClone, prevFontLists.current);
+    const filterData = filterSearch(searchValue, data, checkedClone);
+    console.log('FILTER DATA CHange', filterData);
     setFontList(filterData);
   };
 
@@ -98,8 +99,10 @@ export default function Home() {
 
   const inputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchValue(event.target.value);
-    setFontList(filterSearch(event.target.value, data, checked, prevFontLists.current));
-    prevFontLists.current = filterSearch(event.target.value, data, checked, prevFontLists.current);
+    const filterData = filterSearch(event.target.value, data, checked);
+    console.log('FILTER DATA Search', filterData);
+    setFontList(filterData);
+    // prevFontLists.current = filterSearch(event.target.value, data, checked, prevFontLists.current);
   };
 
   if (data.length === 0) return <RivLoading />;
