@@ -73,7 +73,7 @@ module.exports = {
     complexity: ['error', { max: 20 }],
     'max-nested-callbacks': ['error', { max: 2 }],
     'max-depth': ['error', { max: 3 }],
-    'max-params': ['error', { max: 2 }],
+    'max-params': ['error', { max: 4 }],
     'no-console': ['error', { allow: ['log', 'warn'] }],
     // disable import React necessity
   },
