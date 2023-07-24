@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import localFont from 'next/font/local';
 import Head from 'next/head';
 import { notFound } from 'next/navigation';
+import Script from 'next/script';
 import { getFontsArray } from '@core/getFonts';
 import Providers from './Providers';
 
@@ -121,8 +122,18 @@ export default async function RootLayout({ children, params: { locale } }: RootL
           }}
         />
       </Head>
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=G-${process.env.NEXT_PUBLIC_GA_TRAKCING_ID}`} />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-${process.env.NEXT_PUBLIC_GA_TRAKCING_ID}');
+        `}
+      </Script>
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <body className={`${myLocalFont.variable} font-acre `}>
+        <body className={`${myLocalFont.variable} font-acre `} suppressHydrationWarning={true}>
           <Providers>{children}</Providers>
         </body>
       </NextIntlClientProvider>

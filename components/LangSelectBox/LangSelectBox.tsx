@@ -29,7 +29,11 @@ const LangSelectBox = () => {
     <Listbox value={initialValue} onChange={setInitialValue}>
       {({ open }) => (
         <div className="relative ">
-          <Listbox.Button className="relative flex items-center w-full text-left rounded-md cursor-pointer">
+          <Listbox.Button
+            aria-label="language select button"
+            className="relative flex items-center w-full text-left rounded-md cursor-pointer"
+            type="button"
+          >
             <LanguageIcon className="w-6" />
           </Listbox.Button>
           <Transition

@@ -61,6 +61,7 @@ const SearchBox = ({
               />
             </div>
             <RadioSelectBar
+              id="range-bar"
               fontSize={fontSize}
               setFontSize={setFontSize}
               handleSliderChange={handleSliderChange}
@@ -98,6 +99,7 @@ const SearchBox = ({
             />
           </div>
           <RadioSelectBar
+            id="floating-range-bar"
             fontSize={fontSize}
             setFontSize={setFontSize}
             handleSliderChange={handleSliderChange}

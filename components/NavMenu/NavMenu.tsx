@@ -79,8 +79,6 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
               <Image
                 className="w-auto h-10"
                 src={Logo}
-                width={40}
-                height={40}
                 alt="mm fonts collection logo"
                 sizes="100vw"
                 placeholder="blur"
