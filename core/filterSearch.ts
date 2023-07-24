@@ -1,30 +1,42 @@
 import { FontType } from './golobalTypes';
 
 export function detectLanguage(input: string) {
-  const charCodes = input
-    .toLowerCase()
-    .split('')
-    .map((char) => char.charCodeAt(0));
+  const en = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  const mm = 'ကခဂဃငစဆဇဈညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအ';
 
-  const englishCount = charCodes.filter((charCode) => charCode >= 97 && charCode <= 122).length;
-  const myanmarCount = charCodes.filter((charCode) => charCode >= 4096 && charCode <= 4255).length;
+  if (en.includes(input[0])) return 'english';
+  if (mm.includes(input[0])) return 'myanmar';
+  else return 'unknown';
+}
 
-  if (englishCount > 0 && myanmarCount === 0) {
-    return 'english';
-  } else if (englishCount === 0 && myanmarCount > 0) {
-    return 'myanmar';
+const filterSearch = (
+  searchKeyWord: string,
+  originData: FontType[],
+  fontChecks: { task: string; done: boolean; value: string }[]
+) => {
+  let filteredData: FontType[];
+  const formattedSearchKeyWord = searchKeyWord.toLowerCase().replace(/\s/g, '');
+  const searchLang = detectLanguage(formattedSearchKeyWord);
+
+  if (fontChecks.every((item) => item.done === true)) {
+    filteredData = originData;
   } else {
-    return 'unknown';
-  }
-}
+    const data: FontType[] = fontChecks
+      .filter((item) => item.done)
+      .flatMap((item) => originData.filter((font) => font.fontSupportType === item.value));
 
-export default function filterSearch(event: React.ChangeEvent<HTMLInputElement>, data: FontType[]) {
-  const language = detectLanguage(event.target.value);
-  const filterData = data.filter((font) => {
-    const fontName = language === 'english' ? font.nameEn.toLowerCase() : font.name;
-    const formattedName = fontName.replace(/\s/g, '');
-    const formattedInput = event.target.value.toLowerCase().replace(/\s/g, '');
-    return formattedName.includes(formattedInput);
-  });
-  return filterData;
-}
+    filteredData = data;
+  }
+  if (formattedSearchKeyWord.length > 0) {
+    filteredData = filteredData.filter((font) => {
+      const fontName = searchLang === 'english' ? font.nameEn.toLowerCase() : font.name;
+      const formattedName = fontName.replace(/\s/g, '');
+      console.log(formattedName, fontName);
+      return formattedName.includes(formattedSearchKeyWord);
+    });
+  }
+
+  return filteredData;
+};
+
+export default filterSearch;

@@ -1,5 +1,4 @@
 'use client';
-
 import { ChevronUpIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -29,9 +28,9 @@ export default function Home() {
   const searchBoxRef = useRef<HTMLDivElement>(null);
   const [isSearchBoxScrolled, setIsSearchBoxScrolled] = useState<boolean>(false);
   const [checked, setChecked] = useState<{ task: string; done: boolean; value: string }[]>([
-    { task: t('zaw-gyi'), done: false, value: 'zawgyi' },
-    { task: t('unicode'), done: false, value: 'unicode' },
-    { task: t('win'), done: false, value: 'win' },
+    { task: t('zaw-gyi'), done: true, value: 'zawgyi' },
+    { task: t('unicode'), done: true, value: 'unicode' },
+    { task: t('win'), done: true, value: 'win' },
   ]);
   const router = useRouter();
   const pathname = usePathname();
@@ -80,22 +79,15 @@ export default function Home() {
     const checkedClone = [...checked];
     checkedClone[i] = tmp;
     setChecked([...checkedClone]);
-    const filterData: FontType[] = [];
-    const [firstChecked, secondChecked] = checkedClone;
-    if (!firstChecked.done && secondChecked.done) {
-      filterData.push(...fontList.filter((font) => font.fontSupportType === secondChecked.value));
-    } else if (firstChecked.done && !secondChecked.done) {
-      filterData.push(...fontList.filter((font) => font.fontSupportType === firstChecked.value));
-    } else {
-      prevFontLists.current.length > 0 ? filterData.push(...prevFontLists.current) : filterData.push(...data);
-    }
+    const filterData = filterSearch(searchValue, data, checkedClone);
+    console.log('FILTER DATA CHange', filterData);
     setFontList(filterData);
   };
 
   useEffect(() => {
     if (fontList.length === 0) setFontList(data);
     if (copyFontList.length === 0) setCopyFontList(data.slice(0, 8));
-  }, [data]);
+  }, []);
 
   useEffect(() => {
     setCopyFontList(fontList.slice(0, 8));
@@ -107,8 +99,10 @@ export default function Home() {
 
   const inputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchValue(event.target.value);
-    setFontList(filterSearch(event, data));
-    prevFontLists.current = filterSearch(event, data);
+    const filterData = filterSearch(event.target.value, data, checked);
+    console.log('FILTER DATA Search', filterData);
+    setFontList(filterData);
+    // prevFontLists.current = filterSearch(event.target.value, data, checked, prevFontLists.current);
   };
 
   if (data.length === 0) return <RivLoading />;
@@ -125,8 +119,6 @@ export default function Home() {
             handleChange={handleChange}
             fontSize={fontSize}
             setFontSize={setFontSize}
-            handleCheckBoxChange={handleCheckBoxChange}
-            checked={checked}
           />
         </div>
         <div className="md:min-h-[1000px] min-h-[800px]">
@@ -144,12 +136,12 @@ export default function Home() {
                     onClick={() => setOpenSelectFontTypes((prev) => !prev)}
                   >
                     <div className="flex flex-row items-center h-full px-4 gap-x-1">
-                      <p className="text-xs">{t('font-types')}</p>
+                      <p className="text-xs text-secondaryText dark:text-darkSecondaryText">{t('font-types')}</p>
                       <ChevronUpIcon className={classNames(openSelectFontTypes && 'transform rotate-180', 'w-4')} />
                     </div>
                   </div>
                   {openSelectFontTypes && (
-                    <div className="p-2 mt-1 border rounded-md shadow bg-primary dark:bg-lightblue ">
+                    <div className="z-10 p-2 mt-1 border rounded-md shadow bg-primary dark:bg-lightblue">
                       {checked.map(({ task, done }, i) => (
                         <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
                       ))}

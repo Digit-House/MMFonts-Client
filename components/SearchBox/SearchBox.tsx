@@ -12,8 +12,6 @@ type SearchBoxType = {
   searchValue: string;
   filterOnChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   handleChange: (event: React.ChangeEvent<HTMLTextAreaElement> | React.ChangeEvent<HTMLInputElement>) => void;
-  handleCheckBoxChange: (d: boolean, i: number) => void;
-  checked: { task: string; done: boolean }[];
   setFontSize: React.Dispatch<React.SetStateAction<SelectOptionType>>;
   fontSize: SelectOptionType;
   isSearchBoxScrolled: boolean;
@@ -23,8 +21,6 @@ const SearchBox = ({
   value,
   searchValue,
   handleChange,
-  handleCheckBoxChange,
-  checked,
   setFontSize,
   filterOnChange,
   fontSize,
@@ -49,7 +45,7 @@ const SearchBox = ({
             value={value}
             onChange={handleChange}
             placeholder={t('type-something')}
-            className="peer min-h-[50px] md:min-h-[100px] h-auto w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 focus:placeholder:text-[#a11d33]"
+            className="peer min-h-[50px] md:min-h-[100px] h-auto w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 focus:placeholder:text-[#a11d33] placeholder:text-secondaryText dark:placeholder:text-darkSecondaryText"
           />
           <div className="flex flex-row flex-wrap items-stretch flex-1 h-auto gap-2 py-2 md:flex-nowrap">
             <div className="relative flex-[1_0_10%] md:w-[50%] md:flex-none order-first">

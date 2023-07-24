@@ -3,7 +3,7 @@ import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import { classNames } from '@core/classnames';
-import filterSearch from '@core/filterSearch';
+import { detectLanguage } from '@core/filterSearch';
 import { getFontsArray } from '@core/getFonts';
 import { FontType } from '@core/golobalTypes';
 
@@ -46,11 +46,22 @@ const TextGenerateComponent = () => {
     }
   };
 
+  function filterSearch(value: string, d: FontType[]) {
+    const language = detectLanguage(value);
+    const filterData = d.filter((font) => {
+      const fontName = language === 'english' ? font.nameEn.toLowerCase() : font.name;
+      const formattedName = fontName.replace(/\s/g, '');
+      const formattedInput = value.toLowerCase().replace(/\s/g, '');
+      return formattedName.includes(formattedInput);
+    });
+    return filterData;
+  }
+
   const inputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (inputRef.current && inputRef.current.value.length > 0) {
       setOpen(true);
     } else setOpen(false);
-    setFilterFontNames(filterSearch(event, data));
+    setFilterFontNames(filterSearch(event.target.value, data));
   };
 
   return (

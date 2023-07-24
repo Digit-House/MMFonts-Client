@@ -12,13 +12,16 @@ const CheckBox = ({ handleCheckBoxChange, done, i, task }: CheckBoxType) => {
     <div className="flex items-center h-6 w-max">
       <label className="sr-only">choose font type</label>
       <input
+        id={`check-box-${i}`}
         aria-describedby="comments-description"
         type="checkbox"
         onChange={() => handleCheckBoxChange(done, i)}
         checked={done}
         className="w-4 h-4 rounded cursor-pointer accent-pink-300 border-secondary focus:secondary"
       />
-      <p className="ml-2 text-sm font-medium text-black dark:text-white">{task}</p>
+      <label htmlFor={`check-box-${i}`}>
+        <p className="ml-2 text-sm font-medium text-black cursor-pointer dark:text-white">{task}</p>
+      </label>
     </div>
   );
 };

@@ -10,11 +10,13 @@ const languages = [
     id: 1,
     name: 'မြန်မာ',
     locale: 'my',
+    href: '/',
   },
   {
     id: 2,
     name: 'Eng',
     locale: 'en',
+    href: '/en',
   },
 ];
 
@@ -50,18 +52,9 @@ const LangSelectBox = () => {
                   }
                   value={lang}
                 >
-                  {({ selected }) => (
-                    <Link href={href} locale={lang.locale} className="flex items-center py-2 ">
-                      <span
-                        className={classNames(
-                          selected ? 'font-bold text-white' : 'font-normal',
-                          'mx-3 h-5 hover:text-white'
-                        )}
-                      >
-                        {lang.name}
-                      </span>
-                    </Link>
-                  )}
+                  <Link href={href} locale={lang.locale} className="flex items-center py-2 ">
+                    <span className="h-5 mx-3 font-normal hover:text-white">{lang.name}</span>
+                  </Link>
                 </Listbox.Option>
               ))}
             </Listbox.Options>
