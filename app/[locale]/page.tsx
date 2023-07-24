@@ -34,7 +34,6 @@ export default function Home() {
   ]);
   const router = useRouter();
   const pathname = usePathname();
-  const prevFontLists = useRef<FontType[]>([]);
   const [openSelectFontTypes, setOpenSelectFontTypes] = useState<boolean>(false);
 
   const handleScroll = useCallback(() => {
@@ -102,7 +101,6 @@ export default function Home() {
     const filterData = filterSearch(event.target.value, data, checked);
     console.log('FILTER DATA Search', filterData);
     setFontList(filterData);
-    // prevFontLists.current = filterSearch(event.target.value, data, checked, prevFontLists.current);
   };
 
   if (data.length === 0) return <RivLoading />;

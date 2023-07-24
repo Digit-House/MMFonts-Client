@@ -104,10 +104,6 @@ interface RootLayoutProps {
   };
 }
 
-export function generateStaticParams() {
-  return [{ locale: 'my' }, { locale: 'en' }];
-}
-
 const generateFontLink = () => {
   const fontsLink = getFontsArray().map((font) => {
     const styleLinks = font.fontStyle
