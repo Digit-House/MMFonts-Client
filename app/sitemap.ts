@@ -4,14 +4,15 @@ import { getAllFontsName } from '@core/getFonts';
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://mmfontshub.com';
   const fonts = getAllFontsName();
-  const fontUrls = fonts.map((font) => {
-    const fontName = font.replaceAll(' ', '+');
 
-    return {
-      url: `${baseUrl}/fonts/${fontName}`,
-      lastModified: new Date(),
-    };
-  });
+  const fontUrls = (en = false) => {
+    return fonts.map((font) => {
+      return {
+        url: `${baseUrl}/${en && 'en'}/fonts/${font}`,
+        lastModified: new Date(),
+      };
+    });
+  };
 
   return [
     {
@@ -34,6 +35,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${baseUrl}/privacy-policy`,
       lastModified: new Date(),
     },
-    ...fontUrls,
+    {
+      url: `${baseUrl}/en`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/en/about-us`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/en/premium`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/en/mm-fonts-generator`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/en/privacy-policy`,
+      lastModified: new Date(),
+    },
+    ...fontUrls(false),
+    ...fontUrls(true),
   ];
 }
