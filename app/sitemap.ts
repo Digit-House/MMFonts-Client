@@ -28,7 +28,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/mm-fonts-generator`,
+      url: `${baseUrl}/myanmar-fonts-generator`,
       lastModified: new Date(),
     },
     {
@@ -48,7 +48,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/en/mm-fonts-generator`,
+      url: `${baseUrl}/en/myanmar-fonts-generator`,
       lastModified: new Date(),
     },
     {

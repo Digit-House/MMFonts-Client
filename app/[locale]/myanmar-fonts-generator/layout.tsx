@@ -16,17 +16,17 @@ export async function generateMetadata({
       absolute: t('Meta.generate-title'),
     },
     keywords: [
-      'myanmar text generator',
+      'myanmar texts generator',
       'mm texts generator',
-      'myanmar font generator',
+      'myanmar fonts generator',
       'mm fonts generator',
       'မြန်မာစာထုတ်ရန်',
       'မြန်မာဖောင့်စမ်းရန်',
     ],
     alternates: {
-      canonical: '/mm-fonts-generator',
+      canonical: '/myanmar-fonts-generator',
       languages: {
-        en: 'en/mm-fonts-generator',
+        en: 'en/myanmar-fonts-generator',
       },
     },
   };
