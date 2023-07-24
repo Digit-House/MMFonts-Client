@@ -27,7 +27,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/mmtextsgenerator`,
+      url: `${baseUrl}/mm-fonts-generator`,
       lastModified: new Date(),
     },
     {

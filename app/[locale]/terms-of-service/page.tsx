@@ -1,19 +1,4 @@
-import { Metadata } from 'next';
 import React from 'react';
-
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    title: {
-      absolute: 'Terms Of Service',
-    },
-    alternates: {
-      canonical: '/terms-of-service',
-      languages: {
-        en: 'en/terms-of-service',
-      },
-    },
-  };
-}
 
 const page = () => {
   return (

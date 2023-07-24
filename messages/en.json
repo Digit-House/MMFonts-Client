@@ -24,5 +24,15 @@
     "not-found-fontlist": "Can't find any fonts.",
     "win": "win",
     "font-types": "font types"
+  },
+  "Meta": {
+    "title": "Myanmar Fonts Hub",
+    "description": "MmFontsHub.com is Myanmar's premier online platform for fonts, catering specifically to the needs of the Myanmar community. Our website offers a vast collection of high-quality fonts, carefully curated and optimized for various projects, including web design, graphic design, branding, and more. Discover an extensive range of traditional and contemporary fonts, all conveniently accessible in one place. Whether you're a professional designer or an enthusiast, MmFontsHub.com provides the perfect resource to enhance your creative projects and express your unique style in the Myanmar language.",
+    "dynamic-description": "Try and download free computer Myanmar fonts such as Unicode, Zawgyi, and Win fonts.",
+    "about-us-title": "About Us",
+    "privacy-policy-title": "Privacy Policy",
+    "terms-and-conditions-title": "Terms and Conditions",
+    "generate-title": "MM Fonts Generator",
+    "premium-title": "Premium"
   }
 }

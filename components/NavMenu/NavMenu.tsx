@@ -37,8 +37,8 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
     },
     {
       title: t('generate'),
-      href: '/mmtextsgenerator',
-      locale: '/en/mmtextsgenerator',
+      href: '/mm-fonts-generator',
+      locale: '/en/mm-fonts-generator',
     },
     {
       title: t('about-us'),
