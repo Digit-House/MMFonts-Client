@@ -1,19 +1,4 @@
-import { Metadata } from 'next';
 import React from 'react';
-
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    title: {
-      absolute: 'Privacy Policy',
-    },
-    alternates: {
-      canonical: '/privacy-policy',
-      languages: {
-        en: 'en/privacy-policy',
-      },
-    },
-  };
-}
 
 const page = () => {
   return (

@@ -57,7 +57,7 @@
     "nameEn": "M-Myanmar1",
     "name": "အမ်မြန်မာဝမ်း",
     "fileName": "M-Myanmar1",
-    "fontSupportType": "unicode",
+    "fontSupportType": "win",
     "fontStyle": "Bold Normal",
     "createdBy": "",
     "English Support": ""
@@ -66,7 +66,7 @@
     "nameEn": "M-Myanmar2",
     "name": "အမ်မြန်မာတူး",
     "fileName": "M-Myanmar2",
-    "fontSupportType": "unicode",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""
@@ -75,7 +75,7 @@
     "nameEn": "Kannaka",
     "name": "ကနက",
     "fileName": "Kannaka",
-    "fontSupportType": "unicode",
+    "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
     "English Support": ""

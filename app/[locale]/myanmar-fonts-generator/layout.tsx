@@ -13,12 +13,20 @@ export async function generateMetadata({
   const t = createTranslator({ locale, messages });
   return {
     title: {
-      absolute: t('Meta.about-us-title'),
+      absolute: t('Meta.generate-title'),
     },
+    keywords: [
+      'myanmar texts generator',
+      'mm texts generator',
+      'myanmar fonts generator',
+      'mm fonts generator',
+      'မြန်မာစာထုတ်ရန်',
+      'မြန်မာဖောင့်စမ်းရန်',
+    ],
     alternates: {
-      canonical: '/about-us',
+      canonical: '/myanmar-fonts-generator',
       languages: {
-        en: 'en/about-us',
+        en: 'en/myanmar-fonts-generator',
       },
     },
   };

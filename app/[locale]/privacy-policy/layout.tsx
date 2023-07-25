@@ -13,12 +13,12 @@ export async function generateMetadata({
   const t = createTranslator({ locale, messages });
   return {
     title: {
-      absolute: t('Meta.about-us-title'),
+      absolute: t('Meta.privacy-policy-title'),
     },
     alternates: {
-      canonical: '/about-us',
+      canonical: '/privacy-policy',
       languages: {
-        en: 'en/about-us',
+        en: 'en/privacy-policy',
       },
     },
   };
