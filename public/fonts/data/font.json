@@ -1528,5 +1528,14 @@
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
     "English Support": ""
+  },
+  "SM07_Virus": {
+    "nameEn": "SM07_Virus",
+    "name": "အက်စ်အမ်ဇီးရိုးဆဲဗင်းဗားရပ်",
+    "fileName": "SM07_Virus",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Sai Moon's Design",
+    "English Support": ""
   }
 }

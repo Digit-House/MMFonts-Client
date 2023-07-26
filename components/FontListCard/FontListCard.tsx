@@ -62,7 +62,7 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) =
           <p className="text-[0.6rem] md:text-xs text-darkblue font-semibold ">{fontSupportType()}</p>
         </div>
       </motion.div>
-      <div className="pt-2 text-4xl break-words">
+      <div className="pt-2 text-4xl break-words ">
         <motion.p
           initial="hidden"
           whileInView="visible"
