@@ -19,7 +19,6 @@
     "@types/react-dom": "18.2.4",
     "@types/react-slick": "^0.23.10",
     "autoprefixer": "10.4.14",
-    "csvtojson": "^2.0.10",
     "eslint": "^8.42.0",
     "eslint-config-next": "13.4.4",
     "framer-motion": "^10.12.16",
@@ -40,10 +39,8 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@types/csvtojson": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^5.59.9",
     "@typescript-eslint/parser": "^5.59.9",
-    "csv-loader": "^3.0.5",
     "cypress": "^12.14.0",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.8.0",
