@@ -81,18 +81,29 @@ export default function Home() {
 
   useLayoutEffect(() => {
     const sessionFontTypes = sessionStorage.getItem('checked-font-types');
-    if (sessionFontTypes) {
+    const sessionSearchedText = sessionStorage.getItem('searched-text');
+    if (sessionFontTypes && sessionSearchedText) {
+      const retrievedFontTypes: { task: string; done: boolean; value: string }[] = JSON.parse(sessionFontTypes);
+      const filterData = filterSearch(sessionSearchedText, data, retrievedFontTypes);
+      setFontList(filterData);
+      setSearchValue(sessionSearchedText);
+      setChecked(retrievedFontTypes);
+    } else setFontList(data);
+    sessionStorage.removeItem('checked-font-types');
+    sessionStorage.removeItem('searched-text');
+    /* if (sessionFontTypes) {
       const retrievedFontTypes: { task: string; done: boolean; value: string }[] = JSON.parse(sessionFontTypes);
       setChecked(retrievedFontTypes);
       const filterFontsBySession: FontType[] = retrievedFontTypes
         .filter((item) => item.done)
         .flatMap((item) => data.filter((font) => font.fontSupportType === item.value));
       setFontList(filterFontsBySession);
-    } else setFontList(data);
+    } else setFontList(data); */
   }, []);
 
   const onClickFont = (name: string) => {
     sessionStorage.setItem('checked-font-types', JSON.stringify(checked));
+    if (searchValue.length > 0) sessionStorage.setItem('searched-text', searchValue);
     router.push(`/fonts/${name}`);
   };
 
@@ -138,7 +149,7 @@ export default function Home() {
                     </div>
                   </div>
                   {openSelectFontTypes && (
-                    <div className="z-10 p-2 mt-1 border rounded-md shadow bg-primary dark:bg-lightblue">
+                    <div className="absolute z-10 p-2 mt-1 border rounded-md shadow bg-primary dark:bg-lightblue">
                       {checked.map(({ task, done }, i) => (
                         <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
                       ))}
