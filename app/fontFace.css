@@ -1973,3 +1973,11 @@
   font-style: Regular;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'SM07_Virus';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/SM07_Virus/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
