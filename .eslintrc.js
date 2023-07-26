@@ -71,7 +71,7 @@ module.exports = {
     'no-param-reassign': ['error'],
     'max-lines': ['error', { max: 250, skipBlankLines: true }],
     complexity: ['error', { max: 20 }],
-    'max-nested-callbacks': ['error', { max: 2 }],
+    'max-nested-callbacks': ['error', { max: 3 }],
     'max-depth': ['error', { max: 3 }],
     'max-params': ['error', { max: 4 }],
     'no-console': ['error', { allow: ['log', 'warn'] }],

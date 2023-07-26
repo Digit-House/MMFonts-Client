@@ -3,7 +3,7 @@ import { ChevronUpIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { CheckBox, FontListCard, FramerMotionWrapper, RivLoading, SearchBox } from '@components/index';
 import { classNames } from '@core/classnames';
 import filterSearch from '@core/filterSearch';
@@ -24,7 +24,6 @@ export default function Home() {
     value: '24',
   });
   const [isToggled, setIsToggled] = useState<boolean>(false);
-  const [offset, setOffset] = useState<number>(1);
   const searchBoxRef = useRef<HTMLDivElement>(null);
   const [isSearchBoxScrolled, setIsSearchBoxScrolled] = useState<boolean>(false);
   const [checked, setChecked] = useState<{ task: string; done: boolean; value: string }[]>([
@@ -40,7 +39,6 @@ export default function Home() {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
 
     if (scrollTop + clientHeight > scrollHeight - 50 && fontList.length !== copyFontList.length) {
-      setOffset((prev) => prev + 1);
       const remainingData = fontList.slice(copyFontList.length, copyFontList.length + 8);
       setCopyFontList((prevFontList) => [...prevFontList, ...remainingData]);
     }
@@ -66,7 +64,6 @@ export default function Home() {
 
   useEffect(() => {
     window.addEventListener('scroll', handleSearchBoxScroll);
-
     return () => {
       window.removeEventListener('scroll', handleSearchBoxScroll);
     };
@@ -79,27 +76,29 @@ export default function Home() {
     checkedClone[i] = tmp;
     setChecked([...checkedClone]);
     const filterData = filterSearch(searchValue, data, checkedClone);
-    console.log('FILTER DATA CHange', filterData);
     setFontList(filterData);
   };
 
-  useEffect(() => {
-    if (fontList.length === 0) setFontList(data);
-    if (copyFontList.length === 0) setCopyFontList(data.slice(0, 8));
+  useLayoutEffect(() => {
+    const sessionFontTypes = sessionStorage.getItem('checked-font-types');
+    if (sessionFontTypes) {
+      const retrievedFontTypes: { task: string; done: boolean; value: string }[] = JSON.parse(sessionFontTypes);
+      setChecked(retrievedFontTypes);
+      const filterFontsBySession: FontType[] = retrievedFontTypes
+        .filter((item) => item.done)
+        .flatMap((item) => data.filter((font) => font.fontSupportType === item.value));
+      setFontList(filterFontsBySession);
+    } else setFontList(data);
   }, []);
 
-  useEffect(() => {
-    setCopyFontList(fontList.slice(0, 8));
-  }, [fontList]);
-
   const onClickFont = (name: string) => {
+    sessionStorage.setItem('checked-font-types', JSON.stringify(checked));
     router.push(`/fonts/${name}`);
   };
 
   const inputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchValue(event.target.value);
     const filterData = filterSearch(event.target.value, data, checked);
-    console.log('FILTER DATA Search', filterData);
     setFontList(filterData);
   };
 
@@ -181,7 +180,7 @@ export default function Home() {
               </div>
             )}
             <div className={`${isToggled ? 'grid-cols-1' : 'sm:grid-cols-2'}  grid gap-4 mt-3 w-full `}>
-              {copyFontList.map((font: FontType, i) => (
+              {fontList.map((font: FontType, i) => (
                 <FontListCard
                   key={i}
                   id={i + 1}
@@ -189,7 +188,6 @@ export default function Home() {
                   font={font}
                   typeText={value}
                   fontSize={parseInt(fontSize.value)}
-                  offset={offset}
                 />
               ))}
             </div>

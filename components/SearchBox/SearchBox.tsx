@@ -55,7 +55,7 @@ const SearchBox = ({
               <input
                 value={searchValue}
                 onChange={filterOnChange}
-                className="w-full h-12 pl-12 py-2 pr-4 border border-none rounded-full shadow text-darkblue bg-secondary focus:outline-none focus:placeholder:text-[#a11d33] "
+                className="w-full h-12 pl-12 py-2 pr-4 border border-none rounded-full  text-darkblue bg-secondary focus:outline-none focus:placeholder:text-[#a11d33] shadow"
                 placeholder={t('search')}
                 type="text"
               />

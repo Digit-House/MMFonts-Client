@@ -31,7 +31,6 @@ const filterSearch = (
     filteredData = filteredData.filter((font) => {
       const fontName = searchLang === 'english' ? font.nameEn.toLowerCase() : font.name;
       const formattedName = fontName.replace(/\s/g, '');
-      console.log(formattedName, fontName);
       return formattedName.includes(formattedSearchKeyWord);
     });
   }

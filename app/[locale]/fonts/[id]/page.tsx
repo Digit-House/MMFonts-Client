@@ -9,7 +9,6 @@ import { FontType, SelectOptionType } from '@core/golobalTypes';
 
 function Page() {
   const params: any = useParams();
-
   const [value, setValue] = useState<string>('');
   const [fontSize, setFontSize] = useState<SelectOptionType>({
     label: '20',
@@ -50,7 +49,12 @@ function Page() {
 
   return (
     <FramerMotionWrapper>
-      <DetailNavMenu fileName={font.fileName} fontName={font.fileName} createdBy={font.createdBy} />
+      <DetailNavMenu
+        fileName={font.fileName}
+        fontNameEn={font.nameEn}
+        createdBy={font.createdBy}
+        fontNameMM={font.name}
+      />
       <div>
         <div className="flex items-center justify-center mt-5 ">
           <div className="p-4 border-2 rounded-md border-darkblue dark:border-white sm:mx-14 md:mx-20 lg:mx-26 xl:mx-auto max-w-[794px]">

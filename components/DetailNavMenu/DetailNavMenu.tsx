@@ -1,18 +1,21 @@
 'use client';
 import JSZip from 'jszip';
 import { useTranslations } from 'next-intl';
+import { usePathname } from 'next/navigation';
 import React, { useState } from 'react';
 
 type DetailNavMenuType = {
-  fontName: string;
+  fontNameMM: string;
   createdBy: string;
   fileName: string;
+  fontNameEn: string;
 };
 
-const DetailNavMenu = ({ fontName, fileName, createdBy }: DetailNavMenuType) => {
+const DetailNavMenu = ({ fontNameMM, fileName, createdBy, fontNameEn }: DetailNavMenuType) => {
   const [isHide, setIsHide] = useState<boolean>(true);
   const t = useTranslations('Index');
   const [showAlert, setShowAlert] = useState<boolean>(false);
+  const pathname = usePathname();
 
   const handleButtonClick = () => {
     setShowAlert(true);
@@ -64,7 +67,7 @@ const DetailNavMenu = ({ fontName, fileName, createdBy }: DetailNavMenuType) => 
     <div className="text-lg ">
       <div className="flex flex-row justify-between ">
         <div className="flex flex-col items-left">
-          <p className="mr-5 font-medium ">{fontName}</p>
+          <p className="mr-5 font-medium ">{pathname?.includes('/en/') ? fontNameEn : fontNameMM}</p>
           <p className="text-sm">{createdBy === undefined ? t('create-by') : createdBy}</p>
         </div>
         <div className="flex flex-row items-center">
