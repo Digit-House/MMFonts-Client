@@ -3,7 +3,7 @@ import { ChevronUpIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { CheckBox, FontListCard, FramerMotionWrapper, RivLoading, SearchBox } from '@components/index';
 import { classNames } from '@core/classnames';
 import filterSearch from '@core/filterSearch';
@@ -76,26 +76,33 @@ export default function Home() {
     checkedClone[i] = tmp;
     setChecked([...checkedClone]);
     const filterData = filterSearch(searchValue, data, checkedClone);
-    console.log('FILTER DATA CHange', filterData);
     setFontList(filterData);
   };
 
-  useEffect(() => {
-    if (fontList.length === 0) setFontList(data);
+  useLayoutEffect(() => {
+    const sessionFontTypes = sessionStorage.getItem('checked-font-types');
+    if (sessionFontTypes) {
+      const retrievedFontTypes: { task: string; done: boolean; value: string }[] = JSON.parse(sessionFontTypes);
+      setChecked(retrievedFontTypes);
+      const filterFontsBySession: FontType[] = retrievedFontTypes
+        .filter((item) => item.done)
+        .flatMap((item) => data.filter((font) => font.fontSupportType === item.value));
+      setFontList(filterFontsBySession);
+    } else setFontList(data);
   }, []);
 
   const onClickFont = (name: string) => {
+    sessionStorage.setItem('checked-font-types', JSON.stringify(checked));
     router.push(`/fonts/${name}`);
   };
 
   const inputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchValue(event.target.value);
     const filterData = filterSearch(event.target.value, data, checked);
-    console.log('FILTER DATA Search', filterData);
     setFontList(filterData);
   };
 
-  if (fontList.length === 0) return <RivLoading />;
+  if (data.length === 0) return <RivLoading />;
 
   return (
     <main className="flex-grow h-full mt-5 ">
@@ -173,7 +180,7 @@ export default function Home() {
               </div>
             )}
             <div className={`${isToggled ? 'grid-cols-1' : 'sm:grid-cols-2'}  grid gap-4 mt-3 w-full `}>
-              {data.map((font: FontType, i) => (
+              {fontList.map((font: FontType, i) => (
                 <FontListCard
                   key={i}
                   id={i + 1}
