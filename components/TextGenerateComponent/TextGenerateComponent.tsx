@@ -7,16 +7,6 @@ import { detectLanguage } from '@core/filterSearch';
 import { getFontsArray } from '@core/getFonts';
 import { FontType } from '@core/golobalTypes';
 
-// const parargraph =
-//   'မြန်မာဘာသာစကားသည် မြန်မာနိုင်ငံ၏ ရုံးသုံး ဘာသာစကားဖြစ်သည်။ ဗမာလူမျိုးနှင့် ဗမာနွယ်ဝင်(ဓနု၊ အင်းသား၊ တောင်ရိုးနှင့် ယော)တို့၏ ဇာတိစကားဖြစ်သည်။ ဗမာလူမျိုးတို့သည် တိဘက်-ဗမာနွယ် ဘာသာစကားများ ပြောဆိုသည့် လူမျိုးနွယ်စုကြီးမှ အကြီးဆုံးသော လူမျိုးဖြစ်သည်။ လူဦးရေ ၃၈သန်းကျော်ခန့်သည် မြန်မာဘာသာစကားကို မိခင်ဘာသာစကား အနေဖြင့် သုံး၍ မြန်မာတိုင်းရင်သားများသည် ဒုတိယဘာသာစကား အနေဖြင့် သုံးသည်။ မြန်မာဘာသာစကားသည် တိဘက်-ဗမာနွယ် ဘာသာစကားများ အုပ်စုတွင် ပါဝင်သည်။ တိဘက်-ဗမာနွယ် ဘာသာစကားများ အုပ်စုသည် တရုတ်-တိဗက်နွယ် ဘာသာစကားများ မိသားစု ထဲတွင် ပါသည်။ မြန်မာဘာသာသည် တက်ကျသံရှိသော ၊ နိမ့်မြင့်အမှတ်အသားရှိ ဖြစ်သော၊ ဧကဝဏ္ဏစကားလုံး အလွန်များသော ဘာသာစကား ဖြစ်သည်။ ကတ္တား-ကံ-တြိယာ စကားလုံးအစီအစဉ်ဖြင့် ရေးသော သရုပ်ခွဲဘာသာစကား လည်းဖြစ်သည်။ မြန်မာအက္ခရာများသည် ဗြာဟ္မီအက္ခရာ မှ ဆင်းသက်လာသည်။';
-// const sentence = 'မြန်မာဘာသာစကားသည် တရုတ်-တိဗက်နွယ် ဘာသာစကား မိသားစု ၏ ဗမာနွယ်ဘာသာစကားများ  မှ တစ်ခုဖြစ်သည်';
-// const zawgyi_paragraph =
-//   'ျမန္မာဘာသာစကားသည္ ျမန္မာႏိုင္ငံ၏ ႐ုံးသုံး ဘာသာစကားျဖစ္သည္။ ဗမာလူမ်ိဳးႏွင့္ ဗမာႏြယ္ဝင္(ဓႏု၊ အင္းသား၊ ေတာင္႐ိုးႏွင့္ ေယာ)တို႔၏ ဇာတိစကားျဖစ္သည္။ ဗမာလူမ်ိဳးတို႔သည္ တိဘက္-ဗမာႏြယ္ ဘာသာစကားမ်ား ေျပာဆိုသည့္ လူမ်ိဳးႏြယ္စုႀကီးမွ အႀကီးဆုံးေသာ လူမ်ိဳးျဖစ္သည္။ လူဦးေရ ၃၈သန္းေက်ာ္ခန႔္သည္ ျမန္မာဘာသာစကားကို မိခင္ဘာသာစကား အေနျဖင့္ သုံး၍ ျမန္မာတိုင္းရင္သားမ်ားသည္ ဒုတိယဘာသာစကား အေနျဖင့္ သုံးသည္။ ျမန္မာဘာသာစကားသည္ တိဘက္-ဗမာႏြယ္ ဘာသာစကားမ်ား အုပ္စုတြင္ ပါဝင္သည္။ တိဘက္-ဗမာႏြယ္ ဘာသာစကားမ်ား အုပ္စုသည္ တ႐ုတ္-တိဗက္ႏြယ္ ဘာသာစကားမ်ား မိသားစု ထဲတြင္ ပါသည္။ ျမန္မာဘာသာသည္ တက္က်သံရွိေသာ ၊ နိမ့္ျမင့္အမွတ္အသားရွိ ျဖစ္ေသာ၊ ဧကဝဏၰစကားလုံး အလြန္မ်ားေသာ ဘာသာစကား ျဖစ္သည္။ ကတၱား-ကံ-ႀတိယာ စကားလုံးအစီအစဥ္ျဖင့္ ေရးေသာ သ႐ုပ္ခြဲဘာသာစကား လည္းျဖစ္သည္။ ျမန္မာအကၡရာမ်ားသည္ ျဗာဟၼီအကၡရာ မွ ဆင္းသက္လာသည္။';
-// const zawgyi_sentence = 'ျမန္မာဘာသာစကားသည္ တ႐ုတ္-တိဗက္ႏြယ္ ဘာသာစကား မိသားစု ၏ ဗမာႏြယ္ဘာသာစကားမ်ား  မွ တစ္ခုျဖစ္သည္';
-// const win_paragraph =
-//   'jrefrmbmompum;onf jrefrmEdkifiH ½kH;okH; bmompum;jzpfonf/ ArmvlrsdK;ESihf ArmEG,fêif("Ek? tif;om;? awmif½dk;ESihf a,m)wdkY Zmwdpum;jzpfonf/ ArmvlrsdK;wdkYonf wdbuf-ArmEG,f bmompum;rsm; ajymqdkonhf vlrsdK;EG,fpkBuD;rS tBuD;qkH;aom vlrsdK;jzpfonf/ vlè;a& 38oef;ausmfceYfonf jrefrmbmompum;udk rdcifbmompum; taejzihf okH;í jrefrmwdkif;&ifom;rsm;onf \'kwd,bmompum; taejzihf okH;onf/ jrefrmbmompum;onf wdbuf-ArmEG,f bmompum;rsm; tkyfpkwGif ygêifonf/ wdbuf-ArmEG,f bmompum;rsm; tkyfpkonf w½kwf-wdAufEG,f bmompum;rsm; rdom;pk xJwGif ygonf/ jrefrmbmomonf wufusoH&Sdaom ? edrhfjrihftrSwftom;&Sd jzpfaom? {uêPÖpum;vkH; tvGefrsm;aom bmompum; jzpfonf/ uwåm;-uH-Bwd,m pum;vkH;tpDtpOfjzihf a&;aom o½kyfcGJbmompum; vnf;jzpfonf/ jrefrmtu©&mrsm;onf jAm[®Dtu©&m rS qif;oufvmonf/';
-// const win_sentence = 'jrefrmbmompum;onf w½kwf-wdAufEG,f bmompum; rdom;pk  ArmEG,fbmompum;rsm;  rS wpfckjzpfonf';
-
 const paragraph = {
   unicode:
     'မြန်မာဘာသာစကားသည် မြန်မာနိုင်ငံ၏ ရုံးသုံး ဘာသာစကားဖြစ်သည်။ ဗမာလူမျိုးနှင့် ဗမာနွယ်ဝင်(ဓနု၊ အင်းသား၊ တောင်ရိုးနှင့် ယော)တို့၏ ဇာတိစကားဖြစ်သည်။ ဗမာလူမျိုးတို့သည် တိဘက်-ဗမာနွယ် ဘာသာစကားများ ပြောဆိုသည့် လူမျိုးနွယ်စုကြီးမှ အကြီးဆုံးသော လူမျိုးဖြစ်သည်။ လူဦးရေ ၃၈သန်းကျော်ခန့်သည် မြန်မာဘာသာစကားကို မိခင်ဘာသာစကား အနေဖြင့် သုံး၍ မြန်မာတိုင်းရင်သားများသည် ဒုတိယဘာသာစကား အနေဖြင့် သုံးသည်။ မြန်မာဘာသာစကားသည် တိဘက်-ဗမာနွယ် ဘာသာစကားများ အုပ်စုတွင် ပါဝင်သည်။ တိဘက်-ဗမာနွယ် ဘာသာစကားများ အုပ်စုသည် တရုတ်-တိဗက်နွယ် ဘာသာစကားများ မိသားစု ထဲတွင် ပါသည်။ မြန်မာဘာသာသည် တက်ကျသံရှိသော ၊ နိမ့်မြင့်အမှတ်အသားရှိ ဖြစ်သော၊ ဧကဝဏ္ဏစကားလုံး အလွန်များသော ဘာသာစကား ဖြစ်သည်။ ကတ္တား-ကံ-တြိယာ စကားလုံးအစီအစဉ်ဖြင့် ရေးသော သရုပ်ခွဲဘာသာစကား လည်းဖြစ်သည်။ မြန်မာအက္ခရာများသည် ဗြာဟ္မီအက္ခရာ မှ ဆင်းသက်လာသည်။',
@@ -41,6 +31,7 @@ const TextGenerateComponent = () => {
   const [isSentence, setIsSentence] = useState<boolean>(false);
   const [countInput, setCountInput] = useState<number>(5);
   const [selectedFont, setSelectedFont] = useState<FontType>();
+  const [typingLanguage, setTypingLanguage] = useState<'myanmar' | 'english' | 'unknown'>();
 
   useEffect(() => {
     generateLoremIpsum();
@@ -67,12 +58,13 @@ const TextGenerateComponent = () => {
     setSelectedFont(font);
     setOpen(false);
     if (inputRef.current) {
-      inputRef.current.value = font.fileName;
+      inputRef.current.value = typingLanguage === 'english' ? font.nameEn : font.name;
     }
   };
 
   function filterSearch(value: string, d: FontType[]) {
     const language = detectLanguage(value);
+    setTypingLanguage(language);
     const filterData = d.filter((font) => {
       const fontName = language === 'english' ? font.nameEn.toLowerCase() : font.name;
       const formattedName = fontName.replace(/\s/g, '');

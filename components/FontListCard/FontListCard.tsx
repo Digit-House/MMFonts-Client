@@ -10,17 +10,15 @@ type FontListType = {
   id: number;
   font: FontType;
   fontSize: number;
-  offset: number;
 };
 
-const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontListType) => {
+const FontListCard = ({ onClick, id, font, typeText, fontSize }: FontListType) => {
   const fontStyle = {
     fontFamily: `${font.fileName}`,
     fontSize: `${fontSize}px`,
     lineHeight: `${fontSize + 20}px`,
     margin: '10px 0',
   };
-
   const pathname: any = usePathname();
   const isEnglish = pathname.includes('en');
 
@@ -38,33 +36,24 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
     }
   };
 
-  const PAGE_COUNT = 8;
-  const recalculatedDelay = id >= PAGE_COUNT ? (id - PAGE_COUNT * (offset - 1)) / 15 : id / 10;
-
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0.4,
-        ease: [0.25, 0.25, 0, 1],
-        delay: recalculatedDelay,
-      }}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={{ visible: { opacity: 1, y: 0, transition: { duration: 0.3 } }, hidden: { opacity: 0, y: 20 } }}
       className="w-full p-5 overflow-hidden border-2 rounded shadow-md  dark:text-[white] cursor-pointer select-none dark:hover:bg-softblue hover:bg-softgold hover:shadow-xl"
       onClick={() => onClick(id)}
     >
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{
-          duration: 0.4,
-          ease: [0.25, 0.25, 0, 1],
-          delay: recalculatedDelay,
-        }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={{ visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }, hidden: { opacity: 0, y: 20 } }}
         className="flex flex-row justify-between"
       >
         <div className="max-w-[80%]">
-          <motion.div className="text-lg font-bold tracking-wider">{font.name}</motion.div>
+          <div className="text-lg font-bold tracking-wider">{font.name}</div>
           <div className="mt-2 text-sm tracking-wide text-secondaryText dark:text-darkSecondaryText">
             {font.fontStyle.replace(/ /g, ', ')}
           </div>
@@ -75,13 +64,10 @@ const FontListCard = ({ onClick, id, font, typeText, fontSize, offset }: FontLis
       </motion.div>
       <div className="pt-2 text-4xl break-words">
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.4,
-            ease: [0.25, 0.25, 0, 1],
-            delay: recalculatedDelay,
-          }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{ visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }, hidden: { opacity: 0, y: 20 } }}
           style={{ ...fontStyle }}
         >
           {convertText(font, typeText)}

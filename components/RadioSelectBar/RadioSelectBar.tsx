@@ -40,7 +40,7 @@ export default function RadioSelectBar({
     <div
       className={classNames(
         customClassName ? customClassName : 'w-full md:w-2/3',
-        'flex flex-row items-center p-1 rounded-full shadow-md bg-secondary radio h-12'
+        'flex flex-row items-center p-1 rounded-full shadow bg-secondary radio h-12'
       )}
     >
       <CustomSelectBox

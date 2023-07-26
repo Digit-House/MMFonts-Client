@@ -24,7 +24,6 @@ export default function Home() {
     value: '24',
   });
   const [isToggled, setIsToggled] = useState<boolean>(false);
-  const [offset, setOffset] = useState<number>(1);
   const searchBoxRef = useRef<HTMLDivElement>(null);
   const [isSearchBoxScrolled, setIsSearchBoxScrolled] = useState<boolean>(false);
   const [checked, setChecked] = useState<{ task: string; done: boolean; value: string }[]>([
@@ -40,7 +39,6 @@ export default function Home() {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
 
     if (scrollTop + clientHeight > scrollHeight - 50 && fontList.length !== copyFontList.length) {
-      setOffset((prev) => prev + 1);
       const remainingData = fontList.slice(copyFontList.length, copyFontList.length + 8);
       setCopyFontList((prevFontList) => [...prevFontList, ...remainingData]);
     }
@@ -66,7 +64,6 @@ export default function Home() {
 
   useEffect(() => {
     window.addEventListener('scroll', handleSearchBoxScroll);
-
     return () => {
       window.removeEventListener('scroll', handleSearchBoxScroll);
     };
@@ -85,12 +82,7 @@ export default function Home() {
 
   useEffect(() => {
     if (fontList.length === 0) setFontList(data);
-    if (copyFontList.length === 0) setCopyFontList(data.slice(0, 8));
   }, []);
-
-  useEffect(() => {
-    setCopyFontList(fontList.slice(0, 8));
-  }, [fontList]);
 
   const onClickFont = (name: string) => {
     router.push(`/fonts/${name}`);
@@ -103,7 +95,7 @@ export default function Home() {
     setFontList(filterData);
   };
 
-  if (data.length === 0) return <RivLoading />;
+  if (fontList.length === 0) return <RivLoading />;
 
   return (
     <main className="flex-grow h-full mt-5 ">
@@ -181,7 +173,7 @@ export default function Home() {
               </div>
             )}
             <div className={`${isToggled ? 'grid-cols-1' : 'sm:grid-cols-2'}  grid gap-4 mt-3 w-full `}>
-              {copyFontList.map((font: FontType, i) => (
+              {data.map((font: FontType, i) => (
                 <FontListCard
                   key={i}
                   id={i + 1}
@@ -189,7 +181,6 @@ export default function Home() {
                   font={font}
                   typeText={value}
                   fontSize={parseInt(fontSize.value)}
-                  offset={offset}
                 />
               ))}
             </div>
