@@ -157,7 +157,7 @@
     "name": "စီအီးကော်လက်ရှင်",
     "fileName": "CeCollection",
     "fontSupportType": "unicode",
-    "fontStyle": "ClassicNormal ClassicRegular ExecelMedium ExcelNormal FreehandNormal HandWriteNormal HorizontalThickBold Normal RoyalOutline TitleNormal TransparentBold TrueOutlineNormal",
+    "fontStyle": "ClassicNormal ClassicRegular ExcelMedium ExcelNormal FreehandNormal HandWriteNormal HorizontalThickBold Normal Outline TitleNormal TransparentBold TrueOutlineNormal",
     "createdBy": "",
     "English Support": ""
   },
@@ -677,7 +677,7 @@
   "WinHanPagan": {
     "nameEn": "WinHanPagan",
     "name": "ဝင်းဟန်ပုဂံ",
-    "fileName": "WInHanPagan",
+    "fileName": "WinHanPagan",
     "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "Win Tun & Maung Han",
@@ -967,7 +967,7 @@
     "name": "အက်စ်အေကေပတ္တမြား",
     "fileName": "SakPadamya",
     "fontSupportType": "win",
-    "fontStyle": "Noraml",
+    "fontStyle": "Normal",
     "createdBy": "Sein Arka Computers",
     "English Support": ""
   },
@@ -1453,7 +1453,7 @@
     "name": "မြန်မာပုံနရိပ်",
     "fileName": "MyanmarPonenyet",
     "fontSupportType": "unicode",
-    "fontStyle": "Regualr",
+    "fontStyle": "Regular",
     "createdBy": "Danh Hong",
     "English Support": ""
   },
