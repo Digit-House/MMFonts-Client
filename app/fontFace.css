@@ -232,9 +232,9 @@
 
 @font-face {
   font-family: 'CeCollection';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/ExecelMedium.ttf') format('truetype');
-  font-weight: ExecelMedium;
-  font-style: ExecelMedium;
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/ExcelMedium.ttf') format('truetype');
+  font-weight: ExcelMedium;
+  font-style: ExcelMedium;
   font-display: swap;
 }
 
@@ -280,9 +280,9 @@
 
 @font-face {
   font-family: 'CeCollection';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/RoyalOutline.ttf') format('truetype');
-  font-weight: RoyalOutline;
-  font-style: RoyalOutline;
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/Outline.ttf') format('truetype');
+  font-weight: Outline;
+  font-style: Outline;
   font-display: swap;
 }
 
@@ -375,8 +375,8 @@
 }
 
 @font-face {
-  font-family: 'ShweThay';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShweThay/Regular.ttf') format('truetype');
+  font-family: 'ShweThway';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShweThway/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -1040,7 +1040,7 @@
 
 @font-face {
   font-family: 'WinHanPagan';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WInHanPagan/A.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinHanPagan/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
   font-display: swap;
@@ -1424,9 +1424,9 @@
 
 @font-face {
   font-family: 'SakPadamya';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/SakPadamya/Noraml.ttf') format('truetype');
-  font-weight: Noraml;
-  font-style: Noraml;
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/SakPadamya/Normal.ttf') format('truetype');
+  font-weight: Normal;
+  font-style: Normal;
   font-display: swap;
 }
 
@@ -1904,9 +1904,9 @@
 
 @font-face {
   font-family: 'MyanmarPonenyet';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarPonenyet/Regualr.ttf') format('truetype');
-  font-weight: Regualr;
-  font-style: Regualr;
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarPonenyet/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
   font-display: swap;
 }
 
