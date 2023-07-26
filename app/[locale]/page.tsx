@@ -91,14 +91,6 @@ export default function Home() {
     } else setFontList(data);
     sessionStorage.removeItem('checked-font-types');
     sessionStorage.removeItem('searched-text');
-    /* if (sessionFontTypes) {
-      const retrievedFontTypes: { task: string; done: boolean; value: string }[] = JSON.parse(sessionFontTypes);
-      setChecked(retrievedFontTypes);
-      const filterFontsBySession: FontType[] = retrievedFontTypes
-        .filter((item) => item.done)
-        .flatMap((item) => data.filter((font) => font.fontSupportType === item.value));
-      setFontList(filterFontsBySession);
-    } else setFontList(data); */
   }, []);
 
   const onClickFont = (name: string) => {
