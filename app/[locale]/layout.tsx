@@ -77,18 +77,10 @@ export async function generateMetadata({
       'ဇော်ဂျီဖောင့်',
       'ဝင်းဖောင့်',
     ],
-    icons: {
-      icon: '/icon.png',
-      shortcut: '/apple-touch-icon.png',
-      apple: '/apple-touch-icon.png',
-      other: {
-        url: '/apple-touch-icon.png',
-      },
-    },
     alternates: {
       canonical: '/',
       languages: {
-        en: 'en',
+        en: '/en',
       },
     },
     creator: 'Digital House Team',
