@@ -77,4 +77,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Thank you for visiting MmFontsHub.com. We hope our platform enriches your creative journey and helps you express your ideas beautifully in both the Myanmar and English languages. Happy designing!
+Thank you for visiting MmFontsHub.com. We hope our platform enriches your creative journey and helps you express your ideas beautifully in both the Myanmar and English languages. Happy coding!
