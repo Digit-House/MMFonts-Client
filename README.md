@@ -10,17 +10,22 @@ At MmFontsHub.com, we strive to provide designers, professionals, and enthusiast
 
 Please visit our website at [MmFontsHub.com](https://www.mmfontshub.com)
 
-![Local Image](/public/images/mmfontshub_desktop_01.png)
-![Local Image](/public/images/mmfontshub_desktop_02.png)
-![Local Image](/public/images/mmfontshub_mobile_01.png)
-![Local Image](/public/images/mmfontshub_mobile_02.png)
-
-<div>
-  <img src='/public/images/mmfontshub_desktop_01.png' alt="MmFontsHub">
-  <img src="/public/images/mmfontshub_desktop_02.png" alt="MmFontsHub">
-  <img src="/public/images/mmfontshub_mobile_01.png" alt="MmFontsHub">
-  <img src="/public/images/mmfontshub_mobile_02.png" alt="MmFontsHub">
-</div>
+<table>
+  <tr>
+    <td align="center">
+      <img src="/public/images/mmfontshub_desktop_01.png" alt="MmFontsHub" height="200">
+    </td>
+    <td align="center">
+      <img src="/public/images/mmfontshub_desktop_02.png" alt="MmFontsHub" height="200">
+    </td>
+    <td align="center">
+      <img src="/public/images/mmfontshub_mobile_01.png" alt="MmFontsHub" height="200">
+    </td>
+    <td align="center">
+      <img src="/public/images/mmfontshub_mobile_02.png" alt="MmFontsHub" height="200">
+    </td>
+  </tr>
+</table>
 
 ## Tech Stack
 
