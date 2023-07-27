@@ -10,6 +10,11 @@ At MmFontsHub.com, we strive to provide designers, professionals, and enthusiast
 
 Please visit our website at [MmFontsHub.com](https://www.mmfontshub.com)
 
+![Local Image](/public/images/mmfontshub_desktop_01.png)
+![Local Image](/public/images/mmfontshub_desktop_02.png)
+![Local Image](/public/images/mmfontshub_mobile_01.png)
+![Local Image](/public/images/mmfontshub_mobile_02.png)
+
 ## Tech Stack
 
 MmFontsHub.com is built using the following technologies:
@@ -19,13 +24,31 @@ MmFontsHub.com is built using the following technologies:
 - [Prettier](https://prettier.io/): A code formatter that ensures consistent code styles.
 - [ESLint](https://eslint.org/): A linter tool to enforce code quality and best practices.
 
-## Features
+## Installation Guide
 
-- **Vast Collection:** Access a wide array of high-quality fonts, handpicked and optimized for different design projects.
-- **Easy Navigation:** Our user-friendly interface allows you to find the perfect font for your project effortlessly.
-- **Responsive Design:** Enjoy a seamless experience across various devices with our responsive web design.
-- **Filter and Search:** Quickly find the fonts you need by filtering or searching based on style, type, and more.
-- **Multi-Language Support:** Specifically designed to support both Myanmar and English languages, catering to a broader audience.
+Follow these steps to set up the project locally:
+
+### npm
+
+1. Clone the repository: `git clone https://github.com/mmfontshub/mmfontshub.git`
+2. Navigate to the project directory: `cd mmfontshub`
+3. Install dependencies: `npm install`
+
+### yarn
+
+1. Clone the repository: `git clone https://github.com/mmfontshub/mmfontshub.git`
+2. Navigate to the project directory: `cd mmfontshub`
+3. Install dependencies: `yarn`
+
+## Scripts
+
+To run the project, you can use the following scripts:
+
+- `npm run dev` or `yarn dev`: Starts the development server.
+- `npm run build` or `yarn build`: Builds the production-ready code.
+- `npm start` or `yarn start`: Starts the production server.
+- `npm run lint:fix` or `yarn lint:fix`: Runs ESLint and automatically fixes linting issues.
+- `npm run generate-ff` or `yarn generate-ff`: Generates the font face CSS.
 
 ## How to Contribute
 

@@ -54,6 +54,8 @@ function Page() {
         fontNameEn={font.nameEn}
         createdBy={font.createdBy}
         fontNameMM={font.name}
+        creatorLink={font.creatorLink}
+        downloadLink={font.downloadLink}
       />
       <div>
         <div className="flex items-center justify-center mt-5 ">

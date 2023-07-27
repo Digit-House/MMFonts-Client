@@ -3,15 +3,25 @@ import JSZip from 'jszip';
 import { useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import React, { useState } from 'react';
+import { classNames } from '@core/classnames';
 
 type DetailNavMenuType = {
   fontNameMM: string;
   createdBy: string;
   fileName: string;
   fontNameEn: string;
+  creatorLink?: string;
+  downloadLink?: string;
 };
 
-const DetailNavMenu = ({ fontNameMM, fileName, createdBy, fontNameEn }: DetailNavMenuType) => {
+const DetailNavMenu = ({
+  fontNameMM,
+  fileName,
+  createdBy,
+  fontNameEn,
+  creatorLink,
+  downloadLink,
+}: DetailNavMenuType) => {
   const [isHide, setIsHide] = useState<boolean>(true);
   const t = useTranslations('Index');
   const [showAlert, setShowAlert] = useState<boolean>(false);
@@ -29,6 +39,10 @@ const DetailNavMenu = ({ fontNameMM, fileName, createdBy, fontNameEn }: DetailNa
   };
 
   const handleDownload = async (name: string) => {
+    if (downloadLink) {
+      window.open(downloadLink, '_blank');
+      return;
+    }
     try {
       const response = await fetch(`/api/fonts?name=${name}`);
       const data = await response.json();
@@ -67,8 +81,15 @@ const DetailNavMenu = ({ fontNameMM, fileName, createdBy, fontNameEn }: DetailNa
     <div className="text-lg ">
       <div className="flex flex-row justify-between ">
         <div className="flex flex-col items-left">
-          <p className="mr-5 font-medium ">{pathname?.includes('/en/') ? fontNameEn : fontNameMM}</p>
-          <p className="text-sm">{createdBy === undefined ? t('create-by') : createdBy}</p>
+          <p className="mb-1 mr-5 font-medium">{pathname?.includes('/en/') ? fontNameEn : fontNameMM}</p>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classNames(creatorLink && 'hover:underline hover:animate-shake', 'text-sm ')}
+            href={creatorLink}
+          >
+            {createdBy === undefined ? t('create-by') : createdBy}
+          </a>
         </div>
         <div className="flex flex-row items-center">
           {/* <p className="hidden mr-5 md:flex">{t('terms-and-conditions')}</p> */}
@@ -103,7 +124,6 @@ const DetailNavMenu = ({ fontNameMM, fileName, createdBy, fontNameEn }: DetailNa
           </div> */}
         </div>
       </div>
-      <p className="flex justify-end mt-5 md:hidden">အကြောင်းနှင့်မူပိုင်ခွင့်</p>
     </div>
   );
 };
