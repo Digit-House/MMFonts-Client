@@ -1435,7 +1435,7 @@
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
     "enSupport": "",
-    "acceptToDownload": "yes",
+    "acceptToDownload": "Yes",
     "downloadLink": "",
     "creatorLink": ""
   },
@@ -1447,7 +1447,7 @@
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
     "enSupport": "",
-    "acceptToDownload": "yes",
+    "acceptToDownload": "Yes",
     "downloadLink": "",
     "creatorLink": ""
   },
@@ -1459,7 +1459,7 @@
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
     "enSupport": "",
-    "acceptToDownload": "yes",
+    "acceptToDownload": "Yes",
     "downloadLink": "",
     "creatorLink": ""
   },
@@ -1471,7 +1471,7 @@
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
     "enSupport": "",
-    "acceptToDownload": "yes",
+    "acceptToDownload": "Yes",
     "downloadLink": "",
     "creatorLink": ""
   },
@@ -1483,7 +1483,7 @@
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
     "enSupport": "",
-    "acceptToDownload": "yes",
+    "acceptToDownload": "Yes",
     "downloadLink": "",
     "creatorLink": ""
   },
@@ -1495,7 +1495,7 @@
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
     "enSupport": "",
-    "acceptToDownload": "yes",
+    "acceptToDownload": "Yes",
     "downloadLink": "",
     "creatorLink": ""
   },
@@ -1507,7 +1507,7 @@
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
     "enSupport": "",
-    "acceptToDownload": "yes",
+    "acceptToDownload": "Yes",
     "downloadLink": "",
     "creatorLink": ""
   },
@@ -1519,19 +1519,79 @@
     "fontStyle": "Regular",
     "createdBy": "Sai Moon's Design",
     "enSupport": "",
-    "acceptToDownload": "no",
+    "acceptToDownload": "No",
     "downloadLink": "https://www.facebook.com/saimoon.designblog/posts/730372242428893",
     "creatorLink": "https://www.facebook.com/saimoon.designblog"
   },
   "NotoSansMyanmar": {
     "nameEn": "NotoSansMyanmar",
-    "name": "",
+    "name": "နိုတိုဆန်မြန်မာ",
     "fileName": "NotoSansMyanmar",
     "fontSupportType": "unicode",
     "fontStyle": "Black Bold ExtraBold ExtraLight Light Medium Regular SemiBold Thin",
     "createdBy": "Monotype Design Team",
     "enSupport": "",
-    "acceptToDownload": "yes",
+    "acceptToDownload": "Yes",
+    "downloadLink": "",
+    "creatorLink": ""
+  },
+  "MyanmarPaOh": {
+    "nameEn": "MyanmarPaOh",
+    "name": "မြန်မာပအို့",
+    "fileName": "MyanmarPaOh",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Khon Soe Zaw Thu",
+    "enSupport": "",
+    "acceptToDownload": "Yes",
+    "downloadLink": "",
+    "creatorLink": ""
+  },
+  "NK_SSmart3": {
+    "nameEn": "NK_SSmart3",
+    "name": "အန်ကေအက်စ်စမတ်သရီး",
+    "fileName": "NK_SSmart3",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "PJaiLon",
+    "enSupport": "",
+    "acceptToDownload": "Yes",
+    "downloadLink": "",
+    "creatorLink": ""
+  },
+  "MyanmarText": {
+    "nameEn": "MyanmarText",
+    "name": "မြန်မာတက်စ်",
+    "fileName": "MyanmarText",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "John Hudson",
+    "enSupport": "",
+    "acceptToDownload": "Yes",
+    "downloadLink": "",
+    "creatorLink": ""
+  },
+  "Asoka": {
+    "nameEn": "Asoka",
+    "name": "အာသောက",
+    "fileName": "Asoka",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Designer Nagar, Lwin Ko Kko, Sai Nay Myo Aung",
+    "enSupport": "",
+    "acceptToDownload": "Yes",
+    "downloadLink": "",
+    "creatorLink": ""
+  },
+  "MyanmarJojarPro": {
+    "nameEn": "MyanmarJojarPro",
+    "name": "မြန်မာဂျိုဂျာပရို",
+    "fileName": "MyanmarJojarPro",
+    "fontSupportType": "unicode",
+    "fontStyle": "Regular",
+    "createdBy": "Khon Soe Zaw Thu",
+    "enSupport": "",
+    "acceptToDownload": "",
     "downloadLink": "",
     "creatorLink": ""
   }

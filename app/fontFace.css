@@ -1349,3 +1349,43 @@
   font-style: Thin;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'MyanmarPaOh';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarPaOh/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NK_SSmart3';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/NK_SSmart3/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MyanmarText';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarText/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Asoka';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Asoka/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MyanmarJojarPro';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyanmarJojarPro/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
