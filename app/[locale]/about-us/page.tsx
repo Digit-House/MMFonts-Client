@@ -10,18 +10,12 @@ const ContactUs = () => {
   const t = useTranslations('Index');
 
   const copyToClipboard = (textToCopy: string) => {
-    navigator.clipboard.writeText(textToCopy).then(
-      () => {
-        setCopied(true);
-        setTimeout(() => {
-          setCopied(false);
-        }, 3000);
-      },
-      (err) => {
-        // eslint-disable-next-line no-console
-        console.error('Async: Could not copy text: ', err);
-      }
-    );
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      setCopied(true);
+      setTimeout(() => {
+        setCopied(false);
+      }, 3000);
+    });
   };
 
   return (

@@ -11,9 +11,7 @@ const generateFontFace = () => {
       return;
     }
     const jsonData = Object.values(JSON.parse(data));
-
     const cssRules = jsonData.map((font) => generateFontFaceCSS(font['nameEn'], font['fileName'], font['fontStyle']));
-
     const cssContent = cssRules.join('\n\n');
     fs.writeFileSync(cssPath, cssContent);
   });

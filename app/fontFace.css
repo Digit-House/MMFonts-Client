@@ -7,14 +7,6 @@
 }
 
 @font-face {
-  font-family: 'ZawgyiOne';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ZawgyiOne/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Padauk';
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Padauk/Regular.ttf') format('truetype');
   font-weight: Regular;
@@ -95,38 +87,6 @@
 }
 
 @font-face {
-  font-family: 'M-Myanmar1';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/M-Myanmar1/Bold.ttf') format('truetype');
-  font-weight: Bold;
-  font-style: Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'M-Myanmar1';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/M-Myanmar1/Normal.ttf') format('truetype');
-  font-weight: Normal;
-  font-style: Normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'M-Myanmar2';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/M-Myanmar2/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Kannaka';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Kannaka/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Tharlon';
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Tharlon/Regular.ttf') format('truetype');
   font-weight: Regular;
@@ -143,66 +103,10 @@
 }
 
 @font-face {
-  font-family: 'WinTaungyi';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinTaungyi/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinTaungyi';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinTaungyi/Bold.ttf') format('truetype');
-  font-weight: Bold;
-  font-style: Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinSittway';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinSittway/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'WinYangon';
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WnYangon/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinKalaw';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinKalaw/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinKalaw';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinKalaw/Bold.ttf') format('truetype');
-  font-weight: Bold;
-  font-style: Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinInnwa';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinInnwa/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinInnwa';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinInnwa/Normal.ttf') format('truetype');
-  font-weight: Normal;
-  font-style: Normal;
   font-display: swap;
 }
 
@@ -215,618 +119,10 @@
 }
 
 @font-face {
-  font-family: 'CeCollection';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/ClassicNormal.ttf') format('truetype');
-  font-weight: ClassicNormal;
-  font-style: ClassicNormal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'CeCollection';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/ClassicRegular.ttf') format('truetype');
-  font-weight: ClassicRegular;
-  font-style: ClassicRegular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'CeCollection';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/ExcelMedium.ttf') format('truetype');
-  font-weight: ExcelMedium;
-  font-style: ExcelMedium;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'CeCollection';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/ExcelNormal.ttf') format('truetype');
-  font-weight: ExcelNormal;
-  font-style: ExcelNormal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'CeCollection';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/FreehandNormal.ttf') format('truetype');
-  font-weight: FreehandNormal;
-  font-style: FreehandNormal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'CeCollection';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/HandWriteNormal.ttf') format('truetype');
-  font-weight: HandWriteNormal;
-  font-style: HandWriteNormal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'CeCollection';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/HorizontalThickBold.ttf') format('truetype');
-  font-weight: HorizontalThickBold;
-  font-style: HorizontalThickBold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'CeCollection';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/Normal.ttf') format('truetype');
-  font-weight: Normal;
-  font-style: Normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'CeCollection';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/Outline.ttf') format('truetype');
-  font-weight: Outline;
-  font-style: Outline;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'CeCollection';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/TitleNormal.ttf') format('truetype');
-  font-weight: TitleNormal;
-  font-style: TitleNormal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'CeCollection';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/TransparentBold.ttf') format('truetype');
-  font-weight: TransparentBold;
-  font-style: TransparentBold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'CeCollection';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/CeCollection/TrueOutlineNormal.ttf') format('truetype');
-  font-weight: TrueOutlineNormal;
-  font-style: TrueOutlineNormal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinBurmese';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinBurmese/Bold.ttf') format('truetype');
-  font-weight: Bold;
-  font-style: Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinBurmese';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinBurmese/Normal.ttf') format('truetype');
-  font-weight: Normal;
-  font-style: Normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinPyinOoLwin';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinPyinOoLwin/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinMandalay';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinMandalay/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinYadanapon';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinYadanapon/Normal.ttf') format('truetype');
-  font-weight: Normal;
-  font-style: Normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'MyaNanda';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/MyaNanda/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'KNU';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KNU/Normal.ttf') format('truetype');
-  font-weight: Normal;
-  font-style: Normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'karen-flower';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/karen-flower/Normal.ttf') format('truetype');
-  font-weight: Normal;
-  font-style: Normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'ShweThway';
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShweThway/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinHaka';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinHaka/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinHaka';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinHaka/Normal.ttf') format('truetype');
-  font-weight: Normal;
-  font-style: Normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ShwePro';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/BoldItalic.ttf') format('truetype');
-  font-weight: BoldItalic;
-  font-style: BoldItalic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ShwePro';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Condense_Normal.ttf') format('truetype');
-  font-weight: Condense_Normal;
-  font-style: Condense_Normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ShwePro';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Expand_Normal.ttf') format('truetype');
-  font-weight: Expand_Normal;
-  font-style: Expand_Normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ShwePro';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/ExtraHeavy_Bold.ttf') format('truetype');
-  font-weight: ExtraHeavy_Bold;
-  font-style: ExtraHeavy_Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ShwePro';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Heavy_Bold.ttf') format('truetype');
-  font-weight: Heavy_Bold;
-  font-style: Heavy_Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ShwePro';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Hollow_Bold.ttf') format('truetype');
-  font-weight: Hollow_Bold;
-  font-style: Hollow_Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ShwePro';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Italic.ttf') format('truetype');
-  font-weight: Italic;
-  font-style: Italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ShwePro';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Medium_Bold.ttf') format('truetype');
-  font-weight: Medium_Bold;
-  font-style: Medium_Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ShwePro';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/MediumHollow_Bold.ttf') format('truetype');
-  font-weight: MediumHollow_Bold;
-  font-style: MediumHollow_Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ShwePro';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Ribbon_BoldItalic.ttf') format('truetype');
-  font-weight: Ribbon_BoldItalic;
-  font-style: Ribbon_BoldItalic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ShwePro';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Serif_Bold.ttf') format('truetype');
-  font-weight: Serif_Bold;
-  font-style: Serif_Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ShwePro';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Tall_Normal.ttf') format('truetype');
-  font-weight: Tall_Normal;
-  font-style: Tall_Normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ShwePro';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/ShwePro/Wide_Bold.ttf') format('truetype');
-  font-weight: Wide_Bold;
-  font-style: Wide_Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'KarenLawplah';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KarenLawplah/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'KarenLawplah';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KarenLawplah/Bold.ttf') format('truetype');
-  font-weight: Bold;
-  font-style: Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Suukyi';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Suukyi/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinLoikaw';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinLoikaw/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinPhaan';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinPhaan/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinMawlamyine';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinMawlamyine/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'KarenHlaing';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KarenHlaing/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'KarenHlaing';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KarenHlaing/Normal.ttf') format('truetype');
-  font-weight: Normal;
-  font-style: Normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'KarenHlaing';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KarenHlaing/Medium.ttf') format('truetype');
-  font-weight: Medium;
-  font-style: Medium;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'KarenHlaing';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KarenHlaing/Normal_Bold.ttf') format('truetype');
-  font-weight: Normal_Bold;
-  font-style: Normal_Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'KarenHlaing';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/KarenHlaing/Light.ttf') format('truetype');
-  font-weight: Light;
-  font-style: Light;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinKyaukTan';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinKyaukTan/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinKyaukTan';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinKyaukTan/Normal.ttf') format('truetype');
-  font-weight: Normal;
-  font-style: Normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinKyaukTan';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinKyaukTan/A.ttf') format('truetype');
-  font-weight: A;
-  font-style: A;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinInnLay';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinInnLay/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinInnLay';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinInnLay/Normal.ttf') format('truetype');
-  font-weight: Normal;
-  font-style: Normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinInnLay';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinInnLay/A.ttf') format('truetype');
-  font-weight: A;
-  font-style: A;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Karen3-0';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Karen3-0/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinKyaeMone';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinKyaeMone/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinKyaeMone';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinKyaeMone/A.ttf') format('truetype');
-  font-weight: A;
-  font-style: A;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinYaway';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinYaway/Heavy.ttf') format('truetype');
-  font-weight: Heavy;
-  font-style: Heavy;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinThanLyin';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinThanLyin/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinThanLyin';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinThanLyin/A.ttf') format('truetype');
-  font-weight: A;
-  font-style: A;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinZin';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinZin/ExtraHeavy.ttf') format('truetype');
-  font-weight: ExtraHeavy;
-  font-style: ExtraHeavy;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LmYadanapon';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmYadanapon/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LmShweMinthamee';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmShweMinthamee/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LmYadana';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmYadana/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LmMyaNanda';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmMyaNanda/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LmZarmaniHeavy';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmZarmaniHeavy/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LmLwin';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmLwin/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LmMaNinPhu';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmMaNinPhu/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LmChaTateLay';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/LmChaTateLay/Regular.ttf') format('truetype');
-  font-weight: Regular;
-  font-style: Regular;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'AcademyFlowerTrue';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/AcademyFlowerTrue/Italic.ttf') format('truetype');
-  font-weight: Italic;
-  font-style: Italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinChoNew';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinChoNew/A.ttf') format('truetype');
-  font-weight: A;
-  font-style: A;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'A-TypeWriter';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/A_TypeWriter/Normal.ttf') format('truetype');
-  font-weight: Normal;
-  font-style: Normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'A-TypeWriter';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/A_TypeWriter/Bold.ttf') format('truetype');
-  font-weight: Bold;
-  font-style: Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'WinTagaung';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinTagaung/Normal.ttf') format('truetype');
-  font-weight: Normal;
-  font-style: Normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Perpetua';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Perpetua/Italic.ttf') format('truetype');
-  font-weight: Italic;
-  font-style: Italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Perpetua';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Perpetua/BoldItalic.ttf') format('truetype');
-  font-weight: BoldItalic;
-  font-style: BoldItalic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Perpetua';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Perpetua/TtilingMT_Bold.ttf') format('truetype');
-  font-weight: TtilingMT_Bold;
-  font-style: TtilingMT_Bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Perpetua';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/Perpetua/TitlingMT_Light.ttf') format('truetype');
-  font-weight: TitlingMT_Light;
-  font-style: TitlingMT_Light;
   font-display: swap;
 }
 
@@ -1040,7 +336,7 @@
 
 @font-face {
   font-family: 'WinHanPagan';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WinHanPagan/A.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/WInHanPagan/A.ttf') format('truetype');
   font-weight: A;
   font-style: A;
   font-display: swap;
@@ -1979,5 +1275,77 @@
   src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/SM07_Virus/Regular.ttf') format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansMyanmar';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/NotoSansMyanmar/Black.ttf') format('truetype');
+  font-weight: Black;
+  font-style: Black;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansMyanmar';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/NotoSansMyanmar/Bold.ttf') format('truetype');
+  font-weight: Bold;
+  font-style: Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansMyanmar';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/NotoSansMyanmar/ExtraBold.ttf') format('truetype');
+  font-weight: ExtraBold;
+  font-style: ExtraBold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansMyanmar';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/NotoSansMyanmar/ExtraLight.ttf') format('truetype');
+  font-weight: ExtraLight;
+  font-style: ExtraLight;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansMyanmar';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/NotoSansMyanmar/Light.ttf') format('truetype');
+  font-weight: Light;
+  font-style: Light;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansMyanmar';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/NotoSansMyanmar/Medium.ttf') format('truetype');
+  font-weight: Medium;
+  font-style: Medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansMyanmar';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/NotoSansMyanmar/Regular.ttf') format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansMyanmar';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/NotoSansMyanmar/SemiBold.ttf') format('truetype');
+  font-weight: SemiBold;
+  font-style: SemiBold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansMyanmar';
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/NotoSansMyanmar/Thin.ttf') format('truetype');
+  font-weight: Thin;
+  font-style: Thin;
   font-display: swap;
 }

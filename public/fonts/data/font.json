@@ -6,16 +6,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Myanmar Natural Language Processing (NLP) Research Center",
-    "English Support": ""
-  },
-  "ZawgyiOne": {
-    "nameEn": "ZawgyiOne",
-    "name": "ဇော်ဂျီဝမ်း",
-    "fileName": "ZawgyiOne",
-    "fontSupportType": "zawgyi",
-    "fontStyle": "Regular",
-    "createdBy": "Zaw Win Myat",
-    "English Support": ""
+    "enSupport": "Yes",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "Padauk": {
     "nameEn": "Padauk",
@@ -24,7 +18,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "Pyidaungsu": {
     "nameEn": "Pyidaungsu",
@@ -33,7 +30,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular Bold Numbers",
     "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "Win-Uni-Innwa": {
     "nameEn": "Win-Uni-Innwa",
@@ -42,7 +42,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "Uni-Burma": {
     "nameEn": "Uni-Burma",
@@ -51,34 +54,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Medium FreeHand FFSerif Medium_Serief Regular_MSSerif",
     "createdBy": "",
-    "English Support": ""
-  },
-  "M-Myanmar1": {
-    "nameEn": "M-Myanmar1",
-    "name": "အမ်မြန်မာဝမ်း",
-    "fileName": "M-Myanmar1",
-    "fontSupportType": "win",
-    "fontStyle": "Bold Normal",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "M-Myanmar2": {
-    "nameEn": "M-Myanmar2",
-    "name": "အမ်မြန်မာတူး",
-    "fileName": "M-Myanmar2",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "Kannaka": {
-    "nameEn": "Kannaka",
-    "name": "ကနက",
-    "fileName": "Kannaka",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "Tharlon": {
     "nameEn": "Tharlon",
@@ -87,7 +66,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinResearcher": {
     "nameEn": "WinResearcher",
@@ -96,25 +78,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
-  },
-  "WinTaungyi": {
-    "nameEn": "WinTaungyi",
-    "name": "ဝင်းတောင်ကြီး",
-    "fileName": "WinTaungyi",
-    "fontSupportType": "win",
-    "fontStyle": "Regular Bold",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "WinSittway": {
-    "nameEn": "WinSittway",
-    "name": "ဝင်းစစ်တွေ",
-    "fileName": "WinSittway",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinYangon": {
     "nameEn": "WinYangon",
@@ -123,25 +90,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
-  },
-  "WinKalaw": {
-    "nameEn": "WinKalaw",
-    "name": "ဝင်းကလော",
-    "fileName": "WinKalaw",
-    "fontSupportType": "win",
-    "fontStyle": "Regular Bold",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "WinInnwa": {
-    "nameEn": "WinInnwa",
-    "name": "ဝင်းအင်းဝ",
-    "fileName": "WinInnwa",
-    "fontSupportType": "win",
-    "fontStyle": "Regular Normal",
-    "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "AungSan": {
     "nameEn": "AungSan",
@@ -150,79 +102,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
-  },
-  "CeCollection": {
-    "nameEn": "CeCollection",
-    "name": "စီအီးကော်လက်ရှင်",
-    "fileName": "CeCollection",
-    "fontSupportType": "unicode",
-    "fontStyle": "ClassicNormal ClassicRegular ExcelMedium ExcelNormal FreehandNormal HandWriteNormal HorizontalThickBold Normal Outline TitleNormal TransparentBold TrueOutlineNormal",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "WinBurmese": {
-    "nameEn": "WinBurmese",
-    "name": "ဝင်းဗားမိ",
-    "fileName": "WinBurmese",
-    "fontSupportType": "win",
-    "fontStyle": "Bold Normal",
-    "createdBy": "Win Tun (Mr Burma)",
-    "English Support": ""
-  },
-  "WinPyinOoLwin": {
-    "nameEn": "WinPyinOoLwin",
-    "name": "ဝင်းပြင်ဦးလွင်",
-    "fileName": "WinPyinOoLwin",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "WinMandalay": {
-    "nameEn": "WinMandalay",
-    "name": "ဝင်းမန္တလေး",
-    "fileName": "WinMandalay",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "WinYadanapon": {
-    "nameEn": "WinYadanapon",
-    "name": "ဝင်းရတနာပုံ",
-    "fileName": "WinYadanapon",
-    "fontSupportType": "win",
-    "fontStyle": "Normal",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "MyaNanda": {
-    "nameEn": "MyaNanda",
-    "name": "မြနန္ဒာ",
-    "fileName": "MyaNanda",
-    "fontSupportType": "unicode",
-    "fontStyle": "Regular",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "KNU": {
-    "nameEn": "KNU",
-    "name": "ကေအန်ယူ",
-    "fileName": "KNU",
-    "fontSupportType": "win",
-    "fontStyle": "Normal",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "karen-flower": {
-    "nameEn": "karen-flower",
-    "name": "ကရင်ဖလားဝါး",
-    "fileName": "karen-flower",
-    "fontSupportType": "unicode",
-    "fontStyle": "Normal",
-    "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "ShweThway": {
     "nameEn": "ShweThway",
@@ -231,259 +114,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
-  },
-  "WinHaka": {
-    "nameEn": "WinHaka",
-    "name": "ဝင်းဟားခါး",
-    "fileName": "WinHaka",
-    "fontSupportType": "win",
-    "fontStyle": "Regular Normal",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "ShwePro": {
-    "nameEn": "ShwePro",
-    "name": "ရွှေပရို",
-    "fileName": "ShwePro",
-    "fontSupportType": "unicode",
-    "fontStyle": "BoldItalic Condense_Normal Expand_Normal ExtraHeavy_Bold Heavy_Bold Hollow_Bold Italic Medium_Bold MediumHollow_Bold Ribbon_BoldItalic Serif_Bold Tall_Normal Wide_Bold",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "KarenLawplah": {
-    "nameEn": "KarenLawplah",
-    "name": "ကရင်လောဖ",
-    "fileName": "KarenLawplah",
-    "fontSupportType": "zawgyi",
-    "fontStyle": "Regular Bold",
-    "createdBy": "Lawplah Min",
-    "English Support": ""
-  },
-  "Suukyi": {
-    "nameEn": "Suukyi",
-    "name": "စုကြည်",
-    "fileName": "Suukyi",
-    "fontSupportType": "unicode",
-    "fontStyle": "Regular",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "WinLoikaw": {
-    "nameEn": "WinLoikaw",
-    "name": "ဝင်းလွိုင်ကော်",
-    "fileName": "WinLoikaw",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "WinPhaan": {
-    "nameEn": "WinPhaan",
-    "name": "ဝင်းဘားအံ",
-    "fileName": "WinPhaan",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "Zaw Htut",
-    "English Support": ""
-  },
-  "WinMawlamyine": {
-    "nameEn": "WinMawlamyine",
-    "name": "ဝင်းမော်လမြိုင်",
-    "fileName": "WinMawlamyine",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "Zaw Htut",
-    "English Support": ""
-  },
-  "KarenHlaing": {
-    "nameEn": "KarenHlaing",
-    "name": "ကရင်လှုိင်း",
-    "fileName": "KarenHlaing",
-    "fontSupportType": "win",
-    "fontStyle": "Regular Normal Medium Normal_Bold Light",
-    "createdBy": "Win Tun & Maung Han",
-    "English Support": ""
-  },
-  "WinKyaukTan": {
-    "nameEn": "WinKyaukTan",
-    "name": "ဝင်းကျောက်တံ",
-    "fileName": "WinKyaukTan",
-    "fontSupportType": "win",
-    "fontStyle": "Regular Normal A",
-    "createdBy": "Zaw Htut",
-    "English Support": ""
-  },
-  "WinInnLay": {
-    "nameEn": "WinInnLay",
-    "name": "ဝင်းအင်းလေး",
-    "fileName": "WinInnLay",
-    "fontSupportType": "win",
-    "fontStyle": "Regular Normal A",
-    "createdBy": "Zaw Htut",
-    "English Support": ""
-  },
-  "Karen3-0": {
-    "nameEn": "Karen3-0",
-    "name": "ကရင်၃_၀",
-    "fileName": "Karen3-0",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "",
-    "English Support": ""
-  },
-  "WinKyaeMone": {
-    "nameEn": "WinKyaeMone",
-    "name": "ဝင်းကြေးမုံ",
-    "fileName": "WinKyaeMone",
-    "fontSupportType": "win",
-    "fontStyle": "Regular A",
-    "createdBy": "Zaw Htut",
-    "English Support": ""
-  },
-  "WinYaway": {
-    "nameEn": "WinYaway",
-    "name": "ဝင်းရဝေ",
-    "fileName": "WinYaway",
-    "fontSupportType": "win",
-    "fontStyle": "Heavy",
-    "createdBy": "Win Tun",
-    "English Support": ""
-  },
-  "WinThanLyin": {
-    "nameEn": "WinThanLyin",
-    "name": "ဝင်းသံလွင်",
-    "fileName": "WinThanLyin",
-    "fontSupportType": "win",
-    "fontStyle": "Regular A",
-    "createdBy": "Zaw Htut",
-    "English Support": ""
-  },
-  "WinZin": {
-    "nameEn": "WinZin",
-    "name": "ဝင်းဇင်း",
-    "fileName": "WinZin",
-    "fontSupportType": "win",
-    "fontStyle": "ExtraHeavy",
-    "createdBy": "Win Tun",
-    "English Support": ""
-  },
-  "LmYadanapon": {
-    "nameEn": "LmYadanapon",
-    "name": "အယ်လ်အမ်ရတနာပုံ",
-    "fileName": "LmYadanapon",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "Lwin Moe",
-    "English Support": ""
-  },
-  "LmShweMinthamee": {
-    "nameEn": "LmShweMinthamee",
-    "name": "အယ်လ်အမ်ရွှေမင်းသမီး",
-    "fileName": "LmShweMinthamee",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "Lwin Moe",
-    "English Support": ""
-  },
-  "LmYadana": {
-    "nameEn": "LmYadana",
-    "name": "အယ်လ်အမ်ရတနာ",
-    "fileName": "LmYadana",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "Lwin Moe",
-    "English Support": ""
-  },
-  "LmMyaNanda": {
-    "nameEn": "LmMyaNanda",
-    "name": "အယ်လ်အမ်မြန္ဒာ",
-    "fileName": "LmMyaNanda",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "Lwin Moe",
-    "English Support": ""
-  },
-  "LmZarmaniHeavy": {
-    "nameEn": "LmZarmaniHeavy",
-    "name": "အယ်လ်အမ်ဇာနည်ဟယ်ဘီး",
-    "fileName": "LmZarmaniHeavy",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "Lwin Moe",
-    "English Support": ""
-  },
-  "LmLwin": {
-    "nameEn": "LmLwin",
-    "name": "အယ်လ်အမ်လွင်",
-    "fileName": "LmLwin",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "Lwin Moe",
-    "English Support": ""
-  },
-  "LmMaNinPhu": {
-    "nameEn": "LmMaNinPhu",
-    "name": "အယ်လ်အမ်မနှင်းဖူး",
-    "fileName": "LmMaNinPhu",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "ABSDF",
-    "English Support": ""
-  },
-  "LmChaTateLay": {
-    "nameEn": "LmChaTateLay",
-    "name": "အယ်လ်အမ်ချာတိတ်လေး",
-    "fileName": "LmChaTateLay",
-    "fontSupportType": "win",
-    "fontStyle": "Regular",
-    "createdBy": "ABSDF",
-    "English Support": ""
-  },
-  "AcademyFlowerTrue": {
-    "nameEn": "AcademyFlowerTrue",
-    "name": "အကယ်ဒမီဖလားဝါးထရူး",
-    "fileName": "AcademyFlowerTrue",
-    "fontSupportType": "win",
-    "fontStyle": "Italic",
-    "createdBy": "Khin Mg Latt",
-    "English Support": ""
-  },
-  "WinChoNew": {
-    "nameEn": "WinChoNew",
-    "name": "ဝင်းချိုနယူး",
-    "fileName": "WinChoNew",
-    "fontSupportType": "win",
-    "fontStyle": "A",
-    "createdBy": "Win Tun",
-    "English Support": ""
-  },
-  "A-TypeWriter": {
-    "nameEn": "A-TypeWriter",
-    "name": "အေတိုက်ရိုက်တာ",
-    "fileName": "A_TypeWriter",
-    "fontSupportType": "win",
-    "fontStyle": "Normal Bold",
-    "createdBy": "A & T Computer Group",
-    "English Support": ""
-  },
-  "WinTagaung": {
-    "nameEn": "WinTagaung",
-    "name": "ဝင်းတောင်ကြီး",
-    "fileName": "WinTagaung",
-    "fontSupportType": "win",
-    "fontStyle": "Normal",
-    "createdBy": "Win Tun",
-    "English Support": ""
-  },
-  "Perpetua": {
-    "nameEn": "Perpetua",
-    "name": "ပါပီတူး",
-    "fileName": "Perpetua",
-    "fontSupportType": "win",
-    "fontStyle": "Italic BoldItalic TtilingMT_Bold TitlingMT_Light",
-    "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinBago": {
     "nameEn": "WinBago",
@@ -492,7 +126,10 @@
     "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "M.C.C ENGINEER GROUP",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "U4AhLone": {
     "nameEn": "U4AhLone",
@@ -501,7 +138,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "U4Bahan": {
     "nameEn": "U4Bahan",
@@ -510,7 +150,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "U4BoTaTaung": {
     "nameEn": "U4BoTaTaung",
@@ -519,7 +162,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "U4DagonMyoThit": {
     "nameEn": "U4DagonMyoThit",
@@ -528,7 +174,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "U4KaMarYut": {
     "nameEn": "U4KaMarYut",
@@ -537,7 +186,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "U4LanMaDaw": {
     "nameEn": "U4LanMaDaw",
@@ -546,7 +198,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "U4LaTha": {
     "nameEn": "U4LaTha",
@@ -555,7 +210,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "U4Mingalardon": {
     "nameEn": "U4Mingalardon",
@@ -564,7 +222,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "U4PaZunDaung": {
     "nameEn": "U4PaZunDaung",
@@ -573,7 +234,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "U4ThaKeTa": {
     "nameEn": "U4ThaKeTa",
@@ -582,7 +246,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "A_Pagan": {
     "nameEn": "A_Pagan",
@@ -591,7 +258,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal Heavy",
     "createdBy": "A & T Group",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "KingPress": {
     "nameEn": "KingPress",
@@ -600,7 +270,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Fontographer 3.5",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "ArtTrue": {
     "nameEn": "ArtTrue",
@@ -609,7 +282,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular Italic",
     "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinThaYeyKitTaRa": {
     "nameEn": "WinThaYeyKitTaRa",
@@ -618,7 +294,10 @@
     "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "M.C.C ENGINEER GROUP",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "AeyarModernTrue": {
     "nameEn": "AeyarModernTrue",
@@ -627,7 +306,10 @@
     "fontSupportType": "win",
     "fontStyle": "Bold Italic BoldItalic Normal",
     "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "Image": {
     "nameEn": "Image",
@@ -636,7 +318,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Sein Arka Computers",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "KgMyanmar": {
     "nameEn": "KgMyanmar",
@@ -645,7 +330,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "King Computer",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinMonotype": {
     "nameEn": "WinMonotype",
@@ -654,7 +342,10 @@
     "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "Zaw Htut",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "KingYoma": {
     "nameEn": "KingYoma",
@@ -663,7 +354,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "King Computer",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinCourier": {
     "nameEn": "WinCourier",
@@ -672,16 +366,22 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Win Tun (Mr Burma)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinHanPagan": {
     "nameEn": "WinHanPagan",
     "name": "ဝင်းဟန်ပုဂံ",
-    "fileName": "WinHanPagan",
+    "fileName": "WInHanPagan",
     "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "Win Tun & Maung Han",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "SakPeacock": {
     "nameEn": "SakPeacock",
@@ -690,7 +390,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Sein Arka Computers",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "AyarNadiTrue": {
     "nameEn": "AyarNadiTrue",
@@ -699,7 +402,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal Italic",
     "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinPonnyaCond": {
     "nameEn": "WinPonnyaCond",
@@ -708,7 +414,10 @@
     "fontSupportType": "win",
     "fontStyle": "Light Bold ExtraBold",
     "createdBy": "Win Tun (Mr Burma) & Maung Han",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "HanNweThaKi": {
     "nameEn": "HanNweThaKi",
@@ -717,7 +426,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Maung Han",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "HanOvelInserat": {
     "nameEn": "HanOvelInserat",
@@ -726,7 +438,10 @@
     "fontSupportType": "win",
     "fontStyle": "Heavy",
     "createdBy": "Maung Han",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "HanPoppa": {
     "nameEn": "HanPoppa",
@@ -735,7 +450,10 @@
     "fontSupportType": "win",
     "fontStyle": "Heavy",
     "createdBy": "Maung Han",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinThanLwin": {
     "nameEn": "WinThanLwin",
@@ -744,7 +462,10 @@
     "fontSupportType": "win",
     "fontStyle": "Bold",
     "createdBy": "M.C.C ENGINEER GROUP",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinSuuKyi": {
     "nameEn": "WinSuuKyi",
@@ -753,7 +474,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal Italic",
     "createdBy": "Win Tun (Mr Burma)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "Harrington": {
     "nameEn": "Harrington",
@@ -762,7 +486,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "The Font Bureau",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "Burma": {
     "nameEn": "Burma",
@@ -771,7 +498,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Win Tun (Mr Burma) & Maung Han",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "Popa": {
     "nameEn": "Popa",
@@ -780,7 +510,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Gustaaf Houtman",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "InGyin": {
     "nameEn": "InGyin",
@@ -789,7 +522,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Win Tun",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "A_Rose": {
     "nameEn": "A_Rose",
@@ -798,7 +534,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "A & T Computer Group",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "AcademyThickTrue": {
     "nameEn": "AcademyThickTrue",
@@ -807,7 +546,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal Bold Italic BoldItalic",
     "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinCho": {
     "nameEn": "WinCho",
@@ -816,7 +558,10 @@
     "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "Win Tun (Mr Burma)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinCircle": {
     "nameEn": "WinCircle",
@@ -825,7 +570,10 @@
     "fontSupportType": "win",
     "fontStyle": "Bold Medium ExtraBold",
     "createdBy": "Win Tun (Mr Burma)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "ShweYee": {
     "nameEn": "ShweYee",
@@ -834,7 +582,10 @@
     "fontSupportType": "win",
     "fontStyle": "ExtraLight",
     "createdBy": "Maung Maung Tun",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "HarlowSolid": {
     "nameEn": "HarlowSolid",
@@ -843,7 +594,10 @@
     "fontSupportType": "win",
     "fontStyle": "Italic",
     "createdBy": "URW Software",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinTypeWriter": {
     "nameEn": "WinTypeWriter",
@@ -852,7 +606,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal Bold ExtraBold",
     "createdBy": "Win Tun (Mr Burma)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "AeyarNadiPlainTrue": {
     "nameEn": "AeyarNadiPlainTrue",
@@ -861,7 +618,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal Italic",
     "createdBy": "Khin Mg Latt (Geocomp Myanmar)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinHlaing": {
     "nameEn": "WinHlaing",
@@ -870,7 +630,10 @@
     "fontSupportType": "win",
     "fontStyle": "Medium",
     "createdBy": "Win Tun (Mr Burma)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinDawei": {
     "nameEn": "WinDawei",
@@ -879,7 +642,10 @@
     "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "M.C.C ENGINEER GROUP",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "A_Pinya": {
     "nameEn": "A_Pinya",
@@ -888,7 +654,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Photographer 3.5",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinPyuCond": {
     "nameEn": "WinPyuCond",
@@ -897,7 +666,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Win Tun (Mr Burma)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinHan": {
     "nameEn": "WinHan",
@@ -906,7 +678,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Win Tun and Maung Han",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WorldNet": {
     "nameEn": "WorldNet",
@@ -915,7 +690,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Iconian font",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "KTO": {
     "nameEn": "KTO",
@@ -924,7 +702,10 @@
     "fontSupportType": "win",
     "fontStyle": "KTO_1 KTO_2 KTO_3 KTO_4 KTO_5",
     "createdBy": "Htun Oo",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "KgThunder": {
     "nameEn": "KgThunder",
@@ -933,7 +714,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "King Computer",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WorldMath": {
     "nameEn": "WorldMath",
@@ -942,7 +726,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Aphabets",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinHeho": {
     "nameEn": "WinHeho",
@@ -951,7 +738,10 @@
     "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "M.C.C ENGINEER GROUP",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "SakRoyal": {
     "nameEn": "SakRoyal",
@@ -960,7 +750,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Sein Arka Computers",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "SakPadamya": {
     "nameEn": "SakPadamya",
@@ -969,7 +762,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Sein Arka Computers",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "SakTwoLine": {
     "nameEn": "SakTwoLine",
@@ -978,7 +774,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Sein Arka Computers",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "SakThick": {
     "nameEn": "SakThick",
@@ -987,7 +786,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Sein Arka Computers",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinChin": {
     "nameEn": "WinChin",
@@ -996,7 +798,10 @@
     "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "M.C.C ENGINEER GROUP",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinEllipse": {
     "nameEn": "WinEllipse",
@@ -1005,7 +810,10 @@
     "fontSupportType": "win",
     "fontStyle": "ExtraHeavy",
     "createdBy": "Win Tun (Mr Burma)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "SakSeinArka": {
     "nameEn": "SakSeinArka",
@@ -1014,7 +822,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Sein Arka Computers",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "Ha2Line": {
     "nameEn": "Ha2Line",
@@ -1023,7 +834,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Han Than Htun, Sett Aung Khaing",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinLaSho": {
     "nameEn": "WinLaSho",
@@ -1032,7 +846,10 @@
     "fontSupportType": "win",
     "fontStyle": "A",
     "createdBy": "Zaw Htut",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinMap": {
     "nameEn": "WinMap",
@@ -1041,7 +858,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Win Tun (Mr Burma)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinPyu": {
     "nameEn": "WinPyu",
@@ -1050,7 +870,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Win Tun (Mr Burma)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "H2Lines": {
     "nameEn": "H2Lines",
@@ -1059,7 +882,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "Han Than Htun",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WinEra": {
     "nameEn": "WinEra",
@@ -1068,7 +894,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Win Tun (Mr Burma)",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "WhPonnya": {
     "nameEn": "WhPonnya",
@@ -1077,7 +906,10 @@
     "fontSupportType": "win",
     "fontStyle": "Bold Light",
     "createdBy": "Win Tun & Maung Han",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "Kg": {
     "nameEn": "Kg",
@@ -1086,7 +918,10 @@
     "fontSupportType": "win",
     "fontStyle": "Normal",
     "createdBy": "King Computer",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "KgOvalflat": {
     "nameEn": "KgOvalflat",
@@ -1095,7 +930,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "King Computer",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "KgChit": {
     "nameEn": "KgChit",
@@ -1104,7 +942,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "King Computer",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "KgFuncy": {
     "nameEn": "KgFuncy",
@@ -1113,7 +954,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Myint Lwynn under support of Tint Lwynn(I.C.S.T)-King Computer",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "KgNand": {
     "nameEn": "KgNand",
@@ -1122,7 +966,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "King Computer",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceDesign": {
     "nameEn": "MasterpieceDesign",
@@ -1131,7 +978,10 @@
     "fontSupportType": "win",
     "fontStyle": "Bold Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceDesignOutline": {
     "nameEn": "MasterpieceDesignOutline",
@@ -1140,7 +990,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceDiploma": {
     "nameEn": "MasterpieceDiploma",
@@ -1149,7 +1002,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceDiplomaOutline": {
     "nameEn": "MasterpieceDiplomaOutline",
@@ -1158,7 +1014,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceFreehand": {
     "nameEn": "MasterpieceFreehand",
@@ -1167,7 +1026,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceHand": {
     "nameEn": "MasterpieceHand",
@@ -1176,7 +1038,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceKids": {
     "nameEn": "MasterpieceKids",
@@ -1185,7 +1050,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceNormal": {
     "nameEn": "MasterpieceNormal",
@@ -1194,7 +1062,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular Bold",
     "createdBy": "Myo Gyi",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceNormalOutline": {
     "nameEn": "MasterpieceNormalOutline",
@@ -1203,7 +1074,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Myo Gyi",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceOctagon": {
     "nameEn": "MasterpieceOctagon",
@@ -1212,7 +1086,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceOctagonOutline": {
     "nameEn": "MasterpieceOctagonOutline",
@@ -1221,7 +1098,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceOctagonCrack": {
     "nameEn": "MasterpieceOctagonCrack",
@@ -1230,7 +1110,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceOctangonLines": {
     "nameEn": "MasterpieceOctangonLines",
@@ -1239,7 +1122,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceOval": {
     "nameEn": "MasterpieceOval",
@@ -1248,7 +1134,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceRectangle": {
     "nameEn": "MasterpieceRectangle",
@@ -1257,7 +1146,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceRectangleOutline": {
     "nameEn": "MasterpieceRectangleOutline",
@@ -1266,7 +1158,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceRound": {
     "nameEn": "MasterpieceRound",
@@ -1275,7 +1170,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular Bold",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceSemiOval": {
     "nameEn": "MasterpieceSemiOval",
@@ -1284,7 +1182,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Ne Lin Oo",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceSemiOvalOutline": {
     "nameEn": "MasterpieceSemiOvalOutline",
@@ -1293,7 +1194,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Ne Lin Oo",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceShade": {
     "nameEn": "MasterpieceShade",
@@ -1302,7 +1206,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceShadeOutline": {
     "nameEn": "MasterpieceShadeOutline",
@@ -1311,7 +1218,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceStroke": {
     "nameEn": "MasterpieceStroke",
@@ -1320,7 +1230,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceStrokeTwin": {
     "nameEn": "MasterpieceStrokeTwin",
@@ -1329,7 +1242,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceV0Stroke": {
     "nameEn": "MasterpieceV0Stroke",
@@ -1338,7 +1254,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MasterpieceV0StrokeTwin": {
     "nameEn": "MasterpieceV0StrokeTwin",
@@ -1347,7 +1266,10 @@
     "fontSupportType": "win",
     "fontStyle": "Regular",
     "createdBy": "Cotoe",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarYinmar": {
     "nameEn": "MyanmarYinmar",
@@ -1356,7 +1278,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarAngoun": {
     "nameEn": "MyanmarAngoun",
@@ -1365,7 +1290,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarChatu": {
     "nameEn": "MyanmarChatu",
@@ -1374,7 +1302,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular Light",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarGantgaw": {
     "nameEn": "MyanmarGantgaw",
@@ -1383,7 +1314,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarKhyay": {
     "nameEn": "MyanmarKhyay",
@@ -1392,7 +1326,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarKuttar": {
     "nameEn": "MyanmarKuttar",
@@ -1401,7 +1338,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarNayone": {
     "nameEn": "MyanmarNayone",
@@ -1410,7 +1350,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarNjaun": {
     "nameEn": "MyanmarNjaun",
@@ -1419,7 +1362,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarPauklay": {
     "nameEn": "MyanmarPauklay",
@@ -1428,7 +1374,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarPhetsot": {
     "nameEn": "MyanmarPhetsot",
@@ -1437,7 +1386,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarPhiksel": {
     "nameEn": "MyanmarPhiksel",
@@ -1446,7 +1398,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular Smooth",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarPonenyet": {
     "nameEn": "MyanmarPonenyet",
@@ -1455,7 +1410,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarSabae": {
     "nameEn": "MyanmarSabae",
@@ -1464,7 +1422,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarSagar": {
     "nameEn": "MyanmarSagar",
@@ -1473,7 +1434,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarSanpya": {
     "nameEn": "MyanmarSanpya",
@@ -1482,7 +1446,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MynmarSansPro": {
     "nameEn": "MynmarSansPro",
@@ -1491,7 +1458,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarSquareLight": {
     "nameEn": "MyanmarSquareLight",
@@ -1500,7 +1470,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarTagu": {
     "nameEn": "MyanmarTagu",
@@ -1509,7 +1482,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarThuriya": {
     "nameEn": "MyanmarThuriya",
@@ -1518,7 +1494,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "MyanmarWaso": {
     "nameEn": "MyanmarWaso",
@@ -1527,7 +1506,10 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Danh Hong",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   },
   "SM07_Virus": {
     "nameEn": "SM07_Virus",
@@ -1536,6 +1518,21 @@
     "fontSupportType": "unicode",
     "fontStyle": "Regular",
     "createdBy": "Sai Moon's Design",
-    "English Support": ""
+    "enSupport": "",
+    "acceptToDownload": "no",
+    "downloadLink": "https://www.facebook.com/saimoon.designblog/posts/730372242428893",
+    "creatorLink": "https://www.facebook.com/saimoon.designblog"
+  },
+  "NotoSansMyanmar": {
+    "nameEn": "NotoSansMyanmar",
+    "name": "",
+    "fileName": "NotoSansMyanmar",
+    "fontSupportType": "unicode",
+    "fontStyle": "Black Bold ExtraBold ExtraLight Light Medium Regular SemiBold Thin",
+    "createdBy": "Monotype Design Team",
+    "enSupport": "",
+    "acceptToDownload": "yes",
+    "downloadLink": "",
+    "creatorLink": ""
   }
 }
