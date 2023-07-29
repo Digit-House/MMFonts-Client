@@ -46,8 +46,8 @@ export default function Home() {
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    if (debounceInputValue.length > 0) params.set(INPUT_TEXT_PARAMS, debounceInputValue);
-    if (debounceSearchValue.length > 0) params.set(SEARCH_FONT_PARAMS, debounceSearchValue);
+    if (debounceInputValue.length > 0) params.set(INPUT_TEXT_PARAMS, debounceInputValue.substring(0, 20));
+    if (debounceSearchValue.length > 0) params.set(SEARCH_FONT_PARAMS, debounceSearchValue.substring(0, 10));
     router.replace(`${pathname}?${params}`);
   }, [debounceInputValue, debounceSearchValue]);
 
@@ -61,7 +61,7 @@ export default function Home() {
     if (searchParams?.get('searchFont')) {
       setSearchValue(searchParams?.get('searchFont') as string);
     }
-  }, [pathname, searchParams]);
+  }, []);
 
   const handleScroll = useCallback(() => {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
