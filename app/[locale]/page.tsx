@@ -2,7 +2,7 @@
 import { ChevronUpIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { CheckBox, FontListCard, FramerMotionWrapper, RivLoading, SearchBox } from '@components/index';
 import { classNames } from '@core/classnames';
@@ -11,6 +11,10 @@ import { getFontsArray } from '@core/getFonts';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
 import NumberConverter from '@core/NumberConverter';
 import RowsIcon from '/public/icons8-columns.png';
+import useDebounce from '@hooks/useDebounce';
+
+const INPUT_TEXT_PARAMS = 'inputText';
+const SEARCH_FONT_PARAMS = 'searchFont';
 
 export default function Home() {
   const data = getFontsArray();
@@ -33,7 +37,31 @@ export default function Home() {
   ]);
   const router = useRouter();
   const pathname = usePathname();
+  const searchParams = useSearchParams();
+
   const [openSelectFontTypes, setOpenSelectFontTypes] = useState<boolean>(false);
+
+  const debounceInputValue = useDebounce(value);
+  const debounceSearchValue = useDebounce(searchValue);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (debounceInputValue.length > 0) params.set(INPUT_TEXT_PARAMS, debounceInputValue);
+    if (debounceSearchValue.length > 0) params.set(SEARCH_FONT_PARAMS, debounceSearchValue);
+    router.replace(`${pathname}?${params}`);
+  }, [debounceInputValue, debounceSearchValue]);
+
+  useEffect(() => {
+    console.log('PRA', pathname, searchParams?.get('inputText'));
+
+    if (searchParams?.get('inputText')) {
+      setValue(searchParams?.get('inputText') as string);
+    }
+
+    if (searchParams?.get('searchFont')) {
+      setSearchValue(searchParams?.get('searchFont') as string);
+    }
+  }, [pathname, searchParams]);
 
   const handleScroll = useCallback(() => {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
@@ -59,7 +87,9 @@ export default function Home() {
   }, [handleScroll]);
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement> | React.ChangeEvent<HTMLInputElement>) => {
-    setValue(event.target.value);
+    const searchKeyword = event.target.value;
+    setValue(searchKeyword);
+    console.log('EO', searchKeyword);
   };
 
   useEffect(() => {
@@ -100,8 +130,9 @@ export default function Home() {
   };
 
   const inputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchValue(event.target.value);
-    const filterData = filterSearch(event.target.value, data, checked);
+    const searchKeyword = event.target.value;
+    setSearchValue(searchKeyword);
+    const filterData = filterSearch(searchKeyword, data, checked);
     setFontList(filterData);
   };
 
