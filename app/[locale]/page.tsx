@@ -11,6 +11,7 @@ import { getFontsArray } from '@core/getFonts';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
 import NumberConverter from '@core/NumberConverter';
 import RowsIcon from '/public/icons8-columns.png';
+import useThrottle from '@hooks/useThrottle';
 
 export default function Home() {
   const data = getFontsArray();
@@ -34,6 +35,14 @@ export default function Home() {
   const router = useRouter();
   const pathname = usePathname();
   const [openSelectFontTypes, setOpenSelectFontTypes] = useState<boolean>(false);
+
+  const throttledValue = useThrottle(value);
+
+  useEffect(() => {
+    if (throttledValue.length >= 0) {
+      router.replace(`${pathname}?search=${throttledValue}`);
+    }
+  }, [throttledValue]);
 
   const handleScroll = useCallback(() => {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
@@ -59,7 +68,8 @@ export default function Home() {
   }, [handleScroll]);
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement> | React.ChangeEvent<HTMLInputElement>) => {
-    setValue(event.target.value);
+    const searchKeyword = event.target.value;
+    setValue(searchKeyword);
   };
 
   useEffect(() => {
@@ -100,8 +110,9 @@ export default function Home() {
   };
 
   const inputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchValue(event.target.value);
-    const filterData = filterSearch(event.target.value, data, checked);
+    const searchKeyword = event.target.value;
+    setSearchValue(searchKeyword);
+    const filterData = filterSearch(searchKeyword, data, checked);
     setFontList(filterData);
   };
 
