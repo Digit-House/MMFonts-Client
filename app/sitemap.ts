@@ -6,12 +6,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const fonts = getAllFontsName();
 
   const fontUrls = (en = false) => {
-    return fonts.map((font) => {
-      return {
-        url: `${baseUrl}/${en && 'en'}/fonts/${font}`,
-        lastModified: new Date(),
-      };
-    });
+    return fonts.map((font) => ({
+      url: `${baseUrl}${en ? '/en' : ''}/fonts/${font}`,
+      lastModified: new Date(),
+    }));
   };
 
   return [
