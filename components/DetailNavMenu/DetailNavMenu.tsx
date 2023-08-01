@@ -86,7 +86,7 @@ const DetailNavMenu = ({
             target="_blank"
             rel="noopener noreferrer"
             className={classNames(creatorLink && 'hover:underline hover:animate-shake', 'text-sm ')}
-            href={creatorLink}
+            href={creatorLink ? creatorLink : 'https://www.facebook.com/profile.php?id=100093490448936'}
           >
             {createdBy === undefined ? t('create-by') : createdBy}
           </a>

@@ -126,6 +126,7 @@ export default async function RootLayout({ children, params: { locale } }: RootL
           <link rel="preload" href={link} as="font" crossOrigin="anonymous" key={link} />
         ))}
         <link rel="preload" href="/loading.riv" as="fetch" crossOrigin="anonymous" />
+        <meta name="theme-color" content="#FFFFFF" />
       </Head>
       <Script src={`https://www.googletagmanager.com/gtag/js?id=G-${process.env.NEXT_PUBLIC_GA_TRAKCING_ID}`} />
       <Script id="google-analytics">
