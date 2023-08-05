@@ -41,6 +41,11 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
       locale: '/en/myanmar-fonts-generator',
     },
     {
+      title: t('meme'),
+      href: '/meme-generator',
+      locale: '/en/meme-generator',
+    },
+    {
       title: t('about-us'),
       href: '/about-us',
       locale: '/en/about-us',

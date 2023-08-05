@@ -16,3 +16,5 @@ export { default as FramerMotionWrapper } from './FramerMotionWrapper/FramerMoti
 export { default as Loading } from './Loading/Loading';
 export { default as LangSelectBox } from './LangSelectBox/LangSelectBox';
 export { default as RivLoading } from './RivLoading/RivLoading';
+export { default as MemeGeneratorComponent } from './MemeGenerator/MemeGenerator';
+export { default as DraggableText } from './DraggableText/DraggableText';
