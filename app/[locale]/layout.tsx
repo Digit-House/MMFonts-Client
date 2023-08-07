@@ -1,6 +1,7 @@
 import '../globals.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Analytics } from '@vercel/analytics/react';
 import { Metadata } from 'next';
 import { createTranslator, NextIntlClientProvider } from 'next-intl';
 import localFont from 'next/font/local';
@@ -140,6 +141,7 @@ export default async function RootLayout({ children, params: { locale } }: RootL
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body className={`${myLocalFont.variable} font-acre `} suppressHydrationWarning={true}>
           <Providers>{children}</Providers>
+          <Analytics />
         </body>
       </NextIntlClientProvider>
     </html>
