@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function NotFound() {
   return (
-    <main className="grid min-h-full px-6 py-24 place-items-center sm:py-32 lg:px-8">
+    <main className="grid min-h-full place-items-center ">
       <div className="text-center">
         <Image src="/images/404.png" alt="404 not found" width={300} height={300} sizes="100vw" />
         <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Page not found</h1>
