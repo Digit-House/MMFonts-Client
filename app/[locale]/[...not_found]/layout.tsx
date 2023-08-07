@@ -1,9 +1,6 @@
 import { Metadata } from 'next';
 import { createTranslator } from 'next-intl';
 import React from 'react';
-import checkValidUrl from '@core/checkValidUrl';
-import { getFontByName } from '@core/getFonts';
-import { FontType } from '@core/golobalTypes';
 
 interface Props {
   params: {
@@ -13,14 +10,12 @@ interface Props {
 }
 
 export async function generateMetadata({ params: { locale, id } }: Props): Promise<Metadata> {
-  const font = getFontByName(id) as FontType;
-  const FontName = checkValidUrl(locale, font);
   const messages = (await import(`/messages/${locale}.json`)).default;
   const t = createTranslator({ locale, messages });
 
   return {
     title: {
-      absolute: FontName + ` - ${t('Meta.title')}`,
+      absolute: '404' + ` - ${t('Meta.title')}`,
     },
     description: t('Meta.dynamic-description'),
     alternates: {

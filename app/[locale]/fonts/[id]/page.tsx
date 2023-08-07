@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useParams } from 'next/navigation';
+import { notFound, useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import { DetailNavMenu, FontListDetailCard, FramerMotionWrapper, Loading, RadioSelectBar } from '@components/index';
 import { getFontByName } from '@core/getFonts';
@@ -18,11 +18,9 @@ function Page() {
   const t = useTranslations('Index');
 
   const font = getFontByName(params.id) as FontType;
-
   useEffect(() => {
-    if (font) {
+    if (typeof font !== 'undefined') {
       const styles = font.fontStyle.split(' ');
-
       const fonts = styles.map((style) => {
         return {
           name: font.name,
@@ -34,7 +32,7 @@ function Page() {
         };
       });
       setFontStyles(fonts);
-    }
+    } else notFound();
   }, [font]);
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {

@@ -60,6 +60,7 @@ const Premium = () => {
   };
 
   if (!currentFont) return <RivLoading />;
+
   return (
     <FramerMotionWrapper>
       <div className="flex flex-row items-center justify-between p-5">
