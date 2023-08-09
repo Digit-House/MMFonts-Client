@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const filePath = path.resolve(__dirname, '../public/fonts/data/font.json');
+const filePath = path.resolve(__dirname, '../public/data/fonts/data/font.json');
 const cssPath = path.resolve(__dirname, '../app/fontFace.css');
 
 const generateFontFace = () => {
@@ -24,7 +24,7 @@ function generateFontFaceCSS(fontFamily, fontUrl, fontStyle) {
     (style) =>
       `@font-face {
   font-family: '${fontFamily}';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/fonts/${fontUrl}/${style}.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/data/fonts/${fontUrl}/${style}.ttf') format('truetype');
   font-weight: ${style};
   font-style: ${style};
   font-display: swap;

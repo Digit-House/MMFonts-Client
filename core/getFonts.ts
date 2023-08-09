@@ -1,4 +1,4 @@
-import fontJson from '../public/fonts/data/font.json';
+import fontJson from '../public/data/fonts/data/font.json';
 import { FontJsonType, FontType } from './golobalTypes';
 
 export const getAllFontsName = () => {
