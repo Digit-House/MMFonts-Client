@@ -3,7 +3,7 @@ import path from 'path';
 
 export default function handler(req: any, res: any) {
   const param = req.query;
-  const fontDir = path.join(process.cwd(), 'public', 'fonts', param.name);
+  const fontDir = path.join(process.cwd(), 'public', 'data/fonts', param.name);
 
   fs.readdir(fontDir, (err, files) => {
     if (err) {
