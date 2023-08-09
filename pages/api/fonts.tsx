@@ -13,9 +13,9 @@ export default function handler(req: any, res: any) {
 
     const fontFiles = files.map((file) => ({
       name: file,
-      url: `/fonts/${file}`,
+      url: `/data/fonts/${param.name}/${file}`,
+      // https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/data/font.json
     }));
-
     res.status(200).json(fontFiles);
   });
 }
