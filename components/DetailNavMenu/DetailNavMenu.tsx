@@ -1,4 +1,5 @@
 'use client';
+import va from '@vercel/analytics';
 import JSZip from 'jszip';
 import { useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
@@ -40,6 +41,8 @@ const DetailNavMenu = ({
   };
 
   const handleDownload = async (name: string) => {
+    va.track('download-font', { fontName: name });
+    console.log(name);
     setIsDisabled(true);
     if (downloadLink) {
       window.open(downloadLink, '_blank');
@@ -110,7 +113,7 @@ const DetailNavMenu = ({
                 <svg
                   aria-hidden="true"
                   role="status"
-                  className="inline w-4 h-4 mr-2 text-gray-200 animate-spin dark:text-white"
+                  className="inline w-4 h-4 mr-2 text-white animate-spin"
                   viewBox="0 0 100 101"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
