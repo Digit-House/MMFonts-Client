@@ -8,7 +8,7 @@ import { getFontByName } from '@core/getFonts';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
 
 function Page() {
-  const params: any = useParams();
+  const params: Record<string, string | string[]> | null = useParams();
   const [value, setValue] = useState<string>('');
   const [fontSize, setFontSize] = useState<SelectOptionType>({
     label: '20',
@@ -17,7 +17,7 @@ function Page() {
   const [fontStyles, setFontStyles] = useState<FontType[]>();
   const t = useTranslations('Index');
 
-  const font = getFontByName(params.id) as FontType;
+  const font = getFontByName(params?.id as string) as FontType;
   useEffect(() => {
     if (typeof font !== 'undefined') {
       const styles = font.fontStyle.split(' ');
