@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
-import TextareaAutosize from 'react-textarea-autosize';
 
 interface DraggableTextProps {
   containerRef: React.MutableRefObject<HTMLDivElement | null>;
+  textValue: string;
 }
 
-export default function DraggableText({ containerRef }: DraggableTextProps) {
+export default function DraggableText({ containerRef, textValue }: DraggableTextProps) {
   const boxRef = useRef<HTMLDivElement>(null);
 
   const cords = useRef<{ x: number; y: number; lastX: number; lastY: number }>({ x: 0, y: 0, lastX: 0, lastY: 0 });
@@ -62,8 +62,8 @@ export default function DraggableText({ containerRef }: DraggableTextProps) {
   }, [boxRef, containerRef]);
 
   return (
-    <div ref={boxRef} className="absolute top-0 text-white bg-darkblue p-4 cursor-move">
-      <TextareaAutosize minRows={3} maxRows={6} defaultValue="Just a single line..." />
+    <div ref={boxRef} className="absolute top-0 text-white border-dashed p-4 cursor-move border-2">
+      <p>{textValue}</p>
     </div>
   );
 }

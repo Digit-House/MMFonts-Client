@@ -51,7 +51,7 @@ const MemeGenerator = () => {
       </div>
       <div ref={containerRef} className="border-2 bg-gray-100 w-full rounded-sm relative overflow-hidden">
         <canvas ref={imageRef} className="w-full"></canvas>
-        <DraggableText containerRef={containerRef} />
+        <DraggableText containerRef={containerRef} textValue="hello world∏Eiusmod qui Lorem amet excepteur est." />
       </div>
     </div>
   );
