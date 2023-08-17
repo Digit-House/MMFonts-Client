@@ -152,18 +152,10 @@ export default async function RootLayout({ children, params: { locale } }: RootL
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', ${process.env.NEXT_PUBLIC_FB_PIXEL_ID});
-         fbq('track', 'PageView');
+        fbq('track', 'PageView');
     `,
         }}
       />
-      <noscript>
-        <img
-          height="1"
-          width="1"
-          style="display:none"
-          src="https://www.facebook.com/tr?id=686090216189198&ev=PageView&noscript=1"
-        />
-      </noscript>
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body className={`${myLocalFont.variable} font-acre `} suppressHydrationWarning={true}>
           <Providers>{children}</Providers>
