@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import { hotjar } from 'react-hotjar';
 import { Footer, Header } from '@components/index';
+import { pageview as fbPageview } from '@core/fpixel';
 import { pageview } from '@core/gtag';
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
@@ -24,6 +25,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     const handleRouteChange = (url: string) => {
       pageview(url);
+      fbPageview(url);
     };
     if (pathname) {
       handleRouteChange(pathname);

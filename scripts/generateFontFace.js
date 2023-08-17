@@ -24,7 +24,7 @@ function generateFontFaceCSS(fontFamily, fontUrl, fontStyle) {
     (style) =>
       `@font-face {
   font-family: '${fontFamily}';
-  src: url('https://raw.githubusercontent.com/Kaung-Htet-Naing/MMfonts/develop/public/data/fonts/${fontUrl}/${style}.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/${fontUrl}/${style}.ttf') format('truetype');
   font-weight: ${style};
   font-style: ${style};
   font-display: swap;

@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import React, { useState } from 'react';
 import { classNames } from '@core/classnames';
+import { fbEvent } from '@core/fpixel';
 
 type DetailNavMenuType = {
   fontNameMM: string;
@@ -83,6 +84,7 @@ const DetailNavMenu = ({
         setShowAlert(false);
       }, 3000);
     }
+    fbEvent('download-font', { name: name });
   };
 
   return (
