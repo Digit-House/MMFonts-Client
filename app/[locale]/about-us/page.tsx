@@ -37,7 +37,7 @@ const ContactUs = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm hover:underline"
-              href="https://github.com/Kaung-Htet-Naing/MMfonts"
+              href="https://github.com/Digit-House/MMfonts"
             >
               <span className="tracking-widest ">GitHub</span>
             </a>
