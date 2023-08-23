@@ -14,35 +14,35 @@ import Providers from './Providers';
 const myLocalFont = localFont({
   src: [
     {
-      path: '../../public/data/fonts/site/AcreMMVariable-Thin.ttf',
+      path: '../../public/data/local/AcreMMVariable-Thin.ttf',
       weight: '100',
     },
     {
-      path: '../../public/data/fonts/site/AcreMMVariable-ExtraLight.ttf',
+      path: '../../public/data/local/AcreMMVariable-ExtraLight.ttf',
       weight: '200',
     },
     {
-      path: '../../public/data/fonts/site/AcreMMVariable-Light.ttf',
+      path: '../../public/data/local/AcreMMVariable-Light.ttf',
       weight: '300',
     },
     {
-      path: '../../public/data/fonts/site/AcreMMVariable-Regular.ttf',
+      path: '../../public/data/local/AcreMMVariable-Regular.ttf',
       weight: '400',
     },
     {
-      path: '../../public/data/fonts/site/AcreMMVariable-DemiBold.ttf',
+      path: '../../public/data/local/AcreMMVariable-DemiBold.ttf',
       weight: '500',
     },
     {
-      path: '../../public/data/fonts/site/AcreMMVariable-Demi.ttf',
+      path: '../../public/data/local/AcreMMVariable-Demi.ttf',
       weight: '600',
     },
     {
-      path: '../../public/data/fonts/site/AcreMMVariable-Bold.ttf',
+      path: '../../public/data/local/AcreMMVariable-Bold.ttf',
       weight: '700',
     },
     {
-      path: '../../public/data/fonts/site/AcreMMVariable-Black.ttf',
+      path: '../../public/data/local/AcreMMVariable-Black.ttf',
       weight: '800',
     },
   ],
