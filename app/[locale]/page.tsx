@@ -7,6 +7,7 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react
 import { CheckBox, FontListCard, FramerMotionWrapper, RivLoading, SearchBox } from '@components/index';
 import { classNames } from '@core/classnames';
 import filterSearch from '@core/filterSearch';
+import { fbEvent } from '@core/fpixel';
 import { getFontsArray } from '@core/getFonts';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
 import NumberConverter from '@core/NumberConverter';
@@ -90,6 +91,7 @@ export default function Home() {
     const searchKeyword = event.target.value;
     setValue(searchKeyword);
     console.log('EO', searchKeyword);
+    fbEvent('Search', { search_string: searchKeyword });
   };
 
   useEffect(() => {
@@ -107,6 +109,7 @@ export default function Home() {
     setChecked([...checkedClone]);
     const filterData = filterSearch(searchValue, data, checkedClone);
     setFontList(filterData);
+    fbEvent('Search', { search_font_type: checkedClone[i].value });
   };
 
   useLayoutEffect(() => {
@@ -127,6 +130,7 @@ export default function Home() {
     sessionStorage.setItem('checked-font-types', JSON.stringify(checked));
     if (searchValue.length > 0) sessionStorage.setItem('searched-text', searchValue);
     router.push(`/fonts/${name}`);
+    fbEvent('Click', { content_name: name });
   };
 
   const inputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -134,6 +138,7 @@ export default function Home() {
     setSearchValue(searchKeyword);
     const filterData = filterSearch(searchKeyword, data, checked);
     setFontList(filterData);
+    fbEvent('Search', { search_font: searchKeyword });
   };
 
   if (data.length === 0) return <RivLoading />;

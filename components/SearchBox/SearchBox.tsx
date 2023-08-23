@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import React from 'react';
 import { classNames } from '@core/classnames';
+import { fbEvent } from '@core/fpixel';
 import { SelectOptionType } from '@core/golobalTypes';
 import { RadioSelectBar } from '..';
 
@@ -32,6 +33,11 @@ const SearchBox = ({
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     clearTimeout(sliderTimeout);
     setFontSize({ label: event.target.value, value: event.target.value });
+    fbEvent('Change', {
+      content_type: event.target.value,
+      content_name: event.target.value,
+      value: event.target.value,
+    });
   };
 
   return (

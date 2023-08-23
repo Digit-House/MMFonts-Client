@@ -84,7 +84,7 @@ const DetailNavMenu = ({
         setShowAlert(false);
       }, 3000);
     }
-    fbEvent('download-font', { name: name });
+    fbEvent('download-font', { fontName: name });
   };
 
   return (
