@@ -35,7 +35,7 @@ const TextElement = (props: ICanvasComponent) => {
             className="ql-editor"
             style={{
               fontFamily: 'Arial',
-              fontSize: '13px',
+              fontSize: '16px',
               padding: 0,
             }}
           >

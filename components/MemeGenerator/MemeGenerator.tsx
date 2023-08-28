@@ -1,16 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import MemeContext, { getInitialData, ICanvasComponent, ICanvasContext, ICanvasData } from '@context/MemeContext';
 import CanvasComponent from './components/CanvasComponent';
 import Toolbar from './components/Toolbar';
 
 const MemeGenerator = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const imageRef = useRef<HTMLCanvasElement>(null);
 
-  const [canvasData, setCanvasData] = useState<ICanvasData[]>([]);
+  const [canvasData, setCanvasData] = useState<ICanvasData[]>([
+    {
+      type: 'IMAGE',
+      id: 'IMAGE__1616154982257__0',
+      position: { left: 269, top: 103.08001708984375 },
+      dimension: { width: '365px', height: '365px' },
+      content: '',
+    },
+  ]);
   const [activeSelection, setActiveSelection] = useState<Set<string>>(new Set());
-  const [enableQuillToolbar, setEnableQuillToolbar] = useState<boolean>(true);
+  const [enableQuillToolbar, setEnableQuillToolbar] = useState<boolean>(false);
 
   const isSelectAll = useRef<boolean>(false);
 
@@ -98,40 +105,16 @@ const MemeGenerator = () => {
     };
   }, [handleKeyDown, handleMouseDown]);
 
-  useEffect(() => {
-    if (!imageRef.current) return;
-    const canvasContext = imageRef.current.getContext('2d');
-    const image = new Image();
-    image.src =
-      'https://images.theconversation.com/files/38926/original/5cwx89t4-1389586191.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip';
-    image.style.objectFit = 'cover';
-    image.onload = function () {
-      const wrh = image.width / image.height;
-      const canvas = imageRef.current;
-      if (!canvas) return;
-      let newWidth = canvas.width;
-      let newHeight = newWidth / wrh;
-      if (newHeight > canvas.height) {
-        newHeight = canvas.height;
-        newWidth = newHeight * wrh;
-      }
-      const xOffset = newWidth < canvas.width ? (canvas.width - newWidth) / 2 : 0;
-      const yOffset = newHeight < canvas.height ? (canvas.height - newHeight) / 2 : 0;
-
-      canvasContext?.drawImage(image, xOffset, yOffset, newWidth, newHeight);
-    };
-  }, []);
-
   return (
     <div ref={containerRef}>
       <MemeContext.Provider value={context}>
-        <Toolbar isEditEnable={true} />
+        <Toolbar isEditEnable={enableQuillToolbar} />
         <div className="w-full h-[60vh] relative overflow-hidden bg-white">
           {canvasData.map((canvas) => {
             return <CanvasComponent {...canvas} key={canvas.id} />;
           })}
         </div>
-        {/* {JSON.stringify(canvasData)} */}
+        {JSON.stringify(canvasData)}
       </MemeContext.Provider>
     </div>
   );

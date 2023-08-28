@@ -2,10 +2,12 @@ import React, { useContext, useRef } from 'react';
 import { ResizeEnable, Rnd } from 'react-rnd';
 import MemeContext, { ICanvasComponent } from '@context/MemeContext';
 import { resizeHandleClasses } from '../utils/canvasUtils';
+import ImageElement from './ImageElement';
 import TextElement from './TextElement';
 
 const componentMap: { [key: string]: React.ComponentType<ICanvasComponent> } = {
   TEXT: TextElement,
+  IMAGE: ImageElement,
 };
 
 const getEnableResize = (type: string): ResizeEnable => {
@@ -69,7 +71,6 @@ const CanvasComponent = (props: ICanvasComponent) => {
     border: `2px solid ${
       (id && state?.activeSelection.has(id)) || showGrids || isDragged.current ? 'red' : 'transparent'
     }`,
-    backgroundColor: 'gray',
   };
 
   const onMouseEnter = () => {
