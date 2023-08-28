@@ -1,4 +1,5 @@
 @import url('./fontFace.css');
+@import url('./quill.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

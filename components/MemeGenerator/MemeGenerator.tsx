@@ -1,14 +1,102 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect, useRef } from 'react';
-import DraggableText from '@components/DraggableText/DraggableText';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import MemeContext, { getInitialData, ICanvasComponent, ICanvasContext, ICanvasData } from '@context/MemeContext';
+import CanvasComponent from './components/CanvasComponent';
+import Toolbar from './components/Toolbar';
 
 const MemeGenerator = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLCanvasElement>(null);
 
-  const addText = () => {
-    console.log('Add Text');
+  const [canvasData, setCanvasData] = useState<ICanvasData[]>([]);
+  const [activeSelection, setActiveSelection] = useState<Set<string>>(new Set());
+  const [enableQuillToolbar, setEnableQuillToolbar] = useState<boolean>(true);
+
+  const isSelectAll = useRef<boolean>(false);
+
+  const updateCanvasData = (data: Partial<ICanvasComponent>) => {
+    const currentDataIndex = canvasData.findIndex((canvas) => canvas.id === data.id) ?? -1;
+    const updatedData = { ...canvasData?.[currentDataIndex], ...data };
+    canvasData.splice(currentDataIndex, 1, updatedData);
+    setCanvasData([...(canvasData || [])]);
   };
+
+  const addElement = (type: string) => {
+    const defaultData = getInitialData(canvasData, type);
+    setCanvasData([...canvasData, { ...defaultData, type: type ?? 'TEXT' }]);
+    activeSelection.clear();
+    activeSelection.add(defaultData.id);
+    setActiveSelection(new Set(activeSelection));
+  };
+
+  const deleteElement = useCallback(() => {
+    setCanvasData([
+      ...canvasData.filter((data) => {
+        if (data.id && activeSelection.has(data.id)) {
+          activeSelection.delete(data.id);
+          return false;
+        }
+        return true;
+      }),
+    ]);
+    setActiveSelection(new Set(activeSelection));
+  }, [activeSelection, canvasData]);
+
+  const selectAllElement = useCallback(() => {
+    isSelectAll.current = true;
+    canvasData.map((data) => activeSelection.add(data.id || ''));
+    setActiveSelection(new Set(activeSelection));
+  }, [activeSelection, canvasData]);
+
+  const context: ICanvasContext = {
+    actions: {
+      setCanvasData,
+      setActiveSelection,
+      updateCanvasData,
+      addElement,
+      setEnableQuillToolbar,
+    },
+    state: {
+      canvasData,
+      activeSelection,
+      enableQuillToolbar,
+    },
+  };
+
+  const handleKeyDown = useCallback(
+    (event: KeyboardEvent) => {
+      if (event.key === 'Delete') {
+        deleteElement();
+      } else if (['a', 'A'].includes(event.key) && event.ctrlKey) {
+        event.preventDefault();
+        selectAllElement();
+      }
+    },
+    [deleteElement, selectAllElement]
+  );
+
+  const outSideClickHandler = () => {
+    isSelectAll.current = false;
+    setActiveSelection(new Set());
+  };
+
+  const handleMouseDown = useCallback((event) => {
+    if (!isSelectAll.current) {
+      return;
+    }
+
+    outSideClickHandler();
+    isSelectAll.current = false;
+  }, []);
+
+  React.useEffect(() => {
+    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('mousedown', handleMouseDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+      document.removeEventListener('mousedown', handleMouseDown);
+    };
+  }, [handleKeyDown, handleMouseDown]);
 
   useEffect(() => {
     if (!imageRef.current) return;
@@ -35,24 +123,16 @@ const MemeGenerator = () => {
   }, []);
 
   return (
-    <div>
-      <div className="flex flex-row justify-between my-4">
-        <div className="flex flex-col items-left"></div>
-        <div>
-          <div className="relative">
-            <p
-              onClick={addText}
-              className="p-4 px-3 py-2 border-2 border-black rounded-md cursor-pointer bg-secondary text-darkblue"
-            >
-              Add Text Here
-            </p>
-          </div>
+    <div ref={containerRef}>
+      <MemeContext.Provider value={context}>
+        <Toolbar isEditEnable={true} />
+        <div className="w-full h-[60vh] relative overflow-hidden bg-white">
+          {canvasData.map((canvas) => {
+            return <CanvasComponent {...canvas} key={canvas.id} />;
+          })}
         </div>
-      </div>
-      <div ref={containerRef} className="border-2 bg-gray-100 w-full rounded-sm relative overflow-hidden">
-        <canvas ref={imageRef} className="w-full"></canvas>
-        <DraggableText containerRef={containerRef} textValue="hello world∏Eiusmod qui Lorem amet excepteur est." />
-      </div>
+        {/* {JSON.stringify(canvasData)} */}
+      </MemeContext.Provider>
     </div>
   );
 };
