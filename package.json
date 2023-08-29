@@ -24,6 +24,8 @@
     "eslint-config-next": "13.4.4",
     "framer-motion": "^10.12.16",
     "fs": "^0.0.1-security",
+    "html-to-image": "^1.11.11",
+    "html2canvas": "^1.4.1",
     "jszip": "^3.10.1",
     "next": "^13.4.9",
     "next-intl": "3.0.0-beta.3",

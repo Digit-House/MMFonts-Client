@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { toPng } from 'html-to-image';
 import React, { useCallback, useRef, useState } from 'react';
 import MemeContext, { getInitialData, ICanvasComponent, ICanvasContext, ICanvasData } from '@context/MemeContext';
 import CanvasComponent from './components/CanvasComponent';
@@ -6,6 +7,7 @@ import Toolbar from './components/Toolbar';
 
 const MemeGenerator = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const imageContainerRef = useRef<HTMLDivElement>(null);
 
   const [canvasData, setCanvasData] = useState<ICanvasData[]>([
     {
@@ -96,6 +98,23 @@ const MemeGenerator = () => {
     isSelectAll.current = false;
   }, []);
 
+  const downloadImage = () => {
+    toPng(imageContainerRef.current as HTMLDivElement)
+      .then(function (dataUrl) {
+        downloadBase64Image(dataUrl, 'my-image.png');
+      })
+      .catch(function (error) {
+        console.log('oops, something went wrong!', error);
+      });
+  };
+
+  const downloadBase64Image = (linkSource: string, fileName: string) => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = linkSource;
+    downloadLink.download = fileName;
+    downloadLink.click();
+  };
+
   React.useEffect(() => {
     document.addEventListener('keydown', handleKeyDown);
     document.addEventListener('mousedown', handleMouseDown);
@@ -106,15 +125,24 @@ const MemeGenerator = () => {
   }, [handleKeyDown, handleMouseDown]);
 
   return (
-    <div ref={containerRef}>
+    <div ref={containerRef} className="text-center">
       <MemeContext.Provider value={context}>
         <Toolbar isEditEnable={enableQuillToolbar} />
-        <div className="w-full h-[60vh] relative overflow-hidden bg-white">
-          {canvasData.map((canvas) => {
-            return <CanvasComponent {...canvas} key={canvas.id} />;
-          })}
+        <div className=" w-full h-[60vh] border-2 relative overflow-hidden bg-white">
+          <div className="w-full h-full bg-transparent" ref={imageContainerRef}>
+            {canvasData.map((canvas) => {
+              return <CanvasComponent {...canvas} key={canvas.id} />;
+            })}
+          </div>
         </div>
-        {JSON.stringify(canvasData)}
+        {canvasData[0].content && (
+          <button
+            className="mt-12 w-60 mx-auto p-4 px-3 py-2 border-2 border-black rounded-md cursor-pointer bg-secondary text-darkblue"
+            onClick={() => downloadImage()}
+          >
+            Download
+          </button>
+        )}
       </MemeContext.Provider>
     </div>
   );
