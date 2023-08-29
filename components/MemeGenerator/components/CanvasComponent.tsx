@@ -96,7 +96,9 @@ const CanvasComponent = (props: ICanvasComponent) => {
   const onDoubleClick = () => {
     if (!isReadOnly) return;
     setIsReadOnly(false);
-    actions?.setEnableQuillToolbar(true);
+    if (type === 'TEXT') {
+      actions?.setEnableQuillToolbar(true);
+    }
   };
 
   return (
