@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Myanmar-3';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Myanmar3/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Myanmar3/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -8,7 +9,8 @@
 
 @font-face {
   font-family: 'Padauk';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Padauk/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Padauk/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -16,7 +18,8 @@
 
 @font-face {
   font-family: 'Pyidaungsu';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pyidaungsu/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pyidaungsu/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -24,7 +27,8 @@
 
 @font-face {
   font-family: 'Pyidaungsu';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pyidaungsu/Bold.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pyidaungsu/Bold.ttf')
+    format('truetype');
   font-weight: Bold;
   font-style: Bold;
   font-display: swap;
@@ -32,7 +36,8 @@
 
 @font-face {
   font-family: 'Pyidaungsu';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pyidaungsu/Numbers.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pyidaungsu/Numbers.ttf')
+    format('truetype');
   font-weight: Numbers;
   font-style: Numbers;
   font-display: swap;
@@ -40,7 +45,8 @@
 
 @font-face {
   font-family: 'Win-Uni-Innwa';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinUniInna/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinUniInna/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -48,7 +54,8 @@
 
 @font-face {
   font-family: 'Uni-Burma';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/UniBurma/Medium.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/UniBurma/Medium.ttf')
+    format('truetype');
   font-weight: Medium;
   font-style: Medium;
   font-display: swap;
@@ -56,7 +63,8 @@
 
 @font-face {
   font-family: 'Uni-Burma';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/UniBurma/FreeHand.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/UniBurma/FreeHand.ttf')
+    format('truetype');
   font-weight: FreeHand;
   font-style: FreeHand;
   font-display: swap;
@@ -64,7 +72,8 @@
 
 @font-face {
   font-family: 'Uni-Burma';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/UniBurma/FFSerif.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/UniBurma/FFSerif.ttf')
+    format('truetype');
   font-weight: FFSerif;
   font-style: FFSerif;
   font-display: swap;
@@ -72,7 +81,8 @@
 
 @font-face {
   font-family: 'Uni-Burma';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/UniBurma/Medium_Serief.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/UniBurma/Medium_Serief.ttf')
+    format('truetype');
   font-weight: Medium_Serief;
   font-style: Medium_Serief;
   font-display: swap;
@@ -80,7 +90,8 @@
 
 @font-face {
   font-family: 'Uni-Burma';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/UniBurma/Regular_MSSerif.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/UniBurma/Regular_MSSerif.ttf')
+    format('truetype');
   font-weight: Regular_MSSerif;
   font-style: Regular_MSSerif;
   font-display: swap;
@@ -88,7 +99,8 @@
 
 @font-face {
   font-family: 'Tharlon';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Tharlon/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Tharlon/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -96,7 +108,8 @@
 
 @font-face {
   font-family: 'WinResearcher';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinResearcher/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinResearcher/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -104,7 +117,8 @@
 
 @font-face {
   font-family: 'WinYangon';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinYangon/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinYangon/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -112,7 +126,8 @@
 
 @font-face {
   font-family: 'AungSan';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/AungSan/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/AungSan/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -120,7 +135,8 @@
 
 @font-face {
   font-family: 'ShweThway';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShweThway/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShweThway/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -128,7 +144,8 @@
 
 @font-face {
   font-family: 'KingYoma';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/KingYoma/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/KingYoma/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -136,7 +153,8 @@
 
 @font-face {
   font-family: 'WinMap';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinMap/Normal.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinMap/Normal.ttf')
+    format('truetype');
   font-weight: Normal;
   font-style: Normal;
   font-display: swap;
@@ -144,7 +162,8 @@
 
 @font-face {
   font-family: 'MyanmarYinmar';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarYinmar/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarYinmar/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -152,7 +171,8 @@
 
 @font-face {
   font-family: 'MyanmarAhgoun';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarAhgoun/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarAhgoun/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -160,7 +180,8 @@
 
 @font-face {
   font-family: 'MyanmarChatu';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarChatu/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarChatu/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -168,7 +189,8 @@
 
 @font-face {
   font-family: 'MyanmarChatu';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarChatu/Light.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarChatu/Light.ttf')
+    format('truetype');
   font-weight: Light;
   font-style: Light;
   font-display: swap;
@@ -176,7 +198,8 @@
 
 @font-face {
   font-family: 'MyanmarGantgaw';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarGantgaw/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarGantgaw/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -184,7 +207,8 @@
 
 @font-face {
   font-family: 'MyanmarKhyay';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarKhyay/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarKhyay/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -192,7 +216,8 @@
 
 @font-face {
   font-family: 'MyanmarKuttar';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarKuttar/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarKuttar/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -200,7 +225,8 @@
 
 @font-face {
   font-family: 'MyanmarNayone';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarNayone/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarNayone/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -208,7 +234,8 @@
 
 @font-face {
   font-family: 'MyanmarNjaun';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarNjaun/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarNjaun/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -216,7 +243,8 @@
 
 @font-face {
   font-family: 'MyanmarPauklay';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPauklay/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPauklay/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -224,7 +252,8 @@
 
 @font-face {
   font-family: 'MyanmarPhetsot';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPhetsot/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPhetsot/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -232,7 +261,8 @@
 
 @font-face {
   font-family: 'MyanmarPhiksel';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPhiksel/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPhiksel/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -240,7 +270,8 @@
 
 @font-face {
   font-family: 'MyanmarPhiksel';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPhiksel/Smooth.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPhiksel/Smooth.ttf')
+    format('truetype');
   font-weight: Smooth;
   font-style: Smooth;
   font-display: swap;
@@ -248,7 +279,8 @@
 
 @font-face {
   font-family: 'MyanmarPonenyet';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPonenyet/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPonenyet/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -256,7 +288,8 @@
 
 @font-face {
   font-family: 'MyanmarSabae';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarSabae/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarSabae/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -264,7 +297,8 @@
 
 @font-face {
   font-family: 'MyanmarSagar';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarSagar/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarSagar/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -272,7 +306,8 @@
 
 @font-face {
   font-family: 'MyanmarSanpya';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarSanpya/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarSanpya/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -280,7 +315,8 @@
 
 @font-face {
   font-family: 'MynmarSansPro';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarSansPro/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarSansPro/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -288,7 +324,8 @@
 
 @font-face {
   font-family: 'MyanmarSquareLight';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarSquareLight/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarSquareLight/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -296,7 +333,8 @@
 
 @font-face {
   font-family: 'MyanmarTagu';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarTagu/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarTagu/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -304,7 +342,8 @@
 
 @font-face {
   font-family: 'MyanmarThuriya';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarThuriya/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarThuriya/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -312,7 +351,8 @@
 
 @font-face {
   font-family: 'MyanmarWaso';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarWaso/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarWaso/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -320,7 +360,8 @@
 
 @font-face {
   font-family: 'SM07_Virus';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/SM07_Virus/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/SM07_Virus/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -328,7 +369,8 @@
 
 @font-face {
   font-family: 'NotoSansMyanmar';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/Black.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/Black.ttf')
+    format('truetype');
   font-weight: Black;
   font-style: Black;
   font-display: swap;
@@ -336,7 +378,8 @@
 
 @font-face {
   font-family: 'NotoSansMyanmar';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/Bold.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/Bold.ttf')
+    format('truetype');
   font-weight: Bold;
   font-style: Bold;
   font-display: swap;
@@ -344,7 +387,8 @@
 
 @font-face {
   font-family: 'NotoSansMyanmar';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/ExtraBold.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/ExtraBold.ttf')
+    format('truetype');
   font-weight: ExtraBold;
   font-style: ExtraBold;
   font-display: swap;
@@ -352,7 +396,8 @@
 
 @font-face {
   font-family: 'NotoSansMyanmar';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/ExtraLight.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/ExtraLight.ttf')
+    format('truetype');
   font-weight: ExtraLight;
   font-style: ExtraLight;
   font-display: swap;
@@ -360,7 +405,8 @@
 
 @font-face {
   font-family: 'NotoSansMyanmar';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/Light.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/Light.ttf')
+    format('truetype');
   font-weight: Light;
   font-style: Light;
   font-display: swap;
@@ -368,7 +414,8 @@
 
 @font-face {
   font-family: 'NotoSansMyanmar';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/Medium.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/Medium.ttf')
+    format('truetype');
   font-weight: Medium;
   font-style: Medium;
   font-display: swap;
@@ -376,7 +423,8 @@
 
 @font-face {
   font-family: 'NotoSansMyanmar';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -384,7 +432,8 @@
 
 @font-face {
   font-family: 'NotoSansMyanmar';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/SemiBold.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/SemiBold.ttf')
+    format('truetype');
   font-weight: SemiBold;
   font-style: SemiBold;
   font-display: swap;
@@ -392,7 +441,8 @@
 
 @font-face {
   font-family: 'NotoSansMyanmar';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/Thin.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NotoSansMyanmar/Thin.ttf')
+    format('truetype');
   font-weight: Thin;
   font-style: Thin;
   font-display: swap;
@@ -400,7 +450,8 @@
 
 @font-face {
   font-family: 'MyanmarPaOh';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPaOh/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPaOh/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -408,7 +459,8 @@
 
 @font-face {
   font-family: 'MyanmarText';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarText/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarText/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -416,7 +468,8 @@
 
 @font-face {
   font-family: 'Asoka';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Asoka/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Asoka/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -424,7 +477,8 @@
 
 @font-face {
   font-family: 'MyanmarJojarPro';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarJojarPro/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarJojarPro/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -432,7 +486,8 @@
 
 @font-face {
   font-family: 'PadaukSagar';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukSagar/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukSagar/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -440,7 +495,8 @@
 
 @font-face {
   font-family: 'PadaukKyaungChee';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukKyaungChee/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukKyaungChee/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -448,7 +504,8 @@
 
 @font-face {
   font-family: 'PadaukGrandProV2';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukGrandProV2/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukGrandProV2/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -456,7 +513,8 @@
 
 @font-face {
   font-family: 'PadaukGhost';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukGhost/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukGhost/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -464,7 +522,8 @@
 
 @font-face {
   font-family: 'PadaukSgaw';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukSgaw/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukSgaw/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -472,7 +531,8 @@
 
 @font-face {
   font-family: 'PadaukSgaw';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukSgaw/Bold.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukSgaw/Bold.ttf')
+    format('truetype');
   font-weight: Bold;
   font-style: Bold;
   font-display: swap;
@@ -480,7 +540,8 @@
 
 @font-face {
   font-family: 'PadaukBookSgaw';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukBookSgaw/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukBookSgaw/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -488,7 +549,8 @@
 
 @font-face {
   font-family: 'PadaukBookSgaw';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukBookSgaw/Bold.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PadaukBookSgaw/Bold.ttf')
+    format('truetype');
   font-weight: Bold;
   font-style: Bold;
   font-display: swap;
@@ -496,7 +558,8 @@
 
 @font-face {
   font-family: 'NamKhoneGrand';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NamKhoneGrand/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NamKhoneGrand/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -504,7 +567,8 @@
 
 @font-face {
   font-family: 'NamKhoneSSmart2';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NamKhoneSSmart2/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NamKhoneSSmart2/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -512,7 +576,8 @@
 
 @font-face {
   font-family: 'NamKhoneSSmart3';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NamKhoneSSmart3/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NamKhoneSSmart3/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -520,7 +585,8 @@
 
 @font-face {
   font-family: 'NamKhoneSSmart4';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NamKhoneSSmart4/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NamKhoneSSmart4/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -528,7 +594,8 @@
 
 @font-face {
   font-family: 'NamKhoneUnicode';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NamKhoneUnicode/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NamKhoneUnicode/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -536,7 +603,8 @@
 
 @font-face {
   font-family: 'NamKhoneWebPro';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NamKhoneWebPro/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/NamKhoneWebPro/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -544,7 +612,8 @@
 
 @font-face {
   font-family: 'YoeYarOne';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/YoeYarOne/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/YoeYarOne/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -552,7 +621,8 @@
 
 @font-face {
   font-family: 'YoeYarOne';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/YoeYarOne/Light.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/YoeYarOne/Light.ttf')
+    format('truetype');
   font-weight: Light;
   font-style: Light;
   font-display: swap;
@@ -560,7 +630,8 @@
 
 @font-face {
   font-family: 'YoeYarOne';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/YoeYarOne/Bold.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/YoeYarOne/Bold.ttf')
+    format('truetype');
   font-weight: Bold;
   font-style: Bold;
   font-display: swap;
@@ -568,7 +639,8 @@
 
 @font-face {
   font-family: 'ArialZawgyi';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ArialZawgyi/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ArialZawgyi/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -576,7 +648,8 @@
 
 @font-face {
   font-family: 'Bit';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Bit/Medium.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Bit/Medium.ttf')
+    format('truetype');
   font-weight: Medium;
   font-style: Medium;
   font-display: swap;
@@ -584,7 +657,8 @@
 
 @font-face {
   font-family: 'CherryUnicode';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/CherryUnicode/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/CherryUnicode/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -592,7 +666,8 @@
 
 @font-face {
   font-family: 'JasmineUnicode';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/JasmineUnicode/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/JasmineUnicode/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -600,7 +675,8 @@
 
 @font-face {
   font-family: 'Mon3Anonta1';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Mon3Anonta1/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Mon3Anonta1/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -608,7 +684,8 @@
 
 @font-face {
   font-family: 'MyanmarBlack';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarBlack/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarBlack/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -616,7 +693,8 @@
 
 @font-face {
   font-family: 'MyanmarCensus';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarCensus/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarCensus/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -624,7 +702,8 @@
 
 @font-face {
   font-family: 'MyanmarPaOhRosemary';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPaOhRosemary/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPaOhRosemary/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -632,7 +711,8 @@
 
 @font-face {
   font-family: 'MyanmarPunk';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPunk/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarPunk/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -640,7 +720,8 @@
 
 @font-face {
   font-family: 'MyanmarSquare';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarSquare/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarSquare/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -648,7 +729,8 @@
 
 @font-face {
   font-family: 'MyanmarTaungyi';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarTaungyi/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarTaungyi/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -656,7 +738,8 @@
 
 @font-face {
   font-family: 'MyanmarTextMelano';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarTextMelano/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyanmarTextMelano/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -664,7 +747,8 @@
 
 @font-face {
   font-family: 'PangLong';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PangLong/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/PangLong/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -672,7 +756,8 @@
 
 @font-face {
   font-family: 'SamsungMyanmar';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/SamsungMyanmar/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/SamsungMyanmar/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -680,7 +765,8 @@
 
 @font-face {
   font-family: 'ShanUnicode';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShanUnicode/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShanUnicode/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
   font-display: swap;
@@ -688,7 +774,8 @@
 
 @font-face {
   font-family: 'ThanLwinUnicode';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ThanLwinUnicode/Medium.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ThanLwinUnicode/Medium.ttf')
+    format('truetype');
   font-weight: Medium;
   font-style: Medium;
   font-display: swap;
@@ -696,8 +783,891 @@
 
 @font-face {
   font-family: 'Yunghkio';
-  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Yunghkio/Regular.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Yunghkio/Regular.ttf')
+    format('truetype');
   font-weight: Regular;
   font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AcreMM';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/AcreMM/Thin.otf')
+    format('truetype');
+  font-weight: Thin;
+  font-style: Thin;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JaPoe';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/JaPoe/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MMT_Display';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MMT_Display/ThinCond.otf')
+    format('truetype');
+  font-weight: ThinCond;
+  font-style: ThinCond;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'VTG_Display';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/VTG_Display/Medium.otf')
+    format('truetype');
+  font-weight: Medium;
+  font-style: Medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ZawgyiOne';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ZawgyiOne/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'M-Myanmar1';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/M-Myanmar1/Bold.ttf')
+    format('truetype');
+  font-weight: Bold;
+  font-style: Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'M-Myanmar1';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/M-Myanmar1/Normal.ttf')
+    format('truetype');
+  font-weight: Normal;
+  font-style: Normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'M-Myanmar2';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/M-Myanmar2/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kannaka';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Kannaka/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinTaungyi';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinTaungyi/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinTaungyi';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinTaungyi/Bold.ttf')
+    format('truetype');
+  font-weight: Bold;
+  font-style: Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinSittway';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinSittway/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinKalaw';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinKalaw/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinKalaw';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinKalaw/Bold.ttf')
+    format('truetype');
+  font-weight: Bold;
+  font-style: Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinInnwa';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinInnwa/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinInnwa';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinInnwa/Normal.ttf')
+    format('truetype');
+  font-weight: Normal;
+  font-style: Normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeCollection';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/CeCollection/ClassicNormal.ttf')
+    format('truetype');
+  font-weight: ClassicNormal;
+  font-style: ClassicNormal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeCollection';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/CeCollection/ClassicRegular.ttf')
+    format('truetype');
+  font-weight: ClassicRegular;
+  font-style: ClassicRegular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeCollection';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/CeCollection/ExcelMedium.ttf')
+    format('truetype');
+  font-weight: ExcelMedium;
+  font-style: ExcelMedium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeCollection';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/CeCollection/ExcelNormal.ttf')
+    format('truetype');
+  font-weight: ExcelNormal;
+  font-style: ExcelNormal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeCollection';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/CeCollection/FreehandNormal.ttf')
+    format('truetype');
+  font-weight: FreehandNormal;
+  font-style: FreehandNormal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeCollection';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/CeCollection/HandWriteNormal.ttf')
+    format('truetype');
+  font-weight: HandWriteNormal;
+  font-style: HandWriteNormal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeCollection';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/CeCollection/HorizontalThickBold.ttf')
+    format('truetype');
+  font-weight: HorizontalThickBold;
+  font-style: HorizontalThickBold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeCollection';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/CeCollection/Normal.ttf')
+    format('truetype');
+  font-weight: Normal;
+  font-style: Normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeCollection';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/CeCollection/Outline.ttf')
+    format('truetype');
+  font-weight: Outline;
+  font-style: Outline;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeCollection';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/CeCollection/TitleNormal.ttf')
+    format('truetype');
+  font-weight: TitleNormal;
+  font-style: TitleNormal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeCollection';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/CeCollection/TransparentBold.ttf')
+    format('truetype');
+  font-weight: TransparentBold;
+  font-style: TransparentBold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CeCollection';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/CeCollection/TrueOutlineNormal.ttf')
+    format('truetype');
+  font-weight: TrueOutlineNormal;
+  font-style: TrueOutlineNormal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinPyinOoLwin';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinPyinOoLwin/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinMandalay';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinMandalay/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinYadanapon';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinYadanapon/Normal.ttf')
+    format('truetype');
+  font-weight: Normal;
+  font-style: Normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MyaNanda';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MyaNanda/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'karen-flower';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/karen-flower/Normal.ttf')
+    format('truetype');
+  font-weight: Normal;
+  font-style: Normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinHaka';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinHaka/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinHaka';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinHaka/Normal.ttf')
+    format('truetype');
+  font-weight: Normal;
+  font-style: Normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ShwePro';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShwePro/BoldItalic.ttf')
+    format('truetype');
+  font-weight: BoldItalic;
+  font-style: BoldItalic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ShwePro';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShwePro/Condense_Normal.ttf')
+    format('truetype');
+  font-weight: Condense_Normal;
+  font-style: Condense_Normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ShwePro';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShwePro/Expand_Normal.ttf')
+    format('truetype');
+  font-weight: Expand_Normal;
+  font-style: Expand_Normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ShwePro';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShwePro/ExtraHeavy_Bold.ttf')
+    format('truetype');
+  font-weight: ExtraHeavy_Bold;
+  font-style: ExtraHeavy_Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ShwePro';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShwePro/Heavy_Bold.ttf')
+    format('truetype');
+  font-weight: Heavy_Bold;
+  font-style: Heavy_Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ShwePro';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShwePro/Hollow_Bold.ttf')
+    format('truetype');
+  font-weight: Hollow_Bold;
+  font-style: Hollow_Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ShwePro';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShwePro/Italic.ttf')
+    format('truetype');
+  font-weight: Italic;
+  font-style: Italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ShwePro';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShwePro/Medium_Bold.ttf')
+    format('truetype');
+  font-weight: Medium_Bold;
+  font-style: Medium_Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ShwePro';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShwePro/MediumHollow_Bold.ttf')
+    format('truetype');
+  font-weight: MediumHollow_Bold;
+  font-style: MediumHollow_Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ShwePro';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShwePro/Ribbon_BoldItalic.ttf')
+    format('truetype');
+  font-weight: Ribbon_BoldItalic;
+  font-style: Ribbon_BoldItalic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ShwePro';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShwePro/Serif_Bold.ttf')
+    format('truetype');
+  font-weight: Serif_Bold;
+  font-style: Serif_Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ShwePro';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShwePro/Tall_Normal.ttf')
+    format('truetype');
+  font-weight: Tall_Normal;
+  font-style: Tall_Normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ShwePro';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ShwePro/Wide_Bold.ttf')
+    format('truetype');
+  font-weight: Wide_Bold;
+  font-style: Wide_Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Suukyi';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Suukyi/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinLoikaw';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinLoikaw/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinPhaan';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinPhaan/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinMawlamyine';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinMawlamyine/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinKyaukTan';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinKyaukTan/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinKyaukTan';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinKyaukTan/Normal.ttf')
+    format('truetype');
+  font-weight: Normal;
+  font-style: Normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinKyaukTan';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinKyaukTan/A.ttf')
+    format('truetype');
+  font-weight: A;
+  font-style: A;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinInnLay';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinInnLay/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinInnLay';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinInnLay/Normal.ttf')
+    format('truetype');
+  font-weight: Normal;
+  font-style: Normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinInnLay';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinInnLay/A.ttf')
+    format('truetype');
+  font-weight: A;
+  font-style: A;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinKyaeMone';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinKyaeMone/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinKyaeMone';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinKyaeMone/A.ttf')
+    format('truetype');
+  font-weight: A;
+  font-style: A;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinThanLyin';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinThanLyin/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinThanLyin';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinThanLyin/A.ttf')
+    format('truetype');
+  font-weight: A;
+  font-style: A;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinBago';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinBago/A.ttf')
+    format('truetype');
+  font-weight: A;
+  font-style: A;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'U4AhLone';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/U4AhLone/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'U4Bahan';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/U4Bahan/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'U4DagonMyoThit';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/U4DagonMyoThit/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'U4KaMarYut';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/U4KaMarYut/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'U4LanMaDaw';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/U4LanMaDaw/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'U4LaTha';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/U4LaTha/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'U4Mingalardon';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/U4Mingalardon/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'U4PaZunDaung';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/U4PaZunDaung/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'U4ThaKeTa';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/U4ThaKeTa/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinMonotype';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinMonotype/A.ttf')
+    format('truetype');
+  font-weight: A;
+  font-style: A;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinThanLwin';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinThanLwin/Bold.ttf')
+    format('truetype');
+  font-weight: Bold;
+  font-style: Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceDesign';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceDesign/Bold.ttf')
+    format('truetype');
+  font-weight: Bold;
+  font-style: Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceDesign';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceDesign/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceDesignOutline';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceDesignOutline/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceDiploma';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceDiploma/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceDiplomaOutline';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceDiplomaOutline/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceFreehand';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceFreehand/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceHand';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceHand/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceKids';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceKids/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceNormal';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceNormal/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceNormal';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceNormal/Bold.ttf')
+    format('truetype');
+  font-weight: Bold;
+  font-style: Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceNormalOutline';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceNormalOutline/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceOctagon';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceOctagon/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceOctagonOutline';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceOctagonOutline/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceOctagonCrack';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceOctagonCrack/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceOval';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceOval/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceRound';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceRound/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceRound';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceRound/Bold.ttf')
+    format('truetype');
+  font-weight: Bold;
+  font-style: Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceShade';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceShade/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceShadeOutline';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceShadeOutline/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceStroke';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceStroke/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceStrokeTwin';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceStrokeTwin/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MasterpieceV0Stroke';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/MasterpieceV0Stroke/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinHeho';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinHeho/A.ttf')
+    format('truetype');
+  font-weight: A;
+  font-style: A;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinLaSho';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/WinLaSho/A.ttf')
+    format('truetype');
+  font-weight: A;
+  font-style: A;
   font-display: swap;
 }
