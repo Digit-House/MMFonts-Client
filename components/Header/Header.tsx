@@ -21,19 +21,25 @@ export default function Header() {
         className="flex items-center justify-between w-full p-2 mx-auto border-b-2 shadow-lg max-w-8xl lg:px-8 border-secondary"
         aria-label="Global"
       >
-        <div className="max-w-[996px] flex items-center w-full  justify-between mx-auto">
-          <div className="flex items-center lg:hidden ">
-            <div className="flex items-center px-5">
+        <div className="max-w-[996px] flex items-center w-full justify-between mx-auto">
+          <div className="flex items-center lg:hidden">
+            <div className="flex items-center px-5 ">
               <button
                 type="button"
-                className="-m-2.5 inline-flex items-center justify-center rounded-md  text-gray-700"
+                className="-m-2.5 inline-flex items-center justify-center rounded-md text-gray-700"
                 onClick={() => setMobileMenuOpen(true)}
               >
                 <span className="sr-only">Open main menu</span>
                 <Bars3Icon className="w-8 h-8" aria-hidden="true" />
               </button>
             </div>
-            <div className="items-center justify-center ml-4">
+            <LogoMenu />
+          </div>
+          <div className="flex items-center">
+            <div className="lg:hidden">
+              <LangSelectBox />
+            </div>
+            <div className="px-5 lg:hidden">
               <DarkModeSwitch
                 checked={currentTheme === 'light'}
                 onChange={switchTheme}
@@ -42,12 +48,9 @@ export default function Header() {
                 moonColor="#365880"
               />
             </div>
-          </div>
-          <div className="flex flex-row items-center gap-3">
-            <div className="flex lg:hidden">
-              <LangSelectBox />
+            <div className="hidden lg:flex">
+              <LogoMenu />
             </div>
-            <LogoMenu />
           </div>
           <NavMenu
             switchTheme={switchTheme}

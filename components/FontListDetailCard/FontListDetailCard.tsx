@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import { convertText } from '@core/fontCovert';
 import { FontType } from '@core/golobalTypes';
 
 interface FontListDetailCardType {
@@ -11,7 +12,7 @@ interface FontListDetailCardType {
 
 const FontListDetailCard = ({ font, size, fontText, id }: FontListDetailCardType) => {
   const fontStyle = {
-    fontFamily: `${font.fileName} , 'font-acre', sans-serif`,
+    fontFamily: font.fileName,
     src: `url(/fonts/${font.fileName}/${font.fontStyle}.ttf)`,
     fontSize: parseInt(size),
     lineHeight: `${parseInt(size) + 20}px`,
@@ -29,7 +30,7 @@ const FontListDetailCard = ({ font, size, fontText, id }: FontListDetailCardType
         ease: [0.25, 0.25, 0, 1],
         delay: recalculatedDelay,
       }}
-      className="w-full p-2 overflow-hidden border-2 rounded shadow-md cursor-pointer select-none dark:hover:bg-softblue hover:bg-softgold"
+      className="w-full p-2 overflow-hidden border-2 rounded shadow-md cursor-pointer select-none "
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -58,7 +59,7 @@ const FontListDetailCard = ({ font, size, fontText, id }: FontListDetailCardType
             ...fontStyle,
           }}
         >
-          {fontText || 'ကောင်းသောနံနက်ခင်းပါ'}
+          {convertText(font, fontText)}
         </motion.p>
         <div className="h-10" />
       </div>

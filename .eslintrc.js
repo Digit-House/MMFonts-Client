@@ -23,7 +23,6 @@ module.exports = {
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
-    'no-console': ['warn', { allow: ['error'] }],
     'react/no-unescaped-entities': ['error', { forbid: ['>', '"', '}'] }],
     '@typescript-eslint/no-empty-interface': 'warn',
     '@typescript-eslint/no-explicit-any': 'warn',
@@ -69,12 +68,13 @@ module.exports = {
     'import/no-useless-path-segments': 'warn',
     // Rules regarding minimize code complexity
     'no-param-reassign': ['error'],
-    'max-lines': ['error', { max: 200, skipBlankLines: true }],
-    complexity: ['error', { max: 10 }],
-    'max-nested-callbacks': ['error', { max: 2 }],
+    'max-lines': ['error', { max: 250, skipBlankLines: true }],
+    complexity: ['error', { max: 20 }],
+    'max-nested-callbacks': ['error', { max: 3 }],
     'max-depth': ['error', { max: 3 }],
-    'max-params': ['error', { max: 2 }],
+    'max-params': ['error', { max: 4 }],
     'no-console': ['error', { allow: ['log', 'warn'] }],
     // disable import React necessity
+    'react-hooks/exhaustive-deps': 'off',
   },
 };

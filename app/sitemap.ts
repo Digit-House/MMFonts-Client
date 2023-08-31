@@ -1,13 +1,16 @@
 import { MetadataRoute } from 'next';
-import getAllFonts from '@core/getAllFonts';
+import { getAllFontsName } from '@core/getFonts';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://www.mmfontshub.com';
-  const fonts = await getAllFonts();
-  const fontUrls = fonts.map((font) => ({
-    url: `${baseUrl}/fonts/${font.nameEn}`,
-    lastModified: new Date(),
-  }));
+  const baseUrl = 'https://mmfontshub.com';
+  const fonts = getAllFontsName();
+
+  const fontUrls = (en = false) => {
+    return fonts.map((font) => ({
+      url: `${baseUrl}${en ? '/en' : ''}/fonts/${font}`,
+      lastModified: new Date(),
+    }));
+  };
 
   return [
     {
@@ -23,9 +26,34 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/mmtextsgenerator`,
+      url: `${baseUrl}/myanmar-fonts-generator`,
       lastModified: new Date(),
     },
-    ...fontUrls,
+    {
+      url: `${baseUrl}/privacy-policy`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/en`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/en/about-us`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/en/premium`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/en/myanmar-fonts-generator`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/en/privacy-policy`,
+      lastModified: new Date(),
+    },
+    ...fontUrls(false),
+    ...fontUrls(true),
   ];
 }

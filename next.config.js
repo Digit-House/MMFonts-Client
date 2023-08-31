@@ -1,34 +1,19 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
-  webpack: (config, options) => {
-    config.resolve.fallback = { fs: false };
-
-    config.module.rules.push({
-      test: /\.csv$/,
-      use: [
-        {
-          loader: 'csv-loader',
-          options: {
-            dynamicTyping: true,
-            header: true,
-            skipEmptyLines: true,
-          },
-        },
-      ],
-    });
-
-    return {
-      ...config,
-    };
-  },
   experimental: {
+    scrollRestoration: true,
     serverActions: true,
   },
+  reactStrictMode: true,
 };
 
 const withNextIntl = require('next-intl/plugin')(
   // This is the default (also the `src` folder is supported out of the box)
   './i18n.ts'
 );
+const withPWA = require('@ducanh2912/next-pwa').default({
+  dest: 'public',
+});
 
-module.exports = withNextIntl(nextConfig);
+module.exports = withPWA(withNextIntl(nextConfig));

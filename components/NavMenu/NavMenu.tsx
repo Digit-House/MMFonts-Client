@@ -28,18 +28,22 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
     {
       title: t('content'),
       href: '/',
+      locale: '/en',
     },
     {
       title: t('premium'),
       href: '/premium',
+      locale: '/en/premium',
     },
     {
       title: t('generate'),
-      href: '/mmtextsgenerator',
+      href: '/myanmar-fonts-generator',
+      locale: '/en/myanmar-fonts-generator',
     },
     {
       title: t('about-us'),
       href: '/about-us',
+      locale: '/en/about-us',
     },
   ];
   return (
@@ -48,13 +52,12 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
         {menuItems.map((item) => (
           <motion.div whileHover={{ scale: 1.2 }} key={item.title}>
             <Link href={item.href} className={pathname == item.href ? activeLink : unactiveLink}>
-              {item.href === pathname && (
+              {(item.href === pathname || item.locale === pathname) && (
                 <motion.span
                   layoutId="underline"
                   className="absolute top-full left-0 block h-[1px] bg-darkblue dark:bg-white w-full "
                 />
               )}
-
               {item.title}
             </Link>
           </motion.div>
@@ -76,8 +79,6 @@ export default function NavMenu({ mobileMenuOpen, setMobileMenuOpen, isLightThem
               <Image
                 className="w-auto h-10"
                 src={Logo}
-                width={80}
-                height={80}
                 alt="mm fonts collection logo"
                 sizes="100vw"
                 placeholder="blur"

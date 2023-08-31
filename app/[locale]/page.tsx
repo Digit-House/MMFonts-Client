@@ -1,19 +1,25 @@
 'use client';
-
+import { ChevronUpIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { usePathname, useRouter } from 'next/navigation';
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { FontListCard, FramerMotionWrapper, Loading, SearchBox } from '@components/index';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { CheckBox, FontListCard, FramerMotionWrapper, RivLoading, SearchBox } from '@components/index';
+import { classNames } from '@core/classnames';
 import filterSearch from '@core/filterSearch';
+import { fbEvent } from '@core/fpixel';
+import { getFontsArray } from '@core/getFonts';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
 import NumberConverter from '@core/NumberConverter';
-import useCSVConvert from '@hooks/useCSVConvert';
 import RowsIcon from '/public/icons8-columns.png';
+import useDebounce from '@hooks/useDebounce';
+
+const INPUT_TEXT_PARAMS = 'inputText';
+const SEARCH_FONT_PARAMS = 'searchFont';
 
 export default function Home() {
+  const data = getFontsArray();
   const t = useTranslations('Index');
-  const { data } = useCSVConvert('/fonts/data/font.csv');
   const [fontList, setFontList] = useState<FontType[]>([]);
   const [copyFontList, setCopyFontList] = useState<FontType[]>([]);
   const [value, setValue] = useState<string>('');
@@ -23,22 +29,45 @@ export default function Home() {
     value: '24',
   });
   const [isToggled, setIsToggled] = useState<boolean>(false);
-  const [offset, setOffset] = useState<number>(1);
   const searchBoxRef = useRef<HTMLDivElement>(null);
   const [isSearchBoxScrolled, setIsSearchBoxScrolled] = useState<boolean>(false);
   const [checked, setChecked] = useState<{ task: string; done: boolean; value: string }[]>([
-    { task: t('zaw-gyi'), done: false, value: 'zawgyi' },
-    { task: t('unicode'), done: false, value: 'unicode' },
+    { task: t('zaw-gyi'), done: true, value: 'zawgyi' },
+    { task: t('unicode'), done: true, value: 'unicode' },
+    { task: t('win'), done: true, value: 'win' },
   ]);
   const router = useRouter();
   const pathname = usePathname();
-  const prevFontLists = useRef<FontType[]>([]);
+  const searchParams = useSearchParams();
+
+  const [openSelectFontTypes, setOpenSelectFontTypes] = useState<boolean>(false);
+
+  const debounceInputValue = useDebounce(value);
+  const debounceSearchValue = useDebounce(searchValue);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (debounceInputValue.length > 0) params.set(INPUT_TEXT_PARAMS, debounceInputValue.substring(0, 20));
+    if (debounceSearchValue.length > 0) params.set(SEARCH_FONT_PARAMS, debounceSearchValue.substring(0, 10));
+    router.replace(`${pathname}?${params}`);
+  }, [debounceInputValue, debounceSearchValue]);
+
+  useEffect(() => {
+    console.log('PRA', pathname, searchParams?.get('inputText'));
+
+    if (searchParams?.get('inputText')) {
+      setValue(searchParams?.get('inputText') as string);
+    }
+
+    if (searchParams?.get('searchFont')) {
+      setSearchValue(searchParams?.get('searchFont') as string);
+    }
+  }, []);
 
   const handleScroll = useCallback(() => {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
 
     if (scrollTop + clientHeight > scrollHeight - 50 && fontList.length !== copyFontList.length) {
-      setOffset((prev) => prev + 1);
       const remainingData = fontList.slice(copyFontList.length, copyFontList.length + 8);
       setCopyFontList((prevFontList) => [...prevFontList, ...remainingData]);
     }
@@ -59,12 +88,14 @@ export default function Home() {
   }, [handleScroll]);
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement> | React.ChangeEvent<HTMLInputElement>) => {
-    setValue(event.target.value);
+    const searchKeyword = event.target.value;
+    setValue(searchKeyword);
+    console.log('EO', searchKeyword);
+    fbEvent('Search', { search_string: searchKeyword });
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleSearchBoxScroll);
-
     return () => {
       window.removeEventListener('scroll', handleSearchBoxScroll);
     };
@@ -76,38 +107,41 @@ export default function Home() {
     const checkedClone = [...checked];
     checkedClone[i] = tmp;
     setChecked([...checkedClone]);
-    const filterData: FontType[] = [];
-    const [firstChecked, secondChecked] = checkedClone;
-    if (!firstChecked.done && secondChecked.done) {
-      filterData.push(...fontList.filter((font) => font.fontSupportType === secondChecked.value));
-    } else if (firstChecked.done && !secondChecked.done) {
-      filterData.push(...fontList.filter((font) => font.fontSupportType === firstChecked.value));
-    } else {
-      prevFontLists.current.length > 0 ? filterData.push(...prevFontLists.current) : filterData.push(...data);
-    }
+    const filterData = filterSearch(searchValue, data, checkedClone);
     setFontList(filterData);
+    fbEvent('Search', { search_font_type: checkedClone[i].value });
   };
 
-  useEffect(() => {
-    if (fontList.length === 0) setFontList(data);
-    if (copyFontList.length === 0) setCopyFontList(data.slice(0, 8));
-  }, [data]);
+  useLayoutEffect(() => {
+    const sessionFontTypes = sessionStorage.getItem('checked-font-types');
+    const sessionSearchedText = sessionStorage.getItem('searched-text');
+    if (sessionFontTypes && sessionSearchedText) {
+      const retrievedFontTypes: { task: string; done: boolean; value: string }[] = JSON.parse(sessionFontTypes);
+      const filterData = filterSearch(sessionSearchedText, data, retrievedFontTypes);
+      setFontList(filterData);
+      setSearchValue(sessionSearchedText);
+      setChecked(retrievedFontTypes);
+    } else setFontList(data);
+    sessionStorage.removeItem('checked-font-types');
+    sessionStorage.removeItem('searched-text');
+  }, []);
 
-  useEffect(() => {
-    setCopyFontList(fontList.slice(0, 8));
-  }, [fontList]);
-
-  const onClickFont = (name: string, id: number) => {
-    router.push(`/fonts/${name.split(' ').join('+')}-${id}`);
+  const onClickFont = (name: string) => {
+    sessionStorage.setItem('checked-font-types', JSON.stringify(checked));
+    if (searchValue.length > 0) sessionStorage.setItem('searched-text', searchValue);
+    router.push(`/fonts/${name}`);
+    fbEvent('Click', { content_name: name });
   };
 
   const inputOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchValue(event.target.value);
-    setFontList(filterSearch(event, data));
-    prevFontLists.current = filterSearch(event, data);
+    const searchKeyword = event.target.value;
+    setSearchValue(searchKeyword);
+    const filterData = filterSearch(searchKeyword, data, checked);
+    setFontList(filterData);
+    fbEvent('Search', { search_font: searchKeyword });
   };
 
-  if (data.length === 0) return <Loading />;
+  if (data.length === 0) return <RivLoading />;
 
   return (
     <main className="flex-grow h-full mt-5 ">
@@ -121,8 +155,6 @@ export default function Home() {
             handleChange={handleChange}
             fontSize={fontSize}
             setFontSize={setFontSize}
-            handleCheckBoxChange={handleCheckBoxChange}
-            checked={checked}
           />
         </div>
         <div className="md:min-h-[1000px] min-h-[800px]">
@@ -133,27 +165,51 @@ export default function Home() {
                   ? ` ${fontList.length} of ${data.length} fonts`
                   : `ဖောင့် ${NumberConverter(data.length)} မှ ${NumberConverter(fontList.length)}`}
               </p>
-              <div className="items-center hidden gap-2 cursor-pointer sm:flex">
-                <div className="relative w-8 h-8" onClick={() => setIsToggled(true)}>
-                  <Image
-                    alt="rows"
-                    src={RowsIcon}
-                    fill
-                    style={{ objectFit: 'cover', objectPosition: 'center' }}
-                    placeholder="blur"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
+              <div className="flex h-6 gap-x-4">
+                <div className="relative select-none ">
+                  <div
+                    className="items-center h-full bg-transparent border rounded-full cursor-pointer "
+                    onClick={() => setOpenSelectFontTypes((prev) => !prev)}
+                  >
+                    <div className="flex flex-row items-center h-full px-4 gap-x-1">
+                      <p className="text-xs text-secondaryText dark:text-darkSecondaryText">{t('font-types')}</p>
+                      <ChevronUpIcon className={classNames(openSelectFontTypes && 'transform rotate-180', 'w-4')} />
+                    </div>
+                  </div>
+                  {openSelectFontTypes && (
+                    <div className="absolute z-10 p-2 mt-1 border rounded-md shadow bg-primary dark:bg-lightblue">
+                      {checked.map(({ task, done }, i) => (
+                        <CheckBox key={i} task={task} done={done} i={i} handleCheckBoxChange={handleCheckBoxChange} />
+                      ))}
+                    </div>
+                  )}
                 </div>
-                <div className="relative w-8 h-8" onClick={() => setIsToggled(false)}>
-                  <Image
-                    alt="columns"
-                    src={RowsIcon}
-                    fill
-                    className="transform rotate-90"
-                    style={{ objectFit: 'cover', objectPosition: 'center' }}
-                    placeholder="blur"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
+                <div className="hidden sm:flex">
+                  <div className="relative w-8 h-full cursor-pointer" onClick={() => setIsToggled(true)}>
+                    <Image
+                      alt="rows"
+                      src={RowsIcon}
+                      fill
+                      style={{ objectFit: 'cover', objectPosition: 'center' }}
+                      placeholder="blur"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      priority={false}
+                      quality={50}
+                    />
+                  </div>
+                  <div className="relative w-8 h-full cursor-pointer" onClick={() => setIsToggled(false)}>
+                    <Image
+                      alt="columns"
+                      src={RowsIcon}
+                      fill
+                      className="transform rotate-90"
+                      style={{ objectFit: 'cover', objectPosition: 'center' }}
+                      placeholder="blur"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      priority={false}
+                      quality={50}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -163,15 +219,14 @@ export default function Home() {
               </div>
             )}
             <div className={`${isToggled ? 'grid-cols-1' : 'sm:grid-cols-2'}  grid gap-4 mt-3 w-full `}>
-              {copyFontList.map((font: FontType, i) => (
+              {fontList.map((font: FontType, i) => (
                 <FontListCard
                   key={i}
                   id={i + 1}
-                  onClick={() => onClickFont(font.nameEn, i)}
+                  onClick={() => onClickFont(font.nameEn)}
                   font={font}
                   typeText={value}
                   fontSize={parseInt(fontSize.value)}
-                  offset={offset}
                 />
               ))}
             </div>

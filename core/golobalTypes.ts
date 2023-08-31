@@ -4,16 +4,24 @@ export interface SelectOptionType {
 }
 
 export interface FontType {
-  name: string;
   nameEn: string;
+  name: string;
   fileName: string;
   fontSupportType: string;
-  createdBy: string;
   fontStyle: string;
+  createdBy: string;
+  enSupport?: string;
+  acceptToDownload?: string;
+  downloadLink?: string;
+  creatorLink?: string;
 }
 
 export interface PremiumFontType extends FontType {
   fbLink: string;
   images: string;
   price: string;
+}
+
+export interface FontJsonType {
+  [fontName: string]: FontType;
 }

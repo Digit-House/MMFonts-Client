@@ -1,51 +1,39 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useParams } from 'next/navigation';
+import { notFound, useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
-import {
-  DetailNavMenu,
-  FontListDetailCard,
-  FramerMotionWrapper,
-  Loading,
-  RadioSelectBar,
-  TextGenerateModal,
-} from '@components/index';
+import { DetailNavMenu, FontListDetailCard, FramerMotionWrapper, Loading, RadioSelectBar } from '@components/index';
+import { getFontByName } from '@core/getFonts';
 import { FontType, SelectOptionType } from '@core/golobalTypes';
-import useCSVConvert from '@hooks/useCSVConvert';
 
 function Page() {
-  const params: any = useParams();
-
+  const params: Record<string, string | string[]> | null = useParams();
   const [value, setValue] = useState<string>('');
   const [fontSize, setFontSize] = useState<SelectOptionType>({
     label: '20',
     value: '20',
   });
-  const [open, setOpen] = useState<boolean>(false);
-  const [font, setFont] = useState<FontType | null>();
   const [fontStyles, setFontStyles] = useState<FontType[]>();
   const t = useTranslations('Index');
 
-  const { data } = useCSVConvert('/fonts/data/font.csv') as { data: FontType[] };
-
+  const font = getFontByName(params?.id as string) as FontType;
   useEffect(() => {
-    const index = params.id.split('-').pop();
-    if (index) {
-      if (!font) {
-        const fontData: FontType = data[parseInt(index)];
-        if (fontData) {
-          const styles = fontData.fontStyle.split(' ');
-          const dataStyles: FontType[] = styles.map((style) => {
-            return { ...fontData, fontStyle: style };
-          });
-
-          setFontStyles([...dataStyles]);
-          setFont(fontData);
-        }
-      }
-    }
-  }, [params, font]);
+    if (typeof font !== 'undefined') {
+      const styles = font.fontStyle.split(' ');
+      const fonts = styles.map((style) => {
+        return {
+          name: font.name,
+          nameEn: style,
+          fontStyle: style,
+          fontSupportType: font.fontSupportType,
+          fileName: font.fileName,
+          createdBy: font.createdBy,
+        };
+      });
+      setFontStyles(fonts);
+    } else notFound();
+  }, [font]);
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setValue(event.target.value);
@@ -59,7 +47,14 @@ function Page() {
 
   return (
     <FramerMotionWrapper>
-      <DetailNavMenu fileName={font.fileName} fontName={font.fileName} createdBy={font.createdBy} />
+      <DetailNavMenu
+        fileName={font.fileName}
+        fontNameEn={font.nameEn}
+        createdBy={font.createdBy}
+        fontNameMM={font.name}
+        creatorLink={font.creatorLink}
+        downloadLink={font.downloadLink}
+      />
       <div>
         <div className="flex items-center justify-center mt-5 ">
           <div className="p-4 border-2 rounded-md border-darkblue dark:border-white sm:mx-14 md:mx-20 lg:mx-26 xl:mx-auto max-w-[794px]">
@@ -71,17 +66,11 @@ function Page() {
                 rows={5}
                 cols={100}
                 placeholder={t('type-something')}
-                className="peer h-full min-h-[100px] w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
+                className="peer h-full min-h-[100px] w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 placeholder-secondaryText dark:placeholder-darkSecondaryText outline outline-0 "
               />
             </div>
             <div className="flex flex-col py-2 md:justify-between md:items-center md:flex-row">
               <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
-              <p
-                className="flex items-center justify-center p-3 mt-5 border-2 rounded-md cursor-pointer md:mt-0 border-sm border-darkblue bg-secondary text-darkblue"
-                onClick={() => setOpen(true)}
-              >
-                {t('generate')}
-              </p>
             </div>
           </div>
         </div>
@@ -97,7 +86,6 @@ function Page() {
             <FontListDetailCard key={index} font={fontData} size={fontSize.value} fontText={value} id={index} />
           ))}
       </div>
-      <TextGenerateModal open={open} setOpen={setOpen} />
     </FramerMotionWrapper>
   );
 }

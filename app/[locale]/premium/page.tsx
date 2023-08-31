@@ -2,18 +2,15 @@
 import React, { useEffect } from 'react';
 import { FramerMotionWrapper, Loading, PremiumCard } from '@components/index';
 import { PremiumFontType } from '@core/golobalTypes';
-import useCSVConvert from '@hooks/useCSVConvert';
 
 const Page = () => {
-  const { data } = useCSVConvert('/fonts/data/premium.csv') as { data: PremiumFontType[] };
   const [fonts, setFonts] = React.useState<PremiumFontType[]>([]);
-  useEffect(() => {
-    if (data.length > 0) {
-      setFonts(data);
-    }
-  }, [data]);
 
-  if (data.length > 0) return <Loading waitingText={true} />;
+  useEffect(() => {
+    setFonts([]);
+  }, []);
+
+  if (fonts.length === 0) return <Loading waitingText={true} />;
 
   return (
     <FramerMotionWrapper>
