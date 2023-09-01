@@ -1671,3 +1671,13 @@
   font-style: A;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'ArialZawgyi';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/ArialZawgyi/Regular.ttf')
+    format('truetype');
+  font-weight: Regular;
+  font-style: Regular;
+  font-display: swap;
+}
+
