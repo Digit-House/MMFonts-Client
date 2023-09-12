@@ -59,8 +59,8 @@ input:checked {
 
 .slick-prev:before,
 .slick-next:before {
-  color: #edb92b !important;
-  font-size: 23px !important;
+  color: #000000 !important;
+  font-size: 1.2rem !important;
 }
 
 @font-face {
