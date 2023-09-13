@@ -20,7 +20,7 @@ export const getFontByName = (fontName: string): FontType | undefined => {
 
 export const getPremiumFonts = () => {
   const array = Object.values(PremiumFontJson);
-  return array as PremiumFontType[];
+  return array;
 };
 
 export const getPremiumFontByName = (fontName: string): PremiumFontType | undefined => {
