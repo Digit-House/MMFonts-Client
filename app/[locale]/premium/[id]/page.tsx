@@ -70,6 +70,7 @@ const Premium = () => {
         images: premiumFont.images,
         fbLink: premiumFont.fbLink,
         downloadLink: premiumFont.downloadLink,
+        price: premiumFont.price,
       };
     });
     setFonts(fontStyles);
