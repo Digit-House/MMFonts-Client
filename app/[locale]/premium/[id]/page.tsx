@@ -30,6 +30,12 @@ const Premium = () => {
   const t = useTranslations('Index');
 
   const [images, setImages] = useState<{ src: string }[]>([]);
+  const [fontImages, setFontImages] = useState<
+    {
+      image: string;
+      style: string;
+    }[]
+  >([]);
 
   const params: Record<string, string | string[]> | null = useParams();
   const fontName = params?.id as string;
@@ -82,8 +88,22 @@ const Premium = () => {
     setValue(event.target.value);
   };
 
-  const generateTextImage = () => {
+  const generateTextImage = async () => {
     console.log('generateTextImage');
+    const url = '/api/premiumfonts';
+    const options = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        fontName: currentFont?.nameEn,
+        word: value,
+      }),
+    };
+    const response = await fetch(url, options);
+    const data = await response.json();
+    if (data.message === 'success') {
+      setFontImages(data.data);
+    }
   };
 
   if (!currentFont) return <RivLoading />;
@@ -113,7 +133,7 @@ const Premium = () => {
         ))}
       </Slider>
       <div className="flex flex-col items-center justify-center w-full">
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center w-full">
           <div className="p-4 border-2 rounded-md border-darkblue dark:border-white sm:mx-14 md:mx-20 lg:mx-26 xl:mx-auto w-full">
             <div className="relative">
               <textarea
@@ -140,15 +160,24 @@ const Premium = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row items-center mt-10">
-        <p className="flex-1 text-sm font-medium text-md text-secondaryText dark:text-darkSecondaryText">
-          {t('fonts')}
-        </p>
-      </div>
+      {fontImages.length > 0 && (
+        <div className="flex flex-row items-center mt-10">
+          <p className="flex-1 text-sm font-medium text-md text-secondaryText dark:text-darkSecondaryText">
+            {t('fonts')}
+          </p>
+        </div>
+      )}
       <div className="grid flex-1 gap-4 mt-3">
-        {fonts &&
-          fonts?.map((fontData, index) => (
-            <PremiumFontDetail key={index} font={fontData} size={fontSize.value} fontText={value} id={index} />
+        {fontImages &&
+          fonts &&
+          fontImages?.map((fData, index) => (
+            <PremiumFontDetail
+              key={index}
+              fontStyle={fData.style}
+              size={fontSize.value}
+              imageUrl={fData.image}
+              id={index}
+            />
           ))}
       </div>
     </FramerMotionWrapper>

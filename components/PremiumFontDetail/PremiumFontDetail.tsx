@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import { FontType } from '@core/golobalTypes';
 
 interface PremiumFontDetailType {
-  font: FontType;
+  fontStyle: string;
   size: string;
   id: number;
+  imageUrl: string;
 }
 
-const PremiumFontDetail = ({ font, size, id }: PremiumFontDetailType) => {
+const PremiumFontDetail = ({ fontStyle, size, id, imageUrl }: PremiumFontDetailType) => {
   const recalculatedDelay = id / 5;
 
   return (
@@ -33,7 +33,7 @@ const PremiumFontDetail = ({ font, size, id }: PremiumFontDetailType) => {
         className="flex flex-row justify-between"
       >
         <div className="">
-          <div className="text-base font-medium">ဖောင့်စတိုင် - {font.fontStyle}</div>
+          <div className="text-base font-medium">ဖောင့်စတိုင် - {fontStyle}</div>
         </div>
       </motion.div>
       <div className="py-4 text-4xl break-words">
@@ -47,7 +47,7 @@ const PremiumFontDetail = ({ font, size, id }: PremiumFontDetailType) => {
           }}
         >
           <img
-            src="https://render.myfonts.net/fonts/font_rend.php?id=c576ae24282f9ccd68f38b2937b0c44b&rt=Hello%20world%20nyan%20lin%20tun%20yae&rs=109&w=1500&rbe=&sc=2&nie=true&fg=CA0B0B&bg=FFFFFF&ft=&nf=1"
+            src={`data:image/png;base64, ${imageUrl}`}
             alt="text"
             style={{
               width: 'auto',
