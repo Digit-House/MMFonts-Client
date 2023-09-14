@@ -21,13 +21,9 @@ export interface PremiumFontType extends FontType {
   imageFolder: string;
   price: number;
   images: string;
-  featureImage: string;
+  featureImage?: string;
 }
 
 export interface FontJsonType {
   [fontName: string]: FontType;
-}
-
-export interface PremiumFontJsonType {
-  [fontName: string]: PremiumFontType;
 }
