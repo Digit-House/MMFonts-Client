@@ -1,15 +1,21 @@
 'use client';
 import React, { useEffect } from 'react';
 import { FramerMotionWrapper, PremiumCard } from '@components/index';
-import { getPremiumFonts } from '@core/getFonts';
+import { getAllPremiumFonts } from '@core/api';
 import { PremiumFontType } from '@core/golobalTypes';
 
 const Page = () => {
   const [fonts, setFonts] = React.useState<PremiumFontType[]>([]);
 
   useEffect(() => {
-    setFonts(getPremiumFonts());
-  }, []);
+    async function getFonts() {
+      const data = await getAllPremiumFonts();
+      setFonts(data);
+    }
+    if (fonts.length === 0) {
+      getFonts();
+    }
+  }, [fonts]);
 
   return (
     <FramerMotionWrapper>

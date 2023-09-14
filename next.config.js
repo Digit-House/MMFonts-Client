@@ -16,6 +16,9 @@ const nextConfig = {
     serverActions: true,
   },
   reactStrictMode: true,
+  images: {
+    domains: ['localhost', 'assets.example.com'],
+  },
 };
 
 const withNextIntl = require('next-intl/plugin')(

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import React from 'react';
+import { getImageUrl } from '@core/api';
 import { PremiumFontType } from '@core/golobalTypes';
 
 type PremiumCardType = {
@@ -20,7 +21,7 @@ const PremiumCard = ({ font, id }: PremiumCardType) => {
         <Image
           width={320}
           height={320}
-          src={`/images/premium/${font.imageFolder}/${font.images.split(',')[0]}`}
+          src={getImageUrl(font.featureImage)}
           alt={`${font.name} ဖောင့်`}
           priority
           className=" max-w-[320px]"

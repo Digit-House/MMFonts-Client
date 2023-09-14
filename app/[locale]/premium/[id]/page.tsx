@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import { FramerMotionWrapper, RadioSelectBar, RivLoading } from '@components/index';
 import PremiumFontDetail from '@components/PremiumFontDetail/PremiumFontDetail';
-import { getPremiumFontByName } from '@core/getFonts';
+import { generateTextImage, getImageUrl, getPremiumFontByName } from '@core/api';
 import { PremiumFontType, SelectOptionType } from '@core/golobalTypes';
 
 const settings = {
@@ -29,7 +29,7 @@ const settings = {
 const Premium = () => {
   const t = useTranslations('Index');
 
-  const [images, setImages] = useState<{ src: string }[]>([]);
+  const [images, setImages] = useState<string[]>([]);
   const [fontImages, setFontImages] = useState<
     {
       image: string;
@@ -38,43 +38,24 @@ const Premium = () => {
   >([]);
 
   const params: Record<string, string | string[]> | null = useParams();
-  const fontName = params?.id as string;
-  const currentFont = getPremiumFontByName(fontName);
-  const [fonts, setFonts] = useState<PremiumFontType[]>();
+  const [font, setFont] = useState<PremiumFontType>();
 
   const [value, setValue] = useState<string>('');
 
   useEffect(() => {
-    if (currentFont) {
-      getImages(currentFont);
-    }
-  }, [currentFont]);
+    const fontName = params?.id as string;
 
-  const getImages = (premiumFont: PremiumFontType) => {
-    const imgs = premiumFont?.images.split(',');
-    const updateURLs = imgs?.map((img) => {
-      return {
-        src: `/images/premium/${premiumFont.imageFolder}/${img}`,
-      };
-    });
-    const styles = premiumFont.fontStyle.split(',');
-    const fontStyles: PremiumFontType[] = styles.map((style) => {
-      return {
-        name: premiumFont.name,
-        nameEn: style,
-        fontStyle: style,
-        fontSupportType: premiumFont.fontSupportType,
-        fileName: premiumFont.fileName,
-        createdBy: premiumFont.createdBy,
-        imageFolder: premiumFont.imageFolder,
-        images: premiumFont.images,
-        fbLink: premiumFont.fbLink,
-        downloadLink: premiumFont.downloadLink,
-        price: premiumFont.price,
-      };
-    });
-    setFonts(fontStyles);
-    setImages(updateURLs);
+    if (fontName) {
+      getFont(fontName);
+    }
+  }, []);
+
+  const getFont = async (fontName: string) => {
+    const data = await getPremiumFontByName(fontName);
+    if (data) {
+      setFont(data);
+      setImages(data.images);
+    }
   };
 
   const [fontSize, setFontSize] = useState<SelectOptionType>({
@@ -89,32 +70,19 @@ const Premium = () => {
     setValue(event.target.value);
   };
 
-  const generateTextImage = async () => {
-    console.log('generateTextImage');
-    const url = '/api/premiumfonts';
-    const options = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        fontName: currentFont?.nameEn,
-        word: value,
-      }),
-    };
-    const response = await fetch(url, options);
-    const data = await response.json();
-    if (data.message === 'success') {
-      setFontImages(data.data);
-    }
+  const generate = async (fontName: string, word: string) => {
+    const data = await generateTextImage(fontName, word);
+    setFontImages(data);
   };
 
-  if (!currentFont) return <RivLoading />;
+  if (!font) return <RivLoading />;
 
   return (
     <FramerMotionWrapper>
       <div className="flex flex-row items-center justify-between p-5">
         <div>
-          <p className="mb-1 font-medium">{currentFont?.name}</p>
-          <p className="font-medium">{currentFont?.createdBy}</p>
+          <p className="mb-1 font-medium">{font?.name}</p>
+          <p className="font-medium">{font?.createdBy}</p>
         </div>
         <div className="flex items-center justify-center px-5 py-2 border-2 border-black rounded-md shadow cursor-pointer bg-secondary text-darkblue">
           <p>ဝယ်ယူရန်</p>
@@ -124,7 +92,7 @@ const Premium = () => {
         {images.map((img, index) => (
           <div key={index} className="relative h-60 w-60">
             <Image
-              src={img.src}
+              src={getImageUrl(img)}
               className="w-auto mb-1 border-2 rounded-lg object-cover"
               fill
               alt="Picture of the myanmar fonts"
@@ -153,7 +121,7 @@ const Premium = () => {
               <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
               <button
                 className="flex items-center justify-center px-5 py-2 border-2 border-black rounded-md shadow cursor-pointer bg-red text-white md:mt-4"
-                onClick={generateTextImage}
+                onClick={() => generate(font.nameEn, value)}
               >
                 <p>စာစမ်းထုတ်ရန်</p>
               </button>
@@ -170,7 +138,6 @@ const Premium = () => {
       )}
       <div className="grid flex-1 gap-4 mt-3">
         {fontImages &&
-          fonts &&
           fontImages?.map((fData, index) => (
             <PremiumFontDetail
               key={index}

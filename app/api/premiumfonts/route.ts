@@ -16,8 +16,7 @@ export function GET(req: Request) {
 }
 
 function fontFile(name: string) {
-  return path.resolve('./public/data/local/', name);
-
+  // return path.join(__dirname, '/AcreMM', name);
   // return path.join(process.cwd(), '/public/data/local/', name);
 }
 
