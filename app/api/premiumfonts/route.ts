@@ -16,8 +16,9 @@ export function GET(req: Request) {
 }
 
 function fontFile(name: string) {
-  return path.join(process.cwd(), '/public/data/local/', name);
-  // return '/public/data/local/' + name;
+  return path.resolve('./public/data/local/', name);
+
+  // return path.join(process.cwd(), '/public/data/local/', name);
 }
 
 const generateCanvasImage = (word: string, style: string, fontName: string) => {
