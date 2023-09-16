@@ -17,7 +17,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   images: {
-    domains: ['localhost', 'mmfontshub.onrender.com'],
+    domains: ['localhost', 'api.mmfontshub.com'],
   },
 };
 
