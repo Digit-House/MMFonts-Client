@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import { getImageUrl } from '@core/api';
 
 interface PremiumFontDetailType {
   fontStyle: string;
@@ -47,7 +48,7 @@ const PremiumFontDetail = ({ fontStyle, size, id, imageUrl }: PremiumFontDetailT
           }}
         >
           <img
-            src={`data:image/png;base64, ${imageUrl}`}
+            src={getImageUrl(imageUrl)}
             alt="text"
             style={{
               width: 'auto',

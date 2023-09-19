@@ -17,18 +17,50 @@ export const getImageUrl = (imagePath: string) => {
   return `${imageUrl}${imagePath}`;
 };
 
-export const generateTextImage = async (fontName: string, word: string, color = '#000000') => {
+export const generateTextImage = async (fontName: string, word: string, color = 'black') => {
+  const uniString = prepareToRender(word);
+  console.log('uniString', uniString);
   const option = {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      word,
+      word: uniString,
       color,
     }),
   };
   const response = await fetch(`${url}/fonts/${fontName}`, option);
   const data = await response.json();
   return data.data;
+};
+
+const convertUnicodeString = (str: string) => {
+  let unicodeString = '';
+  for (let i = 0; i < str.length; i++) {
+    const unicodeChar = str.charCodeAt(i).toString(16).toUpperCase();
+    unicodeString += '\\u' + '0000'.substring(0, 4 - unicodeChar.length) + unicodeChar;
+  }
+  return unicodeString;
+};
+
+const convertCodePoint = ['ေ', 'ြ'];
+
+const prepareToRender = (str: string) => {
+  let uniString = convertUnicodeString(str);
+  convertCodePoint.forEach((codePoint) => {
+    let uni = convertUnicodeString(codePoint);
+    uni = pop(uni);
+    const reStr = String.raw`(\\u[0-9A-Fa-f]{4})(\\${uni})`;
+    const regexPattern = new RegExp(`${reStr}`, 'g');
+    uniString = uniString.replace(regexPattern, (match, g1, g2) => {
+      console.log('match', match);
+      return g2 + g1;
+    });
+  });
+  return uniString;
+};
+
+const pop = (str: string) => {
+  return str.slice(1, str.length);
 };
