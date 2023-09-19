@@ -17,8 +17,15 @@ export const getImageUrl = (imagePath: string) => {
   return `${imageUrl}${imagePath}`;
 };
 
-export const generateTextImage = async (fontName: string, word: string, color = 'black') => {
+export const generateTextImage = async (fontName: string, word: string) => {
   const uniString = prepareToRender(word);
+  const theme = localStorage.getItem('theme');
+  let color = 'black';
+  if (!theme || theme === 'dark') {
+    color = 'black';
+  } else {
+    color = 'white';
+  }
   console.log('uniString', uniString);
   const option = {
     method: 'POST',
