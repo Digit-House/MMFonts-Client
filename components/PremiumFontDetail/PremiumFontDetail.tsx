@@ -51,9 +51,10 @@ const PremiumFontDetail = ({ fontStyle, size, id, imageUrl }: PremiumFontDetailT
             src={getImageUrl(imageUrl)}
             alt="text"
             style={{
-              width: 'auto',
+              width: `${+100 + +size}vw`,
+              overflowX: scroll,
               minHeight: '20px',
-              height: size + 'px',
+              height: 'auto',
             }}
           />
         </motion.p>
