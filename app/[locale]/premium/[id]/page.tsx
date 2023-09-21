@@ -127,7 +127,7 @@ const Premium = () => {
             <div className="flex flex-col py-2 md:justify-between md:items-center md:flex-row">
               <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
               <button
-                className="flex items-center justify-center px-5 py-2 border-2 border-black rounded-md shadow cursor-pointer bg-red text-white md:mt-4"
+                className="flex items-center justify-center px-5 py-2 border-2 border-black rounded-md shadow cursor-pointer bg-secondary text-darkblue"
                 onClick={() => generate(font.nameEn, value)}
               >
                 <p>စာစမ်းထုတ်ရန်</p>
