@@ -124,7 +124,7 @@ const Premium = () => {
               />
               <small className="absolute bottom-4 right-0 text-xs font-medium">{value.length}/50</small>
             </div>
-            <div className="flex flex-col py-2 md:justify-between md:items-center md:flex-row">
+            <div className="flex flex-col py-2 md:justify-between md:items-center md:flex-row gap-4">
               <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
               <button
                 className="flex items-center justify-center px-5 py-2 border-2 border-black rounded-md shadow cursor-pointer bg-secondary text-darkblue"
