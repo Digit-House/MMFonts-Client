@@ -53,8 +53,6 @@ export default function Home() {
   }, [debounceInputValue, debounceSearchValue]);
 
   useEffect(() => {
-    console.log('PRA', pathname, searchParams?.get('inputText'));
-
     if (searchParams?.get('inputText')) {
       setValue(searchParams?.get('inputText') as string);
     }
@@ -90,7 +88,6 @@ export default function Home() {
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement> | React.ChangeEvent<HTMLInputElement>) => {
     const searchKeyword = event.target.value;
     setValue(searchKeyword);
-    console.log('EO', searchKeyword);
     fbEvent('Search', { search_string: searchKeyword });
   };
 

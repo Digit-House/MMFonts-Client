@@ -26,7 +26,6 @@ export const generateTextImage = async (fontName: string, word: string) => {
   } else {
     color = 'white';
   }
-  console.log('uniString', uniString);
   const option = {
     method: 'POST',
     headers: {
@@ -61,7 +60,6 @@ const prepareToRender = (str: string) => {
     const reStr = String.raw`(\\u[0-9A-Fa-f]{4})(\\${uni})`;
     const regexPattern = new RegExp(`${reStr}`, 'g');
     uniString = uniString.replace(regexPattern, (match, g1, g2) => {
-      console.log('match', match);
       return g2 + g1;
     });
   });
