@@ -1660,20 +1660,5 @@
     "acceptToDownload": "Yes",
     "downloadLink": "",
     "creatorLink": ""
-  },
-
-  "ArialZawgyi": {
-    "nameEn": "ArialZawgyi",
-    "name": "အေရီရယ်ဇော်ဂျီ",
-    "fileName": "ArialZawgyi",
-    "fontSupportType": "Zawgyi",
-    "Error": "ဝဆွဲ ရှေ့တိုး, အောက်ကမြစ်နောက်ရောက်",
-    "Working percent": 50,
-    "fontStyle": "Regular",
-    "createdBy": "The Monotype Corporation",
-    "enSupport": "Yes",
-    "acceptToDownload": "Yes",
-    "downloadLink": "",
-    "creatorLink": ""
   }
 }

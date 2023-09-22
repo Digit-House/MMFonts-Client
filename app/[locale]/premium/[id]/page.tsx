@@ -1,14 +1,17 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import { FramerMotionWrapper, RadioSelectBar, RivLoading } from '@components/index';
+import PremiumFontDetail from '@components/PremiumFontDetail/PremiumFontDetail';
+import { generateTextImage, getImageUrl, getPremiumFontByName } from '@core/api';
 import { PremiumFontType, SelectOptionType } from '@core/golobalTypes';
 
 const settings = {
-  dots: false,
+  dots: true,
   infinite: false,
   speed: 500,
   slidesToShow: 3,
@@ -19,65 +22,85 @@ const settings = {
     { breakpoint: 640, settings: { slidesToShow: 2 } },
     { breakpoint: 480, settings: { slidesToShow: 1 } },
   ],
+  nextArrow: <div>next</div>,
+  prevArrow: <div>prev</div>,
 };
 
 const Premium = () => {
-  const data: any = [];
+  const t = useTranslations('Index');
 
-  const [currentFont, setCurrentFont] = useState<PremiumFontType | null>();
-  const [images, setImages] = useState<{ src: string }[]>([]);
-  const params: any = useParams();
+  const [images, setImages] = useState<string[]>([]);
+  const [fontImages, setFontImages] = useState<
+    {
+      image: string;
+      style: string;
+    }[]
+  >([]);
+
+  const params: Record<string, string | string[]> | null = useParams();
+  const [font, setFont] = useState<PremiumFontType>();
+
+  const [value, setValue] = useState<string>('');
 
   useEffect(() => {
-    const index = params.id.split('-').pop();
-    if (data && index) {
-      if (currentFont) return;
-      getFontDetail(parseInt(index));
-    }
-  }, [data]);
+    const fontName = params?.id as string;
 
-  const getFontDetail = useCallback(
-    (position: number) => {
-      const fontData: PremiumFontType = data[position];
-      const imgs = fontData?.images.split(' ');
-      const updateURLs = imgs?.map((img) => {
-        return {
-          src: `/images/premium/${fontData.fileName}/${img}`,
-        };
-      });
-      setCurrentFont(fontData);
-      setImages(updateURLs);
-    },
-    [data]
-  );
+    if (fontName) {
+      getFont(fontName);
+    }
+  }, []);
+
+  const getFont = async (fontName: string) => {
+    const data = await getPremiumFontByName(fontName);
+    if (data) {
+      setFont(data);
+      setImages(data.images);
+    }
+  };
 
   const [fontSize, setFontSize] = useState<SelectOptionType>({
-    label: '12',
-    value: '12',
+    label: '20',
+    value: '20',
   });
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFontSize({ label: event.target.value, value: event.target.value });
   };
 
-  if (!currentFont) return <RivLoading />;
+  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setValue(event.target.value);
+  };
+
+  const generate = async (fontName: string, word: string) => {
+    const data = await generateTextImage(fontName, word);
+    setFontImages(data);
+  };
+
+  const goToFb = () => {
+    window.open(font?.fbLink, '_blank');
+  };
+
+  if (!font) return <RivLoading />;
 
   return (
     <FramerMotionWrapper>
       <div className="flex flex-row items-center justify-between p-5">
         <div>
-          <p className="mb-1 font-medium">{currentFont?.name}</p>
-          <p className="font-medium">{currentFont?.createdBy}</p>
+          <p className="mb-1 font-medium">{font?.name}</p>
+          <p className="font-medium">{font?.createdBy}</p>
         </div>
-        <div className="flex items-center justify-center px-5 py-2 border-2 border-black rounded-md shadow cursor-pointer bg-secondary text-darkblue">
+        <div
+          className="flex items-center justify-center px-5 py-2 border-2 border-black rounded-md shadow cursor-pointer bg-secondary text-darkblue"
+          onClick={goToFb}
+        >
           <p>ဝယ်ယူရန်</p>
         </div>
       </div>
-      <Slider {...settings} className="flex justify-center h-48 mx-5 md:0 ">
+      <Slider {...settings} className="mb-8">
         {images.map((img, index) => (
-          <div key={index} className="relative w-full h-48">
+          <div key={index} className="relative h-60 w-60">
             <Image
-              src={img.src}
-              className="w-auto mb-1 border-2 rounded-lg "
+              src={getImageUrl(img)}
+              className="w-auto mb-1 border-2 rounded-lg object-cover"
               fill
               alt="Picture of the myanmar fonts"
               priority
@@ -85,26 +108,52 @@ const Premium = () => {
           </div>
         ))}
       </Slider>
-      <div className="flex flex-col items-center justify-center">
-        <div className="w-full">
-          <div className="flex items-center justify-center mt-5">
-            <div className="p-4 border-2 rounded-md border-darkblue dark:border-white mx-14 md:mx-20 lg:mx-26 xl:mx-auto max-w-[794px]">
-              <div>
-                <textarea
-                  name="postContent"
-                  rows={5}
-                  cols={100}
-                  placeholder="လက်တည့်စမ်းရန်"
-                  className="peer h-full min-h-[100px] w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 outline outline-0 "
-                />
-              </div>
-              <div className="flex flex-col py-2 md:justify-between md:items-center md:flex-row">
-                <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
-              </div>
+      <div className="flex flex-col items-center justify-center w-full">
+        <div className="flex items-center justify-center w-full">
+          <div className="p-4 border-2 rounded-md border-darkblue dark:border-white sm:mx-14 md:mx-20 lg:mx-26 xl:mx-auto w-full">
+            <div className="relative">
+              <textarea
+                name="postContent"
+                value={value}
+                onChange={handleChange}
+                rows={2}
+                cols={100}
+                maxLength={50}
+                placeholder={t('type-something')}
+                className="peer h-full min-h-[100px] w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 placeholder-secondaryText dark:placeholder-darkSecondaryText outline outline-0 "
+              />
+              <small className="absolute bottom-4 right-0 text-xs font-medium">{value.length}/50</small>
+            </div>
+            <div className="flex flex-col py-2 md:justify-between md:items-center md:flex-row gap-4">
+              <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
+              <button
+                className="flex items-center justify-center px-5 py-2 border-2 border-black rounded-md shadow cursor-pointer bg-secondary text-darkblue"
+                onClick={() => generate(font.nameEn, value)}
+              >
+                <p>စာစမ်းထုတ်ရန်</p>
+              </button>
             </div>
           </div>
-          <p className="mt-5 mb-5 font-medium">ဖောင့်ပုံစံများ</p>
         </div>
+      </div>
+      {fontImages.length > 0 && (
+        <div className="flex flex-row items-center mt-10">
+          <p className="flex-1 text-sm font-medium text-md text-secondaryText dark:text-darkSecondaryText">
+            {t('fonts')}
+          </p>
+        </div>
+      )}
+      <div className="grid flex-1 gap-4 mt-3">
+        {fontImages &&
+          fontImages?.map((fData, index) => (
+            <PremiumFontDetail
+              key={index}
+              fontStyle={fData.style}
+              size={fontSize.value}
+              imageUrl={fData.image}
+              id={index}
+            />
+          ))}
       </div>
     </FramerMotionWrapper>
   );

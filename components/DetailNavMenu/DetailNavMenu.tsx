@@ -43,7 +43,6 @@ const DetailNavMenu = ({
 
   const handleDownload = async (name: string) => {
     va.track('download-font', { fontName: name });
-    console.log(name);
     setIsDisabled(true);
     if (downloadLink) {
       window.open(downloadLink, '_blank');

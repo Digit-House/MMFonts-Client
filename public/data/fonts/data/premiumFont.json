@@ -1,0 +1,20 @@
+{
+  "AcreMM": {
+    "nameEn": "AcreMM",
+    "name": "အေကရီ",
+    "fileName": "acreMM",
+    "fontSupportType": "Unicode",
+    "Error": "-",
+    "Working percent": 100,
+    "fontStyle": "Thin,Black,Bold,Demi,DemiBold,ExtraLight,Light,Regular",
+    "createdBy": "someone",
+    "enSupport": "TRUE",
+    "acceptToDownload": "no",
+    "downloadLink": "",
+    "creatorLink": "fb",
+    "price": 5000,
+    "fbLink": "https://www.facebook.com/acre.mm",
+    "imageFolder": "acreMM",
+    "images": "image.jpeg,image_2.jpeg,image_3.jpeg,image_4.jpeg"
+  }
+}

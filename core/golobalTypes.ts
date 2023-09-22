@@ -18,8 +18,10 @@ export interface FontType {
 
 export interface PremiumFontType extends FontType {
   fbLink: string;
+  imageFolder: string;
+  price: number;
   images: string;
-  price: string;
+  featureImage?: string;
 }
 
 export interface FontJsonType {
