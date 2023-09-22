@@ -76,5 +76,6 @@ module.exports = {
     'no-console': ['error', { allow: ['log', 'warn'] }],
     // disable import React necessity
     'react-hooks/exhaustive-deps': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
   },
 };
