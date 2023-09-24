@@ -4,7 +4,8 @@
 
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { useParams } from 'next/navigation';
+import Link from 'next/link';
+import { useParams, useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import { FramerMotionWrapper, RadioSelectBar, RivLoading } from '@components/index';
@@ -30,7 +31,7 @@ const settings = {
 
 const Premium = () => {
   const t = useTranslations('Index');
-
+  const router = useRouter();
   const [images, setImages] = useState<string[]>([]);
   const [fontImages, setFontImages] = useState<
     {
@@ -88,7 +89,14 @@ const Premium = () => {
       <div className="flex flex-row items-center justify-between p-5">
         <div>
           <p className="mb-1 font-medium">{font?.name}</p>
-          <p className="font-medium">{font?.createdBy}</p>
+          <Link
+            href={{
+              pathname: '/author',
+              query: { author: font?.createdBy },
+            }}
+          >
+            <p className="font-medium ">{font?.createdBy}</p>
+          </Link>
         </div>
         <div
           className="flex items-center justify-center px-5 py-2 border-2 border-black rounded-md shadow cursor-pointer bg-secondary text-darkblue"
@@ -102,7 +110,7 @@ const Premium = () => {
           <div key={index} className="relative h-60 w-60">
             <Image
               src={getImageUrl(img)}
-              className="w-auto mb-1 border-2 rounded-lg object-cover"
+              className="object-cover w-auto mb-1 border-2 rounded-lg"
               fill
               alt="Picture of the myanmar fonts"
               priority
@@ -112,7 +120,7 @@ const Premium = () => {
       </Slider>
       <div className="flex flex-col items-center justify-center w-full">
         <div className="flex items-center justify-center w-full">
-          <div className="p-4 border-2 rounded-md border-darkblue dark:border-white sm:mx-14 md:mx-20 lg:mx-26 xl:mx-auto w-full">
+          <div className="w-full p-4 border-2 rounded-md border-darkblue dark:border-white sm:mx-14 md:mx-20 lg:mx-26 xl:mx-auto">
             <div className="relative">
               <textarea
                 name="postContent"
@@ -124,9 +132,9 @@ const Premium = () => {
                 placeholder={t('type-something')}
                 className="peer h-full min-h-[100px] w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 placeholder-secondaryText dark:placeholder-darkSecondaryText outline outline-0 "
               />
-              <small className="absolute bottom-4 right-0 text-xs font-medium">{value.length}/50</small>
+              <small className="absolute right-0 text-xs font-medium bottom-4">{value.length}/50</small>
             </div>
-            <div className="flex flex-col py-2 md:justify-between md:items-center md:flex-row gap-4">
+            <div className="flex flex-col gap-4 py-2 md:justify-between md:items-center md:flex-row">
               <RadioSelectBar fontSize={fontSize} setFontSize={setFontSize} handleSliderChange={handleSliderChange} />
               <button
                 className="flex items-center justify-center px-5 py-2 border-2 border-black rounded-md shadow cursor-pointer bg-secondary text-darkblue"

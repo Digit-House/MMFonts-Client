@@ -1,6 +1,5 @@
 'use client';
 
-import { Bars3Icon } from '@heroicons/react/24/outline';
 import { useTheme } from 'next-themes';
 import { useState } from 'react';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
@@ -23,15 +22,20 @@ export default function Header() {
       >
         <div className="max-w-[996px] flex items-center w-full justify-between mx-auto">
           <div className="flex items-center lg:hidden">
-            <div className="flex items-center px-5 ">
-              <button
+            <div className="flex items-center ">
+              {/* <button
                 type="button"
                 className="-m-2.5 inline-flex items-center justify-center rounded-md text-gray-700"
                 onClick={() => setMobileMenuOpen(true)}
               >
                 <span className="sr-only">Open main menu</span>
                 <Bars3Icon className="w-8 h-8" aria-hidden="true" />
-              </button>
+              </button> */}
+              <div className={`menu ${mobileMenuOpen && 'open'}`} onClick={() => setMobileMenuOpen((prev) => !prev)}>
+                <div className="button "></div>
+                <div className="button"></div>
+                <div className="button"></div>
+              </div>
             </div>
             <LogoMenu />
           </div>
@@ -56,7 +60,7 @@ export default function Header() {
             switchTheme={switchTheme}
             isLightTheme={currentTheme === 'light'}
             setMobileMenuOpen={setMobileMenuOpen}
-            mobileMenuOpen={mobileMenuOpen}
+            mobileMenuOpen={false}
           />
         </div>
       </nav>

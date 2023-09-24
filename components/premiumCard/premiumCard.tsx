@@ -14,8 +14,8 @@ const PremiumCard = ({ font, id }: PremiumCardType) => {
 
   return (
     <div className="px-2 mx-auto cursor-pointer">
-      <p className="mb-1 font-semibold text-2xl">{font.name} ဖောင့်</p>
-      <p className="text-base font-normal mb-2">{font.createdBy}</p>
+      <p className="mb-1 text-2xl font-semibold">{font.name} ဖောင့်</p>
+      <p className="mb-2 text-base font-normal">{font.createdBy}</p>
       <div style={{ boxShadow: ' 4px 3px 0px #292D53 ' }} className="border-2 rounded-md relative w-[300px] h-[300px]">
         {font.featureImage && (
           <Image
@@ -23,7 +23,7 @@ const PremiumCard = ({ font, id }: PremiumCardType) => {
             src={getImageUrl(font.featureImage)}
             alt={`${font.name} ဖောင့်`}
             priority
-            className="absolute top-0 left-0 overflow-hidden object-cover"
+            className="absolute top-0 left-0 object-cover overflow-hidden"
             onClick={() => router.push(`/premium/${font.nameEn}`)}
           />
         )}
