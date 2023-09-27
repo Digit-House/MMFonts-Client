@@ -19,7 +19,7 @@ const Page = () => {
 
   return (
     <FramerMotionWrapper>
-      <div className="grid grid-cols-1 gap-6 md:gap-2 gap-y-12 mx-auto mt-3 w-fit lg:grid-cols-3 sm:grid-cols-2">
+      <div className="grid grid-cols-1  gap-12 gap-y-12 mx-auto mt-3 w-fit lg:grid-cols-3 sm:grid-cols-2">
         {fonts?.length > 0 && fonts.map((font, i) => <PremiumCard font={font} key={i} id={i} />)}
       </div>
     </FramerMotionWrapper>
