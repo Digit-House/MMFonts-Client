@@ -50,6 +50,7 @@ const DetailNavMenu = ({
     }
     try {
       const response = await fetch(`/api/fonts?name=${name}`);
+
       const data = await response.json();
       const zip = new JSZip();
       const folder: any = zip.folder('fonts');

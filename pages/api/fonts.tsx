@@ -7,7 +7,6 @@ export default function handler(req: any, res: any) {
 
   res.setHeader('Content-Type', 'application/json');
   res.setHeader('Cache-Control', 'max-age=180000');
-  res.status(200).json({ message: 'success' });
 
   fs.readdir(fontDir, (err, files) => {
     if (err) {
