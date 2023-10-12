@@ -23,9 +23,11 @@ function getGreeting(greeting: string[]) {
 }
 
 export const convertText = (font: FontType, text: string | undefined) => {
-  if (font.fontSupportType === 'unicode') return text || getGreeting(default_text_uni);
-  if (font.fontSupportType === 'zawgyi') return text ? Rabbit.uni2zg(text) : getGreeting(default_text_zaw);
-  if (font.fontSupportType === 'win') {
+  console.log('font', font, text);
+  if (font.fontSupportType.toLowerCase() === 'unicode') return text || getGreeting(default_text_uni);
+  if (font.fontSupportType.toLowerCase() === 'zawgyi')
+    return text ? Rabbit.uni2zg(text) : getGreeting(default_text_zaw);
+  if (font.fontSupportType.toLowerCase() === 'win') {
     if (!text) return getGreeting(default_text_win);
     const convertTextZg = Rabbit.uni2zg(text);
     return Rabbit.zg2win(convertTextZg);

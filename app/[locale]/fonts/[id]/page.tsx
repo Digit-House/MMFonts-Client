@@ -37,6 +37,7 @@ function Page() {
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setValue(event.target.value);
+    console.log('EV', event.target.value);
   };
 
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -65,7 +66,7 @@ function Page() {
                 onChange={handleChange}
                 rows={5}
                 cols={100}
-                placeholder={t('type-something')}
+                placeholder={font.fontSupportType.toLocaleLowerCase() === 'win' ? t('type-win') : t('type-something')}
                 className="peer h-full min-h-[100px] w-full resize-none border-b-2 border-b-secondary dark:bg-lightblue bg-primary px-3 py-2.5 text-md font-normal text-blue-gray-700 placeholder-secondaryText dark:placeholder-darkSecondaryText outline outline-0 "
               />
             </div>
