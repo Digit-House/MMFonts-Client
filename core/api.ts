@@ -12,7 +12,7 @@ export const getAllPremiumFonts = async () => {
 export const getPremiumFontByName = async (fontName: string) => {
   const response = await fetch(`${url}/fonts/${fontName}`);
   const data = await response.json();
-  return data.data;
+  return data.data as PremiumFontType;
 };
 
 export const getImageUrl = (imagePath: string) => {

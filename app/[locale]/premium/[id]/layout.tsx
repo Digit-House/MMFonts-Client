@@ -18,6 +18,8 @@ export async function generateMetadata({
   const font = await getPremiumFontByName(id);
   const FontName = checkValidUrl(locale, font);
 
+  const image = font.featureImage ? getImageUrl(font.featureImage) : '/images/banner.png';
+
   return {
     title: {
       absolute: FontName + ` - ${t('Meta.premium-title')}`,
@@ -38,14 +40,14 @@ export async function generateMetadata({
       modifiedTime: new Date().toISOString(),
       url: './',
       images: {
-        url: getImageUrl(font.featureImage),
+        url: image,
       },
     },
     twitter: {
       card: 'summary_large_image',
       title: FontName + ` - ${t('Meta.premium-title')}`,
       description: t('Meta.description'),
-      images: getImageUrl(font.featureImage),
+      images: image,
     },
   };
 }
