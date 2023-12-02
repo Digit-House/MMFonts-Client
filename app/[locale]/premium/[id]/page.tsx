@@ -2,6 +2,7 @@
 
 'use client';
 
+import va from '@vercel/analytics';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
@@ -78,6 +79,7 @@ const Premium = () => {
   };
 
   const goToFb = () => {
+    va.track('buy-font', { fontName: name });
     window.open(font?.fbLink, '_blank');
   };
 
