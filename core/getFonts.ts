@@ -8,7 +8,7 @@ export const getAllFontsName = () => {
 
 export const getFontsArray = () => {
   const array = Object.values(fontJson);
-  return array;
+  return array.reverse();
 };
 
 export const getFontByName = (fontName: string): FontType | undefined => {
