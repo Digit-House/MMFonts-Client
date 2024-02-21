@@ -2181,3 +2181,91 @@
   font-style: Regular;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Pinny2';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pinny2/Medium.ttf') format('truetype');
+  font-weight: Medium;
+  font-style: Medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pinny3';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pinny3/Medium.ttf') format('truetype');
+  font-weight: Medium;
+  font-style: Medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pinny4';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pinny4/Medium.ttf') format('truetype');
+  font-weight: Medium;
+  font-style: Medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pinny5';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pinny5/Medium.ttf') format('truetype');
+  font-weight: Medium;
+  font-style: Medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pinny7';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pinny7/Medium.ttf') format('truetype');
+  font-weight: Medium;
+  font-style: Medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pinny9';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pinny9/Medium.ttf') format('truetype');
+  font-weight: Medium;
+  font-style: Medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pinny11';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pinny11/Medium.ttf') format('truetype');
+  font-weight: Medium;
+  font-style: Medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pinny12';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pinny12/Medium.ttf') format('truetype');
+  font-weight: Medium;
+  font-style: Medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pinny17';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pinny17/Medium.ttf') format('truetype');
+  font-weight: Medium;
+  font-style: Medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pinny20';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pinny20/Medium.ttf') format('truetype');
+  font-weight: Medium;
+  font-style: Medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pinny21';
+  src: url('https://raw.githubusercontent.com/Digit-House/MMfonts/develop/public/data/fonts/Pinny21/Medium.ttf') format('truetype');
+  font-weight: Medium;
+  font-style: Medium;
+  font-display: swap;
+}

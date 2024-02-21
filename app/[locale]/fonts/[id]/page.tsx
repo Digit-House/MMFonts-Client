@@ -37,7 +37,6 @@ function Page() {
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setValue(event.target.value);
-    console.log('EV', event.target.value);
   };
 
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
