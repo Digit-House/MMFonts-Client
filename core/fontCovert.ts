@@ -23,7 +23,6 @@ function getGreeting(greeting: string[]) {
 }
 
 export const convertText = (font: FontType, text: string | undefined) => {
-  console.log('font', font, text);
   if (font.fontSupportType.toLowerCase() === 'unicode') return text || getGreeting(default_text_uni);
   if (font.fontSupportType.toLowerCase() === 'zawgyi')
     return text ? Rabbit.uni2zg(text) : getGreeting(default_text_zaw);
