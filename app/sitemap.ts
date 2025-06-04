@@ -5,24 +5,9 @@ import { PremiumFontType } from '@core/golobalTypes';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://mmfontshub.app';
-  const fonts = getAllFontsName();
-
-  const fontUrls = (en = false) => {
-    return fonts.map((font) => ({
-      url: `${baseUrl}${en ? '/en' : ''}/fonts/${font}`,
-      lastModified: new Date(),
-    }));
-  };
-
-  const premiumFontUrls = async (en = false) => {
-    const premiumFonts: PremiumFontType[] = await getAllPremiumFonts();
-    return premiumFonts.map((font) => ({
-      url: `${baseUrl}${en ? '/en' : ''}/premium/${font.nameEn}`,
-      lastModified: new Date(),
-    }));
-  };
-
-  return [
+  
+  // Static routes that don't depend on API calls
+  const staticRoutes = [
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -63,9 +48,50 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${baseUrl}/en/privacy-policy`,
       lastModified: new Date(),
     },
-    ...fontUrls(false),
-    ...fontUrls(true),
-    ...(await premiumFontUrls(false)),
-    ...(await premiumFontUrls(true)),
   ];
+  
+  interface SitemapRoute {
+    url: string;
+    lastModified: Date;
+  }
+
+  let fontUrlsArray: SitemapRoute[] = [];
+  let premiumUrlsArray  : SitemapRoute[] = [];
+  
+  // Try to get regular fonts
+  try {
+    const fonts = await getAllFontsName();
+    fontUrlsArray = [
+      ...fonts.map((font) => ({
+        url: `${baseUrl}/fonts/${font}`,
+        lastModified: new Date(),
+      })),
+      ...fonts.map((font) => ({
+        url: `${baseUrl}/en/fonts/${font}`,
+        lastModified: new Date(),
+      })),
+    ];
+  } catch (error) {
+    // If there's an error fetching fonts, log it but don't fail the sitemap generation
+  }
+
+  // Try to get premium fonts
+  try {
+    const premiumFonts: PremiumFontType[] = await getAllPremiumFonts();
+    premiumUrlsArray = [
+      ...premiumFonts.map((font) => ({
+        url: `${baseUrl}/premium/${font.nameEn}`,
+        lastModified: new Date(),
+      })),
+      ...premiumFonts.map((font) => ({
+        url: `${baseUrl}/en/premium/${font.nameEn}`,
+        lastModified: new Date(),
+      })),
+    ];
+  } catch (error) {
+    // If there's an error fetching premium fonts, log it but don't fail the sitemap generation
+  }
+
+  // Return combined sitemap entries
+  return [...staticRoutes, ...fontUrlsArray, ...premiumUrlsArray];
 }
