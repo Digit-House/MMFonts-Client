@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import { getImageUrl } from '@core/api';
 
 interface PremiumFontDetailType {
   fontStyle: string;
