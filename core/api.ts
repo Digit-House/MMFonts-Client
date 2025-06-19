@@ -4,13 +4,13 @@ const url = process.env.NEXT_PUBLIC_API_URL;
 const imageUrl = process.env.NEXT_PUBLIC_IMAGE_PATH;
 
 export const getAllPremiumFonts = async () => {
-  const response = await fetch(`${url}/fonts`);
+  const response = await fetch(`${url}/fonts/premium`);
   const data = await response.json();
   return data.data as PremiumFontType[];
 };
 
 export const getPremiumFontByName = async (fontName: string) => {
-  const response = await fetch(`${url}/fonts/${fontName}`);
+  const response = await fetch(`${url}/fonts/premium/${fontName}`);
   const data = await response.json();
   return data.data as PremiumFontType;
 };
@@ -38,7 +38,7 @@ export const generateTextImage = async (fontName: string, word: string) => {
       color,
     }),
   };
-  const response = await fetch(`${url}/fonts/${fontName}`, option);
+  const response = await fetch(`${url}/fonts/generate-text-to-image`, option);
   const data = await response.json();
   return data.data;
 };
