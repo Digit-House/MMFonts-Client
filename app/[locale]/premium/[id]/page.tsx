@@ -74,7 +74,7 @@ const Premium = () => {
   };
 
   const generate = async (fontName: string, word: string) => {
-    const data = await generateTextImage(fontName, word);
+    const data = await generateTextImage(fontName, word , `${fontSize.value}px`);
     setFontImages(data);
   };
 

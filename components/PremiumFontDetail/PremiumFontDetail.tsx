@@ -48,7 +48,7 @@ const PremiumFontDetail = ({ fontStyle, size, id, imageUrl }: PremiumFontDetailT
           }}
         >
           <img
-            src={getImageUrl(imageUrl)}
+            src={imageUrl}
             alt="text"
             style={{
               width: 'auto',

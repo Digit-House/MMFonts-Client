@@ -19,14 +19,16 @@ export const getImageUrl = (imagePath: string) => {
   return `${imageUrl}${imagePath}`;
 };
 
-export const generateTextImage = async (fontName: string, word: string) => {
-  const uniString = prepareToRender(word);
+export const generateTextImage = async (fontName: string, word: string , fontSize: number) => {
   const theme = localStorage.getItem('theme');
-  let color = 'black';
+  let textColor = 'black';
+  let backgroundColor = 'white';
   if (!theme || theme === 'dark') {
-    color = 'black';
+    textColor = 'white';
+    backgroundColor = '#365880';
   } else {
-    color = 'white';
+    textColor = 'black';
+    backgroundColor = '#E4D1AC';
   }
   const option = {
     method: 'POST',
@@ -34,8 +36,11 @@ export const generateTextImage = async (fontName: string, word: string) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      word: uniString,
-      color,
+      "text": word,
+      "fontName": fontName,
+      "textColor": textColor,
+      "backgroundColor": backgroundColor,
+      "fontSize": fontSize,
     }),
   };
   const response = await fetch(`${url}/fonts/generate-text-to-image`, option);
