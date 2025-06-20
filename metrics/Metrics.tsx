@@ -1,8 +1,11 @@
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Umami from './Umami';
+import Clarity from '@microsoft/clarity';
 
 const Metrics = () => {
-  console.log('asea', process.env.NEXT_PUBLIC_GA_TRAKCING_ID);
+  const projectId = process.env.NEXT_PUBLIC_CLARITY_ID as string;
+
+  Clarity.init(projectId);
   return (
     <>
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_TRAKCING_ID as string} />
