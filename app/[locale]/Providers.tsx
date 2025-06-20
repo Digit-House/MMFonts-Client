@@ -6,7 +6,6 @@ import { ThemeProvider } from 'next-themes';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import { Footer, Header } from '@components/index';
-import { pageview as fbPageview } from '@core/fpixel';
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
   const [mounted, setMounted] = useState(false);
@@ -19,7 +18,6 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     const handleRouteChange = (url: string) => {
       sendGTMEvent(url);
-      fbPageview(url);
     };
     if (pathname) {
       handleRouteChange(pathname);
