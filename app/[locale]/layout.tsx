@@ -6,7 +6,6 @@ import { createTranslator, NextIntlClientProvider } from 'next-intl';
 import localFont from 'next/font/local';
 import Head from 'next/head';
 import { notFound } from 'next/navigation';
-import Script from 'next/script';
 import { getFontsArray } from '@core/getFonts';
 import Metrics from '../../metrics/Metrics';
 import Providers from './Providers';
